@@ -1,0 +1,139 @@
+///////////////////////////////////////////////////////////////////////////////
+//
+// Build Script for building JavaPOS Contracts Library
+// 
+// Author: denis.kuniss@wincor-nixdorf.com (2016)
+//
+///////////////////////////////////////////////////////////////////////////////
+
+plugins {
+	id 'java'
+	id 'eclipse'
+	id 'maven'
+}
+
+task wrapper(type: Wrapper) {
+	gradleVersion = '2.11'
+}
+
+///////////////////////////////////////////////////////////////////////////////
+// Names and Versions
+///////////////////////////////////////////////////////////////////////////////
+
+def artifactName = 'javapos-contracts'
+def groupId='org.javapos'
+def uposVersion = '1.6'
+def version="${uposVersion}.0" // the last part after dot is the build/release version
+def jclVersion='2.2.0' // we need JposServiceInstance.java from there to resolve circular dependency 
+ 
+///////////////////////////////////////////////////////////////////////////////
+// Build Tasks
+///////////////////////////////////////////////////////////////////////////////
+
+sourceCompatibility = '1.5' // this defines the lowest JVM version this library may be used with
+
+// this is to request the best matching JDK (currently 1.5) for compiling in Eclipse 
+// it is recommended to install a JDK which matches best to avoid applying APIs methods and types not available in specified JVM compatibility version  
+eclipse.classpath {
+	containers.clear()
+	containers "org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/J2SE-$sourceCompatibility"
+}
+
+jar {
+	baseName = artifactName
+	manifest {
+        attributes('Specification-Title': 'UnifiedPOS Standard',
+				   'Specification-Vendor': 'UnifiedPOS Committee',
+                   'Specification-Version': uposVersion,
+                   'Implementation-Title': 'JavaPOS Contracts',
+				   'Implementation-Vendor': 'github.com/JavaPOSWorkingGroup',
+                   'Implementation-Version': version)
+    }
+}
+
+///////////////////////////////////////////////////////////////////////////////
+// Artifact Upload
+///////////////////////////////////////////////////////////////////////////////
+
+artifacts {
+	archives jar
+}
+
+uploadArchives {
+    repositories {
+        mavenDeployer {
+            repository(url: "file:$localTestFileRepositoryDir")
+            pom.artifactId = artifactName
+            pom.groupId = groupId
+            pom.version = version
+        }
+    }
+}
+
+
+
+
+///////////////////////////////////////////////////////////////////////////////
+// Source Import
+///////////////////////////////////////////////////////////////////////////////
+
+// The following is for importing the source code initially; it does not take 
+// part of a release build
+  
+// javaposImportDir must be defined in the gradle.properties file
+def javaposSourceZipFile ="$javaposImportDir/JavaPOS-$uposVersion-Source-20010529.zip"
+def jclSourceFilesDir ="$javaposImportDir/jcl${jclVersion}/src"
+
+task importSources {
+	description = 'Copies the sources from an official JavaPOS source distribution archive into this projectout of the current version of the project.'
+	
+	doLast {
+		assert file(javaposSourceZipFile).exists(), "import archive '$javaposSourceZipFile' does not exist"
+		copy {
+			from (zipTree(javaposSourceZipFile)) {
+				include 'jpos/services/**'
+				include 'jpos/events/**'
+				include 'jpos/*Const.java'
+				include 'jpos/JposException.java'
+				include 'jpos/BaseControl.java'
+			}
+			into "src/main/java"
+		}
+		assert file(jclSourceFilesDir).exists(), "import directory '$jclSourceFilesDir' does not exist"
+		copy {
+			from (jclSourceFilesDir) {
+				include 'jpos/loader/JposServiceInstance.java'
+			}
+			into "src/main/java"
+		}
+	}
+}
+
+/**
+ * Helper method: Prepends given header to the content of the given file and writes the file back.
+ */
+private void prependToFile(File file, String header) {
+	String contents = file.getText() 
+
+	BufferedWriter writer = new BufferedWriter(new FileWriter(file))
+	writer.write(header)
+	writer.write(contents)
+	writer.close()
+}
+
+
+task addLicenseHeader << {
+	sourceSets.main.java.each { 
+		prependToFile(it, 
+'''\
+//////////////////////////////////////////////////////////////////////
+//
+// The JavaPOS library source code is now under the CPL license, which 
+// is an OSS Apache-like license. The complete license is located at:
+//    http://www.ibm.com/developerworks/library/os-cpl.html
+//
+//////////////////////////////////////////////////////////////////////
+''')
+		logger.info "added license header to source file '${it}'." 
+	}
+}
