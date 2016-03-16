@@ -21,7 +21,7 @@ package jpos.loader;
 //
 // The JavaPOS Config/Loader (aka JCL) is now under the CPL license, which 
 // is an OSS Apache-like license.  The complete license is located at:
-//    http://oss.software.ibm.com/developerworks/opensource/license-cpl.html
+//    http://www.ibm.com/developerworks/library/os-cpl.html
 //
 ///////////////////////////////////////////////////////////////////////////////
 
