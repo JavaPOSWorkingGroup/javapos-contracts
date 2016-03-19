@@ -55,21 +55,24 @@ jar {
 // Artifact Upload
 ///////////////////////////////////////////////////////////////////////////////
 
-artifacts {
-	archives jar
-}
+if (project.hasProperty('localTestFileRepositoryDir')) 
+{ // evaluate only at development environment, not at travis-ci.org
 
-uploadArchives {
-    repositories {
-        mavenDeployer {
-            repository(url: "file:$localTestFileRepositoryDir")
-            pom.artifactId = artifactName
-            pom.groupId = groupId
-            pom.version = version
-        }
-    }
+	artifacts {
+		archives jar
+	}
+	
+	uploadArchives {
+	    repositories {
+	        mavenDeployer {
+	            repository(url: "file:$localTestFileRepositoryDir")
+	            pom.artifactId = artifactName
+	            pom.groupId = groupId
+	            pom.version = version
+	        }
+	    }
+	}
 }
-
 
 
 
@@ -79,32 +82,36 @@ uploadArchives {
 
 // The following is for importing the source code initially; it does not take 
 // part of a release build
-  
-// javaposImportDir must be defined in the gradle.properties file
-def javaposSourceZipFile ="$javaposImportDir/JavaPOS-$uposVersion-Source-20010529.zip"
-def jclSourceFilesDir ="$javaposImportDir/jcl${jclVersion}/src"
 
-task importSources {
-	description = 'Copies the sources from an official JavaPOS source distribution archive into this projectout of the current version of the project.'
+if (project.hasProperty('javaposImportDir')) 
+{ // evaluate only at development environment, not at travis-ci.org
+
+	// javaposImportDir must be defined in the gradle.properties file
+	def javaposSourceZipFile ="$javaposImportDir/JavaPOS-$uposVersion-Source-20010529.zip"
+	def jclSourceFilesDir ="$javaposImportDir/jcl${jclVersion}/src"
 	
-	doLast {
-		assert file(javaposSourceZipFile).exists(), "import archive '$javaposSourceZipFile' does not exist"
-		copy {
-			from (zipTree(javaposSourceZipFile)) {
-				include 'jpos/services/**'
-				include 'jpos/events/**'
-				include 'jpos/*Const.java'
-				include 'jpos/JposException.java'
-				include 'jpos/BaseControl.java'
+	task importSources {
+		description = 'Copies the sources from an official JavaPOS source distribution archive into this projectout of the current version of the project.'
+		
+		doLast {
+			assert file(javaposSourceZipFile).exists(), "import archive '$javaposSourceZipFile' does not exist"
+			copy {
+				from (zipTree(javaposSourceZipFile)) {
+					include 'jpos/services/**'
+					include 'jpos/events/**'
+					include 'jpos/*Const.java'
+					include 'jpos/JposException.java'
+					include 'jpos/BaseControl.java'
+				}
+				into "src/main/java"
 			}
-			into "src/main/java"
-		}
-		assert file(jclSourceFilesDir).exists(), "import directory '$jclSourceFilesDir' does not exist"
-		copy {
-			from (jclSourceFilesDir) {
-				include 'jpos/loader/JposServiceInstance.java'
+			assert file(jclSourceFilesDir).exists(), "import directory '$jclSourceFilesDir' does not exist"
+			copy {
+				from (jclSourceFilesDir) {
+					include 'jpos/loader/JposServiceInstance.java'
+				}
+				into "src/main/java"
 			}
-			into "src/main/java"
 		}
 	}
 }
