@@ -9,7 +9,8 @@
 plugins {
 	id 'java'
 	id 'eclipse'
-	id 'maven'
+//	id 'maven'
+    id 'com.github.oehme.sobula.bintray-release' version '0.6.7'
 }
 
 task wrapper(type: Wrapper) {
@@ -54,6 +55,20 @@ jar {
 ///////////////////////////////////////////////////////////////////////////////
 // Artifact Upload
 ///////////////////////////////////////////////////////////////////////////////
+
+group = "org.javapos"
+description = "JavaPOS Contracts Library"
+ 
+contacts {
+    "builder@javapos.org" {
+        moniker "JavaPOS Working Group"
+        roles "owner"
+        github "JavaPOSWorkingGroup"
+    }
+}
+
+bintray.user = "javaposworkinggroup"
+bintray.pkg.version.mavenCentralSync.user = "kuniss"
 
 if (project.hasProperty('localTestFileRepositoryDir')) 
 { // evaluate only at development environment, not at travis-ci.org
