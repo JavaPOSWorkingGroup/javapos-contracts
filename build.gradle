@@ -67,7 +67,7 @@ contacts {
     }
 }
 
-bintray.user = "javaposworkinggroup"
+bintray.user = "kuniss"
 bintray.pkg.version.mavenCentralSync.user = "kuniss"
 
 if (project.hasProperty('localTestFileRepositoryDir')) 
