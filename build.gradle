@@ -9,7 +9,7 @@
 plugins {
 	id 'java'
 	id 'eclipse'
-//	id 'maven'
+//	id 'maven' // comment this in and the next line out for populating to a local Maven repository for testing purposes
     id 'com.github.oehme.sobula.bintray-release' version '0.6.7'
 }
 
@@ -56,22 +56,25 @@ jar {
 // Artifact Upload
 ///////////////////////////////////////////////////////////////////////////////
 
-group = "org.javapos"
-description = "JavaPOS Contracts Library"
- 
-contacts {
-    "builder@javapos.org" {
-        moniker "JavaPOS Working Group"
-        roles "owner"
-        github "JavaPOSWorkingGroup"
-    }
+if (project.plugins.hasPlugin('com.github.oehme.sobula.bintray-release')) 
+{ // evaluates only on travis-ci.org for releasing
+	group = "org.javapos"
+	description = "JavaPOS Contracts Library"
+	 
+	contacts {
+	    "builder@javapos.org" {
+	        moniker "JavaPOS Working Group"
+	        roles "owner"
+	        github "JavaPOSWorkingGroup"
+	    }
+	}
+	
+	bintray.user = "javaposworkinggroup"
+	bintray.pkg.version.mavenCentralSync.user = "kuniss"
 }
 
-bintray.user = "javaposworkinggroup"
-bintray.pkg.version.mavenCentralSync.user = "kuniss"
-
-if (project.hasProperty('localTestFileRepositoryDir')) 
-{ // evaluate only at development environment, not at travis-ci.org
+if (project.plugins.hasPlugin('maven')) 
+{ // evaluates only at development environment, not at travis-ci.org
 
 	artifacts {
 		archives jar
