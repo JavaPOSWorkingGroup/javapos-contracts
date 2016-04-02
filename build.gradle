@@ -71,7 +71,6 @@ if (project.plugins.hasPlugin('com.github.oehme.sobula.bintray-release'))
 	
 	bintray.user = "javaposworkinggroup"
 	bintray.pkg.version.mavenCentralSync.user = "kuniss"
-    bintray.pkg.version.mavenCentralSync.sync = false // only for the first relase to avoid populating to MavenCentral fails as package is not in jCenter which has to be requested manually
 }
 
 if (project.plugins.hasPlugin('maven')) 
