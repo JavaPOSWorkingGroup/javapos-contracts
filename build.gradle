@@ -120,6 +120,7 @@ if (project.hasProperty('javaposImportDir'))
 					include 'jpos/*Const.java'
 					include 'jpos/JposException.java'
 					include 'jpos/BaseControl.java'
+					include 'jpos/*Control1?.java'
 				}
 				into "src/main/java"
 			}
