@@ -25,6 +25,23 @@
 // Modification history
 // ------------------------------------------------------------------
 // 2004-Apr-01 JavaPOS Release 1.8                                 BS
+// 2005-Jan-16 JavaPOS Release 1.9                                 BS
+//   Issues reported that draft specification methods and properties
+//   were still present in the 1.8 code releases.
+//   Removed:
+//     getCapFreeMemory
+//     getCapMultipleFiles
+//     getCapSCTypes
+//     getFreeMemory
+//     getMemorySegments
+//     getSCType
+//     getTotalMemorySize
+//   Added:
+//     getCapIsoEmvMode
+//     getIsoEmvMode
+//     setIsoEmvMode
+//   Fixed:
+//     count parameter of readData is now int[] instead of int
 //
 /////////////////////////////////////////////////////////////////////
 
@@ -38,13 +55,11 @@ public interface SmartCardRWService18
 {
   // Capabilities
   public boolean getCapCardErrorDetection() throws JposException;
-  public boolean getCapFreeMemory() throws JposException;
-  public boolean getCapMultipleFiles() throws JposException;
   public int     getCapInterfaceMode() throws JposException;
+  public int     getCapIsoEmvMode() throws JposException;
   public int     getCapPowerReporting() throws JposException;
   public int     getCapSCPresentSensor() throws JposException;
   public int     getCapSCSlots() throws JposException;
-  public int     getCapSCTypes() throws JposException;
   public boolean getCapStatisticsReporting() throws JposException;
   public int     getCapTransmissionProtocol() throws JposException;
   public boolean getCapUpdateStatistics() throws JposException;
@@ -54,19 +69,17 @@ public interface SmartCardRWService18
   public boolean getDataEventEnabled() throws JposException;
   public void    setDataEventEnabled(boolean dataEventEnabled)
            throws JposException;
-  public int     getFreeMemory() throws JposException;
   public int     getInterfaceMode() throws JposException;
   public void    setInterfaceMode(int interfaceMode) throws JposException;
-  public int     getMemorySegments() throws JposException;
+  public int     getIsoEmvMode() throws JposException;
+  public void    setIsoEmvMode(int isoEmvMode) throws JposException;
   public int     getOutputID() throws JposException;
   public int     getPowerNotify() throws JposException;
   public void    setPowerNotify(int powerNotify) throws JposException;
   public int     getPowerState() throws JposException;
-  public boolean getSCPresentSensor() throws JposException;
+  public int     getSCPresentSensor() throws JposException;
   public int     getSCSlot() throws JposException;
   public void    setSCSlot(int scSlot) throws JposException;
-  public int     getSCType() throws JposException;
-  public int     getTotalMemorySize() throws JposException;
   public boolean getTransactionInProgress() throws JposException;
   public int     getTransmissionProtocol() throws JposException;
 
@@ -77,7 +90,7 @@ public interface SmartCardRWService18
   public void    clearOutput()  throws JposException;
   public void    endInsertion() throws JposException;
   public void    endRemoval() throws JposException;
-  public void    readData(int action, int count, String[] data)
+  public void    readData(int action, int[] count, String[] data)
                      throws JposException;
   public void    resetStatistics(String statisticsBuffer)
                      throws JposException;

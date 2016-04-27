@@ -23,7 +23,13 @@
 //
 // Modification history
 // ------------------------------------------------------------------
-// 98-04-20 JavaPOS Release 1.3                                   BS
+// 1998-Apr-20 JavaPOS Release 1.3                                 BS
+// 2005-Jan-16 JavaPOS Release 1.9                                 BS
+//   Added the following missing constants:
+//     ROD_CLK_SHORT
+//     ROD_CLK_NORMAL
+//     ROD_CLK_12_LONG
+//     ROD_CLK_24_LONG
 //
 /////////////////////////////////////////////////////////////////////
 
@@ -115,6 +121,16 @@ public interface RemoteOrderDisplayConst
     public static final int ROD_CLK_RESUME       = 3;
     public static final int ROD_CLK_MOVE         = 4;
     public static final int ROD_CLK_STOP         = 5;
+
+
+    /////////////////////////////////////////////////////////////////////
+    // "ControlClock" Method: "Mode" Parameter Constants
+    /////////////////////////////////////////////////////////////////////
+
+    public static final int ROD_CLK_SHORT        = 1;
+    public static final int ROD_CLK_NORMAL       = 2;
+    public static final int ROD_CLK_12_LONG      = 3;
+    public static final int ROD_CLK_24_LONG      = 4;
 
 
     /////////////////////////////////////////////////////////////////////

@@ -23,8 +23,8 @@ task wrapper(type: Wrapper) {
 
 def artifactName = 'javapos-contracts'
 def groupId='org.javapos'
-def uposVersion = '1.8'
-version="${uposVersion}.2" // the last part after dot is the build/release version
+def uposVersion = '1.9'
+version="${uposVersion}.0" // the last part after dot is the build/release version
 def jclVersion='2.2.0' // we need JposServiceInstance.java from there to resolve circular dependency 
  
 ///////////////////////////////////////////////////////////////////////////////
@@ -105,7 +105,7 @@ if (project.hasProperty('javaposImportDir'))
 { // evaluate only at development environment, not at travis-ci.org
 
 	// javaposImportDir must be defined in the gradle.properties file
-	def javaposSourceZipFile ="$javaposImportDir/JavaPOS-$uposVersion.2-Source-20040915.zip"
+	def javaposSourceZipFile ="$javaposImportDir/JavaPOS-$uposVersion.1-Source-20050428.zip"
 	def jclSourceFilesDir ="$javaposImportDir/jcl${jclVersion}/src"
 	
 	task importSources {

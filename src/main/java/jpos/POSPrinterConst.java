@@ -23,10 +23,10 @@
 //
 // Modification history
 // ------------------------------------------------------------------
-// 98-02-18 JavaPOS Release 1.2                                   BS
-// 98-04-20 JavaPOS Release 1.3                                   BS
+// 1998-Feb-18 JavaPOS Release 1.2                                 BS
+// 1998-Apr-20 JavaPOS Release 1.3                                 BS
 //   Add more PrintTwoNormal constants.
-// 03-Jun-2003 JavaPOS Release 1.8                                BS
+// 2003-Jun-03 JavaPOS Release 1.8                                 BS
 //   Added the following constants:
 //     PTR_BCS_Code128_Parsed
 //     PTR_BCS_GTIN
@@ -36,7 +36,22 @@
 //      PTR_SUE_REC_COVER_OK
 //      PTR_SUE_SLP_COVER_OPEN
 //      PTR_SUE_SLP_COVER_OK
-// 2004-02-27 Added cartridge constants with corect spelling.     BS
+// 2004-Feb-27 Added cartridge constants with corect spelling.     BS
+// 2005-Jan-16 JavaPOS Release 1.9                                 BS
+//   Added the following constants:
+//     PTR_PM_BITMAP
+//     PTR_PM_BARCODE
+//     PTR_PM_BM_ROTATE
+//     PTR_PM_BC_ROTATE
+//     PTR_PM_OPAQUE
+//     PTR_PD_LEFT_TO_RIGHT
+//     PTR_PD_BOTTOM_TO_TOP
+//     PTR_PD_RIGHT_TO_LEFT
+//     PTR_PD_TOP_TO_BOTTOM
+//     PTR_PM_PAGE_MODE
+//     PTR_PM_PRINT_SAVE
+//     PTR_PM_NORMAL
+//     PTR_PM_CANCEL
 //
 /////////////////////////////////////////////////////////////////////
 
@@ -139,6 +154,37 @@ public interface POSPrinterConst
 
     public static final int PTR_CN_DISABLED        = 0x00000000;
     public static final int PTR_CN_ENABLED         = 0x00000001;
+
+
+    /////////////////////////////////////////////////////////////////////
+    // "PageModeDescriptor"  Property Constants
+    /////////////////////////////////////////////////////////////////////
+
+    public static final int PTR_PM_BITMAP         = 0x00000001;
+    public static final int PTR_PM_BARCODE        = 0x00000002;
+    public static final int PTR_PM_BM_ROTATE      = 0x00000004;
+    public static final int PTR_PM_BC_ROTATE      = 0x00000008;
+    public static final int PTR_PM_OPAQUE         = 0x00000010;
+
+
+    /////////////////////////////////////////////////////////////////////
+    // "PageModePrintDirection"  Property Constants
+    /////////////////////////////////////////////////////////////////////
+
+    public static final int PTR_PD_LEFT_TO_RIGHT = 1;
+    public static final int PTR_PD_BOTTOM_TO_TOP = 2;
+    public static final int PTR_PD_RIGHT_TO_LEFT = 3;
+    public static final int PTR_PD_TOP_TO_BOTTOM = 4;
+
+
+    /////////////////////////////////////////////////////////////////////
+    // "clearPrintArea" and "pageModePrint" Method Constant
+    /////////////////////////////////////////////////////////////////////
+
+    public static final int PTR_PM_PAGE_MODE      = 1;
+    public static final int PTR_PM_PRINT_SAVE     = 2;
+    public static final int PTR_PM_NORMAL         = 3;
+    public static final int PTR_PM_CANCEL         = 4;
 
 
     /////////////////////////////////////////////////////////////////////

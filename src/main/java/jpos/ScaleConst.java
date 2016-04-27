@@ -23,7 +23,19 @@
 //
 // Modification history
 // ------------------------------------------------------------------
-// 98-02-18 JavaPOS Release 1.2                                   BS
+// 1998-Feb-18 JavaPOS Release 1.2                                 BS
+// 2005-Jan-16 JavaPOS Release 1.9                                 BS
+//   Added the following constants:
+//     SCAL_SN_DISABLED
+//     SCAL_SN_ENABLED
+//     JPOS_ESCAL_UNDER_ZERO
+//     JPOS_ESCAL_SAME_WEIGHT
+//     SCL_SUE_STABLE_WEIGHT
+//     SCL_SUE_WEIGHT_UNSTABLE
+//     SCL_SUE_WEIGHT_ZERO
+//     SCL_SUE_WEIGHT_OVERWEIGHT
+//     SCL_SUE_NOT_READY
+//     SCL_SUE_WEIGHT_UNDER_ZERO
 //
 /////////////////////////////////////////////////////////////////////
 
@@ -46,8 +58,30 @@ public interface ScaleConst
 
 
     /////////////////////////////////////////////////////////////////////
+    // "StatusNotify" Property Constants
+    /////////////////////////////////////////////////////////////////////
+
+    public static final int SCAL_SN_DISABLED = 1;
+    public static final int SCAL_SN_ENABLED  = 2;
+
+
+    /////////////////////////////////////////////////////////////////////
+    // "StatusUpdateEvent" "Status" Parameter Constants
+    /////////////////////////////////////////////////////////////////////
+
+    public static final int SCL_SUE_STABLE_WEIGHT     = 11;
+    public static final int SCL_SUE_WEIGHT_UNSTABLE   = 12;
+    public static final int SCL_SUE_WEIGHT_ZERO       = 13;
+    public static final int SCL_SUE_WEIGHT_OVERWEIGHT = 14;
+    public static final int SCL_SUE_NOT_READY         = 15;
+    public static final int SCL_SUE_WEIGHT_UNDER_ZERO = 16;
+
+
+    /////////////////////////////////////////////////////////////////////
     // "ResultCodeExtended" Property Constants for Scale
     /////////////////////////////////////////////////////////////////////
 
-    public static final int JPOS_ESCAL_OVERWEIGHT= 1 + JposConst.JPOSERREXT; // ReadWeight
+    public static final int JPOS_ESCAL_OVERWEIGHT  = 1 + JposConst.JPOSERREXT; // ReadWeight
+    public static final int JPOS_ESCAL_UNDER_ZERO  = 2 + JposConst.JPOSERREXT; // ReadWeight
+    public static final int JPOS_ESCAL_SAME_WEIGHT = 3 + JposConst.JPOSERREXT; // ReadWeight
 }

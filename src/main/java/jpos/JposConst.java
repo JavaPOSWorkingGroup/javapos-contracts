@@ -23,10 +23,11 @@
 //
 // Modification history
 // ------------------------------------------------------------------
-// 98-02-18 JavaPOS Release 1.2                                   BS
-// 98-04-20 JavaPOS Release 1.3                                   BS
+// 1998-Feb-18 JavaPOS Release 1.2                                 BS
+// 1998-Apr-20 JavaPOS Release 1.3                                 BS
 //   Add CapPowerReporting, PowerState, and PowerNotify values.
 //   Add power reporting values for StatusUpdateEvent.
+// 2005-Jan-16 JavaPOS Release 1.9                                 BS
 //
 /////////////////////////////////////////////////////////////////////
 
@@ -48,7 +49,7 @@ public interface JposConst
     public static final int JPOS_S_ERROR         = 4;
 
     /////////////////////////////////////////////////////////////////////
-    // "ResultCode" Property Constants
+    // "ErrorCode" Property Constants
     /////////////////////////////////////////////////////////////////////
 
     public static final int JPOSERR    = 100;
@@ -72,10 +73,11 @@ public interface JposConst
 
 
     /////////////////////////////////////////////////////////////////////
-    // "ResultCodeExtended" Property Constants
+    // "ErrorCodeExtended" Property Constants
     /////////////////////////////////////////////////////////////////////
 
-    public static final int JPOS_ESTATS_ERROR    = 80 + JPOSERREXT;
+    public static final int JPOS_ESTATS_ERROR       = 80 + JPOSERREXT;
+    public static final int JPOS_EFIRMWARE_BAD_FILE = 81 + JPOSERREXT;
 
 
     /////////////////////////////////////////////////////////////////////
@@ -116,6 +118,17 @@ public interface JposConst
 
 
     /////////////////////////////////////////////////////////////////////
+    // "compareFirmwareVersion" Method: "result" Parameter Constants
+    /////////////////////////////////////////////////////////////////////
+
+    public static final int JPOS_CFV_FIRMWARE_OLDER     = 1;
+    public static final int JPOS_CFV_FIRMWARE_SAME      = 2;
+    public static final int JPOS_CFV_FIRMWARE_NEWER     = 3;
+    public static final int JPOS_CFV_FIRMWARE_DIFFERENT = 4;
+    public static final int JPOS_CFV_FIRMWARE_UNKNOWN   = 5;
+
+
+    /////////////////////////////////////////////////////////////////////
     // "ErrorEvent" Event: "ErrorLocus" Parameter Constants
     /////////////////////////////////////////////////////////////////////
 
@@ -137,10 +150,18 @@ public interface JposConst
     // "StatusUpdateEvent" Event: Common "Status" Constants
     /////////////////////////////////////////////////////////////////////
 
-    public static final int JPOS_SUE_POWER_ONLINE      = 2001;
-    public static final int JPOS_SUE_POWER_OFF         = 2002;
-    public static final int JPOS_SUE_POWER_OFFLINE     = 2003;
-    public static final int JPOS_SUE_POWER_OFF_OFFLINE = 2004;
+    public static final int JPOS_SUE_POWER_ONLINE                 = 2001;
+    public static final int JPOS_SUE_POWER_OFF                    = 2002;
+    public static final int JPOS_SUE_POWER_OFFLINE                = 2003;
+    public static final int JPOS_SUE_POWER_OFF_OFFLINE            = 2004;
+
+    public static final int JPOS_SUE_UF_PROGRESS                  = 2100;
+    public static final int JPOS_SUE_UF_COMPLETE                  = 2200; // JPOS_SUE_UF_PROGRESS + 100
+    public static final int JPOS_SUE_UF_FAILED_DEV_OK             = 2201;
+    public static final int JPOS_SUE_UF_FAILED_DEV_UNRECOVERABLE  = 2202;
+    public static final int JPOS_SUE_UF_FAILED_DEV_NEEDS_FIRMWARE = 2203;
+    public static final int JPOS_SUE_UF_FAILED_DEV_UNKNOWN        = 2204;
+    public static final int JPOS_SUE_UF_COMPLETE_DEV_NOT_RESTORED = 2205;
 
 
     /////////////////////////////////////////////////////////////////////

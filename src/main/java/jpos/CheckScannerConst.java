@@ -23,7 +23,10 @@
 //
 // Modification history
 // ------------------------------------------------------------------
-// 01-Jul-2002 JavaPOS Release 1.7                                 BS
+// 2002-Jul-01 JavaPOS Release 1.7                                 BS
+// 2005-Jan-16 JavaPOS Release 1.9                                 BS
+//   Added the following constants:
+//     CHK_AUTOMATIC_CONTRAST
 //
 /////////////////////////////////////////////////////////////////////
 
@@ -64,6 +67,12 @@ public interface CheckScannerConst
     public static final int CHK_CL_16        = 3;
     public static final int CHK_CL_256       = 4;
     public static final int CHK_CL_FULL      = 5;
+
+    /////////////////////////////////////////////////////////////////////
+    // "constrast" Property Constants:
+    /////////////////////////////////////////////////////////////////////
+
+    public static final int CHK_AUTOMATIC_CONTRAST = -1;
 
     /////////////////////////////////////////////////////////////////////
     // "ImageFormat" Property Constants

@@ -24,6 +24,13 @@
 // Modification history
 // ------------------------------------------------------------------
 // 2000-Apr-18 JavaPOS Release 1.5                                 BS
+// 2005-Jan-16 JavaPOS Release 1.9                                 BS
+//   Added the following constants (misnamed originally) :
+//     PCRW_SUE_NOCARD
+//     PCRW_SUE_REMAINING
+//     PCRW_SUE_INRW
+//   Removed the following constant which was included incorrectly:
+//     PCRW_RP_NORMAL_ASYNC
 //
 /////////////////////////////////////////////////////////////////////
 
@@ -60,16 +67,16 @@ public interface PointCardRWConst
     public static final int PCRW_STATE_INRW       = 3;
 
 
-		/////////////////////////////////////////////////////////////////////
-		// CapTrackToRead and TrackToWrite Property constants
-		/////////////////////////////////////////////////////////////////////
+    /////////////////////////////////////////////////////////////////////
+    // CapTrackToRead and TrackToWrite Property constants
+    /////////////////////////////////////////////////////////////////////
 
-    public static final int PCRW_TRACK1		= 0x0001;
-    public static final int PCRW_TRACK2		= 0x0002;
-    public static final int PCRW_TRACK3		= 0x0004;
-    public static final int PCRW_TRACK4		= 0x0008;
-    public static final int PCRW_TRACK5		= 0x0010;
-    public static final int PCRW_TRACK6		= 0x0020;
+    public static final int PCRW_TRACK1   = 0x0001;
+    public static final int PCRW_TRACK2   = 0x0002;
+    public static final int PCRW_TRACK3   = 0x0004;
+    public static final int PCRW_TRACK4   = 0x0008;
+    public static final int PCRW_TRACK5   = 0x0010;
+    public static final int PCRW_TRACK6   = 0x0020;
 
 
     /////////////////////////////////////////////////////////////////////
@@ -87,9 +94,10 @@ public interface PointCardRWConst
     /////////////////////////////////////////////////////////////////////
 
     public static final int PCRW_RP_NORMAL        = 0x0001;
-    public static final int PCRW_RP_NORMAL_ASYNC  = 0x0002;
+    // In drafts of spec, but not in final - should never have been defined.
+    //public static final int PCRW_RP_NORMAL_ASYNC  = 0x0002;
 
-		public static final int PCRW_RP_RIGHT90       = 0x0101;
+    public static final int PCRW_RP_RIGHT90       = 0x0101;
     public static final int PCRW_RP_LEFT90        = 0x0102;
     public static final int PCRW_RP_ROTATE180     = 0x0103;
 
@@ -101,6 +109,10 @@ public interface PointCardRWConst
     public static final int PCRW_SUE_STATE_NOCARD     = 1;
     public static final int PCRW_SUE_STATE_REMAINING  = 2;
     public static final int PCRW_SUE_STATE_INRW       = 3;
+
+    public static final int PCRW_SUE_NOCARD           = 1;
+    public static final int PCRW_SUE_REMAINING        = 2;
+    public static final int PCRW_SUE_INRW             = 3;
 
 
     /////////////////////////////////////////////////////////////////////
