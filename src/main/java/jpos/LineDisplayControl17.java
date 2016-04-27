@@ -17,14 +17,14 @@
 // software or its derivatives.Permission to use, copy, modify, and distribute
 // the software and its documentation for any purpose is hereby granted.
 //
-// CashChangerControl13
+// LineDisplayControl17
 //
 //   Interface definining all new capabilities, properties and
-//   methods that are specific to Cash Changer for release 1.3.
+//   methods that are specific to Line Display for release 1.7.
 //
 // Modification history
 // ------------------------------------------------------------------
-// 98-04-20 JavaPOS Release 1.3                                   BS
+// 01-Jul-2002 JavaPOS Release 1.7                                 BS
 //
 /////////////////////////////////////////////////////////////////////
 
@@ -32,13 +32,26 @@ package jpos;
 
 import jpos.events.*;
 
-public interface CashChangerControl13 extends CashChangerControl12
+public interface LineDisplayControl17 extends LineDisplayControl16
 {
   // Capabilities
-  public int     getCapPowerReporting() throws JposException;
+  public boolean getCapBitmap() throws JposException;
+  public boolean getCapMapCharacterSet() throws JposException;
+  public boolean getCapScreenMode() throws JposException;
 
   // Properties
-  public int     getPowerNotify() throws JposException;
-  public void    setPowerNotify(int powerNotify) throws JposException;
-  public int     getPowerState() throws JposException;
+  public boolean getMapCharacterSet() throws JposException;
+  public void    setMapCharacterSet(boolean mapCharacterSet)
+                   throws JposException;
+  public int     getMaximumX() throws JposException;
+  public int     getMaximumY() throws JposException;
+  public int     getScreenMode() throws JposException;
+  public void    setScreenMode(int screenMode) throws JposException;
+  public String  getScreenModeList() throws JposException;
+
+  // Methods
+  public void    displayBitmap(String fileName, int width, int alignmentX,
+                               int alignmentY) throws JposException;
+  public void    setBitmap(int bitmapNumber, String fileName, int width,
+                           int alignmentX, int alignmentY) throws JposException;
 }

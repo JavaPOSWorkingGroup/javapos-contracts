@@ -162,4 +162,31 @@ public interface LineDisplayConst
     public static final int DISP_SD_OFF          = 0;
     public static final int DISP_SD_ON           = 1;
     public static final int DISP_SD_BLINK        = 2;
+
+
+    /////////////////////////////////////////////////////////////////////
+    /////////////////////////////////////////////////////////////////////
+    // The following were added in Release 1.7
+    /////////////////////////////////////////////////////////////////////
+    /////////////////////////////////////////////////////////////////////
+
+    /////////////////////////////////////////////////////////////////////
+    // "displayBitmap" and "setBitmap" Method Constants:
+    /////////////////////////////////////////////////////////////////////
+
+    //   "Width" Parameter
+
+    public static final int DISP_BM_ASIS          = -11;
+
+    //   "AlignmentX" Parameter
+
+    public static final int DISP_BM_LEFT          = -1;
+    public static final int DISP_BM_CENTER        = -2;
+    public static final int DISP_BM_RIGHT         = -3;
+
+    //   "AlignmentY" Parameter
+
+    public static final int DISP_BM_TOP           = -1;
+    //public static final int DISP_BM_CENTER      = -2;
+    public static final int DISP_BM_BOTTOM        = -3;
 }

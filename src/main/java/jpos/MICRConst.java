@@ -58,6 +58,14 @@ public interface MICRConst
     // "ResultCodeExtended" Property Constants for MICR
     /////////////////////////////////////////////////////////////////////
 
-    public static final int JPOS_EMICR_NOCHECK   = 1 + JposConst.JPOSERREXT; // EndInsertion
-    public static final int JPOS_EMICR_CHECK     = 2 + JposConst.JPOSERREXT; // EndRemoval
+    public static final int JPOS_EMICR_NOCHECK    = 1 + JposConst.JPOSERREXT; // EndInsertion
+    public static final int JPOS_EMICR_CHECK      = 2 + JposConst.JPOSERREXT; // EndRemoval
+
+    // The following were added in Release 1.7
+    public static final int JPOS_EMICR_BADDATA    = 3 + JposConst.JPOSERREXT;
+    public static final int JPOS_EMICR_NODATA     = 4 + JposConst.JPOSERREXT;
+    public static final int JPOS_EMICR_BADSIZE    = 5 + JposConst.JPOSERREXT;
+    public static final int JPOS_EMICR_JAM        = 6 + JposConst.JPOSERREXT;
+    public static final int JPOS_EMICR_CHECKDIGIT = 7 + JposConst.JPOSERREXT;
+    public static final int JPOS_EMICR_COVEROPEN  = 8 + JposConst.JPOSERREXT;
 }

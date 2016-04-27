@@ -17,28 +17,23 @@
 // software or its derivatives.Permission to use, copy, modify, and distribute
 // the software and its documentation for any purpose is hereby granted.
 //
-// CashChangerControl13
+// FiscalPrinterService17
 //
 //   Interface definining all new capabilities, properties and
-//   methods that are specific to Cash Changer for release 1.3.
+//   methods that are specific to Fiscal Printer for release 1.7.
 //
 // Modification history
 // ------------------------------------------------------------------
-// 98-04-20 JavaPOS Release 1.3                                   BS
+// 01-Jul-2002 JavaPOS Release 1.7                                 BS
 //
 /////////////////////////////////////////////////////////////////////
 
-package jpos;
+package jpos.services;
 
-import jpos.events.*;
+import jpos.*;
 
-public interface CashChangerControl13 extends CashChangerControl12
+public interface FiscalPrinterService17
+  extends FiscalPrinterService16
 {
-  // Capabilities
-  public int     getCapPowerReporting() throws JposException;
-
-  // Properties
-  public int     getPowerNotify() throws JposException;
-  public void    setPowerNotify(int powerNotify) throws JposException;
-  public int     getPowerState() throws JposException;
+  // Nothing new added for release 1.7
 }
