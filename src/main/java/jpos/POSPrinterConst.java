@@ -229,6 +229,11 @@ public interface POSPrinterConst
     public static final int PTR_RP_LEFT90        = 0x0102;
     public static final int PTR_RP_ROTATE180     = 0x0103;
 
+		// Version 1.7. One of the following values can be
+		// ORed with one of the above values.
+    public static final int PTR_RP_BARCODE       = 0x1000;
+    public static final int PTR_RP_BITMAP        = 0x2000;
+
 
     /////////////////////////////////////////////////////////////////////
     // "SetLogo" Method: "Location" Parameter Constants

@@ -25,6 +25,9 @@
 // Modification history
 // ------------------------------------------------------------------
 // 01-Jul-2002 JavaPOS Release 1.7                                 BS
+// 16-Apr-2003 Release 1.7.2: Added getAmountDecimalPlaces to      BS
+//               correct a spelling error present since release
+//               1.3.
 //
 /////////////////////////////////////////////////////////////////////
 
@@ -35,5 +38,13 @@ import jpos.*;
 public interface FiscalPrinterService17
   extends FiscalPrinterService16
 {
-  // Nothing new added for release 1.7
+	// The AmountDecimalPlaces property was incorrectly spelled
+	// AmountDecimalPlace since version 1.3.  In version 1.7.2 and later,
+	// the correct spelling is supported. The old version is left for
+	// Application and Device Service compatibility. The implementations
+	// of getAmountDecimalPlaces and getAmountDecimalPlace should be
+	// identical.
+
+	// Properties
+	public int     getAmountDecimalPlaces() throws JposException;
 }

@@ -75,7 +75,7 @@ public interface CheckScannerControl17 extends BaseControl
   public void    setImageTagData(String sImageTagData) throws JposException;
   public int     getMapMode() throws JposException;
   public void    setMapMode(int nMapMode) throws JposException;
-  public int     getMaxCropArea() throws JposException;
+  public int     getMaxCropAreas() throws JposException;
   public int     getPowerNotify() throws JposException;
   public void    setPowerNotify(int powerNotify) throws JposException;
   public int     getPowerState() throws JposException;

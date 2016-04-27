@@ -24,6 +24,8 @@
 // Modification history
 // ------------------------------------------------------------------
 // 98-02-18 JavaPOS Release 1.2                                   BS
+// 16-Apr-2003 Release 1.7.2: Added the missing constant          BS
+//               DISP_CCT_NONE.
 //
 /////////////////////////////////////////////////////////////////////
 
@@ -60,6 +62,7 @@ public interface LineDisplayConst
     // "CapCursorType" Property Constants
     /////////////////////////////////////////////////////////////////////
 
+    public static final int DISP_CCT_NONE        =   0x00000000;
     public static final int DISP_CCT_FIXED       =   0x00000001;
     public static final int DISP_CCT_BLOCK       =   0x00000002;
     public static final int DISP_CCT_HALFBLOCK   =   0x00000004;

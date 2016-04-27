@@ -24,6 +24,8 @@
 // Modification history
 // ------------------------------------------------------------------
 // 98-04-20 JavaPOS Release 1.3                                   BS
+// 16-Apr-2003 Release 1.7.2: Added the missing constant          BS
+//               FPTR_SC_EURO.
 //
 /////////////////////////////////////////////////////////////////////
 
@@ -338,6 +340,13 @@ public interface FiscalPrinterConst
 
     public static final int FPTR_RT_ORDINAL                  =  1;
     public static final int FPTR_RT_DATE                     =  2;
+
+
+    /////////////////////////////////////////////////////////////////////
+    // "NewCurrency" argument in "SetCurrency" method
+    /////////////////////////////////////////////////////////////////////
+
+    public static final int FPTR_SC_EURO                     =  1;
 
 
     /////////////////////////////////////////////////////////////////////
