@@ -24,7 +24,7 @@ task wrapper(type: Wrapper) {
 def artifactName = 'javapos-contracts'
 def groupId='org.javapos'
 def uposVersion = '1.8'
-version="${uposVersion}.0" // the last part after dot is the build/release version
+version="${uposVersion}.2" // the last part after dot is the build/release version
 def jclVersion='2.2.0' // we need JposServiceInstance.java from there to resolve circular dependency 
  
 ///////////////////////////////////////////////////////////////////////////////
@@ -105,7 +105,7 @@ if (project.hasProperty('javaposImportDir'))
 { // evaluate only at development environment, not at travis-ci.org
 
 	// javaposImportDir must be defined in the gradle.properties file
-	def javaposSourceZipFile ="$javaposImportDir/JavaPOS-$uposVersion-Source-20040401.zip"
+	def javaposSourceZipFile ="$javaposImportDir/JavaPOS-$uposVersion.2-Source-20040915.zip"
 	def jclSourceFilesDir ="$javaposImportDir/jcl${jclVersion}/src"
 	
 	task importSources {
@@ -115,14 +115,19 @@ if (project.hasProperty('javaposImportDir'))
 			assert file(javaposSourceZipFile).exists(), "import archive '$javaposSourceZipFile' does not exist"
 			copy {
 				from (zipTree(javaposSourceZipFile)) {
-					include 'jpos/services/**'
-					include 'jpos/events/**'
-					include 'jpos/*Const.java'
-					include 'jpos/JposException.java'
-					include 'jpos/BaseControl.java'
-					include 'jpos/*Control1*.java'
+					include 'src/jpos/services/**'
+					include 'src/jpos/events/**'
+					include 'src/jpos/*Const.java'
+					include 'src/jpos/JposException.java'
+					include 'src/jpos/BaseControl.java'
+					include 'src/jpos/*Control1*.java'
 				}
 				into "src/main/java"
+				// get rid of leading 'src/'
+	            eachFile { // This moves the file to the right relative path
+	                it.path = it.path.replaceAll('src/(.*)', '$1')
+	            }
+	            includeEmptyDirs = false
 			}
 			assert file(jclSourceFilesDir).exists(), "import directory '$jclSourceFilesDir' does not exist"
 			copy {
