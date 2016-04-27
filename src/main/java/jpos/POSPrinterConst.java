@@ -26,6 +26,17 @@
 // 98-02-18 JavaPOS Release 1.2                                   BS
 // 98-04-20 JavaPOS Release 1.3                                   BS
 //   Add more PrintTwoNormal constants.
+// 03-Jun-2003 JavaPOS Release 1.8                                BS
+//   Added the following constants:
+//     PTR_BCS_Code128_Parsed
+//     PTR_BCS_GTIN
+//      PTR_SUE_JRN_COVER_OPEN
+//      PTR_SUE_JRN_COVER_OK
+//      PTR_SUE_REC_COVER_OPEN
+//      PTR_SUE_REC_COVER_OK
+//      PTR_SUE_SLP_COVER_OPEN
+//      PTR_SUE_SLP_COVER_OK
+// 2004-02-27 Added cartridge constants with corect spelling.     BS
 //
 /////////////////////////////////////////////////////////////////////
 
@@ -93,9 +104,9 @@ public interface POSPrinterConst
     public static final int PTR_MM_METRIC        = 4;
 
 
-		/////////////////////////////////////////////////////////////////////
-		// "CapXxxColor" Property Constants
-		/////////////////////////////////////////////////////////////////////
+    /////////////////////////////////////////////////////////////////////
+    // "CapXxxColor" Property Constants
+    /////////////////////////////////////////////////////////////////////
 
     public static final int PTR_COLOR_PRIMARY      = 0x00000001;
     public static final int PTR_COLOR_CUSTOM1      = 0x00000002;
@@ -110,9 +121,9 @@ public interface POSPrinterConst
     public static final int PTR_COLOR_FULL         = 0x80000000;
 
 
-		/////////////////////////////////////////////////////////////////////
-		// "CapXxxCartridgeSensor" and  "XxxCartridgeState" Property Constants
-		/////////////////////////////////////////////////////////////////////
+    /////////////////////////////////////////////////////////////////////
+    // "CapXxxCartridgeSensor" and  "XxxCartridgeState" Property Constants
+    /////////////////////////////////////////////////////////////////////
 
     public static final int PTR_CART_UNKNOWN         = 0x10000000;
     public static final int PTR_CART_OK              = 0x00000000;
@@ -122,9 +133,9 @@ public interface POSPrinterConst
     public static final int PTR_CART_CLEANING        = 0x00000008;
 
 
-		/////////////////////////////////////////////////////////////////////
-		// "CartridgeNotify"  Property Constants
-		/////////////////////////////////////////////////////////////////////
+    /////////////////////////////////////////////////////////////////////
+    // "CartridgeNotify"  Property Constants
+    /////////////////////////////////////////////////////////////////////
 
     public static final int PTR_CN_DISABLED        = 0x00000000;
     public static final int PTR_CN_ENABLED         = 0x00000001;
@@ -158,39 +169,44 @@ public interface POSPrinterConst
     //   "Symbology" Parameter:
 
     //     One dimensional symbologies
-    public static final int PTR_BCS_UPCA         = 101;  // Digits
-    public static final int PTR_BCS_UPCE         = 102;  // Digits
-    public static final int PTR_BCS_JAN8         = 103;  // = EAN 8
-    public static final int PTR_BCS_EAN8         = 103;  // = JAN 8 (added in 1.2)
-    public static final int PTR_BCS_JAN13        = 104;  // = EAN 13
-    public static final int PTR_BCS_EAN13        = 104;  // = JAN 13 (added in 1.2)
-    public static final int PTR_BCS_TF           = 105;  // (Discrete 2 of 5) Digits
-    public static final int PTR_BCS_ITF          = 106;  // (Interleaved 2 of 5) Digits
-    public static final int PTR_BCS_Codabar      = 107;  // Digits, -, $, :, /, ., +;
-                                                         //   4 start/stop characters
-                                                         //   (a, b, c, d)
-    public static final int PTR_BCS_Code39       = 108;  // Alpha, Digits, Space, -, .,
-                                                         //   $, /, +, %; start/stop (*)
-                                                         // Also has Full ASCII feature
-    public static final int PTR_BCS_Code93       = 109;  // Same characters as Code 39
-    public static final int PTR_BCS_Code128      = 110;  // 128 data characters
+    public static final int PTR_BCS_UPCA           = 101;  // Digits
+    public static final int PTR_BCS_UPCE           = 102;  // Digits
+    public static final int PTR_BCS_JAN8           = 103;  // = EAN 8
+    public static final int PTR_BCS_EAN8           = 103;  // = JAN 8 (added in 1.2)
+    public static final int PTR_BCS_JAN13          = 104;  // = EAN 13
+    public static final int PTR_BCS_EAN13          = 104;  // = JAN 13 (added in 1.2)
+    public static final int PTR_BCS_TF             = 105;  // (Discrete 2 of 5) Digits
+    public static final int PTR_BCS_ITF            = 106;  // (Interleaved 2 of 5) Digits
+    public static final int PTR_BCS_Codabar        = 107;  // Digits, -, $, :, /, ., +;
+                                                           //   4 start/stop characters
+                                                           //   (a, b, c, d)
+    public static final int PTR_BCS_Code39         = 108;  // Alpha, Digits, Space, -, .,
+                                                           //   $, /, +, %; start/stop (*)
+                                                           // Also has Full ASCII feature
+    public static final int PTR_BCS_Code93         = 109;  // Same characters as Code 39
+    public static final int PTR_BCS_Code128        = 110;  // 128 data characters
     //        (The following were added in Release 1.2)
-    public static final int PTR_BCS_UPCA_S       = 111;  // UPC-A with supplemental
-                                                         //   barcode
-    public static final int PTR_BCS_UPCE_S       = 112;  // UPC-E with supplemental
-                                                         //   barcode
-    public static final int PTR_BCS_UPCD1        = 113;  // UPC-D1
-    public static final int PTR_BCS_UPCD2        = 114;  // UPC-D2
-    public static final int PTR_BCS_UPCD3        = 115;  // UPC-D3
-    public static final int PTR_BCS_UPCD4        = 116;  // UPC-D4
-    public static final int PTR_BCS_UPCD5        = 117;  // UPC-D5
-    public static final int PTR_BCS_EAN8_S       = 118;  // EAN 8 with supplemental
-                                                         //   barcode
-    public static final int PTR_BCS_EAN13_S      = 119;  // EAN 13 with supplemental
-                                                         //   barcode
-    public static final int PTR_BCS_EAN128       = 120;  // EAN 128
-    public static final int PTR_BCS_OCRA         = 121;  // OCR "A"
-    public static final int PTR_BCS_OCRB         = 122;  // OCR "B"
+    public static final int PTR_BCS_UPCA_S         = 111;  // UPC-A with supplemental
+                                                           //   barcode
+    public static final int PTR_BCS_UPCE_S         = 112;  // UPC-E with supplemental
+                                                           //   barcode
+    public static final int PTR_BCS_UPCD1          = 113;  // UPC-D1
+    public static final int PTR_BCS_UPCD2          = 114;  // UPC-D2
+    public static final int PTR_BCS_UPCD3          = 115;  // UPC-D3
+    public static final int PTR_BCS_UPCD4          = 116;  // UPC-D4
+    public static final int PTR_BCS_UPCD5          = 117;  // UPC-D5
+    public static final int PTR_BCS_EAN8_S         = 118;  // EAN 8 with supplemental
+                                                           //   barcode
+    public static final int PTR_BCS_EAN13_S        = 119;  // EAN 13 with supplemental
+                                                           //   barcode
+    public static final int PTR_BCS_EAN128         = 120;  // EAN 128
+    public static final int PTR_BCS_OCRA           = 121;  // OCR "A"
+    public static final int PTR_BCS_OCRB           = 122;  // OCR "B"
+
+    // Added in Release 1.8
+    public static final int PTR_BCS_Code128_Parsed = 123;
+    public static final int PTR_BCS_RSS14          = 131;  // Reduced Space Symbology - 14 digit GTIN
+    public static final int PTR_BCS_RSS_EXPANDED   = 132;  // RSS - 14 digit GTIN plus additional fields
 
 
     //     Two dimensional symbologies
@@ -229,8 +245,8 @@ public interface POSPrinterConst
     public static final int PTR_RP_LEFT90        = 0x0102;
     public static final int PTR_RP_ROTATE180     = 0x0103;
 
-		// Version 1.7. One of the following values can be
-		// ORed with one of the above values.
+    // Version 1.7. One of the following values can be
+    // ORed with one of the above values.
     public static final int PTR_RP_BARCODE       = 0x1000;
     public static final int PTR_RP_BITMAP        = 0x2000;
 
@@ -251,10 +267,10 @@ public interface POSPrinterConst
     public static final int PTR_TP_NORMAL        = 12;
 
 
-		/////////////////////////////////////////////////////////////////////
-		// "MarkFeed" Method: "Type" Parameter Constants
-		// "CapRecMarkFeed" Property Constants
-		/////////////////////////////////////////////////////////////////////
+    /////////////////////////////////////////////////////////////////////
+    // "MarkFeed" Method: "Type" Parameter Constants
+    // "CapRecMarkFeed" Property Constants
+    /////////////////////////////////////////////////////////////////////
 
     public static final int PTR_MF_TO_TAKEUP      = 1;
     public static final int PTR_MF_TO_CUTTER      = 2;
@@ -262,9 +278,9 @@ public interface POSPrinterConst
     public static final int PTR_MF_TO_NEXT_TOF    = 8;
 
 
-		/////////////////////////////////////////////////////////////////////
-		// "ChangePrintSide" Method: "Side" Parameter Constants
-		/////////////////////////////////////////////////////////////////////
+    /////////////////////////////////////////////////////////////////////
+    // "ChangePrintSide" Method: "Side" Parameter Constants
+    /////////////////////////////////////////////////////////////////////
 
     public static final int PTR_PS_UNKNOWN  = 0;
     public static final int PTR_PS_SIDE1    = 1;
@@ -295,18 +311,28 @@ public interface POSPrinterConst
     public static final int PTR_SUE_JRN_CARTRIDGE_NEAREMPTY = 42;
     public static final int PTR_SUE_JRN_HEAD_CLEANING       = 43;
     public static final int PTR_SUE_JRN_CARTDRIGE_OK        = 44;
+    public static final int PTR_SUE_JRN_CARTRIDGE_OK        = 44;
 
     public static final int PTR_SUE_REC_CARTRIDGE_EMPTY     = 45;
     public static final int PTR_SUE_REC_CARTRIDGE_NEAREMPTY = 46;
     public static final int PTR_SUE_REC_HEAD_CLEANING       = 47;
     public static final int PTR_SUE_REC_CARTDRIGE_OK        = 48;
+    public static final int PTR_SUE_REC_CARTRIDGE_OK        = 48;
 
     public static final int PTR_SUE_SLP_CARTRIDGE_EMPTY     = 49;
     public static final int PTR_SUE_SLP_CARTRIDGE_NEAREMPTY = 50;
     public static final int PTR_SUE_SLP_HEAD_CLEANING       = 51;
-    public static final int PTR_SUE_SLP_CARTDRIGE_OK        = 52;
+    public static final int PTR_SUE_SLP_CARTRIDGE_OK        = 52;
 
     public static final int PTR_SUE_IDLE         = 1001;
+
+    // Added in Release 1.8
+    public static final int PTR_SUE_JRN_COVER_OPEN = 60;
+    public static final int PTR_SUE_JRN_COVER_OK   = 61;
+    public static final int PTR_SUE_REC_COVER_OPEN = 62;
+    public static final int PTR_SUE_REC_COVER_OK   = 63;
+    public static final int PTR_SUE_SLP_COVER_OPEN = 64;
+    public static final int PTR_SUE_SLP_COVER_OK   = 65;
 
 
     /////////////////////////////////////////////////////////////////////

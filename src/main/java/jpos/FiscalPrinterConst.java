@@ -23,9 +23,11 @@
 //
 // Modification history
 // ------------------------------------------------------------------
-// 98-04-20 JavaPOS Release 1.3                                   BS
+// 98-04-20    JavaPOS Release 1.3                                BS
 // 16-Apr-2003 Release 1.7.2: Added the missing constant          BS
 //               FPTR_SC_EURO.
+// 03-Jun-2003 JavaPOS Release 1.8                                BS
+//               Added new StatusUpdateEvent constants.
 //
 /////////////////////////////////////////////////////////////////////
 
@@ -369,6 +371,14 @@ public interface FiscalPrinterConst
     public static final int FPTR_SUE_SLP_PAPEROK             =  29;
 
     public static final int FPTR_SUE_IDLE                    =1001;
+
+    // Added in Release 1.8
+    public static final int FPTR_SUE_JRN_COVER_OPEN          =  60;
+    public static final int FPTR_SUE_JRN_COVER_OK            =  61;
+    public static final int FPTR_SUE_REC_COVER_OPEN          =  62;
+    public static final int FPTR_SUE_REC_COVER_OK            =  63;
+    public static final int FPTR_SUE_SLP_COVER_OPEN          =  64;
+    public static final int FPTR_SUE_SLP_COVER_OK            =  65;
 
 
     /////////////////////////////////////////////////////////////////////
