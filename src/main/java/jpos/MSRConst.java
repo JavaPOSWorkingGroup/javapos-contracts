@@ -23,7 +23,8 @@
 //
 // Modification history
 // ------------------------------------------------------------------
-// 98-02-18 JavaPOS Release 1.2                                   BS
+// 1998-Feb-18 JavaPOS Release 1.2                                 BS
+// 2006-Feb-10 JavaPOS Release 1.10                                BS
 //
 /////////////////////////////////////////////////////////////////////
 
@@ -38,6 +39,8 @@ public interface MSRConst
     /////////////////////////////////////////////////////////////////////
     // "TracksToRead" Property Constants
     /////////////////////////////////////////////////////////////////////
+
+    public static final int MSR_TR_NONE      = 0;
 
     public static final int MSR_TR_1         = 1;
     public static final int MSR_TR_2         = 2;

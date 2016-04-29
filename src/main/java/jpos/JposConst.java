@@ -28,6 +28,7 @@
 //   Add CapPowerReporting, PowerState, and PowerNotify values.
 //   Add power reporting values for StatusUpdateEvent.
 // 2005-Jan-16 JavaPOS Release 1.9                                 BS
+// 2006-Feb-10 JavaPOS Release 1.10                                BS
 //
 /////////////////////////////////////////////////////////////////////
 
@@ -78,6 +79,7 @@ public interface JposConst
 
     public static final int JPOS_ESTATS_ERROR       = 80 + JPOSERREXT;
     public static final int JPOS_EFIRMWARE_BAD_FILE = 81 + JPOSERREXT;
+    public static final int JPOS_ESTATS_DEPENDENCY  = 82 + JPOSERREXT;
 
 
     /////////////////////////////////////////////////////////////////////

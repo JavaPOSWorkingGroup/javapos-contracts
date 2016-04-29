@@ -1,0 +1,138 @@
+//////////////////////////////////////////////////////////////////////
+//
+// The JavaPOS library source code is now under the CPL license, which 
+// is an OSS Apache-like license. The complete license is located at:
+//    http://www.ibm.com/developerworks/library/os-cpl.html
+//
+//////////////////////////////////////////////////////////////////////
+/////////////////////////////////////////////////////////////////////
+//
+// This software is provided "AS IS".  The JavaPOS working group (including
+// each of the Corporate members, contributors and individuals)  MAKES NO
+// REPRESENTATIONS OR WARRANTIES ABOUT THE SUITABILITY OF THE SOFTWARE,
+// EITHER EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE IMPLIED
+// WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND
+// NON-INFRINGEMENT. The JavaPOS working group shall not be liable for
+// any damages suffered as a result of using, modifying or distributing this
+// software or its derivatives.Permission to use, copy, modify, and distribute
+// the software and its documentation for any purpose is hereby granted.
+//
+// BiometricsConst
+//
+//   Biometrics constants for JavaPOS Applications.
+//
+// Modification history
+// ------------------------------------------------------------------
+// 2006-Feb-10 JavaPOS Release 1.10                                BS
+/////////////////////////////////////////////////////////////////////
+
+package jpos;
+
+public interface BiometricsConst
+{
+  //###################################################################
+  //#### Biometrics Constants
+  //###################################################################
+
+  /////////////////////////////////////////////////////////////////////
+  // "CapSensorColor" Property Constants
+  /////////////////////////////////////////////////////////////////////
+
+  public static final int BIO_CSC_MONO      = 0x00000001;
+  public static final int BIO_CSC_GRAYSCALE = 0x00000002;
+  public static final int BIO_CSC_16        = 0x00000004;
+  public static final int BIO_CSC_256       = 0x00000008;
+  public static final int BIO_CSC_FULL      = 0x00000010;
+
+
+  /////////////////////////////////////////////////////////////////////
+  // "CapSensorOrientation" Property Constants
+  /////////////////////////////////////////////////////////////////////
+
+  public static final int BIO_CSO_NORMAL    = 0x00000001;
+  public static final int BIO_CSO_RIGHT     = 0x00000002;
+  public static final int BIO_CSO_INVERTED  = 0x00000004;
+  public static final int BIO_CSO_LEFT      = 0x00000008;
+
+
+  /////////////////////////////////////////////////////////////////////
+  // "CapSensorType" Property Constants
+  /////////////////////////////////////////////////////////////////////
+
+  public static final int BIO_CST_FACIAL_FEATURES    = 0x00000001;
+  public static final int BIO_CST_VOICE              = 0x00000002;
+  public static final int BIO_CST_FINGERPRINT        = 0x00000004;
+  public static final int BIO_CST_IRIS               = 0x00000008;
+  public static final int BIO_CST_RETINA             = 0x00000010;
+  public static final int BIO_CST_HAND_GEOMETRY      = 0x00000020;
+  public static final int BIO_CST_SIGNATURE_DYNAMICS = 0x00000040;
+  public static final int BIO_CST_KEYSTOKE_DYNAMICS  = 0x00000080;
+  public static final int BIO_CST_LIP_MOVEMENT       = 0x00000100;
+  public static final int BIO_CST_THERMAL_FACE_IMAGE = 0x00000200;
+  public static final int BIO_CST_THERMAL_HAND_IMAGE = 0x00000400;
+  public static final int BIO_CST_GAIT               = 0x00000800;
+  public static final int BIO_CST_PASSWORD           = 0x00001000;
+
+
+  /////////////////////////////////////////////////////////////////////
+  // "SensorColor" Property Constants
+  /////////////////////////////////////////////////////////////////////
+
+  public static final int BIO_SC_MONO      = 1;
+  public static final int BIO_SC_GRAYSCALE = 2;
+  public static final int BIO_SC_16        = 3;
+  public static final int BIO_SC_256       = 4;
+  public static final int BIO_SC_FULL      = 5;
+
+
+  /////////////////////////////////////////////////////////////////////
+  // "SensorOrientation" Property Constants
+  /////////////////////////////////////////////////////////////////////
+
+  public static final int BIO_SO_NORMAL    = 1;
+  public static final int BIO_SO_RIGHT     = 2;
+  public static final int BIO_SO_INVERTED  = 3;
+  public static final int BIO_SO_LEFT      = 4;
+
+
+  /////////////////////////////////////////////////////////////////////
+  // "SensorType" Property Constants
+  /////////////////////////////////////////////////////////////////////
+
+  public static final int BIO_ST_FACIAL_FEATURES    =  1;
+  public static final int BIO_ST_VOICE              =  2;
+  public static final int BIO_ST_FINGERPRINT        =  3;
+  public static final int BIO_ST_IRIS               =  4;
+  public static final int BIO_ST_RETINA             =  5;
+  public static final int BIO_ST_HAND_GEOMETRY      =  6;
+  public static final int BIO_ST_SIGNATURE_DYNAMICS =  7;
+  public static final int BIO_ST_KEYSTOKE_DYNAMICS  =  8;
+  public static final int BIO_ST_LIP_MOVEMENT       =  9;
+  public static final int BIO_ST_THERMAL_FACE_IMAGE = 10;
+  public static final int BIO_ST_THERMAL_HAND_IMAGE = 11;
+  public static final int BIO_ST_GAIT               = 12;
+  public static final int BIO_ST_PASSWORD           = 13;
+
+
+  /////////////////////////////////////////////////////////////////////
+  // "DataEvent" "Status" Property Constants
+  /////////////////////////////////////////////////////////////////////
+
+  public static final int BIO_DATA_ENROLL = 1;
+  public static final int BIO_DATA_VERIFY = 2;
+
+
+  /////////////////////////////////////////////////////////////////////
+  // "StatusUpdateEvent" "Status" Property Constants
+  /////////////////////////////////////////////////////////////////////
+
+  public static final int BIO_SUE_RAW_DATA      = 1;
+  public static final int BIO_SUE_MOVE_LEFT     = 2;
+  public static final int BIO_SUE_MOVE_RIGHT    = 3;
+  public static final int BIO_SUE_MOVE_DOWN     = 4;
+  public static final int BIO_SUE_MOVE_UP       = 5;
+  public static final int BIO_SUE_MOVE_CLOSER   = 6;
+  public static final int BIO_SUE_MOVE_AWAY     = 7;
+  public static final int BIO_SUE_MOVE_BACKWARD = 8;
+  public static final int BIO_SUE_MOVE_FORWARD  = 9;
+}

@@ -52,6 +52,11 @@
 //     PTR_PM_PRINT_SAVE
 //     PTR_PM_NORMAL
 //     PTR_PM_CANCEL
+// 2006-Feb-10 JavaPOS Release 1.10                                BS
+//  Added the following constants:
+//     PTR_BMT_BMP
+//     PTR_BMT_JPEG
+//     PTR_BMT_GIF
 //
 /////////////////////////////////////////////////////////////////////
 
@@ -264,21 +269,24 @@ public interface POSPrinterConst
 
 
     /////////////////////////////////////////////////////////////////////
-    // "PrintBitmap" Method Constants:
+    // "PrintBitmap" and "PrintMemoryBitmap" Method Constants:
     /////////////////////////////////////////////////////////////////////
 
     //   "Width" Parameter
     //     Either bitmap width or:
-
     public static final int PTR_BM_ASIS          = -11;  // One pixel per printer dot
 
     //   "Alignment" Parameter
     //     Either the distance from the left-most print column to the start
     //     of the bitmap, or one of the following:
-
     public static final int PTR_BM_LEFT          = -1;
     public static final int PTR_BM_CENTER        = -2;
     public static final int PTR_BM_RIGHT         = -3;
+
+    //   "Type" Parameter ("PrintMemoryBitmap" only)
+    public static final int PTR_BMT_BMP          = 1;
+    public static final int PTR_BMT_JPEG         = 2;
+    public static final int PTR_BMT_GIF          = 3;
 
 
     /////////////////////////////////////////////////////////////////////

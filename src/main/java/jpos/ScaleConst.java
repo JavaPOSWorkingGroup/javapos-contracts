@@ -36,6 +36,9 @@
 //     SCL_SUE_WEIGHT_OVERWEIGHT
 //     SCL_SUE_NOT_READY
 //     SCL_SUE_WEIGHT_UNDER_ZERO
+// 2006-Feb-10 JavaPOS Release 1.10                                BS
+//   Added duplicate SUE constants to match names used in the spec.
+//     (i.e. SCAL_SUE_STABLE_WEIGHT instead of SCL_SUE_STABLE_WEIGHT)
 //
 /////////////////////////////////////////////////////////////////////
 
@@ -75,6 +78,15 @@ public interface ScaleConst
     public static final int SCL_SUE_WEIGHT_OVERWEIGHT = 14;
     public static final int SCL_SUE_NOT_READY         = 15;
     public static final int SCL_SUE_WEIGHT_UNDER_ZERO = 16;
+
+    // 1.10 Correction: new names that actually match the UnifiedPOS
+    //   specification
+    public static final int SCAL_SUE_STABLE_WEIGHT     = 11;
+    public static final int SCAL_SUE_WEIGHT_UNSTABLE   = 12;
+    public static final int SCAL_SUE_WEIGHT_ZERO       = 13;
+    public static final int SCAL_SUE_WEIGHT_OVERWEIGHT = 14;
+    public static final int SCAL_SUE_NOT_READY         = 15;
+    public static final int SCAL_SUE_WEIGHT_UNDER_ZERO = 16;
 
 
     /////////////////////////////////////////////////////////////////////
