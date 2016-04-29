@@ -40,16 +40,22 @@ eclipse.classpath {
 	containers "org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/J2SE-$sourceCompatibility"
 }
 
-jar {
-	baseName = artifactName
-	manifest {
+def javaposManifest = 	manifest {
         attributes('Specification-Title': 'UnifiedPOS Standard',
 				   'Specification-Vendor': 'UnifiedPOS Committee',
                    'Specification-Version': uposVersion,
                    'Implementation-Title': 'JavaPOS Contracts',
 				   'Implementation-Vendor': 'github.com/JavaPOSWorkingGroup',
                    'Implementation-Version': version)
-    }
+}
+
+jar {
+	baseName = artifactName
+	manifest = javaposManifest
+}
+
+sourceJar {
+	manifest = javaposManifest
 }
 
 ///////////////////////////////////////////////////////////////////////////////
