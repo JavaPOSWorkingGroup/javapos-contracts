@@ -29,6 +29,8 @@
 //   Add power reporting values for StatusUpdateEvent.
 // 2005-Jan-16 JavaPOS Release 1.9                                 BS
 // 2006-Feb-10 JavaPOS Release 1.10                                BS
+// 2007-Jan-04 JavaPOS Release 1.11                                BS
+//   Added the JPOS_E_DEPRECATED ErrorCode value
 //
 /////////////////////////////////////////////////////////////////////
 
@@ -71,6 +73,7 @@ public interface JposConst
     public static final int JPOS_E_TIMEOUT       = 12 + JPOSERR;
     public static final int JPOS_E_BUSY          = 13 + JPOSERR;
     public static final int JPOS_E_EXTENDED      = 14 + JPOSERR;
+    public static final int JPOS_E_DEPRECATED    = 15 + JPOSERR; // 1.11
 
 
     /////////////////////////////////////////////////////////////////////

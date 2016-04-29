@@ -24,6 +24,19 @@
 // Modification history
 // ------------------------------------------------------------------
 // 2006-Feb-10 JavaPOS Release 1.10                                BS
+// 2006-Aug-11 JavaPOS Release 1.10.2                              BS
+//   - Added missing constants:
+//       BIO_FAR_PRECEDENCE
+//       BIO_FRR_PRECEDENCE
+// 2007-Jan-04 JavaPOS Release 1.11                                BS
+//   Added new StatusUpdateEvent constants:
+//       BIO_SUE_MOVE_SLOWER
+//       BIO_SUE_MOVE_FASTER
+//       BIO_SUE_SENSOR_DIRTY
+//   Fixed incorrect spelling of constants:
+//       BIO_CST_KEYSTROKE_DYNAMICS
+//       BIO_ST_KEYSTROKE_DYNAMICS
+//
 /////////////////////////////////////////////////////////////////////
 
 package jpos;
@@ -66,7 +79,7 @@ public interface BiometricsConst
   public static final int BIO_CST_RETINA             = 0x00000010;
   public static final int BIO_CST_HAND_GEOMETRY      = 0x00000020;
   public static final int BIO_CST_SIGNATURE_DYNAMICS = 0x00000040;
-  public static final int BIO_CST_KEYSTOKE_DYNAMICS  = 0x00000080;
+  public static final int BIO_CST_KEYSTROKE_DYNAMICS = 0x00000080;
   public static final int BIO_CST_LIP_MOVEMENT       = 0x00000100;
   public static final int BIO_CST_THERMAL_FACE_IMAGE = 0x00000200;
   public static final int BIO_CST_THERMAL_HAND_IMAGE = 0x00000400;
@@ -99,19 +112,28 @@ public interface BiometricsConst
   // "SensorType" Property Constants
   /////////////////////////////////////////////////////////////////////
 
-  public static final int BIO_ST_FACIAL_FEATURES    =  1;
-  public static final int BIO_ST_VOICE              =  2;
-  public static final int BIO_ST_FINGERPRINT        =  3;
-  public static final int BIO_ST_IRIS               =  4;
-  public static final int BIO_ST_RETINA             =  5;
-  public static final int BIO_ST_HAND_GEOMETRY      =  6;
-  public static final int BIO_ST_SIGNATURE_DYNAMICS =  7;
-  public static final int BIO_ST_KEYSTOKE_DYNAMICS  =  8;
-  public static final int BIO_ST_LIP_MOVEMENT       =  9;
-  public static final int BIO_ST_THERMAL_FACE_IMAGE = 10;
-  public static final int BIO_ST_THERMAL_HAND_IMAGE = 11;
-  public static final int BIO_ST_GAIT               = 12;
-  public static final int BIO_ST_PASSWORD           = 13;
+  public static final int BIO_ST_FACIAL_FEATURES     =  1;
+  public static final int BIO_ST_VOICE               =  2;
+  public static final int BIO_ST_FINGERPRINT         =  3;
+  public static final int BIO_ST_IRIS                =  4;
+  public static final int BIO_ST_RETINA              =  5;
+  public static final int BIO_ST_HAND_GEOMETRY       =  6;
+  public static final int BIO_ST_SIGNATURE_DYNAMICS  =  7;
+  public static final int BIO_ST_KEYSTROKE_DYNAMICS  =  8;
+  public static final int BIO_ST_LIP_MOVEMENT        =  9;
+  public static final int BIO_ST_THERMAL_FACE_IMAGE  = 10;
+  public static final int BIO_ST_THERMAL_HAND_IMAGE  = 11;
+  public static final int BIO_ST_GAIT                = 12;
+  public static final int BIO_ST_PASSWORD            = 13;
+
+
+  /////////////////////////////////////////////////////////////////////
+  // "identify", "identifyMatch, "verify", and "verifyMatch"
+  // "FARPrecedence" Parameter Constants
+  /////////////////////////////////////////////////////////////////////
+
+  public static final boolean BIO_FAR_PRECEDENCE = true;
+  public static final boolean BIO_FRR_PRECEDENCE = false;
 
 
   /////////////////////////////////////////////////////////////////////
@@ -126,13 +148,16 @@ public interface BiometricsConst
   // "StatusUpdateEvent" "Status" Property Constants
   /////////////////////////////////////////////////////////////////////
 
-  public static final int BIO_SUE_RAW_DATA      = 1;
-  public static final int BIO_SUE_MOVE_LEFT     = 2;
-  public static final int BIO_SUE_MOVE_RIGHT    = 3;
-  public static final int BIO_SUE_MOVE_DOWN     = 4;
-  public static final int BIO_SUE_MOVE_UP       = 5;
-  public static final int BIO_SUE_MOVE_CLOSER   = 6;
-  public static final int BIO_SUE_MOVE_AWAY     = 7;
-  public static final int BIO_SUE_MOVE_BACKWARD = 8;
-  public static final int BIO_SUE_MOVE_FORWARD  = 9;
+  public static final int BIO_SUE_RAW_DATA      =  1;
+  public static final int BIO_SUE_MOVE_LEFT     =  2;
+  public static final int BIO_SUE_MOVE_RIGHT    =  3;
+  public static final int BIO_SUE_MOVE_DOWN     =  4;
+  public static final int BIO_SUE_MOVE_UP       =  5;
+  public static final int BIO_SUE_MOVE_CLOSER   =  6;
+  public static final int BIO_SUE_MOVE_AWAY     =  7;
+  public static final int BIO_SUE_MOVE_BACKWARD =  8;
+  public static final int BIO_SUE_MOVE_FORWARD  =  9;
+  public static final int BIO_SUE_MOVE_SLOWER   = 10; // 1.11
+  public static final int BIO_SUE_MOVE_FASTER   = 11; // 1.11
+  public static final int BIO_SUE_SENSOR_DIRTY  = 12; // 1.11
 }

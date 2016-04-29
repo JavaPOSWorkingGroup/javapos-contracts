@@ -94,20 +94,20 @@ public interface BiometricsService110
   public void    identify(int maxFARRequested,
                           int maxFRRRequested,
                           boolean FARPrecedence,
-                          byte[] referenceBIRPopulation,
-                          byte[] candidateRanking,
+                          byte[][] referenceBIRPopulation,
+                          int[][] candidateRanking,
                           int timeout)
                      throws JposException;
   public void    identifyMatch(int maxFARRequested,
                                int maxFRRRequested,
                                boolean FARPrecedence,
                                byte[] sampleBIR,
-                               byte[] referenceBIRPopulation,
-                               byte[] candidateRanking)
+                               byte[][] referenceBIRPopulation,
+                               int[][] candidateRanking)
                      throws JposException;
   public void    processPrematchData(byte[] capturedBIR,
                                      byte[] prematchDataBIR,
-                                     byte[] processedBIR)
+                                     byte[][] processedBIR)
                      throws JposException;
   public void    resetStatistics(String statisticsBuffer)
                      throws JposException;
@@ -121,11 +121,11 @@ public interface BiometricsService110
                         int maxFRRRequested,
                         boolean FARPrecedence,
                         byte[] referenceBIR,
-                        byte[] adaptedBIR,
+                        byte[][] adaptedBIR,
                         boolean[] result,
                         int[] FARAchieved,
                         int[] FRRAchieved,
-                        byte[] payload,
+                        byte[][] payload,
                         int timeout)
                      throws JposException;
   public void    verifyMatch(int maxFARRequested,
@@ -133,10 +133,10 @@ public interface BiometricsService110
                              boolean FARPrecedence,
                              byte[] sampleBIR,
                              byte[] referenceBIR,
-                             byte[] adaptedBIR,
+                             byte[][] adaptedBIR,
                              boolean[] result,
                              int[] FARAchieved,
                              int[] FRRAchieved,
-                             byte[] payload)
+                             byte[][] payload)
                      throws JposException;
 }

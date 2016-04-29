@@ -23,11 +23,31 @@
 //
 // Modification history
 // ------------------------------------------------------------------
-// 98-04-20    JavaPOS Release 1.3                                BS
-// 16-Apr-2003 Release 1.7.2: Added the missing constant          BS
+// 98-04-20    JavaPOS Release 1.3                                 BS
+// 16-Apr-2003 Release 1.7.2: Added the missing constant           BS
 //               FPTR_SC_EURO.
-// 03-Jun-2003 JavaPOS Release 1.8                                BS
+// 03-Jun-2003 JavaPOS Release 1.8                                 BS
 //               Added new StatusUpdateEvent constants.
+// 2007-Jan-04 JavaPOS Release 1.11                                BS
+//   Added new ActualCurrency constants:
+//       FPTR_AC_CZK
+//       FPTR_AC_UAH
+//       FPTR_AC_OTHER
+//   Added new CountryCode constants:
+//       FPTR_CC_CZECH_REPUBLIC
+//       FPTR_CC_UKRAINE
+//       FPTR_CC_OTHER
+//   Added new DateType constant:
+//       FPTR_DT_START
+//   Added new FiscalReceiptType constant:
+//       FPTR_RT_REFUND
+//   Added new AdjustmentType constants:
+//       FPTR_AT_COUPON_AMOUNT_DISCOUNT
+//       FPTR_AT_COUPON_PERCENTAGE_DISCOUNT
+//   Added new ReportType constant:
+//       FPTR_RT_EOD_ORDINAL
+//   Added new ErrorCodeExtended constant:
+//       JPOS_EFPTR_DAY_END_REQUIRED
 //
 /////////////////////////////////////////////////////////////////////
 
@@ -60,6 +80,9 @@ public interface FiscalPrinterConst
     public static final int FPTR_AC_ROL                      =  8;
     public static final int FPTR_AC_RUR                      =  9;
     public static final int FPTR_AC_TRL                      =  10;
+    public static final int FPTR_AC_CZK                      =  11; // 1.11
+    public static final int FPTR_AC_UAH                      =  12; // 1.11
+    public static final int FPTR_AC_OTHER                    = 200; // 1.11
 
 
     /////////////////////////////////////////////////////////////////////
@@ -84,6 +107,9 @@ public interface FiscalPrinterConst
     public static final int FPTR_CC_RUSSIA                   = 0x00000040;
     public static final int FPTR_CC_BULGARIA                 = 0x00000080;
     public static final int FPTR_CC_ROMANIA                  = 0x00000100;
+    public static final int FPTR_CC_CZECH_REPUBLIC           = 0x00000200; // 1.11
+    public static final int FPTR_CC_UKRAINE                  = 0x00000400; // 1.11
+    public static final int FPTR_CC_OTHER                    = 0x40000000; // 1.11
 
 
     /////////////////////////////////////////////////////////////////////
@@ -95,6 +121,7 @@ public interface FiscalPrinterConst
     public static final int FPTR_DT_RESET                    =  3;
     public static final int FPTR_DT_RTC                      =  4;
     public static final int FPTR_DT_VAT                      =  5;
+    public static final int FPTR_DT_START                    =  6; // 1.11
 
 
     /////////////////////////////////////////////////////////////////////
@@ -141,6 +168,7 @@ public interface FiscalPrinterConst
     public static final int FPTR_RT_SALES                    =  4;
     public static final int FPTR_RT_SERVICE                  =  5;
     public static final int FPTR_RT_SIMPLE_INVOICE           =  6;
+    public static final int FPTR_RT_REFUND                   =  7; // 1.11
 
 
     /////////////////////////////////////////////////////////////////////
@@ -330,10 +358,12 @@ public interface FiscalPrinterConst
     // "AdjustmentType" arguments in diverse methods
     /////////////////////////////////////////////////////////////////////
 
-    public static final int FPTR_AT_AMOUNT_DISCOUNT          =  1;
-    public static final int FPTR_AT_AMOUNT_SURCHARGE         =  2;
-    public static final int FPTR_AT_PERCENTAGE_DISCOUNT      =  3;
-    public static final int FPTR_AT_PERCENTAGE_SURCHARGE     =  4;
+    public static final int FPTR_AT_AMOUNT_DISCOUNT            =  1;
+    public static final int FPTR_AT_AMOUNT_SURCHARGE           =  2;
+    public static final int FPTR_AT_PERCENTAGE_DISCOUNT        =  3;
+    public static final int FPTR_AT_PERCENTAGE_SURCHARGE       =  4;
+    public static final int FPTR_AT_COUPON_AMOUNT_DISCOUNT     =  5; // 1.11
+    public static final int FPTR_AT_COUPON_PERCENTAGE_DISCOUNT =  6; // 1.11
 
 
     /////////////////////////////////////////////////////////////////////
@@ -342,6 +372,7 @@ public interface FiscalPrinterConst
 
     public static final int FPTR_RT_ORDINAL                  =  1;
     public static final int FPTR_RT_DATE                     =  2;
+    public static final int FPTR_RT_EOD_ORDINAL              =  3; // 1.11
 
 
     /////////////////////////////////////////////////////////////////////
@@ -426,4 +457,6 @@ public interface FiscalPrinterConst
             22 + JposConst.JPOSERREXT; // (Several)
     public static final int JPOS_EFPTR_MISSING_SET_CURRENCY       =
             23 + JposConst.JPOSERREXT; // (Several)
+    public static final int JPOS_EFPTR_DAY_END_REQUIRED           =
+            24 + JposConst.JPOSERREXT; // (Several)                 // 1.11
 }

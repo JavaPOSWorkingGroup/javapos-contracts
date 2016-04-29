@@ -23,7 +23,13 @@
 //
 // Modification history
 // ------------------------------------------------------------------
-// 98-02-18 JavaPOS Release 1.2                                   BS
+// 1998-Feb-18 JavaPOS Release 1.2                                 BS
+// 2007-Jan-04 JavaPOS Release 1.11                                BS
+//   Added new StatusUpdateEvent constant:
+//       LOCK_KP_ELECTRONIC
+//   Added new CapKeylockType constants:
+//       LOCK_KT_STANDARD
+//       LOCK_KT_ELECTRONIC
 //
 /////////////////////////////////////////////////////////////////////
 
@@ -42,7 +48,16 @@ public interface KeylockConst
     /////////////////////////////////////////////////////////////////////
 
     public static final int LOCK_KP_ANY          = 0; // WaitForKeylockChange Only
+    public static final int LOCK_KP_ELECTRONIC   = 0; // StatusUpdateEvent Only (1.11)
     public static final int LOCK_KP_LOCK         = 1;
     public static final int LOCK_KP_NORM         = 2;
     public static final int LOCK_KP_SUPR         = 3;
+
+
+    /////////////////////////////////////////////////////////////////////
+    // "CapKeylockType" Property Constants                  Added in 1.11
+    /////////////////////////////////////////////////////////////////////
+
+    public static final int LOCK_KT_STANDARD     = 1; // 1.11
+    public static final int LOCK_KT_ELECTRONIC   = 2; // 1.11
 }

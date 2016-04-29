@@ -23,9 +23,16 @@
 //
 // Modification history
 // ------------------------------------------------------------------
-// 98-02-18 JavaPOS Release 1.2                                   BS
-// 03-Jun-2003 JavaPOS Release 1.8                                BS
+// 1998-Feb-18 JavaPOS Release 1.2                                 BS
+// 2003-Jun-03 JavaPOS Release 1.8                                 BS
 //   Added new ScanDataType constants.
+// 2007-Jan-04 JavaPOS Release 1.11                                BS
+//   Added new StatusUpdateEvent constants:
+//       SCAN_SDT_DATAMATRIX
+//       SCAN_SDT_QRCODE
+//       SCAN_SDT_UQRCODE
+//       SCAN_SDT_AZTEC
+//       SCAN_SDT_UPDF417
 //
 /////////////////////////////////////////////////////////////////////
 
@@ -93,6 +100,13 @@ public interface ScannerConst
     // Two dimensional symbologies
     public static final int SCAN_SDT_PDF417      = 201;
     public static final int SCAN_SDT_MAXICODE    = 202;
+
+    //  - One dimensional symbologies (added in 1.11)
+    public static final int SCAN_SDT_DATAMATRIX  = 203;  // Data Matrix
+    public static final int SCAN_SDT_QRCODE      = 204;  // QR Code
+    public static final int SCAN_SDT_UQRCODE     = 205;  // Micro QR Code
+    public static final int SCAN_SDT_AZTEC       = 206;  // Aztec
+    public static final int SCAN_SDT_UPDF417     = 207;  // Micro PDF 417
 
     // Special cases
     public static final int SCAN_SDT_OTHER       = 501;  // Start of Scanner-

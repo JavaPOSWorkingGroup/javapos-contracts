@@ -17,43 +17,37 @@
 // software or its derivatives.Permission to use, copy, modify, and distribute
 // the software and its documentation for any purpose is hereby granted.
 //
-// MSRService110
+// FiscalPrinterControl111
 //
 //   Interface definining all new capabilities, properties and
-//   methods that are specific to MSR for release 1.10.
+//   methods that are specific to Fiscal Printer for release 1.11.
 //
 // Modification history
 // ------------------------------------------------------------------
-// 2006-Feb-10 JavaPOS Release 1.10                                BS
-// 2006-Oct-23 JavaPOS 1.10.2 Update                               BS
-//   Fixed type of writeTracks data parameter to be byte[][] as
-//   UnifiedPOS has corrected the type from "string" to
-//   "array of binary".
+// 2007-Jan-04 JavaPOS Release 1.11                                BS
 //
 /////////////////////////////////////////////////////////////////////
 
-package jpos.services;
+package jpos;
 
-import jpos.*;
+import jpos.events.*;
 
-public interface MSRService110
-  extends MSRService19
+public interface FiscalPrinterControl111 extends FiscalPrinterControl110
 {
   // Capabilities
-  public int     getCapWritableTracks()
-                     throws JposException;
-
-  // Properties
-  public int     getEncodingMaxLength()
-                     throws JposException;
-  public int     getTracksToWrite()
-                     throws JposException;
-  public void    setTracksToWrite(int tracks)
-                     throws JposException;
+  public boolean getCapPositiveSubtotalAdjustment() throws JposException;
 
   // Methods
-  public void    clearInputProperties()
+  public void    printRecItemVoid(String description,
+                                  long price,
+                                  int quantity,
+                                  int vatInfo,
+                                  long unitPrice,
+                                  String unitName)
                      throws JposException;
-  public void    writeTracks(byte[][] data, int timeout)
+  public void    printRecItemAdjustmentVoid(int adjustmentType,
+                                            String description,
+                                            long amount,
+                                            int vatInfo)
                      throws JposException;
 }

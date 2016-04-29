@@ -17,43 +17,36 @@
 // software or its derivatives.Permission to use, copy, modify, and distribute
 // the software and its documentation for any purpose is hereby granted.
 //
-// MSRService110
+// CashChangerControl111
 //
 //   Interface definining all new capabilities, properties and
-//   methods that are specific to MSR for release 1.10.
+//   methods that are specific to Cash Changer for release 1.11.
 //
 // Modification history
 // ------------------------------------------------------------------
-// 2006-Feb-10 JavaPOS Release 1.10                                BS
-// 2006-Oct-23 JavaPOS 1.10.2 Update                               BS
-//   Fixed type of writeTracks data parameter to be byte[][] as
-//   UnifiedPOS has corrected the type from "string" to
-//   "array of binary".
+// 2007-Jan-04 JavaPOS Release 1.11                                BS
 //
 /////////////////////////////////////////////////////////////////////
 
-package jpos.services;
+package jpos;
 
-import jpos.*;
+import jpos.events.*;
 
-public interface MSRService110
-  extends MSRService19
+public interface CashChangerControl111 extends CashChangerControl110
 {
   // Capabilities
-  public int     getCapWritableTracks()
-                     throws JposException;
+  public boolean getCapJamSensor() throws JposException;
+  public boolean getCapRealTimeData() throws JposException;
 
   // Properties
-  public int     getEncodingMaxLength()
-                     throws JposException;
-  public int     getTracksToWrite()
-                     throws JposException;
-  public void    setTracksToWrite(int tracks)
-                     throws JposException;
+  public int     getCurrentService() throws JposException;
+  public void    setCurrentServuce(int currentService) throws JposException;
+  public boolean getRealTimeDataEnabled() throws JposException;
+  public void    setRealTimeDataEnabled(boolean bEnabled) throws JposException;
+  public int     getServiceCount() throws JposException;
+  public int     getServiceIndex() throws JposException;
 
   // Methods
-  public void    clearInputProperties()
-                     throws JposException;
-  public void    writeTracks(byte[][] data, int timeout)
+  public void    adjustCashCounts(String cashCounts)
                      throws JposException;
 }
