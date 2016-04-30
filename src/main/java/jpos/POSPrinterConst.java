@@ -53,10 +53,16 @@
 //     PTR_PM_NORMAL
 //     PTR_PM_CANCEL
 // 2006-Feb-10 JavaPOS Release 1.10                                BS
-//  Added the following constants:
+//   Added the following constants:
 //     PTR_BMT_BMP
 //     PTR_BMT_JPEG
 //     PTR_BMT_GIF
+// 2008-Jan-14 JavaPOS Release 1.12                                BS
+//   Added Bar Code Symbology values:
+//     PTR_BCS_GS1DATABAR
+//     PTR_BCS_GS1DATABAR_E
+//     PTR_BCS_GS1DATABAR_S
+//     PTR_BCS_GS1DATABAR_E_S
 //
 /////////////////////////////////////////////////////////////////////
 
@@ -256,9 +262,15 @@ public interface POSPrinterConst
 
     // Added in Release 1.8
     public static final int PTR_BCS_Code128_Parsed = 123;
+       // The followings RSS have been deprecated in 1.12. Use the GS1DATABAR constants below instead.
     public static final int PTR_BCS_RSS14          = 131;  // Reduced Space Symbology - 14 digit GTIN
     public static final int PTR_BCS_RSS_EXPANDED   = 132;  // RSS - 14 digit GTIN plus additional fields
 
+    // Added in Release 1.12
+    public static final int PTR_BCS_GS1DATABAR     = 131;  // GS1 DataBar Omnidirectional
+    public static final int PTR_BCS_GS1DATABAR_E   = 132;  // GS1 DataBar Expanded
+    public static final int PTR_BCS_GS1DATABAR_S   = 133;  // GS1 DataBar Stacked Omnidirectional
+    public static final int PTR_BCS_GS1DATABAR_E_S = 134;  // GS1 DataBar Expanded Stacked
 
     //     Two dimensional symbologies
     public static final int PTR_BCS_PDF417       = 201;

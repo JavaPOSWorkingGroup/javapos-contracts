@@ -24,6 +24,13 @@
 // Modification history
 // ------------------------------------------------------------------
 // 2006-Feb-10 JavaPOS Release 1.10                                BS
+// 2008-Jan-14 JavaPOS Release 1.12                                BS
+//   Added new StatusUpdateEvent constant:
+//       EJ_SUE_IDLE
+// 2008-Apr-21 JavaPOS Release 1.12.1                              BS
+//   Change value of EJ_SUE_IDLE to be the same value as used for
+//   printer idle SUEs (1001).
+//
 /////////////////////////////////////////////////////////////////////
 
 package jpos;
@@ -74,9 +81,10 @@ public interface ElectronicJournalConst
   // "StatusUpdateEvent" "Status" Property Constants
   /////////////////////////////////////////////////////////////////////
 
-  public static final int EJ_SUE_MEDIUM_NEAR_FULL = 1;
-  public static final int EJ_SUE_MEDIUM_FULL      = 2;
-  public static final int EJ_SUE_MEDIUM_REMOVED   = 3;
-  public static final int EJ_SUE_MEDIUM_INSERTED  = 4;
-  public static final int EJ_SUE_SUSPENDED        = 5;
+  public static final int EJ_SUE_MEDIUM_NEAR_FULL =    1;
+  public static final int EJ_SUE_MEDIUM_FULL      =    2;
+  public static final int EJ_SUE_MEDIUM_REMOVED   =    3;
+  public static final int EJ_SUE_MEDIUM_INSERTED  =    4;
+  public static final int EJ_SUE_SUSPENDED        =    5;
+  public static final int EJ_SUE_IDLE             = 1001; // 1.12.1
 }

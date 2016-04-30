@@ -17,15 +17,14 @@
 // software or its derivatives.Permission to use, copy, modify, and distribute
 // the software and its documentation for any purpose is hereby granted.
 //
-// CashChangerService111
+// MotionSensorService112
 //
 //   Interface definining all new capabilities, properties and
-//   methods that are specific to Cash Changer for release 1.11.
+//   methods that are specific to Motion Sensor for release 1.12.
 //
 // Modification history
 // ------------------------------------------------------------------
-// 2007-Jan-04 JavaPOS Release 1.11                                BS
-// 2008-Jul-23 Corrected spelling mistake of setCurrentService     BS
+// 2008-Jan-14 JavaPOS Release 1.12                                BS
 //
 /////////////////////////////////////////////////////////////////////
 
@@ -33,21 +32,7 @@ package jpos.services;
 
 import jpos.*;
 
-public interface CashChangerService111 extends CashChangerService110
+public interface MotionSensorService112 extends MotionSensorService111
 {
-  // Capabilities
-  public boolean getCapJamSensor() throws JposException;
-  public boolean getCapRealTimeData() throws JposException;
-
-  // Properties
-  public int     getCurrentService() throws JposException;
-  public void    setCurrentService(int currentService) throws JposException;
-  public boolean getRealTimeDataEnabled() throws JposException;
-  public void    setRealTimeDataEnabled(boolean bEnabled) throws JposException;
-  public int     getServiceCount() throws JposException;
-  public int     getServiceIndex() throws JposException;
-
-  // Methods
-  public void    adjustCashCounts(String cashCounts)
-                     throws JposException;
+  // Nothing new added for release 1.12
 }
