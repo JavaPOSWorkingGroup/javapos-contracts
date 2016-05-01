@@ -17,14 +17,14 @@
 // software or its derivatives.Permission to use, copy, modify, and distribute
 // the software and its documentation for any purpose is hereby granted.
 //
-// ImageScannerService112
+// POSKeyboardService113
 //
 //   Interface definining all new capabilities, properties and
-//   methods that are specific to Image Scanner for release 1.12.
+//   methods that are specific to POS Keyboard for release 1.13.
 //
 // Modification history
 // ------------------------------------------------------------------
-// 2008-Jan-14 JavaPOS Release 1.12                                BS
+// 2009-Feb-23 JavaPOS Release 1.13                                BS
 //
 /////////////////////////////////////////////////////////////////////
 
@@ -32,8 +32,7 @@ package jpos.services;
 
 import jpos.*;
 
-public interface ImageScannerService112
-  extends ImageScannerService111
+public interface POSKeyboardService113 extends POSKeyboardService112
 {
-  // Nothing new added for release 1.12
+  // Nothing new added for release 1.13
 }
