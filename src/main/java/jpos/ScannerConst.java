@@ -27,12 +27,16 @@
 // 2003-Jun-03 JavaPOS Release 1.8                                 BS
 //   Added new ScanDataType constants.
 // 2007-Jan-04 JavaPOS Release 1.11                                BS
-//   Added new StatusUpdateEvent constants:
+//   Added new ScanDataType constants:
 //       SCAN_SDT_DATAMATRIX
 //       SCAN_SDT_QRCODE
 //       SCAN_SDT_UQRCODE
 //       SCAN_SDT_AZTEC
 //       SCAN_SDT_UPDF417
+// 2008-Jan-14 JavaPOS Release 1.12                                BS
+//   Added new ScanDataType constants:
+//       SCAN_SDT_GS1DATABAR
+//       SCAN_SDT_GS1DATABAR_E
 //
 /////////////////////////////////////////////////////////////////////
 
@@ -89,8 +93,14 @@ public interface ScannerConst
     public static final int SCAN_SDT_OCRB        = 122;  // OCR "B"
 
     // One dimensional symbologies (Added in Release 1.8)
+    //        The following RSS constants deprecated in 1.12.
+    //        Instead use the GS1DATABAR constants below.
     public static final int SCAN_SDT_RSS14       = 131;  // Reduced Space Symbology - 14 digit GTIN
     public static final int SCAN_SDT_RSS_EXPANDED= 132;  // RSS - 14 digit GTIN plus additional fields
+
+    // One dimensional symbologies (added in Release 1.12)
+    public static final int SCAN_SDT_GS1DATABAR  = 131;  // GS1 DataBar Omnidirectional (normal or stacked)
+    public static final int SCAN_SDT_GS1DATABAR_E= 132;  // GS1 DataBar Expanded (normal or stacked)
 
     // Composite Symbologies (Added in Release 1.8)
     public static final int SCAN_SDT_CCA         = 151;  // Composite Component A.

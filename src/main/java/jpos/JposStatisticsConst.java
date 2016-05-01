@@ -27,6 +27,8 @@
 //   New file to define constants for Device Statistic names.
 // 2007-Jan-04 JavaPOS Release 1.11                                BS
 //   Added constants for new device classes.
+// 2008-Jan-14 JavaPOS Release 1.12                                BS
+//   Added constants for statistics new to Release 1.12.
 //
 /////////////////////////////////////////////////////////////////////
 
@@ -43,6 +45,7 @@ public interface JposStatisticsConst
   public static final String JPOS_STAT_BumpCount = "BumpCount";
   public static final String JPOS_STAT_DrawerGoodOpenCount = "DrawerGoodOpenCount";
   public static final String JPOS_STAT_DrawerFailedOpenCount = "DrawerFailedOpenCount";
+  public static final String JPOS_STAT_ChecksScannedCount = "ChecksScannedCount";
   public static final String JPOS_STAT_WriteCount = "WriteCount";
   public static final String JPOS_STAT_FailedWriteCount = "FailedWriteCount";
   public static final String JPOS_STAT_EraseCount = "EraseCount";
@@ -86,11 +89,23 @@ public interface JposStatisticsConst
   public static final String JPOS_STAT_ParityLRCErrorTrack3Count = "ParityLRCErrorTrack3Count";
   public static final String JPOS_STAT_MissingStartSentinelTrack4Count = "MissingStartSentinelTrack4Count";
   public static final String JPOS_STAT_ParityLRCErrorTrack4Count = "ParityLRCErrorTrack4Count";
+  public static final String JPOS_STAT_GoodCardAuthenticationDataCount = "GoodCardAuthenticationDataCount";
+  public static final String JPOS_STAT_FailedCardAuthenticationDataCount = "FailedCardAuthenticationDataCount";
+  public static final String JPOS_STAT_ChallengeRequestCount = "ChallengeRequestCount";
+  public static final String JPOS_STAT_GoodDeviceAuthenticationCount = "GoodDeviceAuthenticationCount";
+  public static final String JPOS_STAT_FailedDeviceAuthenticationCount = "FailedDeviceAuthenticationCount";
   public static final String JPOS_STAT_FailedReadCount = "FailedReadCount";
   public static final String JPOS_STAT_MotionEventCount = "MotionEventCount";
   public static final String JPOS_STAT_ValidPINEntryCount = "ValidPINEntryCount";
   public static final String JPOS_STAT_InvalidPINEntryCount = "InvalidPINEntryCount";
   public static final String JPOS_STAT_KeyPressedCount = "KeyPressedCount";
+  public static final String JPOS_STAT_TagReadCount = "TagReadCount";
+  public static final String JPOS_STAT_GoodTagWriteCount = "GoodTagWriteCount";
+  public static final String JPOS_STAT_FailedTagWriteCount = "FailedTagWriteCount";
+  public static final String JPOS_STAT_GoodTagLockCount = "GoodTagLockCount";
+  public static final String JPOS_STAT_FailedTagLockCount = "FailedTagLockCount";
+  public static final String JPOS_STAT_GoodTagDisableCount = "GoodTagDisableCount";
+  public static final String JPOS_STAT_FailedTagDisableCount = "FailedTagDisableCount";
   public static final String JPOS_STAT_GoodWeightReadCount = "GoodWeightReadCount";
   public static final String JPOS_STAT_GoodScanCount = "GoodScanCount";
   public static final String JPOS_STAT_GoodSignatureReadCount = "GoodSignatureReadCount";

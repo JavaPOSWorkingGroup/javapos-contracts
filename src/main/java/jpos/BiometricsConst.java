@@ -36,6 +36,9 @@
 //   Fixed incorrect spelling of constants:
 //       BIO_CST_KEYSTROKE_DYNAMICS
 //       BIO_ST_KEYSTROKE_DYNAMICS
+// 2008-Jan-14 JavaPOS Release 1.12                                BS
+//   Added new StatusUpdateEvent constant:
+//       BIO_SUE_FAILED_READ
 //
 /////////////////////////////////////////////////////////////////////
 
@@ -160,4 +163,5 @@ public interface BiometricsConst
   public static final int BIO_SUE_MOVE_SLOWER   = 10; // 1.11
   public static final int BIO_SUE_MOVE_FASTER   = 11; // 1.11
   public static final int BIO_SUE_SENSOR_DIRTY  = 12; // 1.11
+  public static final int BIO_SUE_FAILED_READ   = 13; // 1.12
 }

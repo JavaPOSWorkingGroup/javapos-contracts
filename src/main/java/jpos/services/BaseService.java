@@ -48,7 +48,7 @@ public interface BaseService
     public String  getPhysicalDeviceName() throws JposException;
     public int     getState() throws JposException;
 
-    // Methods supported by all device services.
+    // Methods
     public void    claim(int timeout) throws JposException;
     public void    close() throws JposException;
     public void    checkHealth(int level) throws JposException;

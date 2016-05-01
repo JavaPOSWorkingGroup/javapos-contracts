@@ -5,7 +5,7 @@
 //    http://www.ibm.com/developerworks/library/os-cpl.html
 //
 //////////////////////////////////////////////////////////////////////
-/////////////////////////////////////////////////////////////////////
+///////////////////////////////////////////////////////////////////////////////
 //
 // This software is provided "AS IS".  The JavaPOS working group (including
 // each of the Corporate members, contributors and individuals)  MAKES NO
@@ -17,37 +17,22 @@
 // software or its derivatives.Permission to use, copy, modify, and distribute
 // the software and its documentation for any purpose is hereby granted.
 //
-// CashChangerControl111
+// CATControl112
 //
-//   Interface definining all new capabilities, properties and
-//   methods that are specific to Cash Changer for release 1.11.
+//   Interface definining all capabilities, properties and methods that are
+//   specific to the Credit Authorization Terminal for release 1.12.
 //
 // Modification history
 // ------------------------------------------------------------------
-// 2007-Jan-04 JavaPOS Release 1.11                                BS
-// 2008-Jul-23 Corrected spelling mistake of setCurrentService     BS
+// 2008-Jan-14 JavaPOS Release 1.12                                BS
 //
-/////////////////////////////////////////////////////////////////////
+//////////////////////////////////////////////////////////////////////////////
 
 package jpos;
 
 import jpos.events.*;
 
-public interface CashChangerControl111 extends CashChangerControl110
+public interface CATControl112 extends CATControl111
 {
-  // Capabilities
-  public boolean getCapJamSensor() throws JposException;
-  public boolean getCapRealTimeData() throws JposException;
-
-  // Properties
-  public int     getCurrentService() throws JposException;
-  public void    setCurrentService(int currentService) throws JposException;
-  public boolean getRealTimeDataEnabled() throws JposException;
-  public void    setRealTimeDataEnabled(boolean bEnabled) throws JposException;
-  public int     getServiceCount() throws JposException;
-  public int     getServiceIndex() throws JposException;
-
-  // Methods
-  public void    adjustCashCounts(String cashCounts)
-                     throws JposException;
+  // Nothing new added for release 1.12
 }

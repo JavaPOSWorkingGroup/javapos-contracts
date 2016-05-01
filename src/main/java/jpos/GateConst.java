@@ -17,37 +17,37 @@
 // software or its derivatives.Permission to use, copy, modify, and distribute
 // the software and its documentation for any purpose is hereby granted.
 //
-// CashChangerService111
+// GateConst
 //
-//   Interface definining all new capabilities, properties and
-//   methods that are specific to Cash Changer for release 1.11.
+//   Gate constants for JavaPOS Applications.
 //
 // Modification history
 // ------------------------------------------------------------------
-// 2007-Jan-04 JavaPOS Release 1.11                                BS
-// 2008-Jul-23 Corrected spelling mistake of setCurrentService     BS
+// 2008-Jan-14 JavaPOS Release 1.12                                BS
+//   New device category.
 //
 /////////////////////////////////////////////////////////////////////
 
-package jpos.services;
+package jpos;
 
-import jpos.*;
-
-public interface CashChangerService111 extends CashChangerService110
+public interface GateConst
 {
-  // Capabilities
-  public boolean getCapJamSensor() throws JposException;
-  public boolean getCapRealTimeData() throws JposException;
+  /////////////////////////////////////////////////////////////////////
+  // "GateStatus" Property Constants
+  /////////////////////////////////////////////////////////////////////
 
-  // Properties
-  public int     getCurrentService() throws JposException;
-  public void    setCurrentService(int currentService) throws JposException;
-  public boolean getRealTimeDataEnabled() throws JposException;
-  public void    setRealTimeDataEnabled(boolean bEnabled) throws JposException;
-  public int     getServiceCount() throws JposException;
-  public int     getServiceIndex() throws JposException;
+  public static final int GATE_GS_CLOSED               = 1;
+  public static final int GATE_GS_OPEN                 = 2;
+  public static final int GATE_GS_BLOCKED              = 3;
+  public static final int GATE_GS_MALFUNCTION          = 4;
 
-  // Methods
-  public void    adjustCashCounts(String cashCounts)
-                     throws JposException;
+
+  /////////////////////////////////////////////////////////////////////
+  // "StatusUpdateEvent" Event: "Data" Parameter Constants
+  /////////////////////////////////////////////////////////////////////
+
+  public static final int GATE_SUE_CLOSED              = 11;
+  public static final int GATE_SUE_OPEN                = 12;
+  public static final int GATE_SUE_BLOCKED             = 13;
+  public static final int GATE_SUE_MALFUNCTION         = 14;
 }
