@@ -25,6 +25,8 @@
 // Modification history
 // ------------------------------------------------------------------
 // 2009-Feb-23 JavaPOS Release 1.13                                BS
+// 2010-Nov-17 JavaPOS Release 1.13.3                              BS
+//   Added missing property OutputID
 //
 //////////////////////////////////////////////////////////////////////////////
 
@@ -34,5 +36,6 @@ import jpos.*;
 
 public interface CATService113 extends CATService112
 {
-  // Nothing new added for release 1.13
+  // Properties
+  public int     getOutputID() throws JposException;
 }

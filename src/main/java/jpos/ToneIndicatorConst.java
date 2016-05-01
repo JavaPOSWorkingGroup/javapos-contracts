@@ -27,6 +27,13 @@
 // 2009-Feb-23 JavaPOS Release 1.13                               BS
 //   Added "MelodyType"constant:
 //     TONE_MT_NONE
+// 2009-Oct-06 JavaPOS Release 1.13.1                             BS
+//   Added "MelodyType"constants:
+//     TONE_MT_TYPE1
+//     TONE_MT_TYPE2
+//     TONE_MT_TYPE3
+//     TONE_MT_TYPE4
+//     TONE_MT_TYPE5
 //
 /////////////////////////////////////////////////////////////////////
 
@@ -43,4 +50,9 @@ public interface ToneIndicatorConst
     /////////////////////////////////////////////////////////////////////
 
     public static final int TONE_MT_NONE  = 0;
+    public static final int TONE_MT_TYPE1 = 1;
+    public static final int TONE_MT_TYPE2 = 2;
+    public static final int TONE_MT_TYPE3 = 3;
+    public static final int TONE_MT_TYPE4 = 4;
+    public static final int TONE_MT_TYPE5 = 5;
 }

@@ -78,6 +78,10 @@
 //     PTR_LS_DOUBLE_SOLID_LINE
 //     PTR_LS_BROKEN_LINE
 //     PTR_LS_CHAIN_LINE
+// 2009-Oct-06 JavaPOS Release 1.13.1                              BS
+//   Re-added dropped, misspelled slip cartridge constant for backwards
+//   compatibility.
+//     PTR_SUE_SLP_CARTDRIGE_OK
 //
 /////////////////////////////////////////////////////////////////////
 
@@ -428,6 +432,7 @@ public interface POSPrinterConst
     public static final int PTR_SUE_SLP_CARTRIDGE_EMPTY     = 49;
     public static final int PTR_SUE_SLP_CARTRIDGE_NEAREMPTY = 50;
     public static final int PTR_SUE_SLP_HEAD_CLEANING       = 51;
+    public static final int PTR_SUE_SLP_CARTDRIGE_OK        = 52;
     public static final int PTR_SUE_SLP_CARTRIDGE_OK        = 52;
 
     public static final int PTR_SUE_IDLE         = 1001;

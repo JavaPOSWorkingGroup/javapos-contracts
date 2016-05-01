@@ -26,6 +26,10 @@
 // ------------------------------------------------------------------
 // 2008-Jan-14 JavaPOS Release 1.12                                BS
 //   New device category.
+// 2010-Mar-16 JavaPOS Release 1.12.4                              BS
+//   Corrected return types of getCapSpeedStepsBackward() and
+//   getCapSpeedStepsForward(). Was boolean, but should have been
+//   int.
 //
 /////////////////////////////////////////////////////////////////////
 
@@ -48,8 +52,8 @@ public interface BeltControl112 extends BaseControl
   public boolean getCapRealTimeData() throws JposException;
   public boolean getCapSecurityFlapBackward() throws JposException;
   public boolean getCapSecurityFlapForward() throws JposException;
-  public boolean getCapSpeedStepsBackward() throws JposException;
-  public boolean getCapSpeedStepsForward() throws JposException;
+  public int     getCapSpeedStepsBackward() throws JposException;
+  public int     getCapSpeedStepsForward() throws JposException;
   public boolean getCapStatisticsReporting() throws JposException;
   public boolean getCapUpdateFirmware() throws JposException;
   public boolean getCapUpdateStatistics() throws JposException;

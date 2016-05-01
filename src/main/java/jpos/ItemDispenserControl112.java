@@ -42,7 +42,6 @@ public interface ItemDispenserControl112 extends BaseControl
   public boolean getCapJamSensor() throws JposException;
   public boolean getCapNearEmptySensor() throws JposException;
   public int     getCapPowerReporting() throws JposException;
-  public boolean getCapRealTimeData() throws JposException;
   public boolean getCapStatisticsReporting() throws JposException;
   public boolean getCapUpdateFirmware() throws JposException;
   public boolean getCapUpdateStatistics() throws JposException;
