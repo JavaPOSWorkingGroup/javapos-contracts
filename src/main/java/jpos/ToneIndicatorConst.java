@@ -24,6 +24,9 @@
 // Modification history
 // ------------------------------------------------------------------
 // 98-02-18 JavaPOS Release 1.2                                   BS
+// 2009-Feb-23 JavaPOS Release 1.13                               BS
+//   Added "MelodyType"constant:
+//     TONE_MT_NONE
 //
 /////////////////////////////////////////////////////////////////////
 
@@ -35,5 +38,9 @@ public interface ToneIndicatorConst
     //#### Tone Indicator Constants
     //###################################################################
 
-    // No definitions required for this version.
+    /////////////////////////////////////////////////////////////////////
+    // "MelodyType" Property Constants
+    /////////////////////////////////////////////////////////////////////
+
+    public static final int TONE_MT_NONE  = 0;
 }

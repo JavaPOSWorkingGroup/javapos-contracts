@@ -39,6 +39,10 @@
 // 2008-Jan-14 JavaPOS Release 1.12                                BS
 //   Added new StatusUpdateEvent constant:
 //       BIO_SUE_FAILED_READ
+// 2009-Feb-23 JavaPOS Release 1.13                                BS
+//   Added new StatusUpdateEvent constants:
+//       BIO_SUE_SENSOR_READY
+//       BIO_SUE_SENSOR_COMPLETE
 //
 /////////////////////////////////////////////////////////////////////
 
@@ -151,17 +155,19 @@ public interface BiometricsConst
   // "StatusUpdateEvent" "Status" Property Constants
   /////////////////////////////////////////////////////////////////////
 
-  public static final int BIO_SUE_RAW_DATA      =  1;
-  public static final int BIO_SUE_MOVE_LEFT     =  2;
-  public static final int BIO_SUE_MOVE_RIGHT    =  3;
-  public static final int BIO_SUE_MOVE_DOWN     =  4;
-  public static final int BIO_SUE_MOVE_UP       =  5;
-  public static final int BIO_SUE_MOVE_CLOSER   =  6;
-  public static final int BIO_SUE_MOVE_AWAY     =  7;
-  public static final int BIO_SUE_MOVE_BACKWARD =  8;
-  public static final int BIO_SUE_MOVE_FORWARD  =  9;
-  public static final int BIO_SUE_MOVE_SLOWER   = 10; // 1.11
-  public static final int BIO_SUE_MOVE_FASTER   = 11; // 1.11
-  public static final int BIO_SUE_SENSOR_DIRTY  = 12; // 1.11
-  public static final int BIO_SUE_FAILED_READ   = 13; // 1.12
+  public static final int BIO_SUE_RAW_DATA        =  1;
+  public static final int BIO_SUE_MOVE_LEFT       =  2;
+  public static final int BIO_SUE_MOVE_RIGHT      =  3;
+  public static final int BIO_SUE_MOVE_DOWN       =  4;
+  public static final int BIO_SUE_MOVE_UP         =  5;
+  public static final int BIO_SUE_MOVE_CLOSER     =  6;
+  public static final int BIO_SUE_MOVE_AWAY       =  7;
+  public static final int BIO_SUE_MOVE_BACKWARD   =  8;
+  public static final int BIO_SUE_MOVE_FORWARD    =  9;
+  public static final int BIO_SUE_MOVE_SLOWER     = 10; // 1.11
+  public static final int BIO_SUE_MOVE_FASTER     = 11; // 1.11
+  public static final int BIO_SUE_SENSOR_DIRTY    = 12; // 1.11
+  public static final int BIO_SUE_FAILED_READ     = 13; // 1.12
+  public static final int BIO_SUE_SENSOR_READY    = 14; // 1.13
+  public static final int BIO_SUE_SENSOR_COMPLETE = 15; // 1.13
 }

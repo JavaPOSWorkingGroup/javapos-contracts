@@ -24,6 +24,9 @@
 // Modification history
 // ------------------------------------------------------------------
 // 98-02-18 JavaPOS Release 1.2                                   BS
+// 2009-Feb-23 JavaPOS Release 1.13                               BS
+//   Added "CountryCode"constant:
+//     MICR_CC_CMC7
 //
 /////////////////////////////////////////////////////////////////////
 
@@ -51,7 +54,9 @@ public interface MICRConst
     public static final int MICR_CC_USA          =  1;
     public static final int MICR_CC_CANADA       =  2;
     public static final int MICR_CC_MEXICO       =  3;
+    public static final int MICR_CC_CMC7         =  4; // Added in 1.13
     public static final int MICR_CC_UNKNOWN      = 99;
+
 
 
     /////////////////////////////////////////////////////////////////////

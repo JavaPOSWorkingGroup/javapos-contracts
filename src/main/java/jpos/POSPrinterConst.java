@@ -63,6 +63,21 @@
 //     PTR_BCS_GS1DATABAR_E
 //     PTR_BCS_GS1DATABAR_S
 //     PTR_BCS_GS1DATABAR_E_S
+// 2009-Feb-23 JavaPOS Release 1.13                                BS
+//   Added Bar Code Symbology values:
+//     PTR_BCS_DATAMATRIX
+//     PTR_BCS_QRCODE
+//     PTR_BCS_UQRCODE
+//     PTR_BCS_AZTEC
+//     PTR_BCS_UPDF417
+//   Added "drawRuledLine" "lineDirection" constants:
+//     PTR_RL_HORIZONTAL
+//     PTR_RL_VERTICAL
+//   Added "drawRuledLine" "lineStyle" constants:
+//     PTR_LS_SINGLE_SOLID_LINE
+//     PTR_LS_DOUBLE_SOLID_LINE
+//     PTR_LS_BROKEN_LINE
+//     PTR_LS_CHAIN_LINE
 //
 /////////////////////////////////////////////////////////////////////
 
@@ -276,6 +291,13 @@ public interface POSPrinterConst
     public static final int PTR_BCS_PDF417       = 201;
     public static final int PTR_BCS_MAXICODE     = 202;
 
+    // Added in Release 1.13
+    public static final int PTR_BCS_DATAMATRIX   = 203; // Data Matrix
+    public static final int PTR_BCS_QRCODE       = 204; // QR Code
+    public static final int PTR_BCS_UQRCODE      = 205; // Micro QR Code
+    public static final int PTR_BCS_AZTEC        = 206; // Aztec
+    public static final int PTR_BCS_UPDF417      = 207; // Micro PDF 417
+
     //     Start of Printer-Specific bar code symbologies
     public static final int PTR_BCS_OTHER        = 501;
 
@@ -352,6 +374,24 @@ public interface POSPrinterConst
     public static final int PTR_PS_SIDE1    = 1;
     public static final int PTR_PS_SIDE2    = 2;
     public static final int PTR_PS_OPPOSITE = 3;
+
+
+    /////////////////////////////////////////////////////////////////////
+    // "drawRuledLine" Method: "lineDirection" Parameter Constants
+    /////////////////////////////////////////////////////////////////////
+
+    public static final int PTR_RL_HORIZONTAL = 1; // Added in 1.13
+    public static final int PTR_RL_VERTICAL   = 2; // Added in 1.13
+
+
+    /////////////////////////////////////////////////////////////////////
+    // "drawRuledLine" Method: "lineStyle" Parameter Constants
+    /////////////////////////////////////////////////////////////////////
+
+    public static final int PTR_LS_SINGLE_SOLID_LINE = 1; // Added in 1.13
+    public static final int PTR_LS_DOUBLE_SOLID_LINE = 2; // Added in 1.13
+    public static final int PTR_LS_BROKEN_LINE       = 3; // Added in 1.13
+    public static final int PTR_LS_CHAIN_LINE        = 4; // Added in 1.13
 
 
     /////////////////////////////////////////////////////////////////////

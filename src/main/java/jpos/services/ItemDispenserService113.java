@@ -17,23 +17,24 @@
 // software or its derivatives.Permission to use, copy, modify, and distribute
 // the software and its documentation for any purpose is hereby granted.
 //
-// ImageScannerService112
+// ItemDispenserService113
 //
 //   Interface definining all new capabilities, properties and
-//   methods that are specific to Image Scanner for release 1.12.
+//   methods that are specific to Item Dispenser for release 1.13.
 //
 // Modification history
 // ------------------------------------------------------------------
-// 2008-Jan-14 JavaPOS Release 1.12                                BS
+// 2009-Feb-23 JavaPOS Release 1.13                                BS
+//   New device category.
 //
 /////////////////////////////////////////////////////////////////////
 
 package jpos.services;
 
 import jpos.*;
+import jpos.loader.*;
 
-public interface ImageScannerService112
-  extends ImageScannerService111
+public interface ItemDispenserService113 extends ItemDispenserService112
 {
-  // Nothing new added for release 1.12
+  // Nothing new added for release 1.13
 }
