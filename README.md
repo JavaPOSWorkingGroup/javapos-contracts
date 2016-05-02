@@ -3,6 +3,6 @@ JavaPOS Contracts [![Build Status](https://travis-ci.org/JavaPOSWorkingGroup/jav
 
 Hosts the device service interfaces, device control interfaces, data and exception types of the UnifiedPOS reference implementation for Java.
 
-Use this library if your are implementing JavaPOS device services or, if you are implementing an JavaPOS application using your own implementation of JavaPOS device controls instead of the [reference implementation of device controls](https://github.com/JavaPOSWorkingGroup/javapos-contracts) provided by this group.
+Use this library if your are implementing JavaPOS device services or, if you are implementing an JavaPOS application using your own implementation of JavaPOS device controls instead of the [reference implementation of device controls](https://github.com/JavaPOSWorkingGroup/javapos-controls) provided by this group.
 
 
