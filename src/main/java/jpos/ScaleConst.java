@@ -39,6 +39,21 @@
 // 2006-Feb-10 JavaPOS Release 1.10                                BS
 //   Added duplicate SUE constants to match names used in the spec.
 //     (i.e. SCAL_SUE_STABLE_WEIGHT instead of SCL_SUE_STABLE_WEIGHT)
+// 2013-Jul-25 JavaPOS Release 1.14                                BS
+//   Added the following constants:
+//     SCAL_SFR_MANUAL_TARE
+//     SCAL_SFR_WEIGHTED_TARE
+//     SCAL_SFR_PERCENT_TARE
+//     SCAL_SFR_UNITPRICE
+//     SCAL_PCM_PRICE_LABELING
+//     SCAL_PCM_SELF_SERVICE
+//     SCAL_PCM_OPERATOR
+//     SCAL_SST_DEFAULT
+//     SCAL_SST_MANUAL
+//     SCAL_SST_PERCENT
+//     SCAL_SST_WEIGHTED
+//     SCAL_STP_FIRST
+//     SCAL_STP_NONE
 //
 /////////////////////////////////////////////////////////////////////
 
@@ -66,6 +81,43 @@ public interface ScaleConst
 
     public static final int SCAL_SN_DISABLED = 1;
     public static final int SCAL_SN_ENABLED  = 2;
+
+
+    /////////////////////////////////////////////////////////////////////
+    // "freezeValue" Method "item" Parameter Constants
+    /////////////////////////////////////////////////////////////////////
+
+    public static final int SCAL_SFR_MANUAL_TARE   = 0x00000001; // Added in 1.14
+    public static final int SCAL_SFR_WEIGHTED_TARE = 0x00000002; // Added in 1.14
+    public static final int SCAL_SFR_PERCENT_TARE  = 0x00000004; // Added in 1.14
+    public static final int SCAL_SFR_UNITPRICE     = 0x00000008; // Added in 1.14
+
+
+    /////////////////////////////////////////////////////////////////////
+    // "setPriceCalculationMode" Method "mode" Parameter Constants
+    /////////////////////////////////////////////////////////////////////
+
+    public static final int SCAL_PCM_PRICE_LABELING = 1; // Added in 1.14
+    public static final int SCAL_PCM_SELF_SERVICE   = 2; // Added in 1.14
+    public static final int SCAL_PCM_OPERATOR       = 3; // Added in 1.14
+
+
+    /////////////////////////////////////////////////////////////////////
+    // "setSpecialTare" Method "mode" Parameter Constants
+    /////////////////////////////////////////////////////////////////////
+
+    public static final int SCAL_SST_DEFAULT  = 1; // Added in 1.14
+    public static final int SCAL_SST_MANUAL   = 2; // Added in 1.14
+    public static final int SCAL_SST_PERCENT  = 3; // Added in 1.14
+    public static final int SCAL_SST_WEIGHTED = 4; // Added in 1.14
+
+
+    /////////////////////////////////////////////////////////////////////
+    // "setSpecialTare" Method "priority" Parameter Constants
+    /////////////////////////////////////////////////////////////////////
+
+    public static final int SCAL_STP_FIRST = 1; // Added in 1.14
+    public static final int SCAL_STP_NONE  = 2; // Added in 1.14
 
 
     /////////////////////////////////////////////////////////////////////

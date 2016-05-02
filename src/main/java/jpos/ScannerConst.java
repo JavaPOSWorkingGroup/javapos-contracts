@@ -37,6 +37,42 @@
 //   Added new ScanDataType constants:
 //       SCAN_SDT_GS1DATABAR
 //       SCAN_SDT_GS1DATABAR_E
+// 2013-Jul-25 JavaPOS Release 1.14                                BS
+//   Added new ScanDataType constants:
+//       SCAN_SDT_ITF_CK
+//       SCAN_SDT_GS1DATABAR_TYPE2
+//       SCAN_SDT_AMES
+//       SCAN_SDT_TFMAT
+//       SCAN_SDT_Code39_CK
+//       SCAN_SDT_Code32
+//       SCAN_SDT_CodeCIP
+//       SCAN_SDT_TRIOPTIC39
+//       SCAN_SDT_ISBT128
+//       SCAN_SDT_Code11
+//       SCAN_SDT_MSI
+//       SCAN_SDT_PLESSEY
+//       SCAN_SDT_TELEPEN
+//       SCAN_SDT_TLC39
+//       SCAN_SDT_GS1DATAMATRIX
+//       SCAN_SDT_GS1QRCODE
+//       SCAN_SDT_Code49
+//       SCAN_SDT_Code16k
+//       SCAN_SDT_CodablockA
+//       SCAN_SDT_CodablockF
+//       SCAN_SDT_Codablock256
+//       SCAN_SDT_HANXIN
+//       SCAN_SDT_AusPost
+//       SCAN_SDT_CanPost
+//       SCAN_SDT_ChinaPost
+//       SCAN_SDT_DutchKix
+//       SCAN_SDT_InfoMail
+//       SCAN_SDT_JapanPost
+//       SCAN_SDT_KoreanPost
+//       SCAN_SDT_SwedenPost
+//       SCAN_SDT_UkPost
+//       SCAN_SDT_UsIntelligent
+//       SCAN_SDT_UsPlanet
+//       SCAN_SDT_PostNet
 //
 /////////////////////////////////////////////////////////////////////
 
@@ -102,21 +138,63 @@ public interface ScannerConst
     public static final int SCAN_SDT_GS1DATABAR  = 131;  // GS1 DataBar Omnidirectional (normal or stacked)
     public static final int SCAN_SDT_GS1DATABAR_E= 132;  // GS1 DataBar Expanded (normal or stacked)
 
+    // One dimensional symbologies (added in Release 1.14)
+    public static final int SCAN_SDT_ITF_CK           = 133;  // Interleaved 2 of 5 check digit verified and transmitted
+    public static final int SCAN_SDT_GS1DATABAR_TYPE2 = 134; // GS1 DataBar Limited
+    public static final int SCAN_SDT_AMES             = 135;  // Ames Code
+    public static final int SCAN_SDT_TFMAT            = 136;  // Matrix 2 of 5
+    public static final int SCAN_SDT_Code39_CK        = 137;  // Code 39 with check character verified and transmitted
+    public static final int SCAN_SDT_Code32           = 138;  // Code 39 with Mod 32 check character
+    public static final int SCAN_SDT_CodeCIP          = 139;  // Code 39 CIP
+    public static final int SCAN_SDT_TRIOPTIC39       = 140;  // Tri-Optic Code 39
+    public static final int SCAN_SDT_ISBT128          = 141;  // ISBT-128
+    public static final int SCAN_SDT_Code11           = 142;  // Code 11
+    public static final int SCAN_SDT_MSI              = 143;  // MSI Code
+    public static final int SCAN_SDT_PLESSEY          = 144;  // Plessey Code
+    public static final int SCAN_SDT_TELEPEN          = 145;  // Telepen
+
     // Composite Symbologies (Added in Release 1.8)
     public static final int SCAN_SDT_CCA         = 151;  // Composite Component A.
     public static final int SCAN_SDT_CCB         = 152;  // Composite Component B.
     public static final int SCAN_SDT_CCC         = 153;  // Composite Component C.
 
+    // Composite Symbologies (Added in Release 1.14)
+    public static final int SCAN_SDT_TLC39       = 154;  // TLC-39
+
     // Two dimensional symbologies
     public static final int SCAN_SDT_PDF417      = 201;
     public static final int SCAN_SDT_MAXICODE    = 202;
 
-    //  - One dimensional symbologies (added in 1.11)
+    // Two dimensional symbologies (Added in Release 1.11)
     public static final int SCAN_SDT_DATAMATRIX  = 203;  // Data Matrix
     public static final int SCAN_SDT_QRCODE      = 204;  // QR Code
     public static final int SCAN_SDT_UQRCODE     = 205;  // Micro QR Code
     public static final int SCAN_SDT_AZTEC       = 206;  // Aztec
     public static final int SCAN_SDT_UPDF417     = 207;  // Micro PDF 417
+
+    // Two dimensional symbologies (Added in Release 1.14)
+    public static final int SCAN_SDT_GS1DATAMATRIX = 208;  // GS1 DataMatrix
+    public static final int SCAN_SDT_GS1QRCODE     = 209;  // GS1 QR Code
+    public static final int SCAN_SDT_Code49        = 210;  // Code 49
+    public static final int SCAN_SDT_Code16k       = 211;  // Code 16K
+    public static final int SCAN_SDT_CodablockA    = 212;  // Codablock A
+    public static final int SCAN_SDT_CodablockF    = 213;  // Codablock F
+    public static final int SCAN_SDT_Codablock256  = 214;  // Codablock 256
+    public static final int SCAN_SDT_HANXIN        = 215;  // Han Xin Code
+
+    // Postal Code Symbologies (Added in Release 1.14)
+    public static final int SCAN_SDT_AusPost       = 301;  // Australian Post
+    public static final int SCAN_SDT_CanPost       = 302;  // Canada Post
+    public static final int SCAN_SDT_ChinaPost     = 303;  // China Post
+    public static final int SCAN_SDT_DutchKix      = 304;  // Dutch Post
+    public static final int SCAN_SDT_InfoMail      = 305;  // InfoMail
+    public static final int SCAN_SDT_JapanPost     = 306;  // Japan Post
+    public static final int SCAN_SDT_KoreanPost    = 307;  // Korean Post
+    public static final int SCAN_SDT_SwedenPost    = 308;  // Sweden Post
+    public static final int SCAN_SDT_UkPost        = 309;  // UK Post BPO
+    public static final int SCAN_SDT_UsIntelligent = 310;  // US Intelligent Mail
+    public static final int SCAN_SDT_UsPlanet      = 311;  // US Planet Code
+    public static final int SCAN_SDT_PostNet       = 312;  // US Postnet
 
     // Special cases
     public static final int SCAN_SDT_OTHER       = 501;  // Start of Scanner-

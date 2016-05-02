@@ -25,6 +25,80 @@
 // ------------------------------------------------------------------
 // 2008-Jan-14 JavaPOS Release 1.12                                BS
 //   New device category.
+// 2013-Jul-25 JavaPOS Release 1.14                                BS
+//   Added new constants:
+//     EVRW_PIN_ENTRY_NONE
+//     EVRW_PIN_ENTRY_EXTERNAL
+//     EVRW_PIN_ENTRY_INTERNAL
+//     EVRW_PIN_ENTRY_UNKNOWN
+//     EVRW_TM_FALSE
+//     EVRW_TM_TRUE
+//     EVRW_TM_UNKNOWN
+//     EVRW_TAG_AS_AUTHENTICATED
+//     EVRW_TAG_AS_UNAUTHENTICATED
+//     EVRW_TAG_CTT_CANCEL
+//     EVRW_TAG_CTT_CHARGE
+//     EVRW_TAG_CTT_RETURN
+//     EVRW_TAG_CTT_SALES
+//     EVRW_TAG_CM_CASH
+//     EVRW_TAG_CM_CREDIT
+//     EVRW_TAG_CM_POINT
+//     EVRW_TAG_PC_INSTALLMENT_2
+//     EVRW_TAG_PC_INSTALLMENT_3
+//     EVRW_TAG_PC_BONUS_1
+//     EVRW_TAG_PC_BONUS_2
+//     EVRW_TAG_PC_BONUS_3
+//     EVRW_TAG_PC_BONUS_4
+//     EVRW_TAG_PC_BONUS_5
+//     EVRW_TAG_PC_BONUS_COMBINATION_1
+//     EVRW_TAG_PC_BONUS_COMBINATION_2
+//     EVRW_TAG_PC_BONUS_COMBINATION_3
+//     EVRW_TAG_PC_BONUS_COMBINATION_4
+//     EVRW_TAG_PC_INSTALLMENT_1
+//     EVRW_TAG_PC_LUMP
+//     EVRW_TAG_PC_REVOLVING
+//     EVRW_TAG_PM_COMBINED
+//     EVRW_TAG_PM_FULL_SETTLEMENT
+//     EVRW_TAG_PMFP_CASH
+//     EVRW_TAG_PMFP_CREDIT
+//     EVRW_TAG_PMFP_EM
+//     EVRW_TAG_PMFP_OTHER
+//     EVRW_TAG_ROS_NG
+//     EVRW_TAG_ROS_OK
+//     EVRW_TAG_ROS_UNKNOWN
+//     EVRW_TAG_STT_1
+//     EVRW_TAG_STT_2
+//     EVRW_TAG_STT_3
+//     EVRW_TAG_TT_ADD
+//     EVRW_TAG_TT_CANCEL_CHARGE
+//     EVRW_TAG_TT_CANCEL_RETURN
+//     EVRW_TAG_TT_CANCEL_SALES
+//     EVRW_TAG_TT_GET_LOG
+//     EVRW_TAG_TT_READ
+//     EVRW_TAG_TT_RETURN
+//     EVRW_TAG_TT_SUBTRACT
+//     EVRW_TAG_TT_WRITE
+//     EVRW_TE_NOTIFY_TOUCH_RETRY
+//     EVRW_TE_NOTIFY_TOUCH_RETRY_CANCELABLE
+//     EVRW_TE_CONFIRM_TOUCH_RETRY
+//     EVRW_TE_CONFIRM_CANCEL
+//     EVRW_TE_NOTIFY_INVALID_OPERATION
+//     EVRW_TE_CONFIRM_INVALID_OPERATION
+//     EVRW_TE_CONFIRM_REMAINDER_SUBTRACTION
+//     EVRW_TE_CONFIRM_CENTER_CHECK
+//     EVRW_TE_CONFIRM_TOUCH_TIMEOUT
+//     EVRW_TE_CONFIRM_AUTO_CHARGE
+//     EVRW_TE_NOTIFY_CAPTURE_CARD
+//     EVRW_TE_NOTIFY_PIN
+//     EVRW_TE_NOTIFY_CENTER_CHECK
+//     EVRW_TE_NOTIFY_COMPLETE
+//     EVRW_TE_NOTIFY_TOUCH
+//     EVRW_TE_NOTIFY_BUSY
+//     EVRW_TE_CONFIRM_CENTER_CHECK_COMPLETE
+//     EVRW_TE_CONFIRM_SELECT
+//     EVRW_TE_NOTIFY_LOCK
+//     EVRW_TE_NOTIFY_CENTER_CHECK_COMPLETE
+//     EVRW_TE_CONFIRM_PIN_ENTRY_BY_OUTER_PINPAD
 //
 /////////////////////////////////////////////////////////////////////
 
@@ -69,6 +143,25 @@ public interface ElectronicValueRWConst
 
 
   /////////////////////////////////////////////////////////////////////
+  // "PINEntry" Property Constants
+  /////////////////////////////////////////////////////////////////////
+
+  public static final int EVRW_PIN_ENTRY_NONE          = 1; // Added in release 1.14
+  public static final int EVRW_PIN_ENTRY_EXTERNAL      = 2; // Added in release 1.14
+  public static final int EVRW_PIN_ENTRY_INTERNAL      = 3; // Added in release 1.14
+  public static final int EVRW_PIN_ENTRY_UNKNOWN       = 4; // Added in release 1.14
+
+
+  /////////////////////////////////////////////////////////////////////
+  // "TrainingModeState" Property Constants
+  /////////////////////////////////////////////////////////////////////
+
+  public static final int EVRW_TM_FALSE                = 1; // Added in release 1.14
+  public static final int EVRW_TM_TRUE                 = 2; // Added in release 1.14
+  public static final int EVRW_TM_UNKNOWN              = 3; // Added in release 1.14
+
+
+  /////////////////////////////////////////////////////////////////////
   // "accessLog" Method: "Type" Parameter Constants
   /////////////////////////////////////////////////////////////////////
 
@@ -82,6 +175,64 @@ public interface ElectronicValueRWConst
 
   public static final int EVRW_BD_ANY                  = 1;
   public static final int EVRW_BD_SPECIFIC             = 2;
+
+
+  /////////////////////////////////////////////////////////////////////
+  // "retrieveResultInformation" Method: "value" Parameter Constants
+  /////////////////////////////////////////////////////////////////////
+
+  public static final int EVRW_TAG_AS_AUTHENTICATED    = 1; // Added in release 1.14
+  public static final int EVRW_TAG_AS_UNAUTHENTICATED  = 2; // Added in release 1.14
+
+  public static final int EVRW_TAG_CTT_CANCEL          = 1; // Added in release 1.14
+  public static final int EVRW_TAG_CTT_CHARGE          = 2; // Added in release 1.14
+  public static final int EVRW_TAG_CTT_RETURN          = 3; // Added in release 1.14
+  public static final int EVRW_TAG_CTT_SALES           = 4; // Added in release 1.14
+
+  public static final int EVRW_TAG_CM_CASH             = 1; // Added in release 1.14
+  public static final int EVRW_TAG_CM_CREDIT           = 2; // Added in release 1.14
+  public static final int EVRW_TAG_CM_POINT            = 3; // Added in release 1.14
+
+  public static final int EVRW_TAG_PC_INSTALLMENT_1       =  1; // Added in release 1.14
+  public static final int EVRW_TAG_PC_INSTALLMENT_2       =  2; // Added in release 1.14
+  public static final int EVRW_TAG_PC_INSTALLMENT_3       =  3; // Added in release 1.14
+  public static final int EVRW_TAG_PC_BONUS_1             =  4; // Added in release 1.14
+  public static final int EVRW_TAG_PC_BONUS_2             =  5; // Added in release 1.14
+  public static final int EVRW_TAG_PC_BONUS_3             =  6; // Added in release 1.14
+  public static final int EVRW_TAG_PC_BONUS_4             =  7; // Added in release 1.14
+  public static final int EVRW_TAG_PC_BONUS_5             =  8; // Added in release 1.14
+  public static final int EVRW_TAG_PC_BONUS_COMBINATION_1 =  9; // Added in release 1.14
+  public static final int EVRW_TAG_PC_BONUS_COMBINATION_2 = 10; // Added in release 1.14
+  public static final int EVRW_TAG_PC_BONUS_COMBINATION_3 = 11; // Added in release 1.14
+  public static final int EVRW_TAG_PC_BONUS_COMBINATION_4 = 12; // Added in release 1.14
+  public static final int EVRW_TAG_PC_LUMP                = 13; // Added in release 1.14
+  public static final int EVRW_TAG_PC_REVOLVING           = 14; // Added in release 1.14
+
+  public static final int EVRW_TAG_PM_COMBINED         = 1; // Added in release 1.14
+  public static final int EVRW_TAG_PM_FULL_SETTLEMENT  = 2; // Added in release 1.14
+
+  public static final int EVRW_TAG_PMFP_CASH           = 1; // Added in release 1.14
+  public static final int EVRW_TAG_PMFP_CREDIT         = 2; // Added in release 1.14
+  public static final int EVRW_TAG_PMFP_EM             = 3; // Added in release 1.14
+  public static final int EVRW_TAG_PMFP_OTHER          = 4; // Added in release 1.14
+
+  public static final int EVRW_TAG_ROS_NG              = 1; // Added in release 1.14
+  public static final int EVRW_TAG_ROS_OK              = 2; // Added in release 1.14
+  public static final int EVRW_TAG_ROS_UNKNOWN         = 3; // Added in release 1.14
+
+  public static final int EVRW_TAG_STT_1               = 1; // Added in release 1.14
+  public static final int EVRW_TAG_STT_2               = 2; // Added in release 1.14
+  public static final int EVRW_TAG_STT_3               = 3; // Added in release 1.14
+
+  public static final int EVRW_TAG_TT_ADD              = 1; // Added in release 1.14
+  public static final int EVRW_TAG_TT_CANCEL_CHARGE    = 2; // Added in release 1.14
+  public static final int EVRW_TAG_TT_CANCEL_RETURN    = 3; // Added in release 1.14
+  public static final int EVRW_TAG_TT_CANCEL_SALES     = 4; // Added in release 1.14
+  public static final int EVRW_TAG_TT_GET_LOG          = 5; // Added in release 1.14
+  public static final int EVRW_TAG_TT_READ             = 6; // Added in release 1.14
+  public static final int EVRW_TAG_TT_RETURN           = 7; // Added in release 1.14
+  public static final int EVRW_TAG_TT_SUBTRACT         = 8; // Added in release 1.14
+  public static final int EVRW_TAG_TT_WRITE            = 9; // Added in release 1.14
 
 
   /////////////////////////////////////////////////////////////////////
@@ -103,6 +254,33 @@ public interface ElectronicValueRWConst
   public static final int EVRW_SUE_DS_DETECTED            = 22;
   public static final int EVRW_SUE_DS_ENTERED             = 23;
   public static final int EVRW_SUE_DS_CAPTURED            = 24;
+
+
+  /////////////////////////////////////////////////////////////////////
+  // "TransitionEvent" Event: "EventNumber" Parameter Constants
+  /////////////////////////////////////////////////////////////////////
+
+  public static final int EVRW_TE_NOTIFY_TOUCH_RETRY                =  1; // Added in release 1.14
+  public static final int EVRW_TE_NOTIFY_TOUCH_RETRY_CANCELABLE     =  2; // Added in release 1.14
+  public static final int EVRW_TE_CONFIRM_TOUCH_RETRY               =  3; // Added in release 1.14
+  public static final int EVRW_TE_CONFIRM_CANCEL                    =  4; // Added in release 1.14
+  public static final int EVRW_TE_NOTIFY_INVALID_OPERATION          =  5; // Added in release 1.14
+  public static final int EVRW_TE_CONFIRM_INVALID_OPERATION         =  6; // Added in release 1.14
+  public static final int EVRW_TE_CONFIRM_REMAINDER_SUBTRACTION     =  7; // Added in release 1.14
+  public static final int EVRW_TE_CONFIRM_CENTER_CHECK              =  8; // Added in release 1.14
+  public static final int EVRW_TE_CONFIRM_TOUCH_TIMEOUT             =  9; // Added in release 1.14
+  public static final int EVRW_TE_CONFIRM_AUTO_CHARGE               = 10; // Added in release 1.14
+  public static final int EVRW_TE_NOTIFY_CAPTURE_CARD               = 11; // Added in release 1.14
+  public static final int EVRW_TE_NOTIFY_PIN                        = 12; // Added in release 1.14
+  public static final int EVRW_TE_NOTIFY_CENTER_CHECK               = 13; // Added in release 1.14
+  public static final int EVRW_TE_NOTIFY_COMPLETE                   = 14; // Added in release 1.14
+  public static final int EVRW_TE_NOTIFY_TOUCH                      = 15; // Added in release 1.14
+  public static final int EVRW_TE_NOTIFY_BUSY                       = 16; // Added in release 1.14
+  public static final int EVRW_TE_CONFIRM_CENTER_CHECK_COMPLETE     = 17; // Added in release 1.14
+  public static final int EVRW_TE_CONFIRM_SELECT                    = 18; // Added in release 1.14
+  public static final int EVRW_TE_NOTIFY_LOCK                       = 19; // Added in release 1.14
+  public static final int EVRW_TE_NOTIFY_CENTER_CHECK_COMPLETE      = 20; // Added in release 1.14
+  public static final int EVRW_TE_CONFIRM_PIN_ENTRY_BY_OUTER_PINPAD = 21; // Added in release 1.14
 
 
   /////////////////////////////////////////////////////////////////////
