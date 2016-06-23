@@ -54,7 +54,7 @@ public interface RFIDScannerConst
   public static final int RFID_PR_EPC2                         = 0x00000010;
   public static final int RFID_PR_ISO14443A                    = 0x00001000;
   public static final int RFID_PR_ISO14443B                    = 0x00002000;
-  public static final int RFID_PR_ISO15693                     = 0x00003000;
+  public static final int RFID_PR_ISO15693                     = 0x00008000; // bug fix, see https://github.com/JavaPOSWorkingGroup/javapos-contracts/issues/1 
   public static final int RFID_PR_ISO180006B                   = 0x00004000;
   public static final int RFID_PR_OTHER                        = 0x01000000;
   public static final int RFID_PR_ALL                          = 0x40000000; // (ProtocolMask only)
