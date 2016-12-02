@@ -9,7 +9,7 @@ if (isTravisCIServerBuild) {
 	if (hasProperty('releaseVersion'))
 	    buildScan.tag 'Release Build'
 	else {
-		if (System.env('TRAVIS_PULL_REQUEST')) {
+		if (System.getenv('TRAVIS_PULL_REQUEST')) {
 			 buildScan.tag 'Pull Request Build'
 			 buildScan.value 'Git Pull Request Branch', System.getenv('TRAVIS_PULL_REQUEST_BRANCH')
 		}
