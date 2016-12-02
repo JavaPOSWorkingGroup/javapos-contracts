@@ -1,6 +1,8 @@
 def GITHUB_REPO = 'https://github.com/JavaPOSWorkingGroup/javapos-contracts'
 def TRAVIS_PROJECT_URL = 'https://travis-ci.org/JavaPOSWorkingGroup/javapos-contracts'
 
+// project independant build scan settings from here
+
 def boolean isTravisCIServerBuild = System.getenv('TRAVIS')
 def pullRequestNumber = System.getenv('TRAVIS_PULL_REQUEST')
 def boolean isPullRequest = pullRequestNumber != 'false'
@@ -9,15 +11,15 @@ buildScan.publishAlwaysIf(isTravisCIServerBuild)
 
 if (isTravisCIServerBuild) {
 	if (hasProperty('releaseVersion'))
-	    buildScan.tag 'Release Build'
+	    buildScan.tag 'RELEASE'
 	else {
 		if (isPullRequest) 
 		{
-			 buildScan.tag 'Pull Request Build'
+			 buildScan.tag 'Pull Request'
 			 buildScan.value 'Git Pull Request Branch', System.getenv('TRAVIS_PULL_REQUEST_BRANCH')
 		}
 		else
-	    	buildScan.tag 'Commit Build'
+	    	buildScan.tag 'Commit Check'
 	}
 		    	
 	def travisBuildId = System.getenv('TRAVIS_BUILD_ID')
