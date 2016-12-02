@@ -1,7 +1,9 @@
 def GITHUB_REPO = 'https://github.com/JavaPOSWorkingGroup/javapos-contracts'
-def travisProjectBuildBaseUrl = 'https://travis-ci.org/JavaPOSWorkingGroup/javapos-contracts'
+def TRAVIS_PROJECT_URL = 'https://travis-ci.org/JavaPOSWorkingGroup/javapos-contracts'
 
 def boolean isTravisCIServerBuild = System.getenv('TRAVIS')
+def pullRequestNumber = System.getenv('TRAVIS_PULL_REQUEST')
+def boolean isPullRequest = pullRequestNumber == 'false'
 
 buildScan.publishAlwaysIf(isTravisCIServerBuild)
 
@@ -9,7 +11,8 @@ if (isTravisCIServerBuild) {
 	if (hasProperty('releaseVersion'))
 	    buildScan.tag 'Release Build'
 	else {
-		if (System.getenv('TRAVIS_PULL_REQUEST')) {
+		if (isPullRequest) 
+		{
 			 buildScan.tag 'Pull Request Build'
 			 buildScan.value 'Git Pull Request Branch', System.getenv('TRAVIS_PULL_REQUEST_BRANCH')
 		}
@@ -19,7 +22,7 @@ if (isTravisCIServerBuild) {
 		    	
 	def travisBuildId = System.getenv('TRAVIS_BUILD_ID')
 	
-	buildScan.value 'Travis Build URL', "$travisProjectBuildBaseUrl/builds/$travisBuildId"
+	buildScan.link  'Travis Build URL', "$TRAVIS_PROJECT_URL/builds/$travisBuildId"
 	buildScan.value 'Travis Build Number', System.getenv('TRAVIS_BUILD_NUMBER')
 	buildScan.value 'Build Trigger Event', System.getenv('TRAVIS_EVENT_TYPE')
 	buildScan.value 'Git Branch Name', System.getenv('TRAVIS_BRANCH')
