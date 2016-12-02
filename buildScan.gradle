@@ -3,7 +3,7 @@ def TRAVIS_PROJECT_URL = 'https://travis-ci.org/JavaPOSWorkingGroup/javapos-cont
 
 def boolean isTravisCIServerBuild = System.getenv('TRAVIS')
 def pullRequestNumber = System.getenv('TRAVIS_PULL_REQUEST')
-def boolean isPullRequest = pullRequestNumber == 'false'
+def boolean isPullRequest = pullRequestNumber != 'false'
 
 buildScan.publishAlwaysIf(isTravisCIServerBuild)
 
