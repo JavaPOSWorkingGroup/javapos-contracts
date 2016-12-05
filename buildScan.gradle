@@ -1,12 +1,13 @@
-// project independant build scan settings from here
 
 def boolean isTravisCIServerBuild = System.getenv('TRAVIS')
-def pullRequestNumber = System.getenv('TRAVIS_PULL_REQUEST')
-def boolean isPullRequest = pullRequestNumber != 'false'
 
 buildScan.publishAlwaysIf(isTravisCIServerBuild)
 
-if (isTravisCIServerBuild) {
+if (isTravisCIServerBuild) 
+{
+	def pullRequestNumber = System.getenv('TRAVIS_PULL_REQUEST')
+	def boolean isPullRequest = pullRequestNumber != 'false'
+	
 	if (hasProperty('releaseVersion'))
 	    buildScan.tag 'RELEASE'
 	else {
