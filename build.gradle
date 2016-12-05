@@ -14,7 +14,7 @@ plugins {
     id 'com.github.oehme.sobula.bintray-release' version '0.6.7'
 }
 
-ext.githubRepoUrl = 'https://github.com/JavaPOSWorkingGroup/javapos-contracts'
+ext.githubProjectUrl = 'https://github.com/JavaPOSWorkingGroup/javapos-contracts'
 ext.travisProjectUrl = 'https://travis-ci.org/JavaPOSWorkingGroup/javapos-contracts'
 
 buildScan {

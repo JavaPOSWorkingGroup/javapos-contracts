@@ -22,9 +22,10 @@ if (isTravisCIServerBuild)
 		    	
 	def travisBuildId = System.getenv('TRAVIS_BUILD_ID')
 	
+	buildScan.link  'Github Project URL', githubProjectUrl
+	buildScan.value 'Git Branch Name', System.getenv('TRAVIS_BRANCH')
+	buildScan.value 'Git Commit Id', System.getenv('TRAVIS_COMMIT')
 	buildScan.link  'Travis Build URL', "$travisProjectUrl/builds/$travisBuildId"
 	buildScan.value 'Travis Build Number', System.getenv('TRAVIS_BUILD_NUMBER')
 	buildScan.value 'Build Trigger Event', System.getenv('TRAVIS_EVENT_TYPE')
-	buildScan.value 'Git Branch Name', System.getenv('TRAVIS_BRANCH')
-	buildScan.value 'Git Commit Id', System.getenv('TRAVIS_COMMIT')
 }
