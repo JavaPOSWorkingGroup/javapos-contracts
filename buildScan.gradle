@@ -1,5 +1,5 @@
-def GITHUB_REPO = 'https://github.com/JavaPOSWorkingGroup/javapos-contracts'
-def TRAVIS_PROJECT_URL = 'https://travis-ci.org/JavaPOSWorkingGroup/javapos-contracts'
+def githubRepoUrl = 'https://github.com/JavaPOSWorkingGroup/javapos-contracts'
+def travisProjectUrl = 'https://travis-ci.org/JavaPOSWorkingGroup/javapos-contracts'
 
 // project independant build scan settings from here
 
@@ -24,7 +24,7 @@ if (isTravisCIServerBuild) {
 		    	
 	def travisBuildId = System.getenv('TRAVIS_BUILD_ID')
 	
-	buildScan.link  'Travis Build URL', "$TRAVIS_PROJECT_URL/builds/$travisBuildId"
+	buildScan.link  'Travis Build URL', "$travisProjectUrl/builds/$travisBuildId"
 	buildScan.value 'Travis Build Number', System.getenv('TRAVIS_BUILD_NUMBER')
 	buildScan.value 'Build Trigger Event', System.getenv('TRAVIS_EVENT_TYPE')
 	buildScan.value 'Git Branch Name', System.getenv('TRAVIS_BRANCH')
@@ -38,7 +38,7 @@ else { // may be enabled by adding -Dscan command line argument
 		def commitId = 'git rev-parse --verify HEAD'.execute().text.trim()
 		if (commitId) {
 		    buildScan.value 'Git Commit ID', commitId
-		    buildScan.link 'Source', "$GITHUB_REPO/tree/$commitId"
+		    buildScan.link 'Source', "$githubRepoUrl/tree/$commitId"
 		}
 		
 		// Git branch name
