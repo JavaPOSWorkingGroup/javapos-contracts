@@ -1,6 +1,3 @@
-def githubRepoUrl = 'https://github.com/JavaPOSWorkingGroup/javapos-contracts'
-def travisProjectUrl = 'https://travis-ci.org/JavaPOSWorkingGroup/javapos-contracts'
-
 // project independant build scan settings from here
 
 def boolean isTravisCIServerBuild = System.getenv('TRAVIS')
