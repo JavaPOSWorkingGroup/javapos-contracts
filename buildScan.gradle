@@ -27,32 +27,3 @@ if (isTravisCIServerBuild) {
 	buildScan.value 'Git Branch Name', System.getenv('TRAVIS_BRANCH')
 	buildScan.value 'Git Commit Id', System.getenv('TRAVIS_COMMIT')
 }
-else { // may be enabled by adding -Dscan command line argument
-    buildScan.tag 'LOCAL'
-
-	try {
-		// Git commit id
-		def commitId = 'git rev-parse --verify HEAD'.execute().text.trim()
-		if (commitId) {
-		    buildScan.value 'Git Commit ID', commitId
-		    buildScan.link 'Source', "$githubRepoUrl/tree/$commitId"
-		}
-		
-		// Git branch name
-		def branchName = 'git rev-parse --abbrev-ref HEAD'.execute().text.trim()
-		if (branchName) {
-		    buildScan.value 'Git Branch Name', branchName
-		}
-		
-		// Git dirty local state
-		def status = 'git status --porcelain'.execute().text
-		if (status) {
-		    buildScan.tag "Local Build"
-		    buildScan.value "Git Status", status
-		}
-	}
-	catch (IOException ioe) {
-		logger.lifecycle("Info: git project data can not be fetched for buildScan -- skipped; maybe, no local git client is installed") 
-	}
-}
-
