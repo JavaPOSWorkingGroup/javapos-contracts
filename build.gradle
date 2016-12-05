@@ -14,12 +14,12 @@ plugins {
     id 'com.github.oehme.sobula.bintray-release' version '0.6.7'
 }
 
+ext.githubRepoUrl = 'https://github.com/JavaPOSWorkingGroup/javapos-contracts'
+ext.travisProjectUrl = 'https://travis-ci.org/JavaPOSWorkingGroup/javapos-contracts'
+
 buildScan {
     licenseAgreementUrl = 'https://gradle.com/terms-of-service'
     licenseAgree = 'yes'
-
-	def githubRepoUrl = 'https://github.com/JavaPOSWorkingGroup/javapos-contracts'
-	def travisProjectUrl = 'https://travis-ci.org/JavaPOSWorkingGroup/javapos-contracts'
 
 	apply from: 'buildScan.gradle'
 }
