@@ -36,7 +36,11 @@ public interface ElectronicValueRWControl114 extends ElectronicValueRWControl113
 {
   // Capabilities
   public boolean getCapPINDevice() throws JposException;
+  /**
+   * @deprecated use {@link #getCapTrainingMode()} instead
+   */
   public boolean CapTrainingMode() throws JposException;
+  public boolean getCapTrainingMode() throws JposException; // substitutes CapTrainingMode which does not follow the naming schema
 
   // Properties
   public int     getPINEntry() throws JposException;
