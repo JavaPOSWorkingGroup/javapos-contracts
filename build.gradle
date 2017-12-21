@@ -36,7 +36,6 @@ def artifactName = 'javapos-contracts'
 def groupId='org.javapos'
 def uposVersion = '1.14'
 version="${uposVersion}.1" // the last part after dot is the build/release version
-def jclVersion='2.2.0' // we need JposServiceInstance.java from there to resolve circular dependency 
  
 ///////////////////////////////////////////////////////////////////////////////
 // Build Tasks
