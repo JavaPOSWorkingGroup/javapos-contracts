@@ -63,7 +63,11 @@ public interface ScaleControl114 extends ScaleControl113
   public void    setPriceCalculationMode(int mode) throws JposException;
   public void    setSpecialTare(int mode,
                                 int data) throws JposException;
+  /**
+   * @deprecated use {@link #setTarePriority(int)} instead.
+   */
   public void    setTarePrioity(int priority) throws JposException;
+  public void    setTarePriority(int priority) throws JposException; // substitutes setTarePrioity which has a spelling error
   public void    setUnitPriceWithWeightUnit(long unitPrice,
                                             int  weightUnit,
                                             int  weightNumerator,
