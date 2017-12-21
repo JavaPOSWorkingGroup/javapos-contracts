@@ -35,7 +35,7 @@ task wrapper(type: Wrapper) {
 def artifactName = 'javapos-contracts'
 def groupId='org.javapos'
 def uposVersion = '1.14'
-version="${uposVersion}.2" // the last part after dot is the build/release version
+version="${uposVersion}.3" // the last part after dot is the build/release version
  
 ///////////////////////////////////////////////////////////////////////////////
 // Build Tasks
