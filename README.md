@@ -6,4 +6,5 @@ Hosts the device service interfaces, device control interfaces, data and excepti
 Use this library if your are implementing JavaPOS device services or, if you are implementing an JavaPOS application using your own implementation of JavaPOS device controls instead of the [reference implementation of device controls](https://github.com/JavaPOSWorkingGroup/javapos-controls) provided by this group.
 
 *Note*: This project may be edited directly in the browser using the gitpod application which is provides a full blown IDE.
-Just try the following URL: [https://gitpod.io#https://github.com/JavaPOSWorkingGroup/javapos-contracts](https://gitpod.io#https://github.com/JavaPOSWorkingGroup/javapos-contracts)
+
+[![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io#https://github.com/JavaPOSWorkingGroup/javapos-contracts)
