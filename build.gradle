@@ -38,16 +38,26 @@ def uposVersion = '1.14'
 version="${uposVersion}.3" // the last part after dot is the build/release version
  
 ///////////////////////////////////////////////////////////////////////////////
-// Build Tasks
+// Project Configurations
 ///////////////////////////////////////////////////////////////////////////////
 
-sourceCompatibility = '1.5' // this defines the lowest JVM version this library may be used with
+def boolean isRunningOnBuildServer = System.getenv('TRAVIS')
 
-// this is to request the best matching JDK (currently 1.5) for compiling in Eclipse 
-// it is recommended to install a JDK which matches best to avoid applying APIs methods and types not available in specified JVM compatibility version  
-eclipse.classpath {
-	containers.clear()
-	containers "org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/J2SE-$sourceCompatibility"
+if (isRunningOnBuildServer) {
+	// this is to request the best matching JDK (currently 1.5) for compiling in Eclipse 
+	// it is recommended to install a JDK which matches best to avoid applying APIs methods and types not available in specified JVM compatibility version  
+	sourceCompatibility = '1.5' // this defines the lowest JVM version this library may be used with
+	eclipse.classpath {
+		containers.clear()
+		containers "org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/J2SE-$sourceCompatibility"
+	}
+}
+else { // for library development in Eclipse
+	// let method parameters be written to the class file to be returned by java.lang.reflect.Method.getParameter()
+	sourceCompatibility = '1.8' 
+	eclipse.jdt.file.withProperties { properties ->
+		properties['org.eclipse.jdt.core.compiler.codegen.methodParameters'] = 'generate'
+	}
 }
 
 def javaposManifest = 	manifest {
@@ -58,6 +68,10 @@ def javaposManifest = 	manifest {
 				   'Implementation-Vendor': 'github.com/JavaPOSWorkingGroup',
                    'Implementation-Version': version)
 }
+
+///////////////////////////////////////////////////////////////////////////////
+// Build Tasks
+///////////////////////////////////////////////////////////////////////////////
 
 jar {
 	baseName = artifactName
