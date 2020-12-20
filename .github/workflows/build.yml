@@ -37,13 +37,3 @@ jobs:
         with: 
           arguments: release "-PreleaseVersion=${{ steps.get_version.outputs.version }}"
           dependencies-cache-enabled: true
-      - name: Store HTML test report
-        uses: actions/upload-artifact@v2
-        with:
-          name: test-report-html
-          path: "**/reports/tests/"
-      - name: Store XML test report
-        uses: actions/upload-artifact@v2
-        with:
-          name: test-results-xml
-          path: "**/test-results/"
