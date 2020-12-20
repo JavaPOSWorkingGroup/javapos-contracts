@@ -33,6 +33,7 @@ jobs:
         env:
           ORG_GRADLE_PROJECT_bintrayApiKey: ${{ secrets.ORG_GRADLE_PROJECT_BINTRAYAPIKEY }}
           ORG_GRADLE_PROJECT_sonatypePassword: ${{ secrets.ORG_GRADLE_PROJECT_SONATYPEPASSWORD }}
+          ORG_GRADLE_PROJECT_signingPassword: ${{ secrets.ORG_GRADLE_PROJECT_SIGNINGPASSWORD }}
         with: 
           arguments: release "-PreleaseVersion=${{ steps.get_version.outputs.version }}"
           dependencies-cache-enabled: true
