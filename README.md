@@ -1,6 +1,6 @@
 [![Gitpod ready-to-code](https://img.shields.io/badge/Gitpod-ready--to--code-blue?logo=gitpod)](https://gitpod.io/#https://github.com/JavaPOSWorkingGroup/javapos-contracts)
 
-JavaPOS Contracts [![Build Status](https://github.com/JavaPOSWorkingGroup/javapos-contracts/workflows/Build/badge.svg)](https://github.com/JavaPOSWorkingGroup/javapos-contracts/actions) [![Download](https://api.bintray.com/packages/javaposworkinggroup/maven/javapos-contracts/images/download.svg) ](https://bintray.com/javaposworkinggroup/maven/javapos-contracts/_latestVersion)
+JavaPOS Contracts [![Build Status](https://github.com/JavaPOSWorkingGroup/javapos-contracts/workflows/Build/badge.svg)](https://github.com/JavaPOSWorkingGroup/javapos-contracts/actions) [![Bintray](https://api.bintray.com/packages/javaposworkinggroup/maven/javapos-contracts/images/download.svg) ](https://bintray.com/javaposworkinggroup/maven/javapos-contracts/_latestVersion) [![Maven Central](https://maven-badges.herokuapp.com/maven-central/org.javapos/javapos-contracts/badge.svg)](https://maven-badges.herokuapp.com/maven-central/org.javapos/javapos-contracts/)
 =================
 
 Hosts the device service interfaces, device control interfaces, data and exception types of the UnifiedPOS reference implementation for Java.
