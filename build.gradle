@@ -8,6 +8,7 @@
 
 plugins {
 	id 'java-library'
+	id 'signing'
 	id 'eclipse'
 //	id 'maven' // comment this in and the next line out for populating to a local Maven repository for testing purposes
     id 'com.github.oehme.sobula.bintray-release' version '0.6.7'
@@ -60,6 +61,18 @@ jar {
 sourceJar {
 	manifest = javaposManifest
 }
+
+signing {
+    def signingKey = findProperty("signingKey")
+    def signingPassword = findProperty("signingPassword")
+    useInMemoryPgpKeys(signingKey, signingPassword)
+	sign jar, sourceJar, javadocJar
+}
+
+task sign {
+	dependsOn signJar, signSourceJar, signJavadocJar
+}
+
 
 ///////////////////////////////////////////////////////////////////////////////
 // Artifact Upload

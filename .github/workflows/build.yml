@@ -31,9 +31,8 @@ jobs:
         if: startsWith(github.ref, 'refs/tags/')
         uses: eskatos/gradle-command-action@v1
         env:
-          ORG_GRADLE_PROJECT_bintrayApiKey: ${{ secrets.ORG_GRADLE_PROJECT_BINTRAYAPIKEY }}
-          ORG_GRADLE_PROJECT_sonatypePassword: ${{ secrets.ORG_GRADLE_PROJECT_SONATYPEPASSWORD }}
-          ORG_GRADLE_PROJECT_signingPassword: ${{ secrets.ORG_GRADLE_PROJECT_SIGNINGPASSWORD }}
+          ORG_GRADLE_PROJECT_signingKey: ${{ secrets.GPG_SIGNING_KEY }}
+          ORG_GRADLE_PROJECT_signingPassword: ${{ secrets.GPG_SIGNING_PASSPHRASE }}
         with: 
           arguments: release "-PreleaseVersion=${{ steps.get_version.outputs.version }}"
           dependencies-cache-enabled: true
