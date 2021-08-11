@@ -2,30 +2,21 @@
 //
 // Build Script for building JavaPOS Contracts Library
 // 
-// Author: denis.kuniss@wincor-nixdorf.com (2016)
+// Author: denis.kuniss@dieboldnixdorf.com (2021)
 //
 ///////////////////////////////////////////////////////////////////////////////
 
 plugins {
-    id 'com.gradle.build-scan' version '3.1.1'
-	id 'java'
+	id 'java-library'
 	id 'eclipse'
 //	id 'maven' // comment this in and the next line out for populating to a local Maven repository for testing purposes
     id 'com.github.oehme.sobula.bintray-release' version '0.6.7'
 }
 
 ext.githubProjectUrl = 'https://github.com/JavaPOSWorkingGroup/javapos-contracts'
-ext.travisProjectUrl = 'https://travis-ci.org/JavaPOSWorkingGroup/javapos-contracts'
-
-buildScan {
-    termsOfServiceUrl = "https://gradle.com/terms-of-service"
-    termsOfServiceAgree = "yes"
-
-	apply from: 'buildScan.gradle'
-}
 
 wrapper {
-	gradleVersion = '5.6.1'
+	gradleVersion = '7.1.1'
 }
 
 ///////////////////////////////////////////////////////////////////////////////
@@ -41,27 +32,12 @@ version="${uposVersion}.3" // the last part after dot is the build/release versi
 // Project Configurations
 ///////////////////////////////////////////////////////////////////////////////
 
-def boolean isRunningOnBuildServer = System.getenv('TRAVIS')
-
-if (isRunningOnBuildServer) {
-	sourceCompatibility = '1.6' // this defines the lowest JVM version this library may be used with
-
-	// this is to request the best matching JDK (currently 1.6) for compiling in Eclipse 
-	// it is recommended to install a JDK which matches best to avoid applying APIs methods and types not available in specified JVM compatibility version  
-	eclipse.classpath {
-		containers.clear()
-        containers "org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-$sourceCompatibility"
-	}
-}
-else { // for library development in Eclipse
-	// let method parameters be written to the class file to be returned by java.lang.reflect.Method.getParameter()
-	sourceCompatibility = '1.8' 
-	eclipse.jdt.file.withProperties { properties ->
-		properties['org.eclipse.jdt.core.compiler.codegen.methodParameters'] = 'generate'
-	}
+// let method parameters be written to the class file to be returned by java.lang.reflect.Method.getParameter()
+eclipse.jdt.file.withProperties { properties ->
+	properties['org.eclipse.jdt.core.compiler.codegen.methodParameters'] = 'generate'
 }
 
-def javaposManifest = 	manifest {
+def javaposManifest = manifest {
         attributes('Specification-Title': 'UnifiedPOS Standard',
 				   'Specification-Vendor': 'UnifiedPOS Committee',
                    'Specification-Version': uposVersion,
@@ -69,6 +45,8 @@ def javaposManifest = 	manifest {
 				   'Implementation-Vendor': 'github.com/JavaPOSWorkingGroup',
                    'Implementation-Version': version)
 }
+
+sourceCompatibility = 8
 
 ///////////////////////////////////////////////////////////////////////////////
 // Build Tasks
