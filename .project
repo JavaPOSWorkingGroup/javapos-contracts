@@ -18,5 +18,15 @@
 		</buildCommand>
 	</buildSpec>
 	<linkedResources/>
-	<filteredResources/>
+	<filteredResources>
+		<filter>
+			<id>1</id>
+			<type>30</type>
+			<name/>
+			<matcher>
+				<id>org.eclipse.core.resources.regexFilterMatcher</id>
+				<arguments>node_modules|.git|__CREATED_BY_JAVA_LANGUAGE_SERVER__</arguments>
+			</matcher>
+		</filter>
+	</filteredResources>
 </projectDescription>
