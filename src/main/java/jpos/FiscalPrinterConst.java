@@ -109,6 +109,7 @@ public interface FiscalPrinterConst
     public static final int FPTR_CC_ROMANIA                  = 0x00000100;
     public static final int FPTR_CC_CZECH_REPUBLIC           = 0x00000200; // 1.11
     public static final int FPTR_CC_UKRAINE                  = 0x00000400; // 1.11
+    public static final int FPTR_CC_GERMANY                  = 0x00000800; // 1.15
     public static final int FPTR_CC_OTHER                    = 0x40000000; // 1.11
 
 
@@ -122,6 +123,8 @@ public interface FiscalPrinterConst
     public static final int FPTR_DT_RTC                      =  4;
     public static final int FPTR_DT_VAT                      =  5;
     public static final int FPTR_DT_START                    =  6; // 1.11
+    public static final int FPTR_DT_TICKET_START             =  7; // 1.15
+    public static final int FPTR_DT_TICKET_END               =  8; // 1.15
 
 
     /////////////////////////////////////////////////////////////////////
