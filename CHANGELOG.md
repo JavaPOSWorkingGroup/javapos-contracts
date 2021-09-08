@@ -1,5 +1,10 @@
 # Change Log for javapos-contracts
 
+## 1.14.4
+
+- **Major Change**: Compiles to Java 8, not Java 6 anymore (cannot be marked in the version accordingly as this is aligned to UnifiedPOS version)
+- `Gate.getCapRealTimeData()` has been marked as deprecated as it is not defined in UnifiedPOS at all; solved GH issue #10
+
 ## 1.14.3 Maintenance Release
 
 - Solves GH issues #2 and #3 by changing device control interfaces `jpos.ElectronicValueRWControl114` and `jpos.ScaleControl114`.
