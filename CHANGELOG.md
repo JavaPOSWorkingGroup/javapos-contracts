@@ -2,7 +2,8 @@
 
 ## 1.14.4
 
-- **Major Change**: Compiles to Java 8, not Java 6 anymore (cannot be marked in the version accordingly as major and minor version is aligned to UnifiedPOS version)
+- **Major Change**: requires Java 8 runtime (cannot be marked as major version change accordingly as major and minor version is aligned to UnifiedPOS version)
+- publishes to MavenCentral only, not Bintray (as Bintray has been shut down)
 - `Gate.getCapRealTimeData()` has been marked as deprecated as it is not defined in UnifiedPOS at all; solved GH issue #10
 - added `ScaleConst.SCAL_SUE_WEIGHT_UNDERWEIGHT` to be UnifiedPOS compliant; solved GH issue #7
 - added constants `FPTR_AT_DISCOUNT` and `FPTR_AT_SURCHARGE` to `FiscalPrinterConst` to be UnifiedPOS compliant; solved GH issue #8
