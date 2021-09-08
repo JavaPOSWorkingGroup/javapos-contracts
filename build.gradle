@@ -59,7 +59,7 @@ java {
 }
 
 jar {
-	baseName = artifactName
+	archiveBaseName = artifactName
 	manifest = javaposManifest
 	from ('CHANGELOG.md') {
 		into 'META-INF'
