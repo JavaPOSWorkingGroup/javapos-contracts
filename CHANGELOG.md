@@ -111,3 +111,6 @@ In this release the device categories
 has been added.
 
 Some constants has been added to MSR, POSPrinter, and Scale.
+
+
+*For older release see https://github.com/JavaPOSWorkingGroup/javapos-contracts/releases*
