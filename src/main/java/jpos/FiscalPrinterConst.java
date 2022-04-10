@@ -377,8 +377,8 @@ public interface FiscalPrinterConst
     // "PackageAdjustment" arguments in diverse methods
     /////////////////////////////////////////////////////////////////////
 
-    public static final int FPTR_AT_DISCOUNT            =  FPTR_AT_AMOUNT_DISCOUNT;
-    public static final int FPTR_AT_SURCHARGE           =  FPTR_AT_AMOUNT_SURCHARGE;
+    public static final int FPTR_AT_DISCOUNT            =  FPTR_AT_AMOUNT_DISCOUNT; // 1.15
+    public static final int FPTR_AT_SURCHARGE           =  FPTR_AT_AMOUNT_SURCHARGE; // 1.15
 
 
     /////////////////////////////////////////////////////////////////////
