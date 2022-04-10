@@ -368,14 +368,23 @@ public interface ElectronicValueRWConst
   // "ResultCodeExtended" Property Constants
   /////////////////////////////////////////////////////////////////////
 
+  public static final int EVRW_CENTERERROR           = 203; // Added in release 1.15
+  public static final int EVRW_COMMANDERROR          = 204; // Added in release 1.15
+  public static final int EVRW_RESET                 = 205; // Added in release 1.15
+  public static final int EVRW_COMMUNICATIONERROR    = 206; // Added in release 1.15
+  public static final int EVRW_LOGOVERFLOW           = 207; // Added in release 1.15
+  public static final int EVRW_DAILYLOGOVERFLOW      = 208; // Added in release 1.15
+  public static final int EVRW_DEFICIENT             = 209; // Added in release 1.15
+  public static final int EVRW_OVERDEPOSIT           = 210; // Added in release 1.15
+
   public static final int OPOS_EVRW_NOCARD                = 201;
   public static final int OPOS_EVRW_RELEASE               = 202;
-  public static final int OPOS_EVRW_CENTERERROR           = 203;
-  public static final int OPOS_EVRW_COMMANDERROR          = 204;
-  public static final int OPOS_EVRW_RESET                 = 205;
-  public static final int OPOS_EVRW_COMMUNICATIONERROR    = 206;
-  public static final int OPOS_EVRW_LOGOVERFLOW           = 207;
-  public static final int OPOS_EVRW_DAILYLOGOVERFLOW      = 208;
-  public static final int OPOS_EVRW_DEFICIENT             = 209;
-  public static final int OPOS_EVRW_OVERDEPOSIT           = 210;
+  public static final int OPOS_EVRW_CENTERERROR           = EVRW_CENTERERROR;
+  public static final int OPOS_EVRW_COMMANDERROR          = EVRW_COMMANDERROR;
+  public static final int OPOS_EVRW_RESET                 = EVRW_RESET;
+  public static final int OPOS_EVRW_COMMUNICATIONERROR    = EVRW_COMMUNICATIONERROR;
+  public static final int OPOS_EVRW_LOGOVERFLOW           = EVRW_LOGOVERFLOW;
+  public static final int OPOS_EVRW_DAILYLOGOVERFLOW      = EVRW_DAILYLOGOVERFLOW;
+  public static final int OPOS_EVRW_DEFICIENT             = EVRW_DEFICIENT;
+  public static final int OPOS_EVRW_OVERDEPOSIT           = EVRW_OVERDEPOSIT;
 }
