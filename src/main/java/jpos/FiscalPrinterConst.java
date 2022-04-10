@@ -56,7 +56,7 @@ package jpos;
 public interface FiscalPrinterConst
 {
     /////////////////////////////////////////////////////////////////////
-    // Fiscal Printer Station Constants
+    // Fiscal Printer Station Constants, ErrorStation Constants
     /////////////////////////////////////////////////////////////////////
 
     public static final int FPTR_S_JOURNAL                   = 1;
@@ -64,6 +64,8 @@ public interface FiscalPrinterConst
     public static final int FPTR_S_SLIP                      = 4;
 
     public static final int FPTR_S_JOURNAL_RECEIPT = FPTR_S_JOURNAL | FPTR_S_RECEIPT;
+    public static final int FPTR_S_JOURNAL_SLIP = FPTR_S_JOURNAL | FPTR_S_SLIP; // 1.15
+    public static final int FPTR_S_RECEIPT_SLIP = FPTR_S_RECEIPT | FPTR_S_SLIP; // 1.15
 
 
     /////////////////////////////////////////////////////////////////////
@@ -82,6 +84,7 @@ public interface FiscalPrinterConst
     public static final int FPTR_AC_TRL                      =  10;
     public static final int FPTR_AC_CZK                      =  11; // 1.11
     public static final int FPTR_AC_UAH                      =  12; // 1.11
+    public static final int FPTR_AC_SEK                      =  13; // 1.15
     public static final int FPTR_AC_OTHER                    = 200; // 1.11
 
 
@@ -109,7 +112,8 @@ public interface FiscalPrinterConst
     public static final int FPTR_CC_ROMANIA                  = 0x00000100;
     public static final int FPTR_CC_CZECH_REPUBLIC           = 0x00000200; // 1.11
     public static final int FPTR_CC_UKRAINE                  = 0x00000400; // 1.11
-    public static final int FPTR_CC_GERMANY                  = 0x00000800; // 1.15
+    public static final int FPTR_CC_SWEDEN                   = 0x00000800; // 1.15
+    public static final int FPTR_CC_GERMANY                  = 0x00001000; // 1.15
     public static final int FPTR_CC_OTHER                    = 0x40000000; // 1.11
 
 
@@ -367,6 +371,14 @@ public interface FiscalPrinterConst
     public static final int FPTR_AT_PERCENTAGE_SURCHARGE       =  4;
     public static final int FPTR_AT_COUPON_AMOUNT_DISCOUNT     =  5; // 1.11
     public static final int FPTR_AT_COUPON_PERCENTAGE_DISCOUNT =  6; // 1.11
+
+
+    /////////////////////////////////////////////////////////////////////
+    // "PackageAdjustment" arguments in diverse methods
+    /////////////////////////////////////////////////////////////////////
+
+    public static final int FPTR_AT_DISCOUNT            =  FPTR_AT_AMOUNT_DISCOUNT;
+    public static final int FPTR_AT_SURCHARGE           =  FPTR_AT_AMOUNT_SURCHARGE;
 
 
     /////////////////////////////////////////////////////////////////////
