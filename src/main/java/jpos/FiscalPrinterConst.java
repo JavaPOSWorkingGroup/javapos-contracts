@@ -372,6 +372,9 @@ public interface FiscalPrinterConst
     public static final int FPTR_AT_COUPON_AMOUNT_DISCOUNT     =  5; // 1.11
     public static final int FPTR_AT_COUPON_PERCENTAGE_DISCOUNT =  6; // 1.11
 
+    // historic corrections; both constants has been defined in UnifiedPOS long time ago
+    public static final int FPTR_AT_DISCOUNT  = FPTR_AT_AMOUNT_DISCOUNT;
+    public static final int FPTR_AT_SURCHARGE = FPTR_AT_AMOUNT_SURCHARGE;
 
     /////////////////////////////////////////////////////////////////////
     // "PackageAdjustment" arguments in diverse methods

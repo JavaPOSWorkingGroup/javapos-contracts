@@ -140,6 +140,8 @@ public interface ScaleConst
     public static final int SCAL_SUE_NOT_READY         = 15;
     public static final int SCAL_SUE_WEIGHT_UNDER_ZERO = 16;
 
+    // correction to 1.14.3; was missing, but defined in UnifiedPOS
+    public static final int SCAL_SUE_WEIGHT_UNDERWEIGHT = 17;
 
     /////////////////////////////////////////////////////////////////////
     // "ResultCodeExtended" Property Constants for Scale

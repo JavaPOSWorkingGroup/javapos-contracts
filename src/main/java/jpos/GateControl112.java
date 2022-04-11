@@ -39,6 +39,9 @@ public interface GateControl112 extends BaseControl
   public boolean getCapCompareFirmwareVersion() throws JposException;
   public boolean getCapGateStatus() throws JposException;
   public int     getCapPowerReporting() throws JposException;
+  /**
+   * @deprecated Does not use it. It is not defined in UnifiedPOS at all.
+   */
   public boolean getCapRealTimeData() throws JposException;
   public boolean getCapStatisticsReporting() throws JposException;
   public boolean getCapUpdateFirmware() throws JposException;

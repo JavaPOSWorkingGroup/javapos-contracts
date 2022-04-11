@@ -10,11 +10,9 @@ plugins {
 	id 'java-library'
 	id 'signing'
 	id 'eclipse'
-//	id 'maven' // comment this in and the next line out for populating to a local Maven repository for testing purposes
-    id 'com.github.oehme.sobula.bintray-release' version '0.6.7'
+	id 'maven-publish'
+	id("io.github.gradle-nexus.publish-plugin") version "1.1.0"
 }
-
-ext.githubProjectUrl = 'https://github.com/JavaPOSWorkingGroup/javapos-contracts'
 
 wrapper {
 	gradleVersion = '7.1.1'
@@ -25,9 +23,9 @@ wrapper {
 ///////////////////////////////////////////////////////////////////////////////
 
 def artifactName = 'javapos-contracts'
-def groupId='org.javapos'
+group='org.javapos'
 def uposVersion = '1.14'
-version="${uposVersion}.3" // the last part after dot is the build/release version
+version="${uposVersion}.4" // the last part after dot is the build/release version
  
 ///////////////////////////////////////////////////////////////////////////////
 // Project Configurations
@@ -53,58 +51,72 @@ sourceCompatibility = 8
 // Build Tasks
 ///////////////////////////////////////////////////////////////////////////////
 
+java {
+    withSourcesJar()
+    withJavadocJar()
+}
+
 jar {
-	baseName = artifactName
+	archiveBaseName = artifactName
 	manifest = javaposManifest
+	from ('CHANGELOG.md') {
+		into 'META-INF'
+	}
 }
 
-sourceJar {
+sourcesJar {
 	manifest = javaposManifest
-}
-
-signing {
-    def signingKey = findProperty("signingKey")
-    def signingPassword = findProperty("signingPassword")
-    useInMemoryPgpKeys(signingKey, signingPassword)
-	sign jar, sourceJar, javadocJar
+    from ('CHANGELOG.md') {
+        into 'META-INF'
+    }
 }
 
 ///////////////////////////////////////////////////////////////////////////////
 // Artifact Upload
 ///////////////////////////////////////////////////////////////////////////////
 
-if (project.plugins.hasPlugin('com.github.oehme.sobula.bintray-release')) 
-{ // evaluates only on travis-ci.org for releasing
-	group = "org.javapos"
-	description = "JavaPOS Contracts Library"
-	 
-	contacts {
-	    "builder@javapos.org" {
-	        moniker "JavaPOS Working Group"
-	        roles "owner"
-	        github "JavaPOSWorkingGroup"
-	    }
-	}
-	
-	bintray.user = "javaposworkinggroup"
-	bintray.pkg.version.mavenCentralSync.user = "kuniss"
+nexusPublishing {
+    repositories {
+        sonatype()
+    }
 }
 
-if (project.plugins.hasPlugin('maven')) 
-{ // evaluates only at development environment, not at travis-ci.org
+def githubProjectUrl = 'https://github.com/JavaPOSWorkingGroup/javapos-contracts'
 
-	artifacts {
-		archives jar
-	}
-	
-	uploadArchives {
-	    repositories {
-	        mavenDeployer {
-	            repository(url: "file:$localTestFileRepositoryDir")
-	            pom.artifactId = artifactName
-	            pom.groupId = groupId
-	            pom.version = version
-	        }
-	    }
-	}
+publishing {
+    publications {
+        mavenJava(MavenPublication) {
+            from(components.java)
+			pom {
+				name = artifactName
+				description = 'JavaPOS Contracts Library'
+                url = githubProjectUrl
+				licenses {
+					license {
+						name = 'Common Public License (CPL) -- V1.0'
+						url = 'https://www.eclipse.org/legal/cpl-v10.html'
+					}
+				}
+				developers {
+					developer {
+						id = 'javapos'
+						name = 'JavaPOS Working Group'
+						email = 'builder@javapos.org'
+					}
+				}
+				scm {
+                    connection = "scm:${githubProjectUrl}.git"
+                    developerConnection = "scm:git:${githubProjectUrl}.git"
+                    url = "${githubProjectUrl}.git"
+				}
+			}
+		}
+    }
+}
+
+signing {
+    def signingKey = findProperty("signingKey")
+    def signingPassword = findProperty("signingPassword")
+    useInMemoryPgpKeys(signingKey, signingPassword)
+	sign publishing.publications.mavenJava
 }
