@@ -49,7 +49,7 @@ public interface ElectronicValueRWControl115 extends ElectronicValueRWControl114
     public boolean getCapPaymentDetail() throws JposException;
     public boolean getCapTaxOthers() throws JposException;
     public boolean getCapTransactionNumber() throws JposException;
-    public boolean getCapMembershipCertificate() throws JposException;
+    public boolean getCapMembershipCertificate() throws JposException; // 1.14.1
 
 
     // Properties
@@ -62,7 +62,7 @@ public interface ElectronicValueRWControl115 extends ElectronicValueRWControl114
     public String getSlipNumber() throws JposException;
     public String getTransactionNumber() throws JposException;
     public int getTransactionType() throws JposException;
-    public int getServiceType() throws JposException;
+    public int getServiceType() throws JposException; // 1.14.1
 
     // Methods
     public void accessDailyLog(int sequenceNumber,
@@ -70,9 +70,9 @@ public interface ElectronicValueRWControl115 extends ElectronicValueRWControl114
                                int timeout) throws JposException;
     public void accessData(int dataType,
                            int[] data,
-                           Object[] object) throws JposException;
+                           Object[] object) throws JposException; // 1.14.1
     public void activateEVService(int[] data,
-                                  Object[] object) throws JposException;
+                                  Object[] object) throws JposException; // 1.14.1
     public void authorizeCompletion(int sequenceNumber,
                                     long amount,
                                     long taxOthers,
@@ -103,20 +103,18 @@ public interface ElectronicValueRWControl115 extends ElectronicValueRWControl114
     public void checkCard(int sequenceNumber,
                           int timeout) throws JposException;
     public void checkServiceRegistrationToMedium(int sequenceNumber,
-                                                 int timeout) throws JposException;
+                                                 int timeout) throws JposException; // 1.14.1
     public void closeDailyEVService(int[] data,
-                                    Object[] object) throws JposException;
+                                    Object[] object) throws JposException; // 1.14.1
     public void deactivateEVService(int[] data,
-                                    Object[] object) throws JposException;
+                                    Object[] object) throws JposException; // 1.14.1
     public void openDailyEVService(int[] data,
-                                   Object[] object) throws JposException;
-    public void retrieveResultInformation(String name,
-                                          String[] value) throws JposException;
+                                   Object[] object) throws JposException; // 1.14.1
+    public void registerServiceToMedium (int sequenceNumber,
+                                         int timeout) throws JposException; // 1.14.1
     public void unregisterServiceToMedium(int sequenceNumber,
-                                          int timeout) throws JposException;
+                                          int timeout) throws JposException; // 1.14.1
     public void updateData(int dataType,
                            int[] data,
-                           Object[] object) throws JposException;
-    public void updateKey(int[] data,
-                          Object[] object) throws JposException;
+                           Object[] object) throws JposException; // 1.14.1
 }
