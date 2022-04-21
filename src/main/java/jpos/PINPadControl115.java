@@ -30,8 +30,6 @@
 
 package jpos;
 
-import jpos.events.*;
-
 public interface PINPadControl115 extends PINPadControl114
 {
     // Nothing new added for release 1.15

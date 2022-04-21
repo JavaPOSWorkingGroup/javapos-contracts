@@ -30,8 +30,6 @@
 
 package jpos.services;
 
-import jpos.*;
-
 public interface ScaleService115 extends ScaleService114
 {
     // Nothing new added for release 1.15

@@ -30,9 +30,6 @@
 
 package jpos.services;
 
-import jpos.*;
-import jpos.loader.*;
-
 public interface RFIDScannerService115 extends RFIDScannerService114
 {
     // Nothing new added for release 1.15

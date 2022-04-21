@@ -30,8 +30,6 @@
 
 package jpos.services;
 
-import jpos.*;
-
 public interface PINPadService115 extends PINPadService114
 {
     // Nothing new added for release 1.15

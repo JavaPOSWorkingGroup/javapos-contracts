@@ -30,9 +30,6 @@
 
 package jpos.services;
 
-import jpos.*;
-import jpos.loader.*;
-
 public interface LightsService115 extends LightsService114
 {
     // Nothing new added for release 1.15

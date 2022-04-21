@@ -30,8 +30,6 @@
 
 package jpos.services;
 
-import jpos.*;
-
 public interface POSPrinterService115 extends POSPrinterService114
 {
     // Nothing new added for release 1.15

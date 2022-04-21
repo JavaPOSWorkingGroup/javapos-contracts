@@ -30,9 +30,6 @@
 
 package jpos.services;
 
-import jpos.*;
-import jpos.loader.*;
-
 public interface ItemDispenserService115 extends ItemDispenserService114
 {
     // Nothing new added for release 1.15

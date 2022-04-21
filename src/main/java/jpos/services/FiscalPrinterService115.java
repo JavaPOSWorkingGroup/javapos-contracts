@@ -17,17 +17,19 @@
 // software or its derivatives.Permission to use, copy, modify, and distribute
 // the software and its documentation for any purpose is hereby granted.
 //
+// FiscalPrinterService115
+//
+// Interface definining all capabilities, properties and methods that are
+// specific to Fiscal Printer for release 1.15.
+//
 // Modification history
 // ------------------------------------------------------------------
 // 2021-Aug-15 JavaPOS Release 1.15                                MC
 //
 /////////////////////////////////////////////////////////////////////
+
 package jpos.services;
 
-/**
- * Interface definining all capabilities, properties and methods that are
- * specific to Fiscal Printer for release 1.15.
- */
 public interface FiscalPrinterService115 extends FiscalPrinterService114 {
     // Nothing new added for release 1.15
 }

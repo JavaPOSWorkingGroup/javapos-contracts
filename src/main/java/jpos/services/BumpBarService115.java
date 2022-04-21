@@ -30,8 +30,6 @@
 
 package jpos.services;
 
-import jpos.*;
-
 public interface BumpBarService115 extends BumpBarService114
 {
     // Nothing new added for release 1.15

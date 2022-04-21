@@ -30,8 +30,6 @@
 
 package jpos.services;
 
-import jpos.*;
-
 public interface LineDisplayService115 extends LineDisplayService114
 {
     // Nothing new added for release 1.15

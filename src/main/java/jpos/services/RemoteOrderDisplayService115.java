@@ -30,8 +30,6 @@
 
 package jpos.services;
 
-import jpos.*;
-
 public interface RemoteOrderDisplayService115 extends RemoteOrderDisplayService114
 {
     // Nothing new added for release 1.15

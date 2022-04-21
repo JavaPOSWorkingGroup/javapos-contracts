@@ -30,8 +30,6 @@
 
 package jpos.services;
 
-import jpos.*;
-
 public interface HardTotalsService115 extends HardTotalsService114
 {
     // Nothing new added for release 1.15

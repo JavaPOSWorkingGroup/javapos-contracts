@@ -30,8 +30,6 @@
 
 package jpos.services;
 
-import jpos.*;
-
 public interface ElectronicJournalService115 extends ElectronicJournalService114
 {
     // Nothing new added for release 1.15

@@ -30,8 +30,6 @@
 
 package jpos.services;
 
-import jpos.*;
-
 public interface MSRService115 extends MSRService114
 {
     // Nothing new added for release 1.15

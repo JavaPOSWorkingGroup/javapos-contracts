@@ -30,8 +30,6 @@
 
 package jpos.services;
 
-import jpos.*;
-
 public interface BiometricsService115 extends BiometricsService114
 {
     // Nothing new added for release 1.15

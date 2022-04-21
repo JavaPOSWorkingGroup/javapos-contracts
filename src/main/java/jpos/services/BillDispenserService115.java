@@ -30,8 +30,6 @@
 
 package jpos.services;
 
-import jpos.*;
-
 public interface BillDispenserService115 extends BillDispenserService114
 {
     // Nothing new added for release 1.15

@@ -30,8 +30,6 @@
 
 package jpos;
 
-import jpos.events.*;
-
 public interface POSPowerControl115 extends POSPowerControl114
 {
     // Nothing new added for release 1.15

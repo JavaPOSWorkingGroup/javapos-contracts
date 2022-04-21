@@ -30,8 +30,6 @@
 
 package jpos.services;
 
-import jpos.*;
-
 public interface ToneIndicatorService115 extends ToneIndicatorService114
 {
     // Nothing new added for release 1.15

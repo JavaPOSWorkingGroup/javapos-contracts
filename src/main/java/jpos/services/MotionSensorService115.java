@@ -30,8 +30,6 @@
 
 package jpos.services;
 
-import jpos.*;
-
 public interface MotionSensorService115 extends MotionSensorService114
 {
     // Nothing new added for release 1.15

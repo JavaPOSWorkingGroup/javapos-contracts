@@ -30,8 +30,6 @@
 
 package jpos.services;
 
-import jpos.*;
-
 public interface CATService115 extends CATService114
 {
     // Nothing new added for release 1.15

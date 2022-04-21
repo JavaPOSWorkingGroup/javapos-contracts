@@ -30,8 +30,6 @@
 
 package jpos.services;
 
-import jpos.*;
-
 public interface ImageScannerService115
         extends ImageScannerService114
 {

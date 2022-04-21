@@ -30,8 +30,6 @@
 
 package jpos.services;
 
-import jpos.*;
-
 public interface POSPowerService115 extends POSPowerService114
 {
     // Nothing new added for release 1.15

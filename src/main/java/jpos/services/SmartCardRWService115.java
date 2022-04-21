@@ -30,8 +30,6 @@
 
 package jpos.services;
 
-import jpos.*;
-
 public interface SmartCardRWService115 extends SmartCardRWService114
 {
     // Nothing new added for release 1.15

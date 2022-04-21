@@ -30,8 +30,6 @@
 
 package jpos.services;
 
-import jpos.*;
-
 public interface KeylockService115 extends KeylockService114
 {
     // Nothing new added for release 1.15

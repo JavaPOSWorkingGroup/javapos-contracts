@@ -30,8 +30,6 @@
 
 package jpos;
 
-import jpos.events.*;
-
 public interface KeylockControl115 extends KeylockControl114
 {
     // Nothing new added for release 1.15

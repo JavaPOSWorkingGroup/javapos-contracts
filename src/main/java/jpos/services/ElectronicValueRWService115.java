@@ -31,7 +31,6 @@
 package jpos.services;
 
 import jpos.*;
-import jpos.loader.*;
 
 public interface ElectronicValueRWService115 extends ElectronicValueRWService114
 {
@@ -60,6 +59,7 @@ public interface ElectronicValueRWService115 extends ElectronicValueRWService114
     public int getPaymentCondition() throws JposException;
     public String getPaymentDetail() throws JposException;
     public int getPaymentMedia() throws JposException;
+    public void setPaymentMedia(int paymentMedia) throws JposException;
     public String getSlipNumber() throws JposException;
     public String getTransactionNumber() throws JposException;
     public int getTransactionType() throws JposException;
@@ -71,9 +71,9 @@ public interface ElectronicValueRWService115 extends ElectronicValueRWService114
                                int timeout) throws JposException;
     public void accessData(int dataType,
                            int[] data,
-                           Object[] object) throws JposException; // 1.14.1
+                           Object obj) throws JposException; // 1.14.1
     public void activateEVService(int[] data,
-                                  Object[] object) throws JposException; // 1.14.1
+                                  Object obj) throws JposException; // 1.14.1
     public void authorizeCompletion(int sequenceNumber,
                                     long amount,
                                     long taxOthers,
@@ -106,16 +106,16 @@ public interface ElectronicValueRWService115 extends ElectronicValueRWService114
     public void checkServiceRegistrationToMedium(int sequenceNumber,
                                                  int timeout) throws JposException; // 1.14.1
     public void closeDailyEVService(int[] data,
-                                    Object[] object) throws JposException; // 1.14.1
+                                    Object obj) throws JposException; // 1.14.1
     public void deactivateEVService(int[] data,
-                                    Object[] object) throws JposException; // 1.14.1
+                                    Object obj) throws JposException; // 1.14.1
     public void openDailyEVService(int[] data,
-                                   Object[] object) throws JposException; // 1.14.1
+                                   Object obj) throws JposException; // 1.14.1
     public void registerServiceToMedium (int sequenceNumber,
                                          int timeout) throws JposException; // 1.14.1
     public void unregisterServiceToMedium(int sequenceNumber,
                                           int timeout) throws JposException; // 1.14.1
     public void updateData(int dataType,
                            int[] data,
-                           Object[] object) throws JposException; // 1.14.1
+                           Object obj) throws JposException; // 1.14.1
 }

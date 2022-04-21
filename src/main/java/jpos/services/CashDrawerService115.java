@@ -30,8 +30,6 @@
 
 package jpos.services;
 
-import jpos.*;
-
 public interface CashDrawerService115 extends CashDrawerService114
 {
     // Nothing new added for release 1.15

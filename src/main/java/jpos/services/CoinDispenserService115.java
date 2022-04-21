@@ -29,8 +29,6 @@
 
 package jpos.services;
 
-import jpos.*;
-
 public interface CoinDispenserService115 extends CoinDispenserService114
 {
     // Nothing new added for release 1.15

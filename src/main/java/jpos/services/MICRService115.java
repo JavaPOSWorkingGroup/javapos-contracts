@@ -30,8 +30,6 @@
 
 package jpos.services;
 
-import jpos.*;
-
 public interface MICRService115 extends MICRService114
 {
     // Nothing new added for release 1.15

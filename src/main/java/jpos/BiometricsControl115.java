@@ -30,8 +30,6 @@
 
 package jpos;
 
-import jpos.events.*;
-
 public interface BiometricsControl115 extends BiometricsControl114
 {
     // Nothing new added for release 1.15

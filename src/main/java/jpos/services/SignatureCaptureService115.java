@@ -30,8 +30,6 @@
 
 package jpos.services;
 
-import jpos.*;
-
 public interface SignatureCaptureService115 extends SignatureCaptureService114
 {
     // Nothing new added for release 1.15

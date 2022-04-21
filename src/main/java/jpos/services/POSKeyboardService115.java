@@ -30,8 +30,6 @@
 
 package jpos.services;
 
-import jpos.*;
-
 public interface POSKeyboardService115 extends POSKeyboardService114
 {
     // Nothing new added for release 1.15

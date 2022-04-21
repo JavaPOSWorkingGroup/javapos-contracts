@@ -29,8 +29,6 @@
 
 package jpos;
 
-import jpos.events.*;
-
 public interface CoinDispenserControl115 extends CoinDispenserControl114
 {
     // Nothing new added for release 1.15

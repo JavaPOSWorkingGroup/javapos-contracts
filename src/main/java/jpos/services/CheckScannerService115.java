@@ -30,8 +30,6 @@
 
 package jpos.services;
 
-import jpos.*;
-
 public interface CheckScannerService115 extends CheckScannerService114
 {
     // Nothing new added for release 1.15
