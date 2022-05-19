@@ -69,9 +69,9 @@ public interface ElectronicValueRWControl115 extends ElectronicValueRWControl114
                                int timeout) throws JposException;
     public void accessData(int dataType,
                            int[] data,
-                           Object obj) throws JposException; // 1.14.1
+                           Object[] obj) throws JposException; // 1.14.1
     public void activateEVService(int[] data,
-                                  Object obj) throws JposException; // 1.14.1
+                                  Object[] obj) throws JposException; // 1.14.1
     public void authorizeCompletion(int sequenceNumber,
                                     long amount,
                                     long taxOthers,
@@ -104,16 +104,16 @@ public interface ElectronicValueRWControl115 extends ElectronicValueRWControl114
     public void checkServiceRegistrationToMedium(int sequenceNumber,
                                                  int timeout) throws JposException; // 1.14.1
     public void closeDailyEVService(int[] data,
-                                    Object obj) throws JposException; // 1.14.1
+                                    Object[] obj) throws JposException; // 1.14.1
     public void deactivateEVService(int[] data,
-                                    Object obj) throws JposException; // 1.14.1
+                                    Object[] obj) throws JposException; // 1.14.1
     public void openDailyEVService(int[] data,
-                                   Object obj) throws JposException; // 1.14.1
+                                   Object[] obj) throws JposException; // 1.14.1
     public void registerServiceToMedium (int sequenceNumber,
                                          int timeout) throws JposException; // 1.14.1
     public void unregisterServiceToMedium(int sequenceNumber,
                                           int timeout) throws JposException; // 1.14.1
     public void updateData(int dataType,
                            int[] data,
-                           Object obj) throws JposException; // 1.14.1
+                           Object[] obj) throws JposException; // 1.14.1
 }
