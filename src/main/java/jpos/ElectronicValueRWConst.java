@@ -114,6 +114,14 @@ public interface ElectronicValueRWConst
   public static final int EVRW_CCS_DETECT              = 0x00000002;
   public static final int EVRW_CCS_CAPTURE             = 0x00000004;
 
+  /////////////////////////////////////////////////////////////////////
+  // "CapDailyLog" Property Constants
+  /////////////////////////////////////////////////////////////////////
+
+  public static final int EVRW_DL_NONE                 = 0x00000000; // Added in release 1.15
+  public static final int EVRW_DL_REPORTING            = 0x00000001; // Added in release 1.15
+  public static final int EVRW_DL_SETTLEMENT           = 0x00000002; // Added in release 1.15
+  public static final int EVRW_DL_REPORTING_SETTLEMENT = 0x00000003; // Added in release 1.15
 
   /////////////////////////////////////////////////////////////////////
   // "CapDetectionControl" Property Constants
@@ -143,6 +151,38 @@ public interface ElectronicValueRWConst
 
 
   /////////////////////////////////////////////////////////////////////
+  // "PaymentCondition" Property Constants
+  /////////////////////////////////////////////////////////////////////
+
+  public static final int EVRW_PAYMENT_LUMP                   = 10; // Added in release 1.15
+  public static final int EVRW_PAYMENT_BONUS_1                = 21; // Added in release 1.15
+  public static final int EVRW_PAYMENT_BONUS_2                = 22; // Added in release 1.15
+  public static final int EVRW_PAYMENT_BONUS_3                = 23; // Added in release 1.15
+  public static final int EVRW_PAYMENT_BONUS_4                = 24; // Added in release 1.15
+  public static final int EVRW_PAYMENT_BONUS_5                = 25; // Added in release 1.15
+  public static final int EVRW_PAYMENT_INSTALLMENT_1          = 61; // Added in release 1.15
+  public static final int EVRW_PAYMENT_INSTALLMENT_2          = 62; // Added in release 1.15
+  public static final int EVRW_PAYMENT_INSTALLMENT_3          = 63; // Added in release 1.15
+  public static final int EVRW_PAYMENT_BONUS_COMBINATION_1    = 31; // Added in release 1.15
+  public static final int EVRW_PAYMENT_BONUS_COMBINATION_2    = 32; // Added in release 1.15
+  public static final int EVRW_PAYMENT_BONUS_COMBINATION_3    = 33; // Added in release 1.15
+  public static final int EVRW_PAYMENT_BONUS_COMBINATION_4    = 34; // Added in release 1.15
+  public static final int EVRW_PAYMENT_REVOLVING              = 80; // Added in release 1.15
+  public static final int EVRW_PAYMENT_DEBIT                  = 110; // Added in release 1.15
+  public static final int EVRW_PAYMENT_ELECTRONIC_MONEY       = 111; // Added in release 1.15
+
+
+  /////////////////////////////////////////////////////////////////////
+  // "PaymentMedia" Property Constants
+  /////////////////////////////////////////////////////////////////////
+
+  public static final int EVRW_MEDIA_UNSPECIFIED              = 0; // Added in release 1.15
+  public static final int EVRW_MEDIA_CREDIT                   = 1; // Added in release 1.15
+  public static final int EVRW_MEDIA_DEBIT                    = 2; // Added in release 1.15
+  public static final int EVRW_MEDIA_ELECTRONIC_MONEY         = 3; // Added in release 1.15
+
+
+  /////////////////////////////////////////////////////////////////////
   // "PINEntry" Property Constants
   /////////////////////////////////////////////////////////////////////
 
@@ -150,6 +190,18 @@ public interface ElectronicValueRWConst
   public static final int EVRW_PIN_ENTRY_EXTERNAL      = 2; // Added in release 1.14
   public static final int EVRW_PIN_ENTRY_INTERNAL      = 3; // Added in release 1.14
   public static final int EVRW_PIN_ENTRY_UNKNOWN       = 4; // Added in release 1.14
+
+
+  /////////////////////////////////////////////////////////////////////
+  // "ServiceType" Property Constants
+  /////////////////////////////////////////////////////////////////////
+
+  public static final int EVRW_ST_UNSPECIFIED          = 0; // Added in release 1.14.1
+  public static final int EVRW_ST_ELECTRONIC_MONEY     = 1; // Added in release 1.14.1
+  public static final int EVRW_ST_POINT                = 2; // Added in release 1.14.1
+  public static final int EVRW_ST_VOUCHER              = 3; // Added in release 1.14.1
+  public static final int EVRW_ST_MEMBERSHIP           = 4; // Added in release 1.14.1
+  public static final int EVRW_ST_CAT                  = 5; // Added in release 1.15
 
 
   /////////////////////////////////////////////////////////////////////
@@ -162,15 +214,38 @@ public interface ElectronicValueRWConst
 
 
   /////////////////////////////////////////////////////////////////////
-  // "accessLog" Method: "Type" Parameter Constants
+  // "TransactionType" Property Constants
   /////////////////////////////////////////////////////////////////////
 
-  public static final int EVRW_AL_REPORTING            = 1;
-  public static final int EVRW_AL_SETTLEMENT           = 2;
+  public static final int EVRW_TRANSACTION_SALES          = 10; // Added in release 1.15
+  public static final int EVRW_TRANSACTION_VOID           = 20; // Added in release 1.15
+  public static final int EVRW_TRANSACTION_REFUND         = 21; // Added in release 1.15
+  public static final int EVRW_TRANSACTION_VOIDPRESALES   = 29; // Added in release 1.15
+  public static final int EVRW_TRANSACTION_COMPLETION     = 30; // Added in release 1.15
+  public static final int EVRW_TRANSACTION_PRESALES       = 40; // Added in release 1.15
+  public static final int EVRW_TRANSACTION_CHECKCARD      = 41; // Added in release 1.15
+  public static final int EVRW_TRANSACTION_CASHDEPOSIT    = 50; // Added in release 1.15
 
 
   /////////////////////////////////////////////////////////////////////
-  // "beginDetection" Method: "Type" Parameter Constants
+  // "accessData" Method: "type" Parameter Constants
+  /////////////////////////////////////////////////////////////////////
+
+  public static final int EVRW_AD_KEY            = 1; // Added in release 1.14.1
+  public static final int EVRW_AD_NEGATIVE_LIST  = 2; // Added in release 1.14.1
+  public static final int EVRW_AD_OTHERS         = 3; // Added in release 1.14.1
+
+
+  /////////////////////////////////////////////////////////////////////
+  // "accessLog" Method: "type" Parameter Constants
+  /////////////////////////////////////////////////////////////////////
+
+  public static final int EVRW_AL_REPORTING            = 1; // Added in release 1.14.1
+  public static final int EVRW_AL_SETTLEMENT           = 2; // Added in release 1.14.1
+
+
+  /////////////////////////////////////////////////////////////////////
+  // "beginDetection" Method: "type" Parameter Constants
   /////////////////////////////////////////////////////////////////////
 
   public static final int EVRW_BD_ANY                  = 1;
@@ -281,6 +356,13 @@ public interface ElectronicValueRWConst
   public static final int EVRW_TE_NOTIFY_LOCK                       = 19; // Added in release 1.14
   public static final int EVRW_TE_NOTIFY_CENTER_CHECK_COMPLETE      = 20; // Added in release 1.14
   public static final int EVRW_TE_CONFIRM_PIN_ENTRY_BY_OUTER_PINPAD = 21; // Added in release 1.14
+  public static final int EVRW_TE_NOTIFY_PROGRESS_1_TO_100          = 22; // Added in release 1.14.1
+  public static final int EVRW_TE_CONFIRM_DEVICE_DATA               = 23; // Added in release 1.14.1
+  public static final int EVRW_TE_CONFIRM_SEARCH_TABLE              = 24; // Added in release 1.15
+  public static final int EVRW_TE_CONFIRM_PAYMENT_CONDITION         = 25; // Added in release 1.15
+  public static final int EVRW_TE_CONFIRM_AUTHORIZE                 = 26; // Added in release 1.15
+  public static final int EVRW_TE_NOTIFY_CHECK_CARD                 = 27; // Added in release 1.15
+  public static final int EVRW_TE_NOTIFY_SELECT_PAYMENT_CONDITION   = 28; // Added in release 1.15
 
 
   /////////////////////////////////////////////////////////////////////
