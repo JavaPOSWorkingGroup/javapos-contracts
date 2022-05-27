@@ -19,12 +19,10 @@
 //
 // ToneIndicatorService113
 //
-//   Interface definining all new capabilities, properties and
-//   methods that are specific to Tone Indicator for release 1.13.
+//   Interface defining all new capabilities, properties and methods
+//   that are specific to Tone Indicator for release 1.13.
 //
-// Modification history
-// ------------------------------------------------------------------
-// 2009-Feb-23 JavaPOS Release 1.13                                BS
+//   Automatically generated from ToneIndicatorControl113.
 //
 /////////////////////////////////////////////////////////////////////
 
@@ -34,12 +32,13 @@ import jpos.*;
 
 public interface ToneIndicatorService113 extends ToneIndicatorService112
 {
-  // Capabilities
-  public int getCapMelody() throws JposException;
-
-  // Properties
-  public int  getMelodyType() throws JposException;
-  public void setMelodyType(int melodyType) throws JposException;
-  public int  getMelodyVolume() throws JposException;
-  public void setMelodyVolume(int melodyVolume) throws JposException;
+	// Capabilities
+	public int     getCapMelody() throws JposException;
+	
+	// Properties
+	public int     getMelodyType() throws JposException;
+	public void    setMelodyType(int melodyType) throws JposException;
+	public int     getMelodyVolume() throws JposException;
+	public void    setMelodyVolume(int melodyVolume) throws JposException;
+	
 }

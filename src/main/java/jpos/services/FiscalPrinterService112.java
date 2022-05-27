@@ -19,12 +19,10 @@
 //
 // FiscalPrinterService112
 //
-//   Interface definining all new capabilities, properties and
-//   methods that are specific to Fiscal Printer for release 1.12.
+//   Interface defining all new capabilities, properties and methods
+//   that are specific to Fiscal Printer for release 1.12.
 //
-// Modification history
-// ------------------------------------------------------------------
-// 2008-Jan-14 JavaPOS Release 1.12                                BS
+//   Automatically generated from FiscalPrinterControl112.
 //
 /////////////////////////////////////////////////////////////////////
 
@@ -34,19 +32,8 @@ import jpos.*;
 
 public interface FiscalPrinterService112 extends FiscalPrinterService111
 {
-  // Methods
-  public void    printRecItemRefund(String description,
-                                    long amount,
-                                    int quantity,
-                                    int vatInfo,
-                                    long unitAmount,
-                                    String unitName)
-                     throws JposException;
-  public void    printRecItemRefundVoid(String description,
-                                        long amount,
-                                        int quantity,
-                                        int vatInfo,
-                                        long unitAmount,
-                                        String unitName)
-                     throws JposException;
+	// Methods
+	public void    printRecItemRefund(String description, long amount, int quantity, int vatInfo, long unitAmount, String unitName) throws JposException;
+	public void    printRecItemRefundVoid(String description, long amount, int quantity, int vatInfo, long unitAmount, String unitName) throws JposException;
+	
 }

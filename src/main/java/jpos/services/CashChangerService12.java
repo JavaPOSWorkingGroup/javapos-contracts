@@ -19,12 +19,10 @@
 //
 // CashChangerService12
 //
-//   Interface definining all capabilities, properties and methods
+//   Interface defining all new capabilities, properties and methods
 //   that are specific to Cash Changer for release 1.2.
 //
-// Modification history
-// ------------------------------------------------------------------
-// 98-02-18 JavaPOS Release 1.2                                   BS
+//   Automatically generated from CashChangerControl12.
 //
 /////////////////////////////////////////////////////////////////////
 
@@ -32,34 +30,34 @@ package jpos.services;
 
 import jpos.*;
 
-public interface CashChangerService12 extends BaseService
+public interface CashChangerService12 extends BaseService, jpos.loader.JposServiceInstance
 {
-    // Capabilities
-    public boolean getCapDiscrepancy() throws JposException;
-    public boolean getCapEmptySensor() throws JposException;
-    public boolean getCapFullSensor() throws JposException;
-    public boolean getCapNearEmptySensor() throws JposException;
-    public boolean getCapNearFullSensor() throws JposException;
-
-    // Properties
-    public boolean getAsyncMode() throws JposException;
-    public void    setAsyncMode(boolean asyncMode) throws JposException;
-    public int     getAsyncResultCode() throws JposException;
-    public int     getAsyncResultCodeExtended() throws JposException;
-    public String  getCurrencyCashList() throws JposException;
-    public String  getCurrencyCode() throws JposException;
-    public void    setCurrencyCode(String currencyCode) throws JposException;
-    public String  getCurrencyCodeList() throws JposException;
-    public int     getCurrentExit() throws JposException;
-    public void    setCurrentExit(int currentExit) throws JposException;
-    public int     getDeviceExits() throws JposException;
-    public int     getDeviceStatus() throws JposException;
-    public String  getExitCashList() throws JposException;
-    public int     getFullStatus() throws JposException;
-
-    // Methods
-    public void    dispenseCash(String cashCounts) throws JposException;
-    public void    dispenseChange(int amount) throws JposException;
-    public void    readCashCounts(String[] cashCounts,
-                       boolean[] discrepancy) throws JposException;
+	// Capabilities
+	public boolean getCapDiscrepancy() throws JposException;
+	public boolean getCapEmptySensor() throws JposException;
+	public boolean getCapFullSensor() throws JposException;
+	public boolean getCapNearEmptySensor() throws JposException;
+	public boolean getCapNearFullSensor() throws JposException;
+	
+	// Properties
+	public boolean getAsyncMode() throws JposException;
+	public void    setAsyncMode(boolean asyncMode) throws JposException;
+	public int     getAsyncResultCode() throws JposException;
+	public int     getAsyncResultCodeExtended() throws JposException;
+	public String  getCurrencyCashList() throws JposException;
+	public String  getCurrencyCode() throws JposException;
+	public void    setCurrencyCode(String currencyCode) throws JposException;
+	public String  getCurrencyCodeList() throws JposException;
+	public int     getCurrentExit() throws JposException;
+	public void    setCurrentExit(int currentExit) throws JposException;
+	public int     getDeviceExits() throws JposException;
+	public int     getDeviceStatus() throws JposException;
+	public String  getExitCashList() throws JposException;
+	public int     getFullStatus() throws JposException;
+	
+	// Methods
+	public void    dispenseCash(String cashCounts) throws JposException;
+	public void    dispenseChange(int amount) throws JposException;
+	public void    readCashCounts(String[] cashCounts, boolean[] discrepancy) throws JposException;
+	
 }

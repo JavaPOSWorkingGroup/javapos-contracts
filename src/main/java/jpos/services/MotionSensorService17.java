@@ -19,34 +19,31 @@
 //
 // MotionSensorService17
 //
-//   Interface definining all new capabilities, properties and
-//   methods that are specific to Motion Sensor for release 1.7.
+//   Interface defining all new capabilities, properties and methods
+//   that are specific to Motion Sensor for release 1.7.
 //
-// Modification history
-// ------------------------------------------------------------------
-// 01-Jul-2002 JavaPOS Release 1.7                                 BS
+//   Automatically generated from MotionSensorControl17.
 //
 /////////////////////////////////////////////////////////////////////
 
 package jpos.services;
 
 import jpos.*;
-import jpos.loader.*;
 
-public interface MotionSensorService17
-  extends BaseService, JposServiceInstance
+public interface MotionSensorService17 extends BaseService, jpos.loader.JposServiceInstance
 {
-  // Capabilities
-  public int     getCapPowerReporting() throws JposException;
-
-  // Properties
-  public boolean getMotion() throws JposException;
-  public int     getPowerNotify() throws JposException;
-  public void    setPowerNotify(int powerNotify) throws JposException;
-  public int     getPowerState() throws JposException;
-  public int     getTimeout() throws JposException;
-  public void    setTimeout(int timeout) throws JposException;
-
-  // Methods
-  public void    waitForMotion(int timeout) throws JposException;
+	// Capabilities
+	public int     getCapPowerReporting() throws JposException;
+	
+	// Properties
+	public boolean getMotion() throws JposException;
+	public int     getPowerNotify() throws JposException;
+	public void    setPowerNotify(int powerNotify) throws JposException;
+	public int     getPowerState() throws JposException;
+	public int     getTimeout() throws JposException;
+	public void    setTimeout(int timeout) throws JposException;
+	
+	// Methods
+	public void    waitForMotion(int timeout) throws JposException;
+	
 }

@@ -19,12 +19,10 @@
 //
 // CashDrawerService12
 //
-//   Interface definining all capabilities, properties and methods
+//   Interface defining all new capabilities, properties and methods
 //   that are specific to Cash Drawer for release 1.2.
 //
-// Modification history
-// ------------------------------------------------------------------
-// 98-02-18 JavaPOS Release 1.2                                   BS
+//   Automatically generated from CashDrawerControl12.
 //
 /////////////////////////////////////////////////////////////////////
 
@@ -32,16 +30,16 @@ package jpos.services;
 
 import jpos.*;
 
-public interface CashDrawerService12 extends BaseService
+public interface CashDrawerService12 extends BaseService, jpos.loader.JposServiceInstance
 {
-    // Capabilities
-    public boolean getCapStatus() throws JposException;
-
-    // Properties
-    public boolean getDrawerOpened() throws JposException;
-
-    // Methods
-    public void    openDrawer() throws JposException;
-    public void    waitForDrawerClose(int beepTimeout, int beepFrequency,
-                       int beepDuration, int beepDelay) throws JposException;
+	// Capabilities
+	public boolean getCapStatus() throws JposException;
+	
+	// Properties
+	public boolean getDrawerOpened() throws JposException;
+	
+	// Methods
+	public void    openDrawer() throws JposException;
+	public void    waitForDrawerClose(int beepTimeout, int beepFrequency, int beepDuration, int beepDelay) throws JposException;
+	
 }

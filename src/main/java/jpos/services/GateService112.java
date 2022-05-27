@@ -19,53 +19,41 @@
 //
 // GateService112
 //
-//   Interface definining all new capabilities, properties and
-//   methods that are specific to Gate for release 1.12.
+//   Interface defining all new capabilities, properties and methods
+//   that are specific to Gate for release 1.12.
 //
-// Modification history
-// ------------------------------------------------------------------
-// 2008-Jan-14 JavaPOS Release 1.12                                BS
-//   New device category.
+//   Automatically generated from GateControl112.
 //
 /////////////////////////////////////////////////////////////////////
 
 package jpos.services;
 
 import jpos.*;
-import jpos.loader.*;
 
-public interface GateService112
-  extends BaseService, JposServiceInstance
+public interface GateService112 extends BaseService, jpos.loader.JposServiceInstance
 {
-  // Capabilities
-  public boolean getCapCompareFirmwareVersion() throws JposException;
-  public boolean getCapGateStatus() throws JposException;
-  public int     getCapPowerReporting() throws JposException;
-  public boolean getCapRealTimeData() throws JposException;
-  public boolean getCapStatisticsReporting() throws JposException;
-  public boolean getCapUpdateFirmware() throws JposException;
-  public boolean getCapUpdateStatistics() throws JposException;
-
-  // Properties
-  public int     getGetStatus() throws JposException;
-  public int     getPowerNotify() throws JposException;
-  public void    setPowerNotify(int powerNotify) throws JposException;
-  public int     getPowerState() throws JposException;
-
-  // Methods
-  public void    compareFirmwareVersion(String firmwareFileName,
-                                        int[] result)
-                     throws JposException;
-  public void    openGate()
-                     throws JposException;
-  public void    resetStatistics(String statisticsBuffer)
-                     throws JposException;
-  public void    retrieveStatistics(String[] statisticsBuffer)
-                     throws JposException;
-  public void    updateFirmware(String firmwareFileName)
-                     throws JposException;
-  public void    updateStatistics(String statisticsBuffer)
-                     throws JposException;
-  public void    waitForGateClose(int timeout)
-                     throws JposException;
+	// Capabilities
+	public boolean getCapCompareFirmwareVersion() throws JposException;
+	public boolean getCapGateStatus() throws JposException;
+	public int     getCapPowerReporting() throws JposException;
+	public boolean getCapRealTimeData() throws JposException;
+	public boolean getCapStatisticsReporting() throws JposException;
+	public boolean getCapUpdateFirmware() throws JposException;
+	public boolean getCapUpdateStatistics() throws JposException;
+	
+	// Properties
+	public int     getGetStatus() throws JposException;
+	public int     getPowerNotify() throws JposException;
+	public void    setPowerNotify(int powerNotify) throws JposException;
+	public int     getPowerState() throws JposException;
+	
+	// Methods
+	public void    compareFirmwareVersion(String firmwareFileName, int[] result) throws JposException;
+	public void    openGate() throws JposException;
+	public void    resetStatistics(String statisticsBuffer) throws JposException;
+	public void    retrieveStatistics(String[] statisticsBuffer) throws JposException;
+	public void    updateFirmware(String firmwareFileName) throws JposException;
+	public void    updateStatistics(String statisticsBuffer) throws JposException;
+	public void    waitForGateClose(int timeout) throws JposException;
+	
 }

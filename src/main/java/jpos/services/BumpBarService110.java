@@ -19,21 +19,17 @@
 //
 // BumpBarService110
 //
-//   Interface definining all new capabilities, properties and
-//   methods that are specific to Bump Bar for release 1.10.
+//   Interface defining all new capabilities, properties and methods
+//   that are specific to Bump Bar for release 1.10.
 //
-// Modification history
-// ------------------------------------------------------------------
-// 2006-Feb-10 JavaPOS Release 1.10                                BS
+//   Automatically generated from BumpBarControl110.
 //
 /////////////////////////////////////////////////////////////////////
 
 package jpos.services;
 
-import jpos.*;
 
-public interface BumpBarService110
-  extends BumpBarService19
+public interface BumpBarService110 extends BumpBarService19
 {
-  // Nothing new added for release 1.10
+	// Nothing new added for release 1.10
 }

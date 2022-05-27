@@ -19,19 +19,17 @@
 //
 // CheckScannerService111
 //
-//   Interface definining all new capabilities, properties and
-//                                Check Scanner
-// Modification history
-// ------------------------------------------------------------------
-// 2007-Jan-04 JavaPOS Release 1.11                                BS
+//   Interface defining all new capabilities, properties and methods
+//   that are specific to Check Scanner for release 1.11.
+//
+//   Automatically generated from CheckScannerControl111.
 //
 /////////////////////////////////////////////////////////////////////
 
 package jpos.services;
 
-import jpos.*;
 
 public interface CheckScannerService111 extends CheckScannerService110
 {
-  // Nothing new added for release 1.11
+	// Nothing new added for release 1.11
 }

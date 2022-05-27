@@ -19,20 +19,17 @@
 //
 // CashChangerService14
 //
-//   Interface definining all new capabilities, properties and
-//   methods that are specific to Cash Changer for release 1.4.
+//   Interface defining all new capabilities, properties and methods
+//   that are specific to Cash Changer for release 1.4.
 //
-// Modification history
-// ------------------------------------------------------------------
-// 98-11-02 JavaPOS Release 1.4                                   BS
+//   Automatically generated from CashChangerControl14.
 //
 /////////////////////////////////////////////////////////////////////
 
 package jpos.services;
 
-import jpos.*;
 
 public interface CashChangerService14 extends CashChangerService13
 {
-  // Nothing new added for release 1.4
+	// Nothing new added for release 1.4
 }

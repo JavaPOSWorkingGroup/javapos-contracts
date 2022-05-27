@@ -19,21 +19,17 @@
 //
 // ScaleService110
 //
-//   Interface definining all new capabilities, properties and
-//   methods that are specific to Scale for release 1.10.
+//   Interface defining all new capabilities, properties and methods
+//   that are specific to Scale for release 1.10.
 //
-// Modification history
-// ------------------------------------------------------------------
-// 2006-Feb-10 JavaPOS Release 1.10                                BS
+//   Automatically generated from ScaleControl110.
 //
 /////////////////////////////////////////////////////////////////////
 
 package jpos.services;
 
-import jpos.*;
 
-public interface ScaleService110
-  extends ScaleService19
+public interface ScaleService110 extends ScaleService19
 {
-  // Nothing new added for release 1.10
+	// Nothing new added for release 1.10
 }

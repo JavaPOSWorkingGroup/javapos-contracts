@@ -19,12 +19,10 @@
 //
 // ScannerService19
 //
-//   Interface definining all new capabilities, properties and
-//   methods that are specific to Scanner for release 1.9.
+//   Interface defining all new capabilities, properties and methods
+//   that are specific to Scanner for release 1.9.
 //
-// Modification history
-// ------------------------------------------------------------------
-// 2005-Jan-16 JavaPOS Release 1.9                                 BS
+//   Automatically generated from ScannerControl19.
 //
 /////////////////////////////////////////////////////////////////////
 
@@ -32,16 +30,14 @@ package jpos.services;
 
 import jpos.*;
 
-public interface ScannerService19
-  extends ScannerService18
+public interface ScannerService19 extends ScannerService18
 {
-  // Capabilities
-  public boolean getCapCompareFirmwareVersion() throws JposException;
-  public boolean getCapUpdateFirmware() throws JposException;
-
-  // Methods
-  public void    compareFirmwareVersion(String firmwareFileName, int[] result)
-                     throws JposException;
-  public void    updateFirmware(String firmwareFileName)
-                     throws JposException;
+	// Capabilities
+	public boolean getCapCompareFirmwareVersion() throws JposException;
+	public boolean getCapUpdateFirmware() throws JposException;
+	
+	// Methods
+	public void    compareFirmwareVersion(String firmwareFileName, int[] result) throws JposException;
+	public void    updateFirmware(String firmwareFileName) throws JposException;
+	
 }

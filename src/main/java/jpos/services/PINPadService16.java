@@ -19,21 +19,17 @@
 //
 // PINPadService16
 //
-//   Interface definining all new capabilities, properties and
-//   methods that are specific to PIN Pad for release 1.6.
+//   Interface defining all new capabilities, properties and methods
+//   that are specific to PIN Pad for release 1.6.
 //
-// Modification history
-// ------------------------------------------------------------------
-// 2001-Apr-18 JavaPOS Release 1.6                                 BS
+//   Automatically generated from PINPadControl16.
 //
 /////////////////////////////////////////////////////////////////////
 
 package jpos.services;
 
-import jpos.*;
 
-public interface PINPadService16
-  extends PINPadService15
+public interface PINPadService16 extends PINPadService15
 {
-  // Nothing new added for release 1.6
+	// Nothing new added for release 1.6
 }

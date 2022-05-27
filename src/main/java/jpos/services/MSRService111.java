@@ -19,24 +19,17 @@
 //
 // MSRService111
 //
-//   Interface definining all new capabilities, properties and
-//   methods that are specific to MSR for release 1.11.
+//   Interface defining all new capabilities, properties and methods
+//   that are specific to MSR for release 1.11.
 //
-// Modification history
-// ------------------------------------------------------------------
-// 2006-Feb-08 JavaPOS release 1.11                                BS
-// 2006-Oct-23 JavaPOS 1.10.2 Update                               BS
-//   Fixed type of writeTracks data parameter to be byte[][] as
-//   UnifiedPOS has corrected the type from "string" to
-//   "array of binary".
+//   Automatically generated from MSRControl111.
 //
 /////////////////////////////////////////////////////////////////////
 
 package jpos.services;
 
-import jpos.*;
 
 public interface MSRService111 extends MSRService110
 {
-  // Nothing new added for release 1.11
+	// Nothing new added for release 1.11
 }

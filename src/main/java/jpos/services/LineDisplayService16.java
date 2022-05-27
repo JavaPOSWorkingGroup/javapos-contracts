@@ -19,12 +19,10 @@
 //
 // LineDisplayService16
 //
-//   Interface definining all new capabilities, properties and
-//   methods that are specific to Line Display for release 1.6.
+//   Interface defining all new capabilities, properties and methods
+//   that are specific to Line Display for release 1.6.
 //
-// Modification history
-// ------------------------------------------------------------------
-// 2001-Apr-18 JavaPOS Release 1.6                                 BS
+//   Automatically generated from LineDisplayControl16.
 //
 /////////////////////////////////////////////////////////////////////
 
@@ -32,27 +30,26 @@ package jpos.services;
 
 import jpos.*;
 
-public interface LineDisplayService16
-  extends LineDisplayService15
+public interface LineDisplayService16 extends LineDisplayService15
 {
-    // Capabilities
-    public boolean getCapBlinkRate() throws JposException;
-    public int     getCapCursorType() throws JposException;
-    public boolean getCapCustomGlyph() throws JposException;
-    public int     getCapReadBack() throws JposException;
-    public int     getCapReverse() throws JposException;
-
-    // Properties
-    public int     getBlinkRate() throws JposException;
-    public void    setBlinkRate(int blinkRate) throws JposException;
-    public int     getCursorType() throws JposException;
-    public void    setCursorType(int cursorType) throws JposException;
-    public String  getCustomGlyphList() throws JposException;
-    public int     getGlyphHeight() throws JposException;
-    public int     getGlyphWidth() throws JposException;
-
-    // Methods
-    public void    defineGlyph(int glyphCode, byte[] glyph)
-                       throws JposException;
-    public void    readCharacterAtCursor(int[] aChar) throws JposException;
+	// Capabilities
+	public boolean getCapBlinkRate() throws JposException;
+	public int     getCapCursorType() throws JposException;
+	public boolean getCapCustomGlyph() throws JposException;
+	public int     getCapReadBack() throws JposException;
+	public int     getCapReverse() throws JposException;
+	
+	// Properties
+	public int     getBlinkRate() throws JposException;
+	public void    setBlinkRate(int blinkRate) throws JposException;
+	public int     getCursorType() throws JposException;
+	public void    setCursorType(int cursorType) throws JposException;
+	public String  getCustomGlyphList() throws JposException;
+	public int     getGlyphHeight() throws JposException;
+	public int     getGlyphWidth() throws JposException;
+	
+	// Methods
+	public void    defineGlyph(int glyphCode, byte[] glyph) throws JposException;
+	public void    readCharacterAtCursor(int[] aChar) throws JposException;
+	
 }

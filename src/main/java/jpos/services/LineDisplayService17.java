@@ -19,12 +19,10 @@
 //
 // LineDisplayService17
 //
-//   Interface definining all new capabilities, properties and
-//   methods that are specific to Line Display for release 1.7.
+//   Interface defining all new capabilities, properties and methods
+//   that are specific to Line Display for release 1.7.
 //
-// Modification history
-// ------------------------------------------------------------------
-// 01-Jul-2002 JavaPOS Release 1.7                                 BS
+//   Automatically generated from LineDisplayControl17.
 //
 /////////////////////////////////////////////////////////////////////
 
@@ -32,27 +30,24 @@ package jpos.services;
 
 import jpos.*;
 
-public interface LineDisplayService17
-  extends LineDisplayService16
+public interface LineDisplayService17 extends LineDisplayService16
 {
-  // Capabilities
-  public boolean getCapBitmap() throws JposException;
-  public boolean getCapScreenMode() throws JposException;
-  public boolean getCapMapCharacterSet() throws JposException;
-
-  // Properties
-  public boolean getMapCharacterSet() throws JposException;
-  public void    setMapCharacterSet(boolean mapCharacterSet)
-                   throws JposException;
-  public int     getMaximumX() throws JposException;
-  public int     getMaximumY() throws JposException;
-  public int     getScreenMode() throws JposException;
-  public void    setScreenMode(int screenMode) throws JposException;
-  public String  getScreenModeList() throws JposException;
-
-  // Methods
-  public void    displayBitmap(String fileName, int width, int alignmentX,
-                               int alignmentY) throws JposException;
-  public void    setBitmap(int bitmapNumber, String fileName, int width,
-                           int alignmentX, int alignmentY) throws JposException;
+	// Capabilities
+	public boolean getCapBitmap() throws JposException;
+	public boolean getCapMapCharacterSet() throws JposException;
+	public boolean getCapScreenMode() throws JposException;
+	
+	// Properties
+	public boolean getMapCharacterSet() throws JposException;
+	public void    setMapCharacterSet(boolean mapCharacterSet) throws JposException;
+	public int     getMaximumX() throws JposException;
+	public int     getMaximumY() throws JposException;
+	public int     getScreenMode() throws JposException;
+	public void    setScreenMode(int screenMode) throws JposException;
+	public String  getScreenModeList() throws JposException;
+	
+	// Methods
+	public void    displayBitmap(String fileName, int width, int alignmentX, int alignmentY) throws JposException;
+	public void    setBitmap(int bitmapNumber, String fileName, int width, int alignmentX, int alignmentY) throws JposException;
+	
 }

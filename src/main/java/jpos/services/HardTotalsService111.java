@@ -19,20 +19,17 @@
 //
 // HardTotalsService111
 //
-//   Interface definining all new capabilities, properties and
-//   methods that are specific to Hard Totals for release 1.11.
+//   Interface defining all new capabilities, properties and methods
+//   that are specific to Hard Totals for release 1.11.
 //
-// Modification history
-// ------------------------------------------------------------------
-// 2007-Jan-04 JavaPOS Release 1.11                                BS
+//   Automatically generated from HardTotalsControl111.
 //
 /////////////////////////////////////////////////////////////////////
 
 package jpos.services;
 
-import jpos.*;
 
 public interface HardTotalsService111 extends HardTotalsService110
 {
-  // Nothing new added for release 1.11
+	// Nothing new added for release 1.11
 }

@@ -19,15 +19,10 @@
 //
 // MSRService113
 //
-//   Interface definining all new capabilities, properties and
-//   methods that are specific to MSR for release 1.13.
+//   Interface defining all new capabilities, properties and methods
+//   that are specific to MSR for release 1.13.
 //
-// Modification history
-// ------------------------------------------------------------------
-// 2009-Feb-23 JavaPOS Release 1.13                                BS
-// 2011-Aug-22 JavaPOS Release 1.13.3                              BS
-//   Added new retrieveDeviceAuthenticationData with correct
-//     parameter type. Old method left in place for compatibility.
+//   Automatically generated from MSRControl113.
 //
 /////////////////////////////////////////////////////////////////////
 
@@ -37,14 +32,7 @@ import jpos.*;
 
 public interface MSRService113 extends MSRService112
 {
-  // The retrieveDeviceAuthenticationData method's challenge parameter
-  // was incorrectly typed as byte[] in version 1.12. Since the parameter
-  // is an in/out parameter, the type should be byte[][].
-  //
-  // The old version is left for Application and Device Service
-  // compatibility.
-
-  // Methods
-  public void    retrieveDeviceAuthenticationData(byte[][] challenge)
-                     throws JposException;
+	// Methods
+	public void    retrieveDeviceAuthenticationData(byte[][] challenge) throws JposException;
+	
 }

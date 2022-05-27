@@ -19,22 +19,17 @@
 //
 // ScannerService15
 //
-//   Interface definining all new capabilities, properties and
-//   methods that are specific to Scanner for release 1.5.
+//   Interface defining all new capabilities, properties and methods
+//   that are specific to Scanner for release 1.5.
 //
-// Modification history
-// ------------------------------------------------------------------
-// 2000-Apr-17 JavaPOS Release 1.5                                 BS
+//   Automatically generated from ScannerControl15.
 //
 /////////////////////////////////////////////////////////////////////
 
 package jpos.services;
 
-import jpos.*;
-import jpos.loader.*;
 
-public interface ScannerService15
-  extends ScannerService14, JposServiceInstance
+public interface ScannerService15 extends ScannerService14
 {
-  // Nothing new added for release 1.5
+	// Nothing new added for release 1.5
 }

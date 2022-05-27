@@ -19,21 +19,17 @@
 //
 // ScaleService16
 //
-//   Interface definining all new capabilities, properties and
-//   methods that are specific to Scale for release 1.6.
+//   Interface defining all new capabilities, properties and methods
+//   that are specific to Scale for release 1.6.
 //
-// Modification history
-// ------------------------------------------------------------------
-// 2001-Apr-18 JavaPOS Release 1.6                                 BS
+//   Automatically generated from ScaleControl16.
 //
 /////////////////////////////////////////////////////////////////////
 
 package jpos.services;
 
-import jpos.*;
 
-public interface ScaleService16
-  extends ScaleService15
+public interface ScaleService16 extends ScaleService15
 {
-  // Nothing new added for release 1.6
+	// Nothing new added for release 1.6
 }

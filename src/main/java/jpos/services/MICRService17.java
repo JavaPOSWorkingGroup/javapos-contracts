@@ -19,21 +19,17 @@
 //
 // MICRService17
 //
-//   Interface definining all new capabilities, properties and
-//   methods that are specific to MICR for release 1.7.
+//   Interface defining all new capabilities, properties and methods
+//   that are specific to MICR for release 1.7.
 //
-// Modification history
-// ------------------------------------------------------------------
-// 01-Jul-2002 JavaPOS Release 1.7                                 BS
+//   Automatically generated from MICRControl17.
 //
 /////////////////////////////////////////////////////////////////////
 
 package jpos.services;
 
-import jpos.*;
 
-public interface MICRService17
-  extends MICRService16
+public interface MICRService17 extends MICRService16
 {
-  // Nothing new added for release 1.7
+	// Nothing new added for release 1.7
 }

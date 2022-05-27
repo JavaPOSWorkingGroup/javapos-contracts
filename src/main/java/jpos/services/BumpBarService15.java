@@ -19,22 +19,17 @@
 //
 // BumpBarService15
 //
-//   Interface definining all new capabilities, properties and
-//   methods that are specific to Bump Bar for release 1.5.
+//   Interface defining all new capabilities, properties and methods
+//   that are specific to Bump Bar for release 1.5.
 //
-// Modification history
-// ------------------------------------------------------------------
-// 2000-Apr-17 JavaPOS Release 1.5                                 BS
+//   Automatically generated from BumpBarControl15.
 //
 /////////////////////////////////////////////////////////////////////
 
 package jpos.services;
 
-import jpos.*;
-import jpos.loader.*;
 
-public interface BumpBarService15
-  extends BumpBarService14, JposServiceInstance
+public interface BumpBarService15 extends BumpBarService14
 {
-  // Nothing new added for release 1.5
+	// Nothing new added for release 1.5
 }

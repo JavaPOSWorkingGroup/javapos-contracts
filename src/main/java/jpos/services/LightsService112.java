@@ -19,58 +19,42 @@
 //
 // LightsService112
 //
-//   Interface definining all new capabilities, properties and
-//   methods that are specific to Lights for release 1.12.
+//   Interface defining all new capabilities, properties and methods
+//   that are specific to Lights for release 1.12.
 //
-// Modification history
-// ------------------------------------------------------------------
-// 2008-Jan-14 JavaPOS Release 1.12                                BS
-//   New device category.
+//   Automatically generated from LightsControl112.
 //
 /////////////////////////////////////////////////////////////////////
 
 package jpos.services;
 
 import jpos.*;
-import jpos.loader.*;
 
-public interface LightsService112
-  extends BaseService, JposServiceInstance
+public interface LightsService112 extends BaseService, jpos.loader.JposServiceInstance
 {
-  // Capabilities
-  public int     getCapAlarm() throws JposException;
-  public boolean getCapBlink() throws JposException;
-  public int     getCapColor() throws JposException;
-  public boolean getCapCompareFirmwareVersion() throws JposException;
-  public int     getCapPowerReporting() throws JposException;
-  public boolean getCapStatisticsReporting() throws JposException;
-  public boolean getCapUpdateFirmware() throws JposException;
-  public boolean getCapUpdateStatistics() throws JposException;
-
-  // Properties
-  public int     getMaxLights() throws JposException;
-  public int     getPowerNotify() throws JposException;
-  public void    setPowerNotify(int powerNotify) throws JposException;
-  public int     getPowerState() throws JposException;
-
-  // Methods
-  public void    compareFirmwareVersion(String firmwareFileName,
-                                        int[] result)
-                     throws JposException;
-  public void    resetStatistics(String statisticsBuffer)
-                     throws JposException;
-  public void    retrieveStatistics(String[] statisticsBuffer)
-                     throws JposException;
-  public void    switchOff(int lightNumber)
-                     throws JposException;
-  public void    switchOn(int lightNumber,
-                          int blinkOnCycle,
-                          int blinkOffCycle,
-                          int color,
-                          int alarm)
-                     throws JposException;
-  public void    updateFirmware(String firmwareFileName)
-                     throws JposException;
-  public void    updateStatistics(String statisticsBuffer)
-                     throws JposException;
+	// Capabilities
+	public int     getCapAlarm() throws JposException;
+	public boolean getCapBlink() throws JposException;
+	public int     getCapColor() throws JposException;
+	public boolean getCapCompareFirmwareVersion() throws JposException;
+	public int     getCapPowerReporting() throws JposException;
+	public boolean getCapStatisticsReporting() throws JposException;
+	public boolean getCapUpdateFirmware() throws JposException;
+	public boolean getCapUpdateStatistics() throws JposException;
+	
+	// Properties
+	public int     getMaxLights() throws JposException;
+	public int     getPowerNotify() throws JposException;
+	public void    setPowerNotify(int powerNotify) throws JposException;
+	public int     getPowerState() throws JposException;
+	
+	// Methods
+	public void    compareFirmwareVersion(String firmwareFileName, int[] result) throws JposException;
+	public void    resetStatistics(String statisticsBuffer) throws JposException;
+	public void    retrieveStatistics(String[] statisticsBuffer) throws JposException;
+	public void    switchOff(int lightNumber) throws JposException;
+	public void    switchOn(int lightNumber, int blinkOnCycle, int blinkOffCycle, int color, int alarm) throws JposException;
+	public void    updateFirmware(String firmwareFileName) throws JposException;
+	public void    updateStatistics(String statisticsBuffer) throws JposException;
+	
 }

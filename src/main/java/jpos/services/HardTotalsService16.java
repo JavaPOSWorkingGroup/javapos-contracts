@@ -19,21 +19,17 @@
 //
 // HardTotalsService16
 //
-//   Interface definining all new capabilities, properties and
-//   methods that are specific to Hard Totals for release 1.6.
+//   Interface defining all new capabilities, properties and methods
+//   that are specific to Hard Totals for release 1.6.
 //
-// Modification history
-// ------------------------------------------------------------------
-// 2001-Apr-18 JavaPOS Release 1.6                                 BS
+//   Automatically generated from HardTotalsControl16.
 //
 /////////////////////////////////////////////////////////////////////
 
 package jpos.services;
 
-import jpos.*;
 
-public interface HardTotalsService16
-  extends HardTotalsService15
+public interface HardTotalsService16 extends HardTotalsService15
 {
-  // Nothing new added for release 1.6
+	// Nothing new added for release 1.6
 }

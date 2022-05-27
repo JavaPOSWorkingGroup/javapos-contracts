@@ -19,21 +19,17 @@
 //
 // ScaleService17
 //
-//   Interface definining all new capabilities, properties and
-//   methods that are specific to Scale for release 1.7.
+//   Interface defining all new capabilities, properties and methods
+//   that are specific to Scale for release 1.7.
 //
-// Modification history
-// ------------------------------------------------------------------
-// 01-Jul-2002 JavaPOS Release 1.7                                 BS
+//   Automatically generated from ScaleControl17.
 //
 /////////////////////////////////////////////////////////////////////
 
 package jpos.services;
 
-import jpos.*;
 
-public interface ScaleService17
-  extends ScaleService16
+public interface ScaleService17 extends ScaleService16
 {
-  // Nothing new added for release 1.7
+	// Nothing new added for release 1.7
 }

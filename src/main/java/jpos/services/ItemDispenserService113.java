@@ -19,22 +19,17 @@
 //
 // ItemDispenserService113
 //
-//   Interface definining all new capabilities, properties and
-//   methods that are specific to Item Dispenser for release 1.13.
+//   Interface defining all new capabilities, properties and methods
+//   that are specific to Item Dispenser for release 1.13.
 //
-// Modification history
-// ------------------------------------------------------------------
-// 2009-Feb-23 JavaPOS Release 1.13                                BS
-//   New device category.
+//   Automatically generated from ItemDispenserControl113.
 //
 /////////////////////////////////////////////////////////////////////
 
 package jpos.services;
 
-import jpos.*;
-import jpos.loader.*;
 
 public interface ItemDispenserService113 extends ItemDispenserService112
 {
-  // Nothing new added for release 1.13
+	// Nothing new added for release 1.13
 }

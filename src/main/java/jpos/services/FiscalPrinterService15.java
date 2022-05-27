@@ -19,22 +19,17 @@
 //
 // FiscalPrinterService15
 //
-//   Interface definining all new capabilities, properties and
-//   methods that are specific to Fiscal Printer for release 1.5.
+//   Interface defining all new capabilities, properties and methods
+//   that are specific to Fiscal Printer for release 1.5.
 //
-// Modification history
-// ------------------------------------------------------------------
-// 2000-Apr-17 JavaPOS Release 1.5                                 BS
+//   Automatically generated from FiscalPrinterControl15.
 //
 /////////////////////////////////////////////////////////////////////
 
 package jpos.services;
 
-import jpos.*;
-import jpos.loader.*;
 
-public interface FiscalPrinterService15
-  extends FiscalPrinterService14, JposServiceInstance
+public interface FiscalPrinterService15 extends FiscalPrinterService14
 {
-  // Nothing new added for release 1.5
+	// Nothing new added for release 1.5
 }

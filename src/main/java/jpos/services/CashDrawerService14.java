@@ -19,20 +19,17 @@
 //
 // CashDrawerService14
 //
-//   Interface definining all new capabilities, properties and
-//   methods that are specific to Cash Drawer for release 1.4.
+//   Interface defining all new capabilities, properties and methods
+//   that are specific to Cash Drawer for release 1.4.
 //
-// Modification history
-// ------------------------------------------------------------------
-// 98-11-02 JavaPOS Release 1.4                                   BS
+//   Automatically generated from CashDrawerControl14.
 //
 /////////////////////////////////////////////////////////////////////
 
 package jpos.services;
 
-import jpos.*;
 
 public interface CashDrawerService14 extends CashDrawerService13
 {
-  // Nothing new added for release 1.4
+	// Nothing new added for release 1.4
 }

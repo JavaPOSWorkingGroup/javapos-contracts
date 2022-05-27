@@ -19,13 +19,10 @@
 //
 // PointCardRWService110
 //
-//   Interface definining all new capabilities, properties and
-//   methods that are specific to the Point Card Reader Wwriter for
-//   release 1.10.
+//   Interface defining all new capabilities, properties and methods
+//   that are specific to PointCard Read Writer for release 1.10.
 //
-// Modification history
-// ------------------------------------------------------------------
-// 2006-Feb-10 JavaPOS Release 1.10                                BS
+//   Automatically generated from PointCardRWControl110.
 //
 /////////////////////////////////////////////////////////////////////
 
@@ -33,10 +30,9 @@ package jpos.services;
 
 import jpos.*;
 
-public interface PointCardRWService110
-  extends PointCardRWService19
+public interface PointCardRWService110 extends PointCardRWService19
 {
-  // Methods
-  public void    clearInputProperties()
-                     throws JposException;
+	// Methods
+	public void    clearInputProperties() throws JposException;
+	
 }

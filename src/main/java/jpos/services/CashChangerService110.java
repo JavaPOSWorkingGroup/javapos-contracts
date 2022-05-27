@@ -19,21 +19,17 @@
 //
 // CashChangerService110
 //
-//   Interface definining all new capabilities, properties and
-//   methods that are specific to Cash Changer for release 1.10.
+//   Interface defining all new capabilities, properties and methods
+//   that are specific to Cash Changer for release 1.10.
 //
-// Modification history
-// ------------------------------------------------------------------
-// 2006-Feb-10 JavaPOS Release 1.10                                BS
+//   Automatically generated from CashChangerControl110.
 //
 /////////////////////////////////////////////////////////////////////
 
 package jpos.services;
 
-import jpos.*;
 
-public interface CashChangerService110
-  extends CashChangerService19
+public interface CashChangerService110 extends CashChangerService19
 {
-  // Nothing new added for release 1.10
+	// Nothing new added for release 1.10
 }

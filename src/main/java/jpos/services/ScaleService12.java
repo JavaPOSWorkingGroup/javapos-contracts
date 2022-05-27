@@ -19,12 +19,10 @@
 //
 // ScaleService12
 //
-//   Interface definining all capabilities, properties and methods
+//   Interface defining all new capabilities, properties and methods
 //   that are specific to Scale for release 1.2.
 //
-// Modification history
-// ------------------------------------------------------------------
-// 98-02-18 JavaPOS Release 1.2                                   BS
+//   Automatically generated from ScaleControl12.
 //
 /////////////////////////////////////////////////////////////////////
 
@@ -32,16 +30,16 @@ package jpos.services;
 
 import jpos.*;
 
-public interface ScaleService12 extends BaseService
+public interface ScaleService12 extends BaseService, jpos.loader.JposServiceInstance
 {
-    // Capabilities
-    public boolean getCapDisplay() throws JposException;
-
-    // Properties
-    public int     getMaximumWeight() throws JposException;
-    public int     getWeightUnit() throws JposException;
-
-    // Methods
-    public void    readWeight(int[] weightData, int timeout)
-                       throws JposException;
+	// Capabilities
+	public boolean getCapDisplay() throws JposException;
+	
+	// Properties
+	public int     getMaximumWeight() throws JposException;
+	public int     getWeightUnit() throws JposException;
+	
+	// Methods
+	public void    readWeight(int[] weightData, int timeout) throws JposException;
+	
 }

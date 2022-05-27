@@ -19,20 +19,17 @@
 //
 // HardTotalsService14
 //
-//   Interface definining all new capabilities, properties and
-//   methods that are specific to Hard Totals for release 1.4.
+//   Interface defining all new capabilities, properties and methods
+//   that are specific to Hard Totals for release 1.4.
 //
-// Modification history
-// ------------------------------------------------------------------
-// 98-11-02 JavaPOS Release 1.4                                   BS
+//   Automatically generated from HardTotalsControl14.
 //
 /////////////////////////////////////////////////////////////////////
 
 package jpos.services;
 
-import jpos.*;
 
 public interface HardTotalsService14 extends HardTotalsService13
 {
-  // Nothing new added for release 1.4
+	// Nothing new added for release 1.4
 }

@@ -19,12 +19,10 @@
 //
 // ScaleService13
 //
-//   Interface definining all new capabilities, properties and
-//   methods that are specific to Scale for release 1.3.
+//   Interface defining all new capabilities, properties and methods
+//   that are specific to Scale for release 1.3.
 //
-// Modification history
-// ------------------------------------------------------------------
-// 98-04-20 JavaPOS Release 1.3                                   BS
+//   Automatically generated from ScaleControl13.
 //
 /////////////////////////////////////////////////////////////////////
 
@@ -34,33 +32,34 @@ import jpos.*;
 
 public interface ScaleService13 extends ScaleService12
 {
-    // Capabilities
-    public boolean getCapDisplayText() throws JposException;
-    public boolean getCapPriceCalculating() throws JposException;
-    public int     getCapPowerReporting() throws JposException;
-    public boolean getCapTareWeight() throws JposException;
-    public boolean getCapZeroScale()  throws JposException;
-
-    // Properties
-    public boolean getAsyncMode() throws JposException;
-    public void    setAsyncMode(boolean asyncMode) throws JposException;
-    public boolean getAutoDisable() throws JposException;
-    public void    setAutoDisable(boolean autoDisable) throws JposException;
-    public int     getDataCount() throws JposException;
-    public boolean getDataEventEnabled() throws JposException;
-    public void    setDataEventEnabled(boolean dataEventEnabled) throws JposException;
-    public int     getMaxDisplayTextChars() throws JposException;
-    public long    getSalesPrice() throws JposException;
-    public int     getTareWeight() throws JposException;
-    public void    setTareWeight(int tareWeight) throws JposException;
-    public long    getUnitPrice() throws JposException;
-    public void    setUnitPrice(long unitPrice) throws JposException;
-    public int     getPowerNotify() throws JposException;
-    public void    setPowerNotify(int powerNotify) throws JposException;
-    public int     getPowerState() throws JposException;
-
-    // Methods
-    public void    clearInput() throws JposException;
-    public void    displayText(String data) throws JposException;
-    public void    zeroScale() throws JposException;
+	// Capabilities
+	public boolean getCapDisplayText() throws JposException;
+	public int     getCapPowerReporting() throws JposException;
+	public boolean getCapPriceCalculating() throws JposException;
+	public boolean getCapTareWeight() throws JposException;
+	public boolean getCapZeroScale() throws JposException;
+	
+	// Properties
+	public boolean getAsyncMode() throws JposException;
+	public void    setAsyncMode(boolean asyncMode) throws JposException;
+	public boolean getAutoDisable() throws JposException;
+	public void    setAutoDisable(boolean autoDisable) throws JposException;
+	public int     getDataCount() throws JposException;
+	public boolean getDataEventEnabled() throws JposException;
+	public void    setDataEventEnabled(boolean dataEventEnabled) throws JposException;
+	public int     getMaxDisplayTextChars() throws JposException;
+	public int     getPowerNotify() throws JposException;
+	public void    setPowerNotify(int powerNotify) throws JposException;
+	public int     getPowerState() throws JposException;
+	public long    getSalesPrice() throws JposException;
+	public int     getTareWeight() throws JposException;
+	public void    setTareWeight(int tareWeight) throws JposException;
+	public long    getUnitPrice() throws JposException;
+	public void    setUnitPrice(long unitPrice) throws JposException;
+	
+	// Methods
+	public void    clearInput() throws JposException;
+	public void    displayText(String data) throws JposException;
+	public void    zeroScale() throws JposException;
+	
 }

@@ -19,12 +19,10 @@
 //
 // ScaleService113
 //
-//   Interface definining all new capabilities, properties and
-//   methods that are specific to Scale for release 1.13.
+//   Interface defining all new capabilities, properties and methods
+//   that are specific to Scale for release 1.13.
 //
-// Modification history
-// ------------------------------------------------------------------
-// 2009-Feb-23 JavaPOS Release 1.13                                BS
+//   Automatically generated from ScaleControl113.
 //
 /////////////////////////////////////////////////////////////////////
 
@@ -34,7 +32,8 @@ import jpos.*;
 
 public interface ScaleService113 extends ScaleService112
 {
-  // Properties
-  public boolean getZeroValid() throws JposException;
-  public void    setZeroValid(boolean zeroValid) throws JposException;
+	// Properties
+	public boolean getZeroValid() throws JposException;
+	public void    setZeroValid(boolean zeroValid) throws JposException;
+	
 }

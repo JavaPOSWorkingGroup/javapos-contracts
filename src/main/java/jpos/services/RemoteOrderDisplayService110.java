@@ -19,22 +19,17 @@
 //
 // RemoteOrderDisplayService110
 //
-//   Interface definining all new capabilities, properties and
-//   methods that are specific to Remote Order Display for release
-//   1.10.
+//   Interface defining all new capabilities, properties and methods
+//   that are specific to Remote Order Display for release 1.10.
 //
-// Modification history
-// ------------------------------------------------------------------
-// 2006-Feb-10 JavaPOS Release 1.10                                BS
+//   Automatically generated from RemoteOrderDisplayControl110.
 //
 /////////////////////////////////////////////////////////////////////
 
 package jpos.services;
 
-import jpos.*;
 
-public interface RemoteOrderDisplayService110
-  extends RemoteOrderDisplayService19
+public interface RemoteOrderDisplayService110 extends RemoteOrderDisplayService19
 {
-  // Nothing new added for release 1.10
+	// Nothing new added for release 1.10
 }

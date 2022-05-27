@@ -19,21 +19,17 @@
 //
 // CashChangerService17
 //
-//   Interface definining all new capabilities, properties and
-//   methods that are specific to Cash Changer for release 1.7.
+//   Interface defining all new capabilities, properties and methods
+//   that are specific to Cash Changer for release 1.7.
 //
-// Modification history
-// ------------------------------------------------------------------
-// 01-Jul-2002 JavaPOS Release 1.7                                 BS
+//   Automatically generated from CashChangerControl17.
 //
 /////////////////////////////////////////////////////////////////////
 
 package jpos.services;
 
-import jpos.*;
 
-public interface CashChangerService17
-  extends CashChangerService16
+public interface CashChangerService17 extends CashChangerService16
 {
-  // Nothing new added for release 1.7
+	// Nothing new added for release 1.7
 }

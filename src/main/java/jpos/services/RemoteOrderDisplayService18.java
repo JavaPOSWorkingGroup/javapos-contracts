@@ -19,12 +19,10 @@
 //
 // RemoteOrderDisplayService18
 //
-//   Interface definining all new capabilities, properties and
-//   methods that are specific to Remote Order Display for release 1.8.
+//   Interface defining all new capabilities, properties and methods
+//   that are specific to Remote Order Display for release 1.8.
 //
-// Modification history
-// ------------------------------------------------------------------
-// 2004-Apr-01 JavaPOS Release 1.8                                 BS
+//   Automatically generated from RemoteOrderDisplayControl18.
 //
 /////////////////////////////////////////////////////////////////////
 
@@ -32,18 +30,15 @@ package jpos.services;
 
 import jpos.*;
 
-public interface RemoteOrderDisplayService18
-  extends RemoteOrderDisplayService17
+public interface RemoteOrderDisplayService18 extends RemoteOrderDisplayService17
 {
-  // Capabilities
-  public boolean getCapStatisticsReporting() throws JposException;
-  public boolean getCapUpdateStatistics() throws JposException;
-
-  // Methods
-  public void    resetStatistics(String statisticsBuffer)
-                     throws JposException;
-  public void    retrieveStatistics(String[] statisticsBuffer)
-                     throws JposException;
-  public void    updateStatistics(String statisticsBuffer)
-                     throws JposException;
+	// Capabilities
+	public boolean getCapStatisticsReporting() throws JposException;
+	public boolean getCapUpdateStatistics() throws JposException;
+	
+	// Methods
+	public void    resetStatistics(String statisticsBuffer) throws JposException;
+	public void    retrieveStatistics(String[] statisticsBuffer) throws JposException;
+	public void    updateStatistics(String statisticsBuffer) throws JposException;
+	
 }

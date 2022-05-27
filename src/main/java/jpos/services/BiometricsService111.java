@@ -19,22 +19,17 @@
 //
 // BiometricsService111
 //
-//   Interface definining all new capabilities, properties and
-//   methods that are specific to Biometrics for release 1.11.
+//   Interface defining all new capabilities, properties and methods
+//   that are specific to Biometrics for release 1.11.
 //
-// Modification history
-// ------------------------------------------------------------------
-// 2007-Jan-04 JavaPOS Release 1.11                                BS
+//   Automatically generated from BiometricsControl111.
 //
 /////////////////////////////////////////////////////////////////////
 
 package jpos.services;
 
-import jpos.*;
 
 public interface BiometricsService111 extends BiometricsService110
 {
-  // Specification changes marked as version 1.11 were incorporated into
-  // the JavaPOS controls 1.10.2 in order to fix implementation issues
-  // for early adopters.
+	// Nothing new added for release 1.11
 }

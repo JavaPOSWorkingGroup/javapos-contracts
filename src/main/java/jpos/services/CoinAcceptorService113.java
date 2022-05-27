@@ -19,20 +19,17 @@
 //
 // CoinAcceptorService113
 //
-//   Interface definining all new capabilities, properties and
-//   methods that are specific to Coin Acceptor for release 1.13.
+//   Interface defining all new capabilities, properties and methods
+//   that are specific to Coin Acceptor for release 1.13.
 //
-// Modification history
-// ------------------------------------------------------------------
-// 2009-Feb-23 JavaPOS Release 1.13                                BS
+//   Automatically generated from CoinAcceptorControl113.
 //
 /////////////////////////////////////////////////////////////////////
 
 package jpos.services;
 
-import jpos.*;
 
 public interface CoinAcceptorService113 extends CoinAcceptorService112
 {
-  // Nothing new added for release 1.13
+	// Nothing new added for release 1.13
 }

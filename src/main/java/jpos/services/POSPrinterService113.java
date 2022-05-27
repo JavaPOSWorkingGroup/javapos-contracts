@@ -19,12 +19,10 @@
 //
 // POSPrinterService113
 //
-//   Interface definining all new capabilities, properties and
-//   methods that are specific to POS Printer for release 1.13.
+//   Interface defining all new capabilities, properties and methods
+//   that are specific to POS Printer for release 1.13.
 //
-// Modification history
-// ------------------------------------------------------------------
-// 2009-Feb-23 JavaPOS Release 1.13                                BS
+//   Automatically generated from POSPrinterControl113.
 //
 /////////////////////////////////////////////////////////////////////
 
@@ -34,13 +32,11 @@ import jpos.*;
 
 public interface POSPrinterService113 extends POSPrinterService112
 {
-  // Capabilities
-  public int getCapRecRuledLine() throws JposException;
-  public int getCapSlpRuledLine() throws JposException;
-
-  // Methods
-  public void drawRuledLine(int station, String positionList,
-                            int lineDirection, int lineWidth,
-                            int lineStyle, int lineColor)
-    throws JposException;
+	// Capabilities
+	public int     getCapRecRuledLine() throws JposException;
+	public int     getCapSlpRuledLine() throws JposException;
+	
+	// Methods
+	public void    drawRuledLine(int station, String positionList, int lineDirection, int lineWidth, int lineStyle, int lineColor) throws JposException;
+	
 }

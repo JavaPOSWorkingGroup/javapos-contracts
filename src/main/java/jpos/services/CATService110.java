@@ -5,7 +5,7 @@
 //    http://www.ibm.com/developerworks/library/os-cpl.html
 //
 //////////////////////////////////////////////////////////////////////
-///////////////////////////////////////////////////////////////////////////////
+/////////////////////////////////////////////////////////////////////
 //
 // This software is provided "AS IS".  The JavaPOS working group (including
 // each of the Corporate members, contributors and individuals)  MAKES NO
@@ -19,21 +19,17 @@
 //
 // CATService110
 //
-//   Interface definining all capabilities, properties and methods that are
-//   specific to the Credit Authorization Terminal for release 1.10.
+//   Interface defining all new capabilities, properties and methods
+//   that are specific to CAT for release 1.10.
 //
-// Modification history
-// ------------------------------------------------------------------
-// 2006-Feb-10 JavaPOS Release 1.10                                BS
+//   Automatically generated from CATControl110.
 //
-//////////////////////////////////////////////////////////////////////////////
+/////////////////////////////////////////////////////////////////////
 
 package jpos.services;
 
-import jpos.*;
 
-public interface CATService110
-  extends CATService19
+public interface CATService110 extends CATService19
 {
-  // Nothing new added for release 1.10
+	// Nothing new added for release 1.10
 }

@@ -19,15 +19,10 @@
 //
 // FiscalPrinterService18
 //
-//   Interface definining all new capabilities, properties and
-//   methods that are specific to Fiscal Printer for release 1.8.
+//   Interface defining all new capabilities, properties and methods
+//   that are specific to Fiscal Printer for release 1.8.
 //
-// Modification history
-// ------------------------------------------------------------------
-// 2004-Apr-01 JavaPOS Release 1.8                                 BS
-// 16-Apr-2003 Release 1.8.2: Added getAmountDecimalPlaces to      BS
-//               correct a spelling error present since release
-//               1.3.
+//   Automatically generated from FiscalPrinterControl18.
 //
 /////////////////////////////////////////////////////////////////////
 
@@ -35,18 +30,15 @@ package jpos.services;
 
 import jpos.*;
 
-public interface FiscalPrinterService18
-  extends FiscalPrinterService17
+public interface FiscalPrinterService18 extends FiscalPrinterService17
 {
-  // Capabilities
-  public boolean getCapStatisticsReporting() throws JposException;
-  public boolean getCapUpdateStatistics() throws JposException;
-
-  // Methods
-  public void    resetStatistics(String statisticsBuffer)
-                     throws JposException;
-  public void    retrieveStatistics(String[] statisticsBuffer)
-                     throws JposException;
-  public void    updateStatistics(String statisticsBuffer)
-                     throws JposException;
+	// Capabilities
+	public boolean getCapStatisticsReporting() throws JposException;
+	public boolean getCapUpdateStatistics() throws JposException;
+	
+	// Methods
+	public void    resetStatistics(String statisticsBuffer) throws JposException;
+	public void    retrieveStatistics(String[] statisticsBuffer) throws JposException;
+	public void    updateStatistics(String statisticsBuffer) throws JposException;
+	
 }

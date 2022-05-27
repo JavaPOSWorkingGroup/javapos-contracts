@@ -19,12 +19,10 @@
 //
 // POSPrinterService110
 //
-//   Interface definining all new capabilities, properties and
-//   methods that are specific to POS Printer for release 1.10.
+//   Interface defining all new capabilities, properties and methods
+//   that are specific to POS Printer for release 1.10.
 //
-// Modification history
-// ------------------------------------------------------------------
-// 2006-Feb-10 JavaPOS Release 1.10                                BS
+//   Automatically generated from POSPrinterControl110.
 //
 /////////////////////////////////////////////////////////////////////
 
@@ -32,11 +30,9 @@ package jpos.services;
 
 import jpos.*;
 
-public interface POSPrinterService110
-  extends POSPrinterService19
+public interface POSPrinterService110 extends POSPrinterService19
 {
-  // Methods
-  public void    printMemoryBitmap(int station, byte[] data, int type,
-                                   int width, int alignment)
-                     throws JposException;
+	// Methods
+	public void    printMemoryBitmap(int station, byte[] data, int type, int width, int alignment) throws JposException;
+	
 }

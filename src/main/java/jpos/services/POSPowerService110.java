@@ -19,22 +19,17 @@
 //
 // POSPowerService110
 //
-//   Interface definining all new capabilities, properties and
-//   methods that are specific to POSPower for release 1.10.
+//   Interface defining all new capabilities, properties and methods
+//   that are specific to POS Power for release 1.10.
 //
-// Modification history
-// ------------------------------------------------------------------
-// 2006-Feb-10 JavaPOS Release 1.10                                BS
+//   Automatically generated from POSPowerControl110.
 //
 /////////////////////////////////////////////////////////////////////
 
 package jpos.services;
 
-import jpos.*;
-import jpos.loader.*;
 
-public interface POSPowerService110
-  extends POSPowerService19
+public interface POSPowerService110 extends POSPowerService19
 {
-  // Nothing new added for release 1.10
+	// Nothing new added for release 1.10
 }

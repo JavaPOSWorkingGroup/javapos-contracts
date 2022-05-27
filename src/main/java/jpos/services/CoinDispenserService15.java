@@ -19,22 +19,17 @@
 //
 // CoinDispenserService15
 //
-//   Interface definining all new capabilities, properties and
-//   methods that are specific to Coin Dispenser for release 1.5.
+//   Interface defining all new capabilities, properties and methods
+//   that are specific to Coin Dispenser for release 1.5.
 //
-// Modification history
-// ------------------------------------------------------------------
-// 2000-Apr-17 JavaPOS Release 1.5                                 BS
+//   Automatically generated from CoinDispenserControl15.
 //
 /////////////////////////////////////////////////////////////////////
 
 package jpos.services;
 
-import jpos.*;
-import jpos.loader.*;
 
-public interface CoinDispenserService15
-  extends CoinDispenserService14, JposServiceInstance
+public interface CoinDispenserService15 extends CoinDispenserService14
 {
-  // Nothing new added for release 1.5
+	// Nothing new added for release 1.5
 }

@@ -19,12 +19,10 @@
 //
 // SmartCardRWService110
 //
-//   Interface definining all new capabilities, properties and
-//   methods that are specific to Smart Card for release 1.10.
+//   Interface defining all new capabilities, properties and methods
+//   that are specific to Smart Card Reader Writer for release 1.10.
 //
-// Modification history
-// ------------------------------------------------------------------
-// 2006-Feb-10 JavaPOS Release 1.10                                BS
+//   Automatically generated from SmartCardRWControl110.
 //
 /////////////////////////////////////////////////////////////////////
 
@@ -32,10 +30,9 @@ package jpos.services;
 
 import jpos.*;
 
-public interface SmartCardRWService110
-  extends SmartCardRWService19
+public interface SmartCardRWService110 extends SmartCardRWService19
 {
-  // Methods
-  public void    clearInputProperties()
-                     throws JposException;
+	// Methods
+	public void    clearInputProperties() throws JposException;
+	
 }

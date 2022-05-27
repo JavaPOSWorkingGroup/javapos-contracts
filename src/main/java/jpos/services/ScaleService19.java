@@ -19,12 +19,10 @@
 //
 // ScaleService19
 //
-//   Interface definining all new capabilities, properties and
-//   methods that are specific to Scale for release 1.9.
+//   Interface defining all new capabilities, properties and methods
+//   that are specific to Scale for release 1.9.
 //
-// Modification history
-// ------------------------------------------------------------------
-// 2005-Jan-16 JavaPOS Release 1.9                                 BS
+//   Automatically generated from ScaleControl19.
 //
 /////////////////////////////////////////////////////////////////////
 
@@ -32,22 +30,20 @@ package jpos.services;
 
 import jpos.*;
 
-public interface ScaleService19
-  extends ScaleService18
+public interface ScaleService19 extends ScaleService18
 {
-  // Capabilities
-  public boolean getCapCompareFirmwareVersion() throws JposException;
-  public boolean getCapStatusUpdate() throws JposException;
-  public boolean getCapUpdateFirmware() throws JposException;
-
-  // Properties
-  public int     getScaleLiveWeight() throws JposException;
-  public int     getStatusNotify() throws JposException;
-  public void    setStatusNotify(int statusNotify) throws JposException;
-
-  // Methods
-  public void    compareFirmwareVersion(String firmwareFileName, int[] result)
-                     throws JposException;
-  public void    updateFirmware(String firmwareFileName)
-                     throws JposException;
+	// Capabilities
+	public boolean getCapCompareFirmwareVersion() throws JposException;
+	public boolean getCapStatusUpdate() throws JposException;
+	public boolean getCapUpdateFirmware() throws JposException;
+	
+	// Properties
+	public int     getScaleLiveWeight() throws JposException;
+	public int     getStatusNotify() throws JposException;
+	public void    setStatusNotify(int statusNotify) throws JposException;
+	
+	// Methods
+	public void    compareFirmwareVersion(String firmwareFileName, int[] result) throws JposException;
+	public void    updateFirmware(String firmwareFileName) throws JposException;
+	
 }

@@ -19,12 +19,10 @@
 //
 // ScaleService114
 //
-// Interface definining all capabilities, properties and methods that are
-// specific to Scale for release 1.14.
+//   Interface defining all new capabilities, properties and methods
+//   that are specific to Scale for release 1.14.
 //
-// Modification history
-// ------------------------------------------------------------------
-// 2013-Jul-25 JavaPOS Release 1.14                                BS
+//   Automatically generated from ScaleControl114.
 //
 /////////////////////////////////////////////////////////////////////
 
@@ -34,38 +32,24 @@ import jpos.*;
 
 public interface ScaleService114 extends ScaleService113
 {
-  // Capabilities
-  public boolean getCapFreezeValue() throws JposException;
-  public boolean getCapReadLiveWeightWithTare() throws JposException;
-  public boolean getCapSetPriceCalculationMode() throws JposException;
-  public boolean getCapSetUnitPriceWithWeightUnit() throws JposException;
-  public boolean getCapSpecialTare() throws JposException;
-  public boolean getCapTarePriority() throws JposException;
-
-  // Properties
-  public int     getMinimumWeight() throws JposException;
-
-  // Methods
-  public void    doPriceCalculating(int[]  weightValue,
-                                    int[]  tare,
-                                    long[] unitPrice,
-                                    long[] unitPriceX,
-                                    int[]  weightUnitX,
-                                    int[]  weightNumeratorX,
-                                    int[]  weightDenominatorX,
-                                    long[] price,
-                                    int    timeout) throws JposException;
-  public void    freezeValue(int     item,
-                             boolean freeze) throws JposException;
-  public void    readLiveWeightWithTare(int[] weightData,
-                                        int[] tare,
-                                        int   timeout) throws JposException;
-  public void    setPriceCalculationMode(int mode) throws JposException;
-  public void    setSpecialTare(int mode,
-                                int data) throws JposException;
-  public void    setTarePrioity(int priority) throws JposException;
-  public void    setUnitPriceWithWeightUnit(long unitPrice,
-                                            int  weightUnit,
-                                            int  weightNumerator,
-                                            int  weightDenominator) throws JposException;
+	// Capabilities
+	public boolean getCapFreezeValue() throws JposException;
+	public boolean getCapReadLiveWeightWithTare() throws JposException;
+	public boolean getCapSetPriceCalculationMode() throws JposException;
+	public boolean getCapSetUnitPriceWithWeightUnit() throws JposException;
+	public boolean getCapSpecialTare() throws JposException;
+	public boolean getCapTarePriority() throws JposException;
+	
+	// Properties
+	public int     getMinimumWeight() throws JposException;
+	
+	// Methods
+	public void    doPriceCalculating(int[] weightValue, int[] tare, long[] unitPrice, long[] unitPriceX, int[] weightUnitX, int[] weightNumeratorX, int[] weightDenominatorX, long[] price, int timeout) throws JposException;
+	public void    freezeValue(int item, boolean freeze) throws JposException;
+	public void    readLiveWeightWithTare(int[] weightData, int[] tare, int timeout) throws JposException;
+	public void    setPriceCalculationMode(int mode) throws JposException;
+	public void    setSpecialTare(int mode, int data) throws JposException;
+	public void    setTarePrioity(int priority) throws JposException;
+	public void    setUnitPriceWithWeightUnit(long unitPrice, int weightUnit, int weightNumerator, int weightDenominator) throws JposException;
+	
 }

@@ -19,20 +19,17 @@
 //
 // SmartCardRWService113
 //
-//   Interface definining all new capabilities, properties and
-//   methods that are specific to Smart Card for release 1.13.
+//   Interface defining all new capabilities, properties and methods
+//   that are specific to Smart Card Reader Writer for release 1.13.
 //
-// Modification history
-// ------------------------------------------------------------------
-// 2009-Feb-23 JavaPOS Release 1.13                                BS
+//   Automatically generated from SmartCardRWControl113.
 //
 /////////////////////////////////////////////////////////////////////
 
 package jpos.services;
 
-import jpos.*;
 
 public interface SmartCardRWService113 extends SmartCardRWService112
 {
-  // Nothing new added for release 1.13
+	// Nothing new added for release 1.13
 }

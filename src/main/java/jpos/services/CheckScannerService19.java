@@ -19,36 +19,31 @@
 //
 // CheckScannerService19
 //
-//   Interface definining all new capabilities, properties and
-//   methods that are specific to Check Scanner for release 1.9.
+//   Interface defining all new capabilities, properties and methods
+//   that are specific to Check Scanner for release 1.9.
 //
-// Modification history
-// ------------------------------------------------------------------
-// 2005-Jan-16 JavaPOS Release 1.9                                 BS
+//   Automatically generated from CheckScannerControl19.
 //
 /////////////////////////////////////////////////////////////////////
 
 package jpos.services;
 
 import jpos.*;
-import jpos.loader.*;
 
-public interface CheckScannerService19
-  extends CheckScannerService18
+public interface CheckScannerService19 extends CheckScannerService18
 {
-  // Capabilities
-  public boolean getCapAutoContrast() throws JposException;
-  public boolean getCapCompareFirmwareVersion() throws JposException;
-  public boolean getCapContrast() throws JposException;
-  public boolean getCapUpdateFirmware() throws JposException;
-
-  // Properties
-  public int     getContrast() throws JposException;
-  public void    setContrast(int contrast) throws JposException;
-
-  // Methods
-  public void    compareFirmwareVersion(String firmwareFileName, int[] result)
-                     throws JposException;
-  public void    updateFirmware(String firmwareFileName)
-                     throws JposException;
+	// Capabilities
+	public boolean getCapAutoContrast() throws JposException;
+	public boolean getCapCompareFirmwareVersion() throws JposException;
+	public boolean getCapContrast() throws JposException;
+	public boolean getCapUpdateFirmware() throws JposException;
+	
+	// Properties
+	public int     getContrast() throws JposException;
+	public void    setContrast(int contrast) throws JposException;
+	
+	// Methods
+	public void    compareFirmwareVersion(String firmwareFileName, int[] result) throws JposException;
+	public void    updateFirmware(String firmwareFileName) throws JposException;
+	
 }

@@ -5,7 +5,7 @@
 //    http://www.ibm.com/developerworks/library/os-cpl.html
 //
 //////////////////////////////////////////////////////////////////////
-///////////////////////////////////////////////////////////////////////////////
+/////////////////////////////////////////////////////////////////////
 //
 // This software is provided "AS IS".  The JavaPOS working group (including
 // each of the Corporate members, contributors and individuals)  MAKES NO
@@ -19,21 +19,17 @@
 //
 // CATService17
 //
-//   Interface definining all capabilities, properties and methods that are
-//   specific to the Credit Authorization Terminal for release 1.7.
+//   Interface defining all new capabilities, properties and methods
+//   that are specific to CAT for release 1.7.
 //
-// Modification history
-// ------------------------------------------------------------------------
-// 01-Jul-2002 JavaPOS Release 1.7                                       BS
+//   Automatically generated from CATControl17.
 //
-//////////////////////////////////////////////////////////////////////////////
+/////////////////////////////////////////////////////////////////////
 
 package jpos.services;
 
-import jpos.*;
 
-public interface CATService17
-  extends CATService16
+public interface CATService17 extends CATService16
 {
-  // Nothing new added for release 1.7
+	// Nothing new added for release 1.7
 }

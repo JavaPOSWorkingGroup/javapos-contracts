@@ -19,13 +19,10 @@
 //
 // PointCardRWService19
 //
-//   Interface definining all new capabilities, properties and
-//   methods that are specific to the Point Card Reader Wwriter for
-//   release 1.9.
+//   Interface defining all new capabilities, properties and methods
+//   that are specific to PointCard Read Writer for release 1.9.
 //
-// Modification history
-// ------------------------------------------------------------------
-// 2005-Jan-16 JavaPOS Release 1.9                                 BS
+//   Automatically generated from PointCardRWControl19.
 //
 /////////////////////////////////////////////////////////////////////
 
@@ -33,16 +30,14 @@ package jpos.services;
 
 import jpos.*;
 
-public interface PointCardRWService19
-  extends PointCardRWService18
+public interface PointCardRWService19 extends PointCardRWService18
 {
-  // Capabilities
-  public boolean getCapCompareFirmwareVersion() throws JposException;
-  public boolean getCapUpdateFirmware() throws JposException;
-
-  // Methods
-  public void    compareFirmwareVersion(String firmwareFileName, int[] result)
-                     throws JposException;
-  public void    updateFirmware(String firmwareFileName)
-                     throws JposException;
+	// Capabilities
+	public boolean getCapCompareFirmwareVersion() throws JposException;
+	public boolean getCapUpdateFirmware() throws JposException;
+	
+	// Methods
+	public void    compareFirmwareVersion(String firmwareFileName, int[] result) throws JposException;
+	public void    updateFirmware(String firmwareFileName) throws JposException;
+	
 }

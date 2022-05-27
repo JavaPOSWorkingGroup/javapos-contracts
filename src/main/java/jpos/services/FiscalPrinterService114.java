@@ -19,20 +19,17 @@
 //
 // FiscalPrinterService114
 //
-// Interface definining all capabilities, properties and methods that are
-// specific to Fiscal Printer for release 1.14.
+//   Interface defining all new capabilities, properties and methods
+//   that are specific to Fiscal Printer for release 1.14.
 //
-// Modification history
-// ------------------------------------------------------------------
-// 2013-Jul-25 JavaPOS Release 1.14                                BS
+//   Automatically generated from FiscalPrinterControl114.
 //
 /////////////////////////////////////////////////////////////////////
 
 package jpos.services;
 
-import jpos.*;
 
 public interface FiscalPrinterService114 extends FiscalPrinterService113
 {
-  // Nothing new added for release 1.14
+	// Nothing new added for release 1.14
 }

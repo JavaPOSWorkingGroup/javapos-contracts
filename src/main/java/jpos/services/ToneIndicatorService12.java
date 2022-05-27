@@ -19,12 +19,10 @@
 //
 // ToneIndicatorService12
 //
-//   Interface definining all capabilities, properties and methods
+//   Interface defining all new capabilities, properties and methods
 //   that are specific to Tone Indicator for release 1.2.
 //
-// Modification history
-// ------------------------------------------------------------------
-// 98-02-18 JavaPOS Release 1.2                                   BS
+//   Automatically generated from ToneIndicatorControl12.
 //
 /////////////////////////////////////////////////////////////////////
 
@@ -32,34 +30,34 @@ package jpos.services;
 
 import jpos.*;
 
-public interface ToneIndicatorService12 extends BaseService
+public interface ToneIndicatorService12 extends BaseService, jpos.loader.JposServiceInstance
 {
-    // Capabilities
-    public boolean getCapPitch() throws JposException;
-    public boolean getCapVolume() throws JposException;
-
-    // Properties
-    public boolean getAsyncMode() throws JposException;
-    public void    setAsyncMode(boolean asyncMode) throws JposException;
-    public int     getInterToneWait() throws JposException;
-    public void    setInterToneWait(int interToneWait) throws JposException;
-    public int     getOutputID() throws JposException;
-    public int     getTone1Duration() throws JposException;
-    public void    setTone1Duration(int tone1Duration) throws JposException;
-    public int     getTone1Pitch() throws JposException;
-    public void    setTone1Pitch(int tone1Pitch) throws JposException;
-    public int     getTone1Volume() throws JposException;
-    public void    setTone1Volume(int tone1Volume) throws JposException;
-    public int     getTone2Duration() throws JposException;
-    public void    setTone2Duration(int tone2Duration) throws JposException;
-    public int     getTone2Pitch() throws JposException;
-    public void    setTone2Pitch(int tone2Pitch) throws JposException;
-    public int     getTone2Volume() throws JposException;
-    public void    setTone2Volume(int tone2Volume) throws JposException;
-
-    // Methods
-    public void    clearOutput() throws JposException;
-    public void    sound(int numberOfCycles, int interSoundWait)
-                       throws JposException;
-    public void    soundImmediate() throws JposException;
+	// Capabilities
+	public boolean getCapPitch() throws JposException;
+	public boolean getCapVolume() throws JposException;
+	
+	// Properties
+	public boolean getAsyncMode() throws JposException;
+	public void    setAsyncMode(boolean asyncMode) throws JposException;
+	public int     getInterToneWait() throws JposException;
+	public void    setInterToneWait(int interToneWait) throws JposException;
+	public int     getOutputID() throws JposException;
+	public int     getTone1Duration() throws JposException;
+	public void    setTone1Duration(int tone1Duration) throws JposException;
+	public int     getTone1Pitch() throws JposException;
+	public void    setTone1Pitch(int tone1Pitch) throws JposException;
+	public int     getTone1Volume() throws JposException;
+	public void    setTone1Volume(int tone1Volume) throws JposException;
+	public int     getTone2Duration() throws JposException;
+	public void    setTone2Duration(int tone2Duration) throws JposException;
+	public int     getTone2Pitch() throws JposException;
+	public void    setTone2Pitch(int tone2Pitch) throws JposException;
+	public int     getTone2Volume() throws JposException;
+	public void    setTone2Volume(int tone2Volume) throws JposException;
+	
+	// Methods
+	public void    clearOutput() throws JposException;
+	public void    sound(int numberOfCycles, int interSoundWait) throws JposException;
+	public void    soundImmediate() throws JposException;
+	
 }

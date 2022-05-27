@@ -19,37 +19,33 @@
 //
 // ElectronicValueRWService114
 //
-// Interface definining all capabilities, properties and methods that are
-// specific to Electronic Value RW for release 1.14.
+//   Interface defining all new capabilities, properties and methods
+//   that are specific to Electronic Value Reader Writer for release 1.14.
 //
-// Modification history
-// ------------------------------------------------------------------
-// 2013-Jul-25 JavaPOS Release 1.14                                BS
+//   Automatically generated from ElectronicValueRWControl114.
 //
 /////////////////////////////////////////////////////////////////////
 
 package jpos.services;
 
 import jpos.*;
-import jpos.loader.*;
 
 public interface ElectronicValueRWService114 extends ElectronicValueRWService113
 {
-  // Capabilities
-  public boolean getCapPINDevice() throws JposException;
-  public boolean CapTrainingMode() throws JposException;
-
-  // Properties
-  public int     getPINEntry() throws JposException;
-  public void    setPINEntry(int pinEntry) throws JposException;
-  public int     getTrainingModeState() throws JposException;
-  public void    setTrainingModeState(int trainingModeState) throws JposException;
-
-  // Methods
-  public void    clearParameterInformation() throws JposException;
-  public void    queryLastSuccessfulTransactionResult() throws JposException;
-  public void    retrieveResultInformation(String   name,
-                                           String[] value) throws JposException;
-  public void    setParameterInformation(String name,
-                                         String value) throws JposException;
+	// Capabilities
+	public boolean getCapPINDevice() throws JposException;
+	public boolean CapTrainingMode() throws JposException;
+	
+	// Properties
+	public int     getPINEntry() throws JposException;
+	public void    setPINEntry(int pinEntry) throws JposException;
+	public int     getTrainingModeState() throws JposException;
+	public void    setTrainingModeState(int trainingModeState) throws JposException;
+	
+	// Methods
+	public void    clearParameterInformation() throws JposException;
+	public void    queryLastSuccessfulTransactionResult() throws JposException;
+	public void    retrieveResultInformation(String name, String[] value) throws JposException;
+	public void    setParameterInformation(String name, String value) throws JposException;
+	
 }

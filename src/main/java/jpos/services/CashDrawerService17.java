@@ -19,21 +19,17 @@
 //
 // CashDrawerService17
 //
-//   Interface definining all new capabilities, properties and
-//   methods that are specific to Cash Drawer for release 1.7.
+//   Interface defining all new capabilities, properties and methods
+//   that are specific to Cash Drawer for release 1.7.
 //
-// Modification history
-// ------------------------------------------------------------------
-// 01-Jul-2002 JavaPOS Release 1.7                                 BS
+//   Automatically generated from CashDrawerControl17.
 //
 /////////////////////////////////////////////////////////////////////
 
 package jpos.services;
 
-import jpos.*;
 
-public interface CashDrawerService17
-  extends CashDrawerService16
+public interface CashDrawerService17 extends CashDrawerService16
 {
-  // Nothing new added for release 1.7
+	// Nothing new added for release 1.7
 }

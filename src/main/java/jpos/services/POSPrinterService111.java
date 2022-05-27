@@ -19,20 +19,17 @@
 //
 // POSPrinterService111
 //
-//   Interface definining all new capabilities, properties and
-//   methods that are specific to POS Printer for release 1.11.
+//   Interface defining all new capabilities, properties and methods
+//   that are specific to POS Printer for release 1.11.
 //
-// Modification history
-// ------------------------------------------------------------------
-// 2007-Jan-04 JavaPOS Release 1.11                                BS
+//   Automatically generated from POSPrinterControl111.
 //
 /////////////////////////////////////////////////////////////////////
 
 package jpos.services;
 
-import jpos.*;
 
 public interface POSPrinterService111 extends POSPrinterService110
 {
-  // Nothing new added for release 1.11
+	// Nothing new added for release 1.11
 }

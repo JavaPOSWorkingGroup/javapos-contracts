@@ -19,44 +19,40 @@
 //
 // CashChangerService15
 //
-//   Interface definining all new capabilities, properties and
-//   methods that are specific to Cash Changer for release 1.5.
+//   Interface defining all new capabilities, properties and methods
+//   that are specific to Cash Changer for release 1.5.
 //
-// Modification history
-// ------------------------------------------------------------------
-// 2000-Apr-17 JavaPOS Release 1.5                                 BS
+//   Automatically generated from CashChangerControl15.
 //
 /////////////////////////////////////////////////////////////////////
 
 package jpos.services;
 
 import jpos.*;
-import jpos.loader.*;
 
-public interface CashChangerService15
-  extends CashChangerService14, JposServiceInstance
+public interface CashChangerService15 extends CashChangerService14
 {
-    // Capabilities
-    public boolean getCapDeposit() throws JposException;
-    public boolean getCapDepositDataEvent() throws JposException;
-    public boolean getCapPauseDeposit() throws JposException;
-    public boolean getCapRepayDeposit() throws JposException;
-
-    // Properties
-    public int     getDataCount() throws JposException;
-    public boolean getDataEventEnabled() throws JposException;
-    public void    setDataEventEnabled(boolean dataEventEnabled)
-                       throws JposException;
-    public int     getDepositAmount() throws JposException;
-    public String  getDepositCashList() throws JposException;
-    public String  getDepositCodeList() throws JposException;
-    public String  getDepositCounts() throws JposException;
-    public int     getDepositStatus() throws JposException;
-
-    // Methods
-    public void    beginDeposit() throws JposException;
-    public void    clearInput() throws JposException;
-    public void    endDeposit(int success) throws JposException;
-    public void    fixDeposit() throws JposException;
-    public void    pauseDeposit(int control) throws JposException;
+	// Capabilities
+	public boolean getCapDeposit() throws JposException;
+	public boolean getCapDepositDataEvent() throws JposException;
+	public boolean getCapPauseDeposit() throws JposException;
+	public boolean getCapRepayDeposit() throws JposException;
+	
+	// Properties
+	public int     getDataCount() throws JposException;
+	public boolean getDataEventEnabled() throws JposException;
+	public void    setDataEventEnabled(boolean dataEventEnabled) throws JposException;
+	public int     getDepositAmount() throws JposException;
+	public String  getDepositCashList() throws JposException;
+	public String  getDepositCodeList() throws JposException;
+	public String  getDepositCounts() throws JposException;
+	public int     getDepositStatus() throws JposException;
+	
+	// Methods
+	public void    beginDeposit() throws JposException;
+	public void    clearInput() throws JposException;
+	public void    endDeposit(int success) throws JposException;
+	public void    fixDeposit() throws JposException;
+	public void    pauseDeposit(int control) throws JposException;
+	
 }

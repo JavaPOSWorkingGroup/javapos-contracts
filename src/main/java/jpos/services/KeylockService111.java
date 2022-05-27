@@ -19,12 +19,10 @@
 //
 // KeylockService111
 //
-//   Interface definining all new capabilities, properties and
-//   methods that are specific to Keylock for release 1.11.
+//   Interface defining all new capabilities, properties and methods
+//   that are specific to Keylock for release 1.11.
 //
-// Modification history
-// ------------------------------------------------------------------
-// 2007-Jan-04 JavaPOS Release 1.11                                BS
+//   Automatically generated from KeylockControl111.
 //
 /////////////////////////////////////////////////////////////////////
 
@@ -34,9 +32,10 @@ import jpos.*;
 
 public interface KeylockService111 extends KeylockService110
 {
-  // Capabilities
-  public int     getCapKeylockType() throws JposException;
-
-  // Properties
-  public byte[]  getElectronicKeyValue() throws JposException;
+	// Capabilities
+	public int     getCapKeylockType() throws JposException;
+	
+	// Properties
+	public byte[]  getElectronicKeyValue() throws JposException;
+	
 }

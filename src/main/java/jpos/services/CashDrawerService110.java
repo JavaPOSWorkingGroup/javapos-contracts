@@ -19,21 +19,17 @@
 //
 // CashDrawerService110
 //
-//   Interface definining all new capabilities, properties and
-//   methods that are specific to Cash Drawer for release 1.10.
+//   Interface defining all new capabilities, properties and methods
+//   that are specific to Cash Drawer for release 1.10.
 //
-// Modification history
-// ------------------------------------------------------------------
-// 2006-Feb-10 JavaPOS Release 1.10                                BS
+//   Automatically generated from CashDrawerControl110.
 //
 /////////////////////////////////////////////////////////////////////
 
 package jpos.services;
 
-import jpos.*;
 
-public interface CashDrawerService110
-  extends CashDrawerService19
+public interface CashDrawerService110 extends CashDrawerService19
 {
-  // Nothing new added for release 1.10
+	// Nothing new added for release 1.10
 }

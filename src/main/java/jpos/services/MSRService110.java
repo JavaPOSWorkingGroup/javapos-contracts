@@ -19,16 +19,10 @@
 //
 // MSRService110
 //
-//   Interface definining all new capabilities, properties and
-//   methods that are specific to MSR for release 1.10.
+//   Interface defining all new capabilities, properties and methods
+//   that are specific to MSR for release 1.10.
 //
-// Modification history
-// ------------------------------------------------------------------
-// 2006-Feb-10 JavaPOS Release 1.10                                BS
-// 2006-Oct-23 JavaPOS 1.10.2 Update                               BS
-//   Fixed type of writeTracks data parameter to be byte[][] as
-//   UnifiedPOS has corrected the type from "string" to
-//   "array of binary".
+//   Automatically generated from MSRControl110.
 //
 /////////////////////////////////////////////////////////////////////
 
@@ -36,24 +30,18 @@ package jpos.services;
 
 import jpos.*;
 
-public interface MSRService110
-  extends MSRService19
+public interface MSRService110 extends MSRService19
 {
-  // Capabilities
-  public int     getCapWritableTracks()
-                     throws JposException;
-
-  // Properties
-  public int     getEncodingMaxLength()
-                     throws JposException;
-  public int     getTracksToWrite()
-                     throws JposException;
-  public void    setTracksToWrite(int tracks)
-                     throws JposException;
-
-  // Methods
-  public void    clearInputProperties()
-                     throws JposException;
-  public void    writeTracks(byte[][] data, int timeout)
-                     throws JposException;
+	// Capabilities
+	public int     getCapWritableTracks() throws JposException;
+	
+	// Properties
+	public int     getEncodingMaxLength() throws JposException;
+	public int     getTracksToWrite() throws JposException;
+	public void    setTracksToWrite(int tracks) throws JposException;
+	
+	// Methods
+	public void    clearInputProperties() throws JposException;
+	public void    writeTracks(byte[][] data, int timeout) throws JposException;
+	
 }

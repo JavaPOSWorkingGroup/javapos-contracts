@@ -19,12 +19,10 @@
 //
 // SignatureCaptureService12
 //
-//   Interface definining all capabilities, properties and methods
+//   Interface defining all new capabilities, properties and methods
 //   that are specific to Signature Capture for release 1.2.
 //
-// Modification history
-// ------------------------------------------------------------------
-// 98-02-18 JavaPOS Release 1.2                                   BS
+//   Automatically generated from SignatureCaptureControl12.
 //
 /////////////////////////////////////////////////////////////////////
 
@@ -32,31 +30,29 @@ package jpos.services;
 
 import jpos.*;
 
-public interface SignatureCaptureService12 extends BaseService
+public interface SignatureCaptureService12 extends BaseService, jpos.loader.JposServiceInstance
 {
-    // Capabilities
-    public boolean getCapDisplay() throws JposException;
-    public boolean getCapRealTimeData() throws JposException;
-    public boolean getCapUserTerminated() throws JposException;
-
-    // Properties
-    public boolean getAutoDisable() throws JposException;
-    public void    setAutoDisable(boolean autoDisable) throws JposException;
-    public int     getDataCount() throws JposException;
-    public boolean getDataEventEnabled() throws JposException;
-    public void    setDataEventEnabled(boolean dataEventEnabled)
-                       throws JposException;
-    public int     getMaximumX() throws JposException;
-    public int     getMaximumY() throws JposException;
-    public java.awt.Point[]
-                   getPointArray() throws JposException;
-    public byte[]  getRawData() throws JposException;
-    public boolean getRealTimeDataEnabled() throws JposException;
-    public void    setRealTimeDataEnabled(boolean realTimeDataEnabled)
-                       throws JposException;
-
-    // Methods
-    public void    beginCapture(String formName) throws JposException;
-    public void    clearInput() throws JposException;
-    public void    endCapture() throws JposException;
+	// Capabilities
+	public boolean getCapDisplay() throws JposException;
+	public boolean getCapRealTimeData() throws JposException;
+	public boolean getCapUserTerminated() throws JposException;
+	
+	// Properties
+	public boolean getAutoDisable() throws JposException;
+	public void    setAutoDisable(boolean autoDisable) throws JposException;
+	public int     getDataCount() throws JposException;
+	public boolean getDataEventEnabled() throws JposException;
+	public void    setDataEventEnabled(boolean dataEventEnabled) throws JposException;
+	public int     getMaximumX() throws JposException;
+	public int     getMaximumY() throws JposException;
+	public java.awt.Point[] getPointArray() throws JposException;
+	public byte[]  getRawData() throws JposException;
+	public boolean getRealTimeDataEnabled() throws JposException;
+	public void    setRealTimeDataEnabled(boolean realTimeDataEnabled) throws JposException;
+	
+	// Methods
+	public void    beginCapture(String formName) throws JposException;
+	public void    clearInput() throws JposException;
+	public void    endCapture() throws JposException;
+	
 }

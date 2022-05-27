@@ -19,21 +19,17 @@
 //
 // KeylockService16
 //
-//   Interface definining all new capabilities, properties and
-//   methods that are specific to Keylock for release 1.6.
+//   Interface defining all new capabilities, properties and methods
+//   that are specific to Keylock for release 1.6.
 //
-// Modification history
-// ------------------------------------------------------------------
-// 2001-Apr-18 JavaPOS Release 1.6                                 BS
+//   Automatically generated from KeylockControl16.
 //
 /////////////////////////////////////////////////////////////////////
 
 package jpos.services;
 
-import jpos.*;
 
-public interface KeylockService16
-  extends KeylockService15
+public interface KeylockService16 extends KeylockService15
 {
-  // Nothing new added for release 1.6
+	// Nothing new added for release 1.6
 }

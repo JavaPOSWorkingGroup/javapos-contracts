@@ -5,7 +5,7 @@
 //    http://www.ibm.com/developerworks/library/os-cpl.html
 //
 //////////////////////////////////////////////////////////////////////
-///////////////////////////////////////////////////////////////////////////////
+/////////////////////////////////////////////////////////////////////
 //
 // This software is provided "AS IS".  The JavaPOS working group (including
 // each of the Corporate members, contributors and individuals)  MAKES NO
@@ -19,16 +19,12 @@
 //
 // CATService113
 //
-//   Interface definining all capabilities, properties and methods that are
-//   specific to the Credit Authorization Terminal for release 1.13.
+//   Interface defining all new capabilities, properties and methods
+//   that are specific to CAT for release 1.13.
 //
-// Modification history
-// ------------------------------------------------------------------
-// 2009-Feb-23 JavaPOS Release 1.13                                BS
-// 2010-Nov-17 JavaPOS Release 1.13.3                              BS
-//   Added missing property OutputID
+//   Automatically generated from CATControl113.
 //
-//////////////////////////////////////////////////////////////////////////////
+/////////////////////////////////////////////////////////////////////
 
 package jpos.services;
 
@@ -36,6 +32,7 @@ import jpos.*;
 
 public interface CATService113 extends CATService112
 {
-  // Properties
-  public int     getOutputID() throws JposException;
+	// Properties
+	public int     getOutputID() throws JposException;
+	
 }

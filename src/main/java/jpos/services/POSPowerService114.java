@@ -19,20 +19,17 @@
 //
 // POSPowerService114
 //
-// Interface definining all capabilities, properties and methods that are
-// specific to POSPower for release 1.14.
+//   Interface defining all new capabilities, properties and methods
+//   that are specific to POS Power for release 1.14.
 //
-// Modification history
-// ------------------------------------------------------------------
-// 2013-Jul-25 JavaPOS Release 1.14                                BS
+//   Automatically generated from POSPowerControl114.
 //
 /////////////////////////////////////////////////////////////////////
 
 package jpos.services;
 
-import jpos.*;
 
 public interface POSPowerService114 extends POSPowerService113
 {
-  // Nothing new added for release 1.14
+	// Nothing new added for release 1.14
 }

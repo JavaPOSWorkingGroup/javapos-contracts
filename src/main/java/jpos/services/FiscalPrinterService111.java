@@ -19,12 +19,10 @@
 //
 // FiscalPrinterService111
 //
-//   Interface definining all new capabilities, properties and
-//   methods that are specific to Fiscal Printer for release 1.11.
+//   Interface defining all new capabilities, properties and methods
+//   that are specific to Fiscal Printer for release 1.11.
 //
-// Modification history
-// ------------------------------------------------------------------
-// 2007-Jan-04 JavaPOS Release 1.11                                BS
+//   Automatically generated from FiscalPrinterControl111.
 //
 /////////////////////////////////////////////////////////////////////
 
@@ -34,20 +32,11 @@ import jpos.*;
 
 public interface FiscalPrinterService111 extends FiscalPrinterService110
 {
-  // Capabilities
-  public boolean getCapPositiveSubtotalAdjustment() throws JposException;
-
-  // Methods
-  public void    printRecItemVoid(String description,
-                                  long price,
-                                  int quantity,
-                                  int vatInfo,
-                                  long unitPrice,
-                                  String unitName)
-                     throws JposException;
-  public void    printRecItemAdjustmentVoid(int adjustmentType,
-                                            String description,
-                                            long amount,
-                                            int vatInfo)
-                     throws JposException;
+	// Capabilities
+	public boolean getCapPositiveSubtotalAdjustment() throws JposException;
+	
+	// Methods
+	public void    printRecItemAdjustmentVoid(int adjustmentType, String description, long amount, int vatInfo) throws JposException;
+	public void    printRecItemVoid(String description, long price, int quantity, int vatInfo, long unitPrice, String unitName) throws JposException;
+	
 }

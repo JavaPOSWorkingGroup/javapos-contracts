@@ -19,12 +19,10 @@
 //
 // LineDisplayService12
 //
-//   Interface definining all capabilities, properties and methods
+//   Interface defining all new capabilities, properties and methods
 //   that are specific to Line Display for release 1.2.
 //
-// Modification history
-// ------------------------------------------------------------------
-// 98-02-18 JavaPOS Release 1.2                                   BS
+//   Automatically generated from LineDisplayControl12.
 //
 /////////////////////////////////////////////////////////////////////
 
@@ -32,65 +30,57 @@ package jpos.services;
 
 import jpos.*;
 
-public interface LineDisplayService12 extends BaseService
+public interface LineDisplayService12 extends BaseService, jpos.loader.JposServiceInstance
 {
-    // Capabilities
-    public int     getCapBlink() throws JposException;
-    public boolean getCapBrightness() throws JposException;
-    public int     getCapCharacterSet() throws JposException;
-    public boolean getCapDescriptors() throws JposException;
-    public boolean getCapHMarquee() throws JposException;
-    public boolean getCapICharWait() throws JposException;
-    public boolean getCapVMarquee() throws JposException;
-
-    // Properties
-    public int     getCharacterSet() throws JposException;
-    public void    setCharacterSet(int characterSet) throws JposException;
-    public String  getCharacterSetList() throws JposException;
-    public int     getColumns() throws JposException;
-    public int     getCurrentWindow() throws JposException;
-    public void    setCurrentWindow(int currentWindow) throws JposException;
-    public int     getCursorColumn() throws JposException;
-    public void    setCursorColumn(int cursorColumn) throws JposException;
-    public int     getCursorRow() throws JposException;
-    public void    setCursorRow(int cursorRow) throws JposException;
-    public boolean getCursorUpdate() throws JposException;
-    public void    setCursorUpdate(boolean cursorUpdate) throws JposException;
-    public int     getDeviceBrightness() throws JposException;
-    public void    setDeviceBrightness(int deviceBrightness)
-                       throws JposException;
-    public int     getDeviceColumns() throws JposException;
-    public int     getDeviceDescriptors() throws JposException;
-    public int     getDeviceRows() throws JposException;
-    public int     getDeviceWindows() throws JposException;
-    public int     getInterCharacterWait() throws JposException;
-    public void    setInterCharacterWait(int interCharacterWait)
-                       throws JposException;
-    public int     getMarqueeFormat() throws JposException;
-    public void    setMarqueeFormat(int marqueeFormat) throws JposException;
-    public int     getMarqueeRepeatWait() throws JposException;
-    public void    setMarqueeRepeatWait(int marqueeRepeatWait)
-                       throws JposException;
-    public int     getMarqueeType() throws JposException;
-    public void    setMarqueeType(int marqueeType) throws JposException;
-    public int     getMarqueeUnitWait() throws JposException;
-    public void    setMarqueeUnitWait(int marqueeUnitWait)
-                       throws JposException;
-    public int     getRows() throws JposException;
-
-    // Methods
-    public void    clearDescriptors() throws JposException;
-    public void    clearText() throws JposException;
-    public void    createWindow(int viewportRow, int viewportColumn,
-                       int viewportHeight, int viewportWidth, int windowHeight,
-                       int windowWidth) throws JposException;
-    public void    destroyWindow() throws JposException;
-    public void    displayText(String data, int attribute)
-                       throws JposException;
-    public void    displayTextAt(int row, int column, String data,
-                       int attribute) throws JposException;
-    public void    refreshWindow(int window) throws JposException;
-    public void    scrollText(int direction, int units) throws JposException;
-    public void    setDescriptor(int descriptor, int attribute)
-                       throws JposException;
+	// Capabilities
+	public int     getCapBlink() throws JposException;
+	public boolean getCapBrightness() throws JposException;
+	public int     getCapCharacterSet() throws JposException;
+	public boolean getCapDescriptors() throws JposException;
+	public boolean getCapHMarquee() throws JposException;
+	public boolean getCapICharWait() throws JposException;
+	public boolean getCapVMarquee() throws JposException;
+	
+	// Properties
+	public int     getCharacterSet() throws JposException;
+	public void    setCharacterSet(int characterSet) throws JposException;
+	public String  getCharacterSetList() throws JposException;
+	public int     getColumns() throws JposException;
+	public int     getCurrentWindow() throws JposException;
+	public void    setCurrentWindow(int currentWindow) throws JposException;
+	public int     getCursorColumn() throws JposException;
+	public void    setCursorColumn(int cursorColumn) throws JposException;
+	public int     getCursorRow() throws JposException;
+	public void    setCursorRow(int cursorRow) throws JposException;
+	public boolean getCursorUpdate() throws JposException;
+	public void    setCursorUpdate(boolean cursorUpdate) throws JposException;
+	public int     getDeviceBrightness() throws JposException;
+	public void    setDeviceBrightness(int deviceBrightness) throws JposException;
+	public int     getDeviceColumns() throws JposException;
+	public int     getDeviceDescriptors() throws JposException;
+	public int     getDeviceRows() throws JposException;
+	public int     getDeviceWindows() throws JposException;
+	public int     getInterCharacterWait() throws JposException;
+	public void    setInterCharacterWait(int interCharacterWait) throws JposException;
+	public int     getMarqueeFormat() throws JposException;
+	public void    setMarqueeFormat(int marqueeFormat) throws JposException;
+	public int     getMarqueeRepeatWait() throws JposException;
+	public void    setMarqueeRepeatWait(int marqueeRepeatWait) throws JposException;
+	public int     getMarqueeType() throws JposException;
+	public void    setMarqueeType(int marqueeType) throws JposException;
+	public int     getMarqueeUnitWait() throws JposException;
+	public void    setMarqueeUnitWait(int marqueeUnitWait) throws JposException;
+	public int     getRows() throws JposException;
+	
+	// Methods
+	public void    clearDescriptors() throws JposException;
+	public void    clearText() throws JposException;
+	public void    createWindow(int viewportRow, int viewportColumn, int viewportHeight, int viewportWidth, int windowHeight, int windowWidth) throws JposException;
+	public void    destroyWindow() throws JposException;
+	public void    displayText(String data, int attribute) throws JposException;
+	public void    displayTextAt(int row, int column, String data, int attribute) throws JposException;
+	public void    refreshWindow(int window) throws JposException;
+	public void    scrollText(int direction, int units) throws JposException;
+	public void    setDescriptor(int descriptor, int attribute) throws JposException;
+	
 }

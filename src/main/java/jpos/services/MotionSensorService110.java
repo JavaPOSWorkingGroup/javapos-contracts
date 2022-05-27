@@ -19,22 +19,17 @@
 //
 // MotionSensorService110
 //
-//   Interface definining all new capabilities, properties and
-//   methods that are specific to Motion Sensor for release 1.10.
+//   Interface defining all new capabilities, properties and methods
+//   that are specific to Motion Sensor for release 1.10.
 //
-// Modification history
-// ------------------------------------------------------------------
-// 2006-Feb-10 JavaPOS Release 1.10                                BS
+//   Automatically generated from MotionSensorControl110.
 //
 /////////////////////////////////////////////////////////////////////
 
 package jpos.services;
 
-import jpos.*;
-import jpos.loader.*;
 
-public interface MotionSensorService110
-  extends MotionSensorService19
+public interface MotionSensorService110 extends MotionSensorService19
 {
-  // Nothing new added for release 1.10
+	// Nothing new added for release 1.10
 }

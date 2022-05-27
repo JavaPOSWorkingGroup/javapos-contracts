@@ -19,22 +19,17 @@
 //
 // GateService113
 //
-//   Interface definining all new capabilities, properties and
-//   methods that are specific to Gate for release 1.13.
+//   Interface defining all new capabilities, properties and methods
+//   that are specific to Gate for release 1.13.
 //
-// Modification history
-// ------------------------------------------------------------------
-// 2009-Feb-23 JavaPOS Release 1.13                                BS
-//   New device category.
+//   Automatically generated from GateControl113.
 //
 /////////////////////////////////////////////////////////////////////
 
 package jpos.services;
 
-import jpos.*;
-import jpos.loader.*;
 
 public interface GateService113 extends GateService112
 {
-  // Nothing new added for release 1.13
+	// Nothing new added for release 1.13
 }

@@ -19,12 +19,10 @@
 //
 // MSRService13
 //
-//   Interface definining all new capabilities, properties and
-//   methods that are specific to MSR for release 1.3.
+//   Interface defining all new capabilities, properties and methods
+//   that are specific to MSR for release 1.3.
 //
-// Modification history
-// ------------------------------------------------------------------
-// 98-04-20 JavaPOS Release 1.3                                   BS
+//   Automatically generated from MSRControl13.
 //
 /////////////////////////////////////////////////////////////////////
 
@@ -34,11 +32,12 @@ import jpos.*;
 
 public interface MSRService13 extends MSRService12
 {
-    // Capabilities
-    public int     getCapPowerReporting() throws JposException;
-
-    // Properties
-    public int     getPowerNotify() throws JposException;
-    public void    setPowerNotify(int powerNotify) throws JposException;
-    public int     getPowerState() throws JposException;
+	// Capabilities
+	public int     getCapPowerReporting() throws JposException;
+	
+	// Properties
+	public int     getPowerNotify() throws JposException;
+	public void    setPowerNotify(int powerNotify) throws JposException;
+	public int     getPowerState() throws JposException;
+	
 }

@@ -17,24 +17,19 @@
 // software or its derivatives.Permission to use, copy, modify, and distribute
 // the software and its documentation for any purpose is hereby granted.
 //
-// SignatureCaptureService14
+// SignatureCaptureService15
 //
-//   Interface definining all new capabilities, properties and
-//   methods that are specific to Signature Capture for release 1.4.
+//   Interface defining all new capabilities, properties and methods
+//   that are specific to Signature Capture for release 1.5.
 //
-// Modification history
-// ------------------------------------------------------------------
-// 2000-Apr-17 JavaPOS Release 1.5                                 BS
+//   Automatically generated from SignatureCaptureControl15.
 //
 /////////////////////////////////////////////////////////////////////
 
 package jpos.services;
 
-import jpos.*;
-import jpos.loader.*;
 
-public interface SignatureCaptureService15
-  extends SignatureCaptureService14, JposServiceInstance
+public interface SignatureCaptureService15 extends SignatureCaptureService14
 {
-  // Nothing new added for release 1.5
+	// Nothing new added for release 1.5
 }

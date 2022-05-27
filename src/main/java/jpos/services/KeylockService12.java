@@ -19,12 +19,10 @@
 //
 // KeylockService12
 //
-//   Interface definining all capabilities, properties and methods
+//   Interface defining all new capabilities, properties and methods
 //   that are specific to Keylock for release 1.2.
 //
-// Modification history
-// ------------------------------------------------------------------
-// 98-02-18 JavaPOS Release 1.2                                   BS
+//   Automatically generated from KeylockControl12.
 //
 /////////////////////////////////////////////////////////////////////
 
@@ -32,13 +30,13 @@ package jpos.services;
 
 import jpos.*;
 
-public interface KeylockService12 extends BaseService
+public interface KeylockService12 extends BaseService, jpos.loader.JposServiceInstance
 {
-    // Properties
-    public int     getKeyPosition() throws JposException;
-    public int     getPositionCount() throws JposException;
-
-    // Methods
-    public void    waitForKeylockChange(int keyPosition, int timeout)
-                       throws JposException;
+	// Properties
+	public int     getKeyPosition() throws JposException;
+	public int     getPositionCount() throws JposException;
+	
+	// Methods
+	public void    waitForKeylockChange(int keyPosition, int timeout) throws JposException;
+	
 }

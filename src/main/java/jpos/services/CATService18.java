@@ -5,7 +5,7 @@
 //    http://www.ibm.com/developerworks/library/os-cpl.html
 //
 //////////////////////////////////////////////////////////////////////
-///////////////////////////////////////////////////////////////////////////////
+/////////////////////////////////////////////////////////////////////
 //
 // This software is provided "AS IS".  The JavaPOS working group (including
 // each of the Corporate members, contributors and individuals)  MAKES NO
@@ -19,31 +19,26 @@
 //
 // CATService18
 //
-//   Interface definining all capabilities, properties and methods that are
-//   specific to the Credit Authorization Terminal for release 1.8.
+//   Interface defining all new capabilities, properties and methods
+//   that are specific to CAT for release 1.8.
 //
-// Modification history
-// ------------------------------------------------------------------------
-// 03-Jun-2003 JavaPOS Release 1.8                                       BS
+//   Automatically generated from CATControl18.
 //
-//////////////////////////////////////////////////////////////////////////////
+/////////////////////////////////////////////////////////////////////
 
 package jpos.services;
 
 import jpos.*;
 
-public interface CATService18
-  extends CATService17
+public interface CATService18 extends CATService17
 {
 	// Capabilities
 	public boolean getCapStatisticsReporting() throws JposException;
 	public boolean getCapUpdateStatistics() throws JposException;
-
+	
 	// Methods
-	public void    resetStatistics(String statisticsBuffer)
-										 throws JposException;
-	public void    retrieveStatistics(String[] statisticsBuffer)
-										 throws JposException;
-	public void    updateStatistics(String statisticsBuffer)
-										 throws JposException;
+	public void    resetStatistics(String statisticsBuffer) throws JposException;
+	public void    retrieveStatistics(String[] statisticsBuffer) throws JposException;
+	public void    updateStatistics(String statisticsBuffer) throws JposException;
+	
 }

@@ -19,24 +19,21 @@
 //
 // PINPadService15
 //
-//   Interface definining all new capabilities, properties and
-//   methods that are specific to PIN Pad for release 1.5.
+//   Interface defining all new capabilities, properties and methods
+//   that are specific to PIN Pad for release 1.5.
 //
-// Modification history
-// ------------------------------------------------------------------
-// 2000-Apr-17 JavaPOS Release 1.5                                 BS
+//   Automatically generated from PINPadControl15.
 //
 /////////////////////////////////////////////////////////////////////
 
 package jpos.services;
 
 import jpos.*;
-import jpos.loader.*;
 
-public interface PINPadService15
-  extends PINPadService14, JposServiceInstance
+public interface PINPadService15 extends PINPadService14
 {
-    // Properties
-    public byte[]  getTrack4Data() throws JposException;
-    public void    setTrack4Data(byte[] track4Data) throws JposException;
+	// Properties
+	public byte[]  getTrack4Data() throws JposException;
+	public void    setTrack4Data(byte[] track4Data) throws JposException;
+	
 }

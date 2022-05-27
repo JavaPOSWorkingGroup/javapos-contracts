@@ -19,20 +19,17 @@
 //
 // ScannerService113
 //
-//   Interface definining all new capabilities, properties and
-//   methods that are specific to Scanner for release 1.13.
+//   Interface defining all new capabilities, properties and methods
+//   that are specific to Scanner for release 1.13.
 //
-// Modification history
-// ------------------------------------------------------------------
-// 2009-Feb-23 JavaPOS Release 1.13                                BS
+//   Automatically generated from ScannerControl113.
 //
 /////////////////////////////////////////////////////////////////////
 
 package jpos.services;
 
-import jpos.*;
 
 public interface ScannerService113 extends ScannerService112
 {
-  // Nothing new added for release 1.13
+	// Nothing new added for release 1.13
 }

@@ -19,48 +19,45 @@
 //
 // POSPrinterService15
 //
-//   Interface definining all new capabilities, properties and
-//   methods that are specific to POS Printer for release 1.5.
+//   Interface defining all new capabilities, properties and methods
+//   that are specific to POS Printer for release 1.5.
 //
-// Modification history
-// ------------------------------------------------------------------
-// 2000-Apr-17 JavaPOS Release 1.5                                 BS
+//   Automatically generated from POSPrinterControl15.
 //
 /////////////////////////////////////////////////////////////////////
 
 package jpos.services;
 
 import jpos.*;
-import jpos.loader.*;
 
-public interface POSPrinterService15
-  extends POSPrinterService14, JposServiceInstance
+public interface POSPrinterService15 extends POSPrinterService14
 {
-    // Capabilities
-    public int     getCapJrnCartridgeSensor() throws JposException;
-    public int     getCapJrnColor() throws JposException;
-    public int     getCapRecCartridgeSensor() throws JposException;
-    public int     getCapRecColor() throws JposException;
-    public int     getCapRecMarkFeed() throws JposException;
-    public boolean getCapSlpBothSidesPrint() throws JposException;
-    public int     getCapSlpCartridgeSensor() throws JposException;
-    public int     getCapSlpColor() throws JposException;
-
-    // Properties
-    public int     getCartridgeNotify() throws JposException;
-    public void    setCartridgeNotify(int notify) throws JposException;
-    public int     getJrnCartridgeState() throws JposException;
-    public int     getJrnCurrentCartridge() throws JposException;
-    public void    setJrnCurrentCartridge(int cartridge) throws JposException;
-    public int     getRecCartridgeState() throws JposException;
-    public int     getRecCurrentCartridge() throws JposException;
-    public void    setRecCurrentCartridge(int cartridge) throws JposException;
-    public int     getSlpCartridgeState() throws JposException;
-    public int     getSlpCurrentCartridge() throws JposException;
-    public void    setSlpCurrentCartridge(int cartridge) throws JposException;
-    public int     getSlpPrintSide() throws JposException;
-
-    // Methods
-    public void    changePrintSide(int side) throws JposException;
-    public void    markFeed(int type) throws JposException;
+	// Capabilities
+	public int     getCapJrnCartridgeSensor() throws JposException;
+	public int     getCapJrnColor() throws JposException;
+	public int     getCapRecCartridgeSensor() throws JposException;
+	public int     getCapRecColor() throws JposException;
+	public int     getCapRecMarkFeed() throws JposException;
+	public boolean getCapSlpBothSidesPrint() throws JposException;
+	public int     getCapSlpCartridgeSensor() throws JposException;
+	public int     getCapSlpColor() throws JposException;
+	
+	// Properties
+	public int     getCartridgeNotify() throws JposException;
+	public void    setCartridgeNotify(int notify) throws JposException;
+	public int     getJrnCartridgeState() throws JposException;
+	public int     getJrnCurrentCartridge() throws JposException;
+	public void    setJrnCurrentCartridge(int cartridge) throws JposException;
+	public int     getRecCartridgeState() throws JposException;
+	public int     getRecCurrentCartridge() throws JposException;
+	public void    setRecCurrentCartridge(int cartridge) throws JposException;
+	public int     getSlpCartridgeState() throws JposException;
+	public int     getSlpCurrentCartridge() throws JposException;
+	public void    setSlpCurrentCartridge(int cartridge) throws JposException;
+	public int     getSlpPrintSide() throws JposException;
+	
+	// Methods
+	public void    changePrintSide(int side) throws JposException;
+	public void    markFeed(int type) throws JposException;
+	
 }

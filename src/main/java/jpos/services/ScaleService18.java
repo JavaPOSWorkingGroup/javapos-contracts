@@ -19,12 +19,10 @@
 //
 // ScaleService18
 //
-//   Interface definining all new capabilities, properties and
-//   methods that are specific to Scale for release 1.8.
+//   Interface defining all new capabilities, properties and methods
+//   that are specific to Scale for release 1.8.
 //
-// Modification history
-// ------------------------------------------------------------------
-// 2004-Apr-01 JavaPOS Release 1.8                                 BS
+//   Automatically generated from ScaleControl18.
 //
 /////////////////////////////////////////////////////////////////////
 
@@ -32,18 +30,15 @@ package jpos.services;
 
 import jpos.*;
 
-public interface ScaleService18
-  extends ScaleService17
+public interface ScaleService18 extends ScaleService17
 {
-  // Capabilities
-  public boolean getCapStatisticsReporting() throws JposException;
-  public boolean getCapUpdateStatistics() throws JposException;
-
-  // Methods
-  public void    resetStatistics(String statisticsBuffer)
-                     throws JposException;
-  public void    retrieveStatistics(String[] statisticsBuffer)
-                     throws JposException;
-  public void    updateStatistics(String statisticsBuffer)
-                     throws JposException;
+	// Capabilities
+	public boolean getCapStatisticsReporting() throws JposException;
+	public boolean getCapUpdateStatistics() throws JposException;
+	
+	// Methods
+	public void    resetStatistics(String statisticsBuffer) throws JposException;
+	public void    retrieveStatistics(String[] statisticsBuffer) throws JposException;
+	public void    updateStatistics(String statisticsBuffer) throws JposException;
+	
 }

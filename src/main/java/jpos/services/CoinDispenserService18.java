@@ -19,12 +19,10 @@
 //
 // CoinDispenserService18
 //
-//   Interface definining all new capabilities, properties and
-//   methods that are specific to Coin Dispenser for release 1.8.
+//   Interface defining all new capabilities, properties and methods
+//   that are specific to Coin Dispenser for release 1.8.
 //
-// Modification history
-// ------------------------------------------------------------------
-// 03-Jun-2003 JavaPOS Release 1.8                               BS
+//   Automatically generated from CoinDispenserControl18.
 //
 /////////////////////////////////////////////////////////////////////
 
@@ -32,18 +30,15 @@ package jpos.services;
 
 import jpos.*;
 
-public interface CoinDispenserService18
-  extends CoinDispenserService17
+public interface CoinDispenserService18 extends CoinDispenserService17
 {
 	// Capabilities
 	public boolean getCapStatisticsReporting() throws JposException;
 	public boolean getCapUpdateStatistics() throws JposException;
-
+	
 	// Methods
-	public void    resetStatistics(String statisticsBuffer)
-										 throws JposException;
-	public void    retrieveStatistics(String[] statisticsBuffer)
-										 throws JposException;
-	public void    updateStatistics(String statisticsBuffer)
-										 throws JposException;
+	public void    resetStatistics(String statisticsBuffer) throws JposException;
+	public void    retrieveStatistics(String[] statisticsBuffer) throws JposException;
+	public void    updateStatistics(String statisticsBuffer) throws JposException;
+	
 }

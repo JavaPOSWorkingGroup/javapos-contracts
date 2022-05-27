@@ -19,27 +19,25 @@
 //
 // RemoteOrderDisplayService19
 //
-//   Interface definining all new capabilities, properties and
-//                                                                 1.9
-// Modification history
-// ------------------------------------------------------------------
-//                             1.9
+//   Interface defining all new capabilities, properties and methods
+//   that are specific to Remote Order Display for release 1.9.
+//
+//   Automatically generated from RemoteOrderDisplayControl19.
+//
 /////////////////////////////////////////////////////////////////////
 
 package jpos.services;
 
 import jpos.*;
 
-public interface RemoteOrderDisplayService19
-  extends RemoteOrderDisplayService18
+public interface RemoteOrderDisplayService19 extends RemoteOrderDisplayService18
 {
-  // Capabilities
-  public boolean getCapCompareFirmwareVersion() throws JposException;
-  public boolean getCapUpdateFirmware() throws JposException;
-
-  // Methods
-  public void    compareFirmwareVersion(String firmwareFileName, int[] result)
-                     throws JposException;
-  public void    updateFirmware(String firmwareFileName)
-                     throws JposException;
+	// Capabilities
+	public boolean getCapCompareFirmwareVersion() throws JposException;
+	public boolean getCapUpdateFirmware() throws JposException;
+	
+	// Methods
+	public void    compareFirmwareVersion(String firmwareFileName, int[] result) throws JposException;
+	public void    updateFirmware(String firmwareFileName) throws JposException;
+	
 }

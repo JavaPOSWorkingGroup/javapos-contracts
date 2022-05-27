@@ -19,21 +19,17 @@
 //
 // KeylockService110
 //
-//   Interface definining all new capabilities, properties and
-//   methods that are specific to Keylock for release 1.10.
+//   Interface defining all new capabilities, properties and methods
+//   that are specific to Keylock for release 1.10.
 //
-// Modification history
-// ------------------------------------------------------------------
-// 2006-Feb-10 JavaPOS Release 1.10                                BS
+//   Automatically generated from KeylockControl110.
 //
 /////////////////////////////////////////////////////////////////////
 
 package jpos.services;
 
-import jpos.*;
 
-public interface KeylockService110
-  extends KeylockService19
+public interface KeylockService110 extends KeylockService19
 {
-  // Nothing new added for release 1.10
+	// Nothing new added for release 1.10
 }

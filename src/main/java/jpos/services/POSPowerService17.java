@@ -19,22 +19,17 @@
 //
 // POSPowerService17
 //
-//   Interface definining all new capabilities, properties and
-//   methods that are specific to POSPower for release 1.7.
+//   Interface defining all new capabilities, properties and methods
+//   that are specific to POS Power for release 1.7.
 //
-// Modification history
-// ------------------------------------------------------------------
-// 01-Jul-2002 JavaPOS Release 1.7                                 BS
+//   Automatically generated from POSPowerControl17.
 //
 /////////////////////////////////////////////////////////////////////
 
 package jpos.services;
 
-import jpos.*;
-import jpos.loader.*;
 
-public interface POSPowerService17
-  extends POSPowerService16
+public interface POSPowerService17 extends POSPowerService16
 {
-  // Nothing new added for release 1.7
+	// Nothing new added for release 1.7
 }

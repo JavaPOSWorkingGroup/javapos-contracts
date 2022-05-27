@@ -19,12 +19,10 @@
 //
 // MICRService12
 //
-//   Interface definining all capabilities, properties and methods
+//   Interface defining all new capabilities, properties and methods
 //   that are specific to MICR for release 1.2.
 //
-// Modification history
-// ------------------------------------------------------------------
-// 98-02-18 JavaPOS Release 1.2                                   BS
+//   Automatically generated from MICRControl12.
 //
 /////////////////////////////////////////////////////////////////////
 
@@ -32,32 +30,32 @@ package jpos.services;
 
 import jpos.*;
 
-public interface MICRService12 extends BaseService
+public interface MICRService12 extends BaseService, jpos.loader.JposServiceInstance
 {
-    // Capabilities
-    public boolean getCapValidationDevice() throws JposException;
-
-    // Properties
-    public boolean getAutoDisable() throws JposException;
-    public void    setAutoDisable(boolean autoDisable) throws JposException;
-    public String  getAccountNumber() throws JposException;
-    public String  getAmount() throws JposException;
-    public String  getBankNumber() throws JposException;
-    public int     getCheckType() throws JposException;
-    public int     getCountryCode() throws JposException;
-    public int     getDataCount() throws JposException;
-    public boolean getDataEventEnabled() throws JposException;
-    public void    setDataEventEnabled(boolean dataEventEnabled)
-                       throws JposException;
-    public String  getEPC() throws JposException;
-    public String  getRawData() throws JposException;
-    public String  getSerialNumber() throws JposException;
-    public String  getTransitNumber() throws JposException;
-
-    // Methods
-    public void    beginInsertion(int timeout) throws JposException;
-    public void    beginRemoval(int timeout) throws JposException;
-    public void    clearInput() throws JposException;
-    public void    endInsertion() throws JposException;
-    public void    endRemoval() throws JposException;
+	// Capabilities
+	public boolean getCapValidationDevice() throws JposException;
+	
+	// Properties
+	public String  getAccountNumber() throws JposException;
+	public String  getAmount() throws JposException;
+	public boolean getAutoDisable() throws JposException;
+	public void    setAutoDisable(boolean autoDisable) throws JposException;
+	public String  getBankNumber() throws JposException;
+	public int     getCheckType() throws JposException;
+	public int     getCountryCode() throws JposException;
+	public int     getDataCount() throws JposException;
+	public boolean getDataEventEnabled() throws JposException;
+	public void    setDataEventEnabled(boolean dataEventEnabled) throws JposException;
+	public String  getEPC() throws JposException;
+	public String  getRawData() throws JposException;
+	public String  getSerialNumber() throws JposException;
+	public String  getTransitNumber() throws JposException;
+	
+	// Methods
+	public void    beginInsertion(int timeout) throws JposException;
+	public void    beginRemoval(int timeout) throws JposException;
+	public void    clearInput() throws JposException;
+	public void    endInsertion() throws JposException;
+	public void    endRemoval() throws JposException;
+	
 }

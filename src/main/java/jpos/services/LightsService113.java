@@ -19,22 +19,17 @@
 //
 // LightsService113
 //
-//   Interface definining all new capabilities, properties and
-//   methods that are specific to Lights for release 1.13.
+//   Interface defining all new capabilities, properties and methods
+//   that are specific to Lights for release 1.13.
 //
-// Modification history
-// ------------------------------------------------------------------
-// 2009-Feb-23 JavaPOS Release 1.13                                BS
-//   New device category.
+//   Automatically generated from LightsControl113.
 //
 /////////////////////////////////////////////////////////////////////
 
 package jpos.services;
 
-import jpos.*;
-import jpos.loader.*;
 
 public interface LightsService113 extends LightsService112
 {
-  // Nothing new added for release 1.13
+	// Nothing new added for release 1.13
 }

@@ -19,12 +19,10 @@
 //
 // PINPadService110
 //
-//   Interface definining all new capabilities, properties and
-//   methods that are specific to PIN Pad for release 1.10.
+//   Interface defining all new capabilities, properties and methods
+//   that are specific to PIN Pad for release 1.10.
 //
-// Modification history
-// ------------------------------------------------------------------
-// 2006-Feb-10 JavaPOS Release 1.10                                BS
+//   Automatically generated from PINPadControl110.
 //
 /////////////////////////////////////////////////////////////////////
 
@@ -32,10 +30,9 @@ package jpos.services;
 
 import jpos.*;
 
-public interface PINPadService110
-  extends PINPadService19
+public interface PINPadService110 extends PINPadService19
 {
-  // Methods
-  public void    clearInputProperties()
-                     throws JposException;
+	// Methods
+	public void    clearInputProperties() throws JposException;
+	
 }

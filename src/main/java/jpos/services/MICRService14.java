@@ -19,20 +19,17 @@
 //
 // MICRService14
 //
-//   Interface definining all new capabilities, properties and
-//   methods that are specific to MICR for release 1.4.
+//   Interface defining all new capabilities, properties and methods
+//   that are specific to MICR for release 1.4.
 //
-// Modification history
-// ------------------------------------------------------------------
-// 98-11-02 JavaPOS Release 1.4                                   BS
+//   Automatically generated from MICRControl14.
 //
 /////////////////////////////////////////////////////////////////////
 
 package jpos.services;
 
-import jpos.*;
 
 public interface MICRService14 extends MICRService13
 {
-  // Nothing new added for release 1.4
+	// Nothing new added for release 1.4
 }

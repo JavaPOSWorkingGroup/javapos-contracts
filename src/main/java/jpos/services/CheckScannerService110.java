@@ -19,24 +19,20 @@
 //
 // CheckScannerService110
 //
-//   Interface definining all new capabilities, properties and
-//   methods that are specific to Check Scanner for release 1.10.
+//   Interface defining all new capabilities, properties and methods
+//   that are specific to Check Scanner for release 1.10.
 //
-// Modification history
-// ------------------------------------------------------------------
-// 2006-Feb-10 JavaPOS Release 1.10                                BS
+//   Automatically generated from CheckScannerControl110.
 //
 /////////////////////////////////////////////////////////////////////
 
 package jpos.services;
 
 import jpos.*;
-import jpos.loader.*;
 
-public interface CheckScannerService110
-  extends CheckScannerService19
+public interface CheckScannerService110 extends CheckScannerService19
 {
-  // Methods
-  public void    clearInputProperties()
-                     throws JposException;
+	// Methods
+	public void    clearInputProperties() throws JposException;
+	
 }

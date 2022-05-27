@@ -19,22 +19,17 @@
 //
 // HardTotalsService15
 //
-//   Interface definining all new capabilities, properties and
-//   methods that are specific to Hard Totals for release 1.5.
+//   Interface defining all new capabilities, properties and methods
+//   that are specific to Hard Totals for release 1.5.
 //
-// Modification history
-// ------------------------------------------------------------------
-// 2000-Apr-17 JavaPOS Release 1.5                                 BS
+//   Automatically generated from HardTotalsControl15.
 //
 /////////////////////////////////////////////////////////////////////
 
 package jpos.services;
 
-import jpos.*;
-import jpos.loader.*;
 
-public interface HardTotalsService15
-  extends HardTotalsService14, JposServiceInstance
+public interface HardTotalsService15 extends HardTotalsService14
 {
-  // Nothing new added for release 1.5
+	// Nothing new added for release 1.5
 }

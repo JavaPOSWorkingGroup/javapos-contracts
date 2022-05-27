@@ -19,21 +19,17 @@
 //
 // POSKeyboardService110
 //
-//   Interface definining all new capabilities, properties and
-//   methods that are specific to POS Keyboard for release 1.10.
+//   Interface defining all new capabilities, properties and methods
+//   that are specific to POS Keyboard for release 1.10.
 //
-// Modification history
-// ------------------------------------------------------------------
-// 2006-Feb-10 JavaPOS Release 1.10                                BS
+//   Automatically generated from POSKeyboardControl110.
 //
 /////////////////////////////////////////////////////////////////////
 
 package jpos.services;
 
-import jpos.*;
 
-public interface POSKeyboardService110
-  extends POSKeyboardService19
+public interface POSKeyboardService110 extends POSKeyboardService19
 {
-  // Nothing new added for release 1.10
+	// Nothing new added for release 1.10
 }

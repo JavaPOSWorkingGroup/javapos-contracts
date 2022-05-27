@@ -19,21 +19,17 @@
 //
 // CoinDispenserService110
 //
-//   Interface definining all new capabilities, properties and
-//   methods that are specific to Coin Dispenser for release 1.10.
+//   Interface defining all new capabilities, properties and methods
+//   that are specific to Coin Dispenser for release 1.10.
 //
-// Modification history
-// ------------------------------------------------------------------
-// 2006-Feb-10 JavaPOS Release 1.10                                BS
+//   Automatically generated from CoinDispenserControl110.
 //
 /////////////////////////////////////////////////////////////////////
 
 package jpos.services;
 
-import jpos.*;
 
-public interface CoinDispenserService110
-  extends CoinDispenserService19
+public interface CoinDispenserService110 extends CoinDispenserService19
 {
-  // Nothing new added for release 1.10
+	// Nothing new added for release 1.10
 }

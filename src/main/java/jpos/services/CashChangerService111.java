@@ -19,13 +19,10 @@
 //
 // CashChangerService111
 //
-//   Interface definining all new capabilities, properties and
-//   methods that are specific to Cash Changer for release 1.11.
+//   Interface defining all new capabilities, properties and methods
+//   that are specific to Cash Changer for release 1.11.
 //
-// Modification history
-// ------------------------------------------------------------------
-// 2007-Jan-04 JavaPOS Release 1.11                                BS
-// 2008-Jul-23 Corrected spelling mistake of setCurrentService     BS
+//   Automatically generated from CashChangerControl111.
 //
 /////////////////////////////////////////////////////////////////////
 
@@ -35,19 +32,19 @@ import jpos.*;
 
 public interface CashChangerService111 extends CashChangerService110
 {
-  // Capabilities
-  public boolean getCapJamSensor() throws JposException;
-  public boolean getCapRealTimeData() throws JposException;
-
-  // Properties
-  public int     getCurrentService() throws JposException;
-  public void    setCurrentService(int currentService) throws JposException;
-  public boolean getRealTimeDataEnabled() throws JposException;
-  public void    setRealTimeDataEnabled(boolean bEnabled) throws JposException;
-  public int     getServiceCount() throws JposException;
-  public int     getServiceIndex() throws JposException;
-
-  // Methods
-  public void    adjustCashCounts(String cashCounts)
-                     throws JposException;
+	// Capabilities
+	public boolean getCapJamSensor() throws JposException;
+	public boolean getCapRealTimeData() throws JposException;
+	
+	// Properties
+	public int     getCurrentService() throws JposException;
+	public void    setCurrentService(int currentService) throws JposException;
+	public boolean getRealTimeDataEnabled() throws JposException;
+	public void    setRealTimeDataEnabled(boolean bEnabled) throws JposException;
+	public int     getServiceCount() throws JposException;
+	public int     getServiceIndex() throws JposException;
+	
+	// Methods
+	public void    adjustCashCounts(String cashCounts) throws JposException;
+	
 }

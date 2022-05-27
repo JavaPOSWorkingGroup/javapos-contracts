@@ -19,20 +19,17 @@
 //
 // CoinDispenserService14
 //
-//   Interface definining all new capabilities, properties and
-//   methods that are specific to Coin Dispenser for release 1.4.
+//   Interface defining all new capabilities, properties and methods
+//   that are specific to Coin Dispenser for release 1.4.
 //
-// Modification history
-// ------------------------------------------------------------------
-// 98-11-02 JavaPOS Release 1.4                                   BS
+//   Automatically generated from CoinDispenserControl14.
 //
 /////////////////////////////////////////////////////////////////////
 
 package jpos.services;
 
-import jpos.*;
 
 public interface CoinDispenserService14 extends CoinDispenserService13
 {
-  // Nothing new added for release 1.4
+	// Nothing new added for release 1.4
 }

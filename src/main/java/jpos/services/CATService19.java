@@ -5,7 +5,7 @@
 //    http://www.ibm.com/developerworks/library/os-cpl.html
 //
 //////////////////////////////////////////////////////////////////////
-///////////////////////////////////////////////////////////////////////////////
+/////////////////////////////////////////////////////////////////////
 //
 // This software is provided "AS IS".  The JavaPOS working group (including
 // each of the Corporate members, contributors and individuals)  MAKES NO
@@ -19,44 +19,37 @@
 //
 // CATService19
 //
-//   Interface definining all capabilities, properties and methods that are
-//   specific to the Credit Authorization Terminal for release 1.9.
+//   Interface defining all new capabilities, properties and methods
+//   that are specific to CAT for release 1.9.
 //
-// Modification history
-// ------------------------------------------------------------------
-// 2005-Jan-16 JavaPOS Release 1.9                                 BS
+//   Automatically generated from CATControl19.
 //
-//////////////////////////////////////////////////////////////////////////////
+/////////////////////////////////////////////////////////////////////
 
 package jpos.services;
 
 import jpos.*;
 
-public interface CATService19
-  extends CATService18
+public interface CATService19 extends CATService18
 {
-  // Capabilities
-  public boolean getCapCashDeposit() throws JposException;
-  public boolean getCapCompareFirmwareVersion() throws JposException;
-  public boolean getCapLockTerminal() throws JposException;
-  public boolean getCapLogStatus() throws JposException;
-  public boolean getCapUnlockTerminal() throws JposException;
-  public boolean getCapUpdateFirmware() throws JposException;
-
-  // Properties
-  public long    getBalance() throws JposException;
-  public int     getLogStatus() throws JposException;
-  public long    getSettledAmount() throws JposException;
-
-  // Methods
-  public void    cashDeposit(int sequenceNumber, long amount, int timeout)
-                     throws JposException;
-  public void    compareFirmwareVersion(String firmwareFileName, int[] result)
-                     throws JposException;
-  public void    lockTerminal()
-                     throws JposException;
-  public void    unlockTerminal()
-                     throws JposException;
-  public void    updateFirmware(String firmwareFileName)
-                     throws JposException;
+	// Capabilities
+	public boolean getCapCashDeposit() throws JposException;
+	public boolean getCapCompareFirmwareVersion() throws JposException;
+	public boolean getCapLockTerminal() throws JposException;
+	public boolean getCapLogStatus() throws JposException;
+	public boolean getCapUnlockTerminal() throws JposException;
+	public boolean getCapUpdateFirmware() throws JposException;
+	
+	// Properties
+	public long    getBalance() throws JposException;
+	public int     getLogStatus() throws JposException;
+	public long    getSettledAmount() throws JposException;
+	
+	// Methods
+	public void    cashDeposit(int sequenceNumber, long amount, int timeout) throws JposException;
+	public void    compareFirmwareVersion(String firmwareFileName, int[] result) throws JposException;
+	public void    lockTerminal() throws JposException;
+	public void    unlockTerminal() throws JposException;
+	public void    updateFirmware(String firmwareFileName) throws JposException;
+	
 }

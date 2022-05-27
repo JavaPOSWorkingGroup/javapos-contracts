@@ -19,20 +19,17 @@
 //
 // POSKeyboardService113
 //
-//   Interface definining all new capabilities, properties and
-//   methods that are specific to POS Keyboard for release 1.13.
+//   Interface defining all new capabilities, properties and methods
+//   that are specific to POS Keyboard for release 1.13.
 //
-// Modification history
-// ------------------------------------------------------------------
-// 2009-Feb-23 JavaPOS Release 1.13                                BS
+//   Automatically generated from POSKeyboardControl113.
 //
 /////////////////////////////////////////////////////////////////////
 
 package jpos.services;
 
-import jpos.*;
 
 public interface POSKeyboardService113 extends POSKeyboardService112
 {
-  // Nothing new added for release 1.13
+	// Nothing new added for release 1.13
 }

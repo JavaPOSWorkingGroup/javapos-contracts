@@ -19,12 +19,10 @@
 //
 // POSKeyboardService12
 //
-//   Interface definining all capabilities, properties and methods
+//   Interface defining all new capabilities, properties and methods
 //   that are specific to POS Keyboard for release 1.2.
 //
-// Modification history
-// ------------------------------------------------------------------
-// 98-02-18 JavaPOS Release 1.2                                   BS
+//   Automatically generated from POSKeyboardControl12.
 //
 /////////////////////////////////////////////////////////////////////
 
@@ -32,23 +30,23 @@ package jpos.services;
 
 import jpos.*;
 
-public interface POSKeyboardService12 extends BaseService
+public interface POSKeyboardService12 extends BaseService, jpos.loader.JposServiceInstance
 {
-    // Capabilities
-    public boolean getCapKeyUp() throws JposException;
-
-    // Properties
-    public boolean getAutoDisable() throws JposException;
-    public void    setAutoDisable(boolean autoDisable) throws JposException;
-    public int     getDataCount() throws JposException;
-    public boolean getDataEventEnabled() throws JposException;
-    public void    setDataEventEnabled(boolean dataEventEnabled)
-                       throws JposException;
-    public int     getEventTypes() throws JposException;
-    public void    setEventTypes(int eventTypes) throws JposException;
-    public int     getPOSKeyData() throws JposException;
-    public int     getPOSKeyEventType() throws JposException;
-
-    // Methods
-    public void    clearInput() throws JposException;
+	// Capabilities
+	public boolean getCapKeyUp() throws JposException;
+	
+	// Properties
+	public boolean getAutoDisable() throws JposException;
+	public void    setAutoDisable(boolean autoDisable) throws JposException;
+	public int     getDataCount() throws JposException;
+	public boolean getDataEventEnabled() throws JposException;
+	public void    setDataEventEnabled(boolean dataEventEnabled) throws JposException;
+	public int     getEventTypes() throws JposException;
+	public void    setEventTypes(int eventTypes) throws JposException;
+	public int     getPOSKeyData() throws JposException;
+	public int     getPOSKeyEventType() throws JposException;
+	
+	// Methods
+	public void    clearInput() throws JposException;
+	
 }

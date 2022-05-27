@@ -19,12 +19,10 @@
 //
 // CoinDispenserService12
 //
-//   Interface definining all capabilities, properties and methods
+//   Interface defining all new capabilities, properties and methods
 //   that are specific to Coin Dispenser for release 1.2.
 //
-// Modification history
-// ------------------------------------------------------------------
-// 98-02-18 JavaPOS Release 1.2                                   BS
+//   Automatically generated from CoinDispenserControl12.
 //
 /////////////////////////////////////////////////////////////////////
 
@@ -32,16 +30,17 @@ package jpos.services;
 
 import jpos.*;
 
-public interface CoinDispenserService12 extends BaseService
+public interface CoinDispenserService12 extends BaseService, jpos.loader.JposServiceInstance
 {
-    // Capabilities
-    public boolean getCapEmptySensor() throws JposException;
-    public boolean getCapJamSensor() throws JposException;
-    public boolean getCapNearEmptySensor() throws JposException;
-
-    // Properties
-    public int     getDispenserStatus() throws JposException;
-
-    // Methods
-    public void    dispenseChange(int amount) throws JposException;
+	// Capabilities
+	public boolean getCapEmptySensor() throws JposException;
+	public boolean getCapJamSensor() throws JposException;
+	public boolean getCapNearEmptySensor() throws JposException;
+	
+	// Properties
+	public int     getDispenserStatus() throws JposException;
+	
+	// Methods
+	public void    dispenseChange(int amount) throws JposException;
+	
 }

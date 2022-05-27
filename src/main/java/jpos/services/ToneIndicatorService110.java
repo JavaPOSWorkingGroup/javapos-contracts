@@ -19,21 +19,17 @@
 //
 // ToneIndicatorService110
 //
-//   Interface definining all new capabilities, properties and
-//   methods that are specific to Tone Indicator for release 1.10.
+//   Interface defining all new capabilities, properties and methods
+//   that are specific to Tone Indicator for release 1.10.
 //
-// Modification history
-// ------------------------------------------------------------------
-// 2006-Feb-10 JavaPOS Release 1.10                                BS
+//   Automatically generated from ToneIndicatorControl110.
 //
 /////////////////////////////////////////////////////////////////////
 
 package jpos.services;
 
-import jpos.*;
 
-public interface ToneIndicatorService110
-  extends ToneIndicatorService19
+public interface ToneIndicatorService110 extends ToneIndicatorService19
 {
-  // Nothing new added for release 1.10
+	// Nothing new added for release 1.10
 }

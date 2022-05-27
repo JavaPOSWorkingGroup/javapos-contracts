@@ -19,12 +19,10 @@
 //
 // SmartCardRWService19
 //
-//   Interface definining all new capabilities, properties and
-//   methods that are specific to Smart Card for release 1.9.
+//   Interface defining all new capabilities, properties and methods
+//   that are specific to Smart Card Reader Writer for release 1.9.
 //
-// Modification history
-// ------------------------------------------------------------------
-// 2005-Jan-16 JavaPOS Release 1.9                                 BS
+//   Automatically generated from SmartCardRWControl19.
 //
 /////////////////////////////////////////////////////////////////////
 
@@ -32,16 +30,14 @@ package jpos.services;
 
 import jpos.*;
 
-public interface SmartCardRWService19
-  extends SmartCardRWService18
+public interface SmartCardRWService19 extends SmartCardRWService18
 {
-  // Capabilities
-  public boolean getCapCompareFirmwareVersion() throws JposException;
-  public boolean getCapUpdateFirmware() throws JposException;
-
-  // Methods
-  public void    compareFirmwareVersion(String firmwareFileName, int[] result)
-                     throws JposException;
-  public void    updateFirmware(String firmwareFileName)
-                     throws JposException;
+	// Capabilities
+	public boolean getCapCompareFirmwareVersion() throws JposException;
+	public boolean getCapUpdateFirmware() throws JposException;
+	
+	// Methods
+	public void    compareFirmwareVersion(String firmwareFileName, int[] result) throws JposException;
+	public void    updateFirmware(String firmwareFileName) throws JposException;
+	
 }

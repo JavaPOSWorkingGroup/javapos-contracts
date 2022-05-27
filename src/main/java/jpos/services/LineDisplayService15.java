@@ -19,22 +19,17 @@
 //
 // LineDisplayService15
 //
-//   Interface definining all new capabilities, properties and
-//   methods that are specific to Line Display for release 1.5.
+//   Interface defining all new capabilities, properties and methods
+//   that are specific to Line Display for release 1.5.
 //
-// Modification history
-// ------------------------------------------------------------------
-// 2000-Apr-17 JavaPOS Release 1.5                                 BS
+//   Automatically generated from LineDisplayControl15.
 //
 /////////////////////////////////////////////////////////////////////
 
 package jpos.services;
 
-import jpos.*;
-import jpos.loader.*;
 
-public interface LineDisplayService15
-  extends LineDisplayService14, JposServiceInstance
+public interface LineDisplayService15 extends LineDisplayService14
 {
-  // Nothing new added for release 1.5
+	// Nothing new added for release 1.5
 }

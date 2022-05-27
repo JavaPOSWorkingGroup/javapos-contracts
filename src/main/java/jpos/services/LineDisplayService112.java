@@ -19,20 +19,17 @@
 //
 // LineDisplayService112
 //
-//   Interface definining all new capabilities, properties and
-//   methods that are specific to Line Display for release 1.12.
+//   Interface defining all new capabilities, properties and methods
+//   that are specific to Line Display for release 1.12.
 //
-// Modification history
-// ------------------------------------------------------------------
-// 2008-Jan-14 JavaPOS Release 1.12                                BS
+//   Automatically generated from LineDisplayControl112.
 //
 /////////////////////////////////////////////////////////////////////
 
 package jpos.services;
 
-import jpos.*;
 
 public interface LineDisplayService112 extends LineDisplayService111
 {
-  // Nothing new added for release 1.12
+	// Nothing new added for release 1.12
 }

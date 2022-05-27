@@ -19,12 +19,10 @@
 //
 // HardTotalsService12
 //
-//   Interface definining all capabilities, properties and methods
+//   Interface defining all new capabilities, properties and methods
 //   that are specific to Hard Totals for release 1.2.
 //
-// Modification history
-// ------------------------------------------------------------------
-// 98-02-18 JavaPOS Release 1.2                                   BS
+//   Automatically generated from HardTotalsControl12.
 //
 /////////////////////////////////////////////////////////////////////
 
@@ -32,41 +30,34 @@ package jpos.services;
 
 import jpos.*;
 
-public interface HardTotalsService12 extends BaseService
+public interface HardTotalsService12 extends BaseService, jpos.loader.JposServiceInstance
 {
-    // Capabilities
-    public boolean getCapErrorDetection() throws JposException;
-    public boolean getCapSingleFile() throws JposException;
-    public boolean getCapTransactions() throws JposException;
-
-    // Properties
-    public int     getFreeData() throws JposException;
-    public int     getNumberOfFiles() throws JposException;
-    public int     getTotalsSize() throws JposException;
-    public boolean getTransactionInProgress() throws JposException;
-
-    // Methods
-    public void    beginTrans() throws JposException;
-    public void    claimFile(int hTotalsFile, int timeout)
-                       throws JposException;
-    public void    commitTrans() throws JposException;
-    public void    create(String fileName, int[] hTotalsFile, int size,
-                       boolean errorDetection) throws JposException;
-    public void    delete(String fileName) throws JposException;
-    public void    find(String fileName, int[] hTotalsFile, int[] size)
-                       throws JposException;
-    public void    findByIndex(int index, String[] fileName)
-                       throws JposException;
-    public void    read(int hTotalsFile, byte[] data, int offset,
-                       int count) throws JposException;
-    public void    recalculateValidationData(int hTotalsFile)
-                       throws JposException;
-    public void    releaseFile(int hTotalsFile) throws JposException;
-    public void    rename(int hTotalsFile, String fileName)
-                       throws JposException;
-    public void    rollback() throws JposException;
-    public void    setAll(int hTotalsFile, byte value) throws JposException;
-    public void    validateData(int hTotalsFile) throws JposException;
-    public void    write(int hTotalsFile, byte[] data, int offset, int count)
-                       throws JposException;
+	// Capabilities
+	public boolean getCapErrorDetection() throws JposException;
+	public boolean getCapSingleFile() throws JposException;
+	public boolean getCapTransactions() throws JposException;
+	
+	// Properties
+	public int     getFreeData() throws JposException;
+	public int     getNumberOfFiles() throws JposException;
+	public int     getTotalsSize() throws JposException;
+	public boolean getTransactionInProgress() throws JposException;
+	
+	// Methods
+	public void    beginTrans() throws JposException;
+	public void    claimFile(int hTotalsFile, int timeout) throws JposException;
+	public void    commitTrans() throws JposException;
+	public void    create(String fileName, int[] hTotalsFile, int size, boolean errorDetection) throws JposException;
+	public void    delete(String fileName) throws JposException;
+	public void    find(String fileName, int[] hTotalsFile, int[] size) throws JposException;
+	public void    findByIndex(int index, String[] fileName) throws JposException;
+	public void    read(int hTotalsFile, byte[] data, int offset, int count) throws JposException;
+	public void    recalculateValidationData(int hTotalsFile) throws JposException;
+	public void    releaseFile(int hTotalsFile) throws JposException;
+	public void    rename(int hTotalsFile, String fileName) throws JposException;
+	public void    rollback() throws JposException;
+	public void    setAll(int hTotalsFile, byte value) throws JposException;
+	public void    validateData(int hTotalsFile) throws JposException;
+	public void    write(int hTotalsFile, byte[] data, int offset, int count) throws JposException;
+	
 }

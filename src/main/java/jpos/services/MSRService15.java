@@ -19,29 +19,25 @@
 //
 // MSRService15
 //
-//   Interface definining all new capabilities, properties and
-//   methods that are specific to MSR for release 1.5.
+//   Interface defining all new capabilities, properties and methods
+//   that are specific to MSR for release 1.5.
 //
-// Modification history
-// ------------------------------------------------------------------
-// 2000-Apr-17 JavaPOS Release 1.5                                 BS
+//   Automatically generated from MSRControl15.
 //
 /////////////////////////////////////////////////////////////////////
 
 package jpos.services;
 
 import jpos.*;
-import jpos.loader.*;
 
-public interface MSRService15
-  extends MSRService14, JposServiceInstance
+public interface MSRService15 extends MSRService14
 {
-  // Capabilities
-  public boolean getCapTransmitSentinels() throws JposException;
-
-  // Properties
-  public byte[]  getTrack4Data() throws JposException;
-  public boolean getTransmitSentinels() throws JposException;
-  public void    setTransmitSentinels(boolean transmitSentinels)
-  								 throws JposException;
+	// Capabilities
+	public boolean getCapTransmitSentinels() throws JposException;
+	
+	// Properties
+	public byte[]  getTrack4Data() throws JposException;
+	public boolean getTransmitSentinels() throws JposException;
+	public void    setTransmitSentinels(boolean transmitSentinels) throws JposException;
+	
 }

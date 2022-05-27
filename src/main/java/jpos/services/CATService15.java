@@ -5,7 +5,7 @@
 //    http://www.ibm.com/developerworks/library/os-cpl.html
 //
 //////////////////////////////////////////////////////////////////////
-///////////////////////////////////////////////////////////////////////////////
+/////////////////////////////////////////////////////////////////////
 //
 // This software is provided "AS IS".  The JavaPOS working group (including
 // each of the Corporate members, contributors and individuals)  MAKES NO
@@ -19,24 +19,21 @@
 //
 // CATService15
 //
-//   Interface definining all capabilities, properties and methods that are
-//   specific to the Credit Authorization Terminal for release 1.5.
+//   Interface defining all new capabilities, properties and methods
+//   that are specific to CAT for release 1.5.
 //
-// Modification history
-// ---------------------------------------------------------------------------
-// 2000-Apr-17 JavaPOS Release 1.5                                         BS
+//   Automatically generated from CATControl15.
 //
-//////////////////////////////////////////////////////////////////////////////
+/////////////////////////////////////////////////////////////////////
 
 package jpos.services;
 
 import jpos.*;
-import jpos.loader.*;
 
-public interface CATService15
-  extends CATService14, JposServiceInstance
+public interface CATService15 extends CATService14
 {
 	// Properties
 	public int     getPaymentMedia() throws JposException;
 	public void    setPaymentMedia(int paymentMedia) throws JposException;
+	
 }

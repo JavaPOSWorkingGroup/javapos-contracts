@@ -19,12 +19,10 @@
 //
 // ScannerService110
 //
-//   Interface definining all new capabilities, properties and
-//   methods that are specific to Scanner for release 1.10.
+//   Interface defining all new capabilities, properties and methods
+//   that are specific to Scanner for release 1.10.
 //
-// Modification history
-// ------------------------------------------------------------------
-// 2006-Feb-10 JavaPOS Release 1.10                                BS
+//   Automatically generated from ScannerControl110.
 //
 /////////////////////////////////////////////////////////////////////
 
@@ -32,10 +30,9 @@ package jpos.services;
 
 import jpos.*;
 
-public interface ScannerService110
-  extends ScannerService19
+public interface ScannerService110 extends ScannerService19
 {
-  // Methods
-  public void    clearInputProperties()
-                     throws JposException;
+	// Methods
+	public void    clearInputProperties() throws JposException;
+	
 }
