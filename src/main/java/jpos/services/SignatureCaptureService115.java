@@ -19,18 +19,17 @@
 //
 // SignatureCaptureService115
 //
-// Interface definining all capabilities, properties and methods that are
-// specific to Signature Capture for release 1.15.
+//   Interface defining all new capabilities, properties and methods
+//   that are specific to Signature Capture for release 1.15.
 //
-// Modification history
-// ------------------------------------------------------------------
-// 2022-Apr-09 JavaPOS Release 1.15                                MC
+//   Automatically generated from SignatureCaptureControl115.
 //
 /////////////////////////////////////////////////////////////////////
 
 package jpos.services;
 
+
 public interface SignatureCaptureService115 extends SignatureCaptureService114
 {
-    // Nothing new added for release 1.15
+	// Nothing new added for release 1.15
 }

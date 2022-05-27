@@ -19,18 +19,17 @@
 //
 // SmartCardRWService115
 //
-// Interface definining all capabilities, properties and methods that are
-// specific to Smart Card for release 1.15.
+//   Interface defining all new capabilities, properties and methods
+//   that are specific to Smart Card Reader Writer for release 1.15.
 //
-// Modification history
-// ------------------------------------------------------------------
-// 2022-Apr-09 JavaPOS Release 1.15                                MC
+//   Automatically generated from SmartCardRWControl115.
 //
 /////////////////////////////////////////////////////////////////////
 
 package jpos.services;
 
+
 public interface SmartCardRWService115 extends SmartCardRWService114
 {
-    // Nothing new added for release 1.15
+	// Nothing new added for release 1.15
 }

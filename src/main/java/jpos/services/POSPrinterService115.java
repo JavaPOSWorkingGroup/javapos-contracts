@@ -19,18 +19,17 @@
 //
 // POSPrinterService115
 //
-// Interface definining all capabilities, properties and methods that are
-// specific to POS Printer for release 1.15.
+//   Interface defining all new capabilities, properties and methods
+//   that are specific to POS Printer for release 1.15.
 //
-// Modification history
-// ------------------------------------------------------------------
-// 2022-Apr-09 JavaPOS Release 1.15                                MC
+//   Automatically generated from POSPrinterControl115.
 //
 /////////////////////////////////////////////////////////////////////
 
 package jpos.services;
 
+
 public interface POSPrinterService115 extends POSPrinterService114
 {
-    // Nothing new added for release 1.15
+	// Nothing new added for release 1.15
 }

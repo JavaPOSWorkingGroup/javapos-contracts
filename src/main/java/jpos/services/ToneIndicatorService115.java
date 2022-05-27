@@ -19,18 +19,17 @@
 //
 // ToneIndicatorService115
 //
-// Interface definining all capabilities, properties and methods that are
-// specific to Tone Indicator for release 1.15.
+//   Interface defining all new capabilities, properties and methods
+//   that are specific to Tone Indicator for release 1.15.
 //
-// Modification history
-// ------------------------------------------------------------------
-// 2022-Apr-09 JavaPOS Release 1.15                                MC
+//   Automatically generated from ToneIndicatorControl115.
 //
 /////////////////////////////////////////////////////////////////////
 
 package jpos.services;
 
+
 public interface ToneIndicatorService115 extends ToneIndicatorService114
 {
-    // Nothing new added for release 1.15
+	// Nothing new added for release 1.15
 }

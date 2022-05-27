@@ -1,13 +1,13 @@
 //////////////////////////////////////////////////////////////////////
 //
-// The JavaPOS library source code is now under the CPL license, which
+// The JavaPOS library source code is now under the CPL license, which 
 // is an OSS Apache-like license. The complete license is located at:
 //    http://www.ibm.com/developerworks/library/os-cpl.html
 //
 //////////////////////////////////////////////////////////////////////
 /////////////////////////////////////////////////////////////////////
 //
-// This software is provided "AS IS".  The JavaPOS working group(including
+// This software is provided "AS IS".  The JavaPOS working group (including
 // each of the Corporate members, contributors and individuals)  MAKES NO
 // REPRESENTATIONS OR WARRANTIES ABOUT THE SUITABILITY OF THE SOFTWARE,
 // EITHER EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE IMPLIED
@@ -19,18 +19,17 @@
 //
 // RFIDScannerService115
 //
-// Interface definining all capabilities, properties and methods that are
-// specific to RFID Scanner for release 1.15.
+//   Interface defining all new capabilities, properties and methods
+//   that are specific to RFID Scanner for release 1.15.
 //
-// Modification history
-// ------------------------------------------------------------------
-// 2022-Apr-09 JavaPOS Release 1.15                                MC
+//   Automatically generated from RFIDScannerControl115.
 //
 /////////////////////////////////////////////////////////////////////
 
 package jpos.services;
 
+
 public interface RFIDScannerService115 extends RFIDScannerService114
 {
-    // Nothing new added for release 1.15
+	// Nothing new added for release 1.15
 }

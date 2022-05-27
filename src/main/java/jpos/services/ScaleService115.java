@@ -19,18 +19,17 @@
 //
 // ScaleService115
 //
-// Interface definining all capabilities, properties and methods that are
-// specific to Scale for release 1.15.
+//   Interface defining all new capabilities, properties and methods
+//   that are specific to Scale for release 1.15.
 //
-// Modification history
-// ------------------------------------------------------------------
-// 2022-Apr-09 JavaPOS Release 1.15                                MC
+//   Automatically generated from ScaleControl115.
 //
 /////////////////////////////////////////////////////////////////////
 
 package jpos.services;
 
+
 public interface ScaleService115 extends ScaleService114
 {
-    // Nothing new added for release 1.15
+	// Nothing new added for release 1.15
 }

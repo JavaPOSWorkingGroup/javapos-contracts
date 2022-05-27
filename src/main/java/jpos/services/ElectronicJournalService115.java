@@ -19,18 +19,17 @@
 //
 // ElectronicJournalService115
 //
-// Interface definining all capabilities, properties and methods that are
-// specific to Electronic Journal for release 1.15.
+//   Interface defining all new capabilities, properties and methods
+//   that are specific to Electronic Journal for release 1.15.
 //
-// Modification history
-// ------------------------------------------------------------------
-// 2022-Apr-09 JavaPOS Release 1.15                                MC
+//   Automatically generated from ElectronicJournalControl115.
 //
 /////////////////////////////////////////////////////////////////////
 
 package jpos.services;
 
+
 public interface ElectronicJournalService115 extends ElectronicJournalService114
 {
-    // Nothing new added for release 1.15
+	// Nothing new added for release 1.15
 }

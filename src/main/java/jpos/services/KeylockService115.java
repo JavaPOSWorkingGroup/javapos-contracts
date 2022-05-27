@@ -19,18 +19,17 @@
 //
 // KeylockService115
 //
-// Interface definining all capabilities, properties and methods that are
-// specific to Keylock for release 1.15.
+//   Interface defining all new capabilities, properties and methods
+//   that are specific to Keylock for release 1.15.
 //
-// Modification history
-// ------------------------------------------------------------------
-// 2022-Apr-09 JavaPOS Release 1.15                                MC
+//   Automatically generated from KeylockControl115.
 //
 /////////////////////////////////////////////////////////////////////
 
 package jpos.services;
 
+
 public interface KeylockService115 extends KeylockService114
 {
-    // Nothing new added for release 1.15
+	// Nothing new added for release 1.15
 }

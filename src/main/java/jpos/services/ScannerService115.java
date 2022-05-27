@@ -19,18 +19,17 @@
 //
 // ScannerService115
 //
-// Interface definining all capabilities, properties and methods that are
-// specific to Scanner for release 1.15.
+//   Interface defining all new capabilities, properties and methods
+//   that are specific to Scanner for release 1.15.
 //
-// Modification history
-// ------------------------------------------------------------------
-// 2022-Apr-09 JavaPOS Release 1.15                                MC
+//   Automatically generated from ScannerControl115.
 //
 /////////////////////////////////////////////////////////////////////
 
 package jpos.services;
 
+
 public interface ScannerService115 extends ScannerService114
 {
-    // Nothing new added for release 1.15
+	// Nothing new added for release 1.15
 }

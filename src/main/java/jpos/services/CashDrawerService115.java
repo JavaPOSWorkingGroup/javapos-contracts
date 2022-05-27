@@ -19,18 +19,17 @@
 //
 // CashDrawerService115
 //
-// Interface definining all capabilities, properties and methods that are
-// specific to Cash Drawer for release 1.15.
+//   Interface defining all new capabilities, properties and methods
+//   that are specific to Cash Drawer for release 1.15.
 //
-// Modification history
-// ------------------------------------------------------------------
-// 2022-Apr-09 JavaPOS Release 1.15                                MC
+//   Automatically generated from CashDrawerControl115.
 //
 /////////////////////////////////////////////////////////////////////
 
 package jpos.services;
 
+
 public interface CashDrawerService115 extends CashDrawerService114
 {
-    // Nothing new added for release 1.15
+	// Nothing new added for release 1.15
 }

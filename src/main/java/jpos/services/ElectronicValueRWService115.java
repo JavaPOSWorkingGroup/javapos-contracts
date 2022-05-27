@@ -1,6 +1,6 @@
 //////////////////////////////////////////////////////////////////////
 //
-// The JavaPOS library source code is now under the CPL license, which
+// The JavaPOS library source code is now under the CPL license, which 
 // is an OSS Apache-like license. The complete license is located at:
 //    http://www.ibm.com/developerworks/library/os-cpl.html
 //
@@ -19,12 +19,10 @@
 //
 // ElectronicValueRWService115
 //
-// Interface definining all capabilities, properties and methods that are
-// specific to Electronic Value RW for release 1.15.
+//   Interface defining all new capabilities, properties and methods
+//   that are specific to Electronic Value Reader Writer for release 1.15.
 //
-// Modification history
-// ------------------------------------------------------------------
-// 2022-Apr-09 JavaPOS Release 1.15                                MC
+//   Automatically generated from ElectronicValueRWControl115.
 //
 /////////////////////////////////////////////////////////////////////
 
@@ -34,88 +32,54 @@ import jpos.*;
 
 public interface ElectronicValueRWService115 extends ElectronicValueRWService114
 {
-    // Capabilities
-    public boolean getCapAdditionalSecurityInformation() throws JposException;
-    public boolean getCapAuthorizeCompletion() throws JposException;
-    public boolean getCapAuthorizePreSales() throws JposException;
-    public boolean getCapAuthorizeRefund() throws JposException;
-    public boolean getCapAuthorizeVoid() throws JposException;
-    public boolean getCapAuthorizeVoidPreSales() throws JposException;
-    public boolean getCapCashDeposit() throws JposException;
-    public boolean getCapCenterResultCode() throws JposException;
-    public boolean getCapCheckCard() throws JposException;
-    public int getCapDailyLog() throws JposException;
-    public boolean getCapInstallments() throws JposException;
-    public boolean getCapPaymentDetail() throws JposException;
-    public boolean getCapTaxOthers() throws JposException;
-    public boolean getCapTransactionNumber() throws JposException;
-    public boolean getCapMembershipCertificate() throws JposException; // 1.14.1
-
-
-    // Properties
-    public String getCardCompanyID() throws JposException;
-    public String getCenterResultCode() throws JposException;
-    public String getDailyLog() throws JposException;
-    public int getPaymentCondition() throws JposException;
-    public String getPaymentDetail() throws JposException;
-    public int getPaymentMedia() throws JposException;
-    public void setPaymentMedia(int paymentMedia) throws JposException;
-    public String getSlipNumber() throws JposException;
-    public String getTransactionNumber() throws JposException;
-    public int getTransactionType() throws JposException;
-    public int getServiceType() throws JposException; // 1.14.1
-
-    // Methods
-    public void accessDailyLog(int sequenceNumber,
-                               int type,
-                               int timeout) throws JposException;
-    public void accessData(int dataType,
-                           int[] data,
-                           Object[] obj) throws JposException; // 1.14.1
-    public void activateEVService(int[] data,
-                                  Object[] obj) throws JposException; // 1.14.1
-    public void authorizeCompletion(int sequenceNumber,
-                                    long amount,
-                                    long taxOthers,
-                                    int timeout) throws JposException;
-    public void authorizePreSales(int sequenceNumber,
-                                  long amount,
-                                  long taxOthers,
-                                  int timeout) throws JposException;
-    public void authorizeRefund(int sequenceNumber,
-                                long amount,
-                                long taxOthers,
-                                int timeout) throws JposException;
-    public void authorizeSales(int sequenceNumber,
-                               long amount,
-                               long taxOthers,
-                               int timeout) throws JposException;
-    public void authorizeVoid(int sequenceNumber,
-                              long amount,
-                              long taxOthers,
-                              int timeout) throws JposException;
-    public void authorizeVoidPreSales(int sequenceNumber,
-                                      long amount,
-                                      long taxOthers,
-                                      int timeout) throws JposException;
-    public void cashDeposit(int sequenceNumber,
-                            long amount,
-                            int timeout) throws JposException;
-    public void checkCard(int sequenceNumber,
-                          int timeout) throws JposException;
-    public void checkServiceRegistrationToMedium(int sequenceNumber,
-                                                 int timeout) throws JposException; // 1.14.1
-    public void closeDailyEVService(int[] data,
-                                    Object[] obj) throws JposException; // 1.14.1
-    public void deactivateEVService(int[] data,
-                                    Object[] obj) throws JposException; // 1.14.1
-    public void openDailyEVService(int[] data,
-                                   Object[] obj) throws JposException; // 1.14.1
-    public void registerServiceToMedium (int sequenceNumber,
-                                         int timeout) throws JposException; // 1.14.1
-    public void unregisterServiceToMedium(int sequenceNumber,
-                                          int timeout) throws JposException; // 1.14.1
-    public void updateData(int dataType,
-                           int[] data,
-                           Object[] obj) throws JposException; // 1.14.1
+	// Capabilities
+	public boolean getCapAdditionalSecurityInformation() throws JposException;
+	public boolean getCapAuthorizeCompletion() throws JposException;
+	public boolean getCapAuthorizePreSales() throws JposException;
+	public boolean getCapAuthorizeRefund() throws JposException;
+	public boolean getCapAuthorizeVoid() throws JposException;
+	public boolean getCapAuthorizeVoidPreSales() throws JposException;
+	public boolean getCapCashDeposit() throws JposException;
+	public boolean getCapCenterResultCode() throws JposException;
+	public boolean getCapCheckCard() throws JposException;
+	public int     getCapDailyLog() throws JposException;
+	public boolean getCapInstallments() throws JposException;
+	public boolean getCapMembershipCertificate() throws JposException;
+	public boolean getCapPaymentDetail() throws JposException;
+	public boolean getCapTaxOthers() throws JposException;
+	public boolean getCapTransactionNumber() throws JposException;
+	
+	// Properties
+	public String  getCardCompanyID() throws JposException;
+	public String  getCenterResultCode() throws JposException;
+	public String  getDailyLog() throws JposException;
+	public int     getPaymentCondition() throws JposException;
+	public String  getPaymentDetail() throws JposException;
+	public int     getPaymentMedia() throws JposException;
+	public void    setPaymentMedia(int paymentMedia) throws JposException;
+	public int     getServiceType() throws JposException;
+	public String  getSlipNumber() throws JposException;
+	public String  getTransactionNumber() throws JposException;
+	public int     getTransactionType() throws JposException;
+	
+	// Methods
+	public void    accessDailyLog(int sequenceNumber, int type, int timeout) throws JposException;
+	public void    accessData(int dataType, int[] data, Object[] obj) throws JposException;
+	public void    activateEVService(int[] data, Object[] obj) throws JposException;
+	public void    authorizeCompletion(int sequenceNumber, long amount, long taxOthers, int timeout) throws JposException;
+	public void    authorizePreSales(int sequenceNumber, long amount, long taxOthers, int timeout) throws JposException;
+	public void    authorizeRefund(int sequenceNumber, long amount, long taxOthers, int timeout) throws JposException;
+	public void    authorizeSales(int sequenceNumber, long amount, long taxOthers, int timeout) throws JposException;
+	public void    authorizeVoid(int sequenceNumber, long amount, long taxOthers, int timeout) throws JposException;
+	public void    authorizeVoidPreSales(int sequenceNumber, long amount, long taxOthers, int timeout) throws JposException;
+	public void    cashDeposit(int sequenceNumber, long amount, int timeout) throws JposException;
+	public void    checkCard(int sequenceNumber, int timeout) throws JposException;
+	public void    checkServiceRegistrationToMedium(int sequenceNumber, int timeout) throws JposException;
+	public void    closeDailyEVService(int[] data, Object[] obj) throws JposException;
+	public void    deactivateEVService(int[] data, Object[] obj) throws JposException;
+	public void    openDailyEVService(int[] data, Object[] obj) throws JposException;
+	public void    registerServiceToMedium(int sequenceNumber, int timeout) throws JposException;
+	public void    unregisterServiceToMedium(int sequenceNumber, int timeout) throws JposException;
+	public void    updateData(int dataType, int[] data, Object[] obj) throws JposException;
+	
 }

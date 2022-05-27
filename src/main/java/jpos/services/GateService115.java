@@ -1,6 +1,6 @@
 //////////////////////////////////////////////////////////////////////
 //
-// The JavaPOS library source code is now under the CPL license, which
+// The JavaPOS library source code is now under the CPL license, which 
 // is an OSS Apache-like license. The complete license is located at:
 //    http://www.ibm.com/developerworks/library/os-cpl.html
 //
@@ -19,18 +19,17 @@
 //
 // GateService115
 //
-// Interface definining all capabilities, properties and methods that are
-// specific to Gate for release 1.15.
+//   Interface defining all new capabilities, properties and methods
+//   that are specific to Gate for release 1.15.
 //
-// Modification history
-// ------------------------------------------------------------------
-// 2022-Apr-09 JavaPOS Release 1.15                                MC
+//   Automatically generated from GateControl115.
 //
 /////////////////////////////////////////////////////////////////////
 
 package jpos.services;
 
+
 public interface GateService115 extends GateService114
 {
-    // Nothing new added for release 1.15
+	// Nothing new added for release 1.15
 }

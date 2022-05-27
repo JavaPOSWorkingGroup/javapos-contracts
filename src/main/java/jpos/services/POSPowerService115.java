@@ -19,18 +19,17 @@
 //
 // POSPowerService115
 //
-// Interface definining all capabilities, properties and methods that are
-// specific to POSPower for release 1.15.
+//   Interface defining all new capabilities, properties and methods
+//   that are specific to POS Power for release 1.15.
 //
-// Modification history
-// ------------------------------------------------------------------
-// 2022-Apr-09 JavaPOS Release 1.15                                MC
+//   Automatically generated from POSPowerControl115.
 //
 /////////////////////////////////////////////////////////////////////
 
 package jpos.services;
 
+
 public interface POSPowerService115 extends POSPowerService114
 {
-    // Nothing new added for release 1.15
+	// Nothing new added for release 1.15
 }

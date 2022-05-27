@@ -19,18 +19,17 @@
 //
 // BumpBarService115
 //
-// Interface definining all capabilities, properties and methods that are
-// specific to Bump Bar for release 1.15.
+//   Interface defining all new capabilities, properties and methods
+//   that are specific to Bump Bar for release 1.15.
 //
-// Modification history
-// ------------------------------------------------------------------
-// 2022-Apr-09 JavaPOS Release 1.15                                MC
+//   Automatically generated from BumpBarControl115.
 //
 /////////////////////////////////////////////////////////////////////
 
 package jpos.services;
 
+
 public interface BumpBarService115 extends BumpBarService114
 {
-    // Nothing new added for release 1.15
+	// Nothing new added for release 1.15
 }
