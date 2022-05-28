@@ -1,5 +1,11 @@
 # Change Log for javapos-contracts
 
+## 1.15.0
+
+- added outstanding enhancements and corrections from UnifiedPOS 1.14.1; solves GH issue #12
+- added enhancements from UnifiedPOS 1.15
+- added serialization UIDs for all events at jpos.events and for jpos.JposException to get rid of all compiler warnings
+
 ## 1.14.4
 
 - **Major Change**: requires Java 8 runtime (cannot be marked as major version change accordingly as major and minor version is aligned to UnifiedPOS version)
