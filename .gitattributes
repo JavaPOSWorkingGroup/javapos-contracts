@@ -1,0 +1,4 @@
+# Configure Git to handle line endings automatically to get collaboration works effectively with people who use different operating systems.
+
+# Set the default behavior to get the line endings checked out OS aware, in case people don't have core.autocrlf set.
+* text=auto
