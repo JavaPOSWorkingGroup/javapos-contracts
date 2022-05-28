@@ -30,6 +30,8 @@ package jpos.events;
 
 public class ErrorEvent extends JposEvent
 {
+    private static final long serialVersionUID = -5592973843207584764L;
+
     public ErrorEvent(Object source, int errorCode, int errorCodeExtended,
                       int errorLocus, int errorResponse)
     {

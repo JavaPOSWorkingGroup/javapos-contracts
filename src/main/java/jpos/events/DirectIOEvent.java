@@ -30,6 +30,8 @@ package jpos.events;
 
 public class DirectIOEvent extends JposEvent
 {
+    private static final long serialVersionUID = 8500720602248958845L;
+
     public DirectIOEvent(Object source, int eventNumber, int data, 
                          Object object)
     {

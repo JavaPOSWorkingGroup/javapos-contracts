@@ -30,6 +30,8 @@ package jpos.events;
 
 public class OutputCompleteEvent extends JposEvent
 {
+    private static final long serialVersionUID = -3382891364455284004L;
+
     public OutputCompleteEvent(Object source, int outputID)
     {
         super(source);

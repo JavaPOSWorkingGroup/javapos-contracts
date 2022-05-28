@@ -30,6 +30,8 @@ package jpos.events;
 
 public class TransitionEvent extends JposEvent
 {
+    private static final long serialVersionUID = 9201728482994927541L;
+
     public TransitionEvent(Object source,
                            int    eventNumber,
                            int    data,

@@ -31,6 +31,8 @@ package jpos;
 
 public class JposException extends java.lang.Exception
 {
+    private static final long serialVersionUID = -4215748007714536597L;
+
     public JposException(int errorCode)
     {
         this(errorCode, 0, "" + errorCode, null);

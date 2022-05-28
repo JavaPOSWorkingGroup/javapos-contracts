@@ -30,6 +30,8 @@ package jpos.events;
 
 public class DataEvent extends JposEvent
 {
+    private static final long serialVersionUID = -6951708606462673518L;
+
     public DataEvent(Object source, int status)
     {
         super(source);

@@ -31,6 +31,8 @@ package jpos.events;
 
 public abstract class JposEvent extends java.util.EventObject
 {
+    private static final long serialVersionUID = 3124521778888584194L;
+
     public JposEvent(Object source)
     {
         super(source);
