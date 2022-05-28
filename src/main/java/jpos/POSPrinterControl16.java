@@ -30,8 +30,6 @@
 
 package jpos;
 
-import jpos.events.*;
-
 public interface POSPrinterControl16 extends POSPrinterControl15
 {
   // Nothing new added for release 1.6

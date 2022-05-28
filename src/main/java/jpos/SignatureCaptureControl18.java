@@ -30,8 +30,6 @@
 
 package jpos;
 
-import jpos.events.*;
-
 public interface SignatureCaptureControl18 extends SignatureCaptureControl17
 {
   // Capabilities

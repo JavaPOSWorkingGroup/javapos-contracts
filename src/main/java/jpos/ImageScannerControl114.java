@@ -30,8 +30,6 @@
 
 package jpos;
 
-import jpos.events.*;
-
 public interface ImageScannerControl114 extends ImageScannerControl113
 {
   // Nothing new added for release 1.14

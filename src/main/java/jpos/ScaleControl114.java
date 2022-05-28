@@ -30,8 +30,6 @@
 
 package jpos;
 
-import jpos.events.*;
-
 public interface ScaleControl114 extends ScaleControl113
 {
   // Capabilities

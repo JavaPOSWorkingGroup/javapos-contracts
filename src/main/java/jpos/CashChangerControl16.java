@@ -30,8 +30,6 @@
 
 package jpos;
 
-import jpos.events.*;
-
 public interface CashChangerControl16 extends CashChangerControl15
 {
   // Nothing new added for release 1.6

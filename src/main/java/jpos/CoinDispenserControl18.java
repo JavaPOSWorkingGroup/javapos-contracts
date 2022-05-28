@@ -30,8 +30,6 @@
 
 package jpos;
 
-import jpos.events.*;
-
 public interface CoinDispenserControl18 extends CoinDispenserControl17
 {
   // Capabilities

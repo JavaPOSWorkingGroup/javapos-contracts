@@ -30,8 +30,6 @@
 
 package jpos;
 
-import jpos.events.*;
-
 public interface POSKeyboardControl114 extends POSKeyboardControl113
 {
   // Nothing new added for release 1.14

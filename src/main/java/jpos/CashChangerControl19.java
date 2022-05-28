@@ -30,8 +30,6 @@
 
 package jpos;
 
-import jpos.events.*;
-
 public interface CashChangerControl19 extends CashChangerControl18
 {
   // Capabilities

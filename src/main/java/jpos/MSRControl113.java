@@ -33,8 +33,6 @@
 
 package jpos;
 
-import jpos.events.*;
-
 public interface MSRControl113 extends MSRControl112
 {
   // The retrieveDeviceAuthenticationData method's challenge parameter

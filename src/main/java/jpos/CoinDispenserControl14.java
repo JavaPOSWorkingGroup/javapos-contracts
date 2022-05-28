@@ -30,8 +30,6 @@
 
 package jpos;
 
-import jpos.events.*;
-
 public interface CoinDispenserControl14 extends CoinDispenserControl13
 {
   // Nothing new added for release 1.4

@@ -30,8 +30,6 @@
 
 package jpos;
 
-import jpos.events.*;
-
 public interface MICRControl110 extends MICRControl19
 {
   // Methods

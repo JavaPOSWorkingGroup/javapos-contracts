@@ -30,8 +30,6 @@
 
 package jpos;
 
-import jpos.events.*;
-
 public interface ScaleControl16 extends ScaleControl15
 {
   // Nothing new added for release 1.6

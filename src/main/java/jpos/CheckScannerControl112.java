@@ -29,8 +29,6 @@
 
 package jpos;
 
-import jpos.events.*;
-
 public interface CheckScannerControl112 extends CheckScannerControl111
 {
   // Nothing new added for release 1.12

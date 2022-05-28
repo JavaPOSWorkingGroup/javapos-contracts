@@ -30,8 +30,6 @@
 
 package jpos;
 
-import jpos.events.*;
-
 public interface FiscalPrinterControl112 extends FiscalPrinterControl111
 {
   // Methods

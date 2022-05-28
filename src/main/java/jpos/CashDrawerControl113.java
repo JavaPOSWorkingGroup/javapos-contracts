@@ -30,8 +30,6 @@
 
 package jpos;
 
-import jpos.events.*;
-
 public interface CashDrawerControl113 extends CashDrawerControl112
 {
   // Nothing new added for release 1.13

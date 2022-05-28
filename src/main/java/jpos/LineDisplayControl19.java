@@ -30,8 +30,6 @@
 
 package jpos;
 
-import jpos.events.*;
-
 public interface LineDisplayControl19 extends LineDisplayControl18
 {
   // Capabilities

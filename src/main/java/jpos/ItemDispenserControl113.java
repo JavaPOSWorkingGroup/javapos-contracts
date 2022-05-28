@@ -31,8 +31,6 @@
 
 package jpos;
 
-import jpos.events.*;
-
 public interface ItemDispenserControl113 extends ItemDispenserControl112
 {
   // Nothing new added for release 1.13

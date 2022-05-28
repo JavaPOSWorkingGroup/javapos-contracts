@@ -30,8 +30,6 @@
 
 package jpos;
 
-import jpos.events.*;
-
 public interface CATControl112 extends CATControl111
 {
   // Nothing new added for release 1.12

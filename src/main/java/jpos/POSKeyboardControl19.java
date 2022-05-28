@@ -30,8 +30,6 @@
 
 package jpos;
 
-import jpos.events.*;
-
 public interface POSKeyboardControl19 extends POSKeyboardControl18
 {
   // Capabilities

@@ -30,8 +30,6 @@
 
 package jpos;
 
-import jpos.events.*;
-
 public interface RemoteOrderDisplayControl18 extends RemoteOrderDisplayControl17
 {
 	// Capabilities

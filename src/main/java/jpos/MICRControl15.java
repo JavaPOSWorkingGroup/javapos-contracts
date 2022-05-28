@@ -30,8 +30,6 @@
 
 package jpos;
 
-import jpos.events.*;
-
 public interface MICRControl15 extends MICRControl14
 {
   // Nothing new added for release 1.5

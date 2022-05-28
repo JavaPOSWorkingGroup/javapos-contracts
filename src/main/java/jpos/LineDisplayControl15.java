@@ -30,8 +30,6 @@
 
 package jpos;
 
-import jpos.events.*;
-
 public interface LineDisplayControl15 extends LineDisplayControl14
 {
   // Nothing new added for release 1.5

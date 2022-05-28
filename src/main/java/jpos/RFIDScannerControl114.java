@@ -30,8 +30,6 @@
 
 package jpos;
 
-import jpos.events.*;
-
 public interface RFIDScannerControl114 extends RFIDScannerControl113
 {
   // Nothing new added for release 1.14

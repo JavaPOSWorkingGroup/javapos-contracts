@@ -30,8 +30,6 @@
 
 package jpos;
 
-import jpos.events.*;
-
 public interface GateControl114 extends GateControl113
 {
   // Nothing new added for release 1.14

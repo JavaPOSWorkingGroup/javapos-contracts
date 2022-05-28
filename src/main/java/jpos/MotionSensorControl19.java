@@ -30,8 +30,6 @@
 
 package jpos;
 
-import jpos.events.*;
-
 public interface MotionSensorControl19 extends MotionSensorControl18
 {
   // Capabilities

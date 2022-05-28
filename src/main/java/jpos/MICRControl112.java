@@ -30,8 +30,6 @@
 
 package jpos;
 
-import jpos.events.*;
-
 public interface MICRControl112 extends MICRControl111
 {
   // Nothing new added for release 1.12

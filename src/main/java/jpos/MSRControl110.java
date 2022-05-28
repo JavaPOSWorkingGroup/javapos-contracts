@@ -34,8 +34,6 @@
 
 package jpos;
 
-import jpos.events.*;
-
 public interface MSRControl110 extends MSRControl19
 {
   // Capabilities

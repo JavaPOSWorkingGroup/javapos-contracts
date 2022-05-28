@@ -30,8 +30,6 @@
 
 package jpos;
 
-import jpos.events.*;
-
 public interface PINPadControl18 extends PINPadControl17
 {
   // Capabilities

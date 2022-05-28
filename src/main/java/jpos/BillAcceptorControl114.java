@@ -30,8 +30,6 @@
 
 package jpos;
 
-import jpos.events.*;
-
 public interface BillAcceptorControl114 extends BillAcceptorControl113
 {
   // Nothing new added for release 1.14

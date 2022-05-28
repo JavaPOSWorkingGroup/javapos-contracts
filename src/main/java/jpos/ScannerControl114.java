@@ -30,8 +30,6 @@
 
 package jpos;
 
-import jpos.events.*;
-
 public interface ScannerControl114 extends ScannerControl113
 {
   // Nothing new added for release 1.14

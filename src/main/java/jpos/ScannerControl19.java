@@ -30,8 +30,6 @@
 
 package jpos;
 
-import jpos.events.*;
-
 public interface ScannerControl19 extends ScannerControl18
 {
   // Capabilities

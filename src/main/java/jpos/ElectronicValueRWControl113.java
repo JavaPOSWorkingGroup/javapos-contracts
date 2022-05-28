@@ -31,8 +31,6 @@
 
 package jpos;
 
-import jpos.events.*;
-
 public interface ElectronicValueRWControl113 extends ElectronicValueRWControl112
 {
   // Nothing new added for release 1.13

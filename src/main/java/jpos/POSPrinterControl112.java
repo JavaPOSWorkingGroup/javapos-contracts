@@ -30,8 +30,6 @@
 
 package jpos;
 
-import jpos.events.*;
-
 public interface POSPrinterControl112 extends POSPrinterControl111
 {
   // Nothing new added for release 1.12

@@ -30,8 +30,6 @@
 
 package jpos;
 
-import jpos.events.*;
-
 public interface MSRControl17 extends MSRControl16
 {
   // Nothing new added for release 1.7

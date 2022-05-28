@@ -30,8 +30,6 @@
 
 package jpos;
 
-import jpos.events.*;
-
 public interface FiscalPrinterControl110 extends FiscalPrinterControl19
 {
   // Nothing new added for release 1.10

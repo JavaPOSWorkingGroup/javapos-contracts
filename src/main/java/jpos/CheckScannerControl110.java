@@ -29,8 +29,6 @@
 
 package jpos;
 
-import jpos.events.*;
-
 public interface CheckScannerControl110 extends CheckScannerControl19
 {
   // Methods

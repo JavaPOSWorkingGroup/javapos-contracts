@@ -30,8 +30,6 @@
 
 package jpos;
 
-import jpos.events.*;
-
 public interface MotionSensorControl112 extends MotionSensorControl111
 {
   // Nothing new added for release 1.12

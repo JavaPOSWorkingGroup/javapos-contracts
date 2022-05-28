@@ -32,8 +32,6 @@
 
 package jpos;
 
-import jpos.events.*;
-
 public interface CATControl113 extends CATControl112
 {
   // Properties

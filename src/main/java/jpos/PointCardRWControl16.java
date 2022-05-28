@@ -31,8 +31,6 @@
 
 package jpos;
 
-import jpos.events.*;
-
 public interface PointCardRWControl16 extends PointCardRWControl15
 {
   // Nothing new added for release 1.6

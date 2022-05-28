@@ -30,8 +30,6 @@
 
 package jpos;
 
-import jpos.events.*;
-
 public interface MSRControl14 extends MSRControl13
 {
   // Nothing new added for release 1.4

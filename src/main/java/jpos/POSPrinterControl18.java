@@ -30,8 +30,6 @@
 
 package jpos;
 
-import jpos.events.*;
-
 public interface POSPrinterControl18 extends POSPrinterControl17
 {
   // Capabilities

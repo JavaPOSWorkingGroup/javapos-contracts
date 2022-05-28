@@ -30,8 +30,6 @@
 
 package jpos;
 
-import jpos.events.*;
-
 public interface CATControl19 extends CATControl18
 {
   // Capabilities

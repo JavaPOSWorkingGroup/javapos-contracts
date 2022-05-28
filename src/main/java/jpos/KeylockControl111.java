@@ -30,8 +30,6 @@
 
 package jpos;
 
-import jpos.events.*;
-
 public interface KeylockControl111 extends KeylockControl110
 {
   // Capabilities

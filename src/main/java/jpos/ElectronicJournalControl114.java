@@ -30,8 +30,6 @@
 
 package jpos;
 
-import jpos.events.*;
-
 public interface ElectronicJournalControl114 extends ElectronicJournalControl113
 {
   // Nothing new added for release 1.14

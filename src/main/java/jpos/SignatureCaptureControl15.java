@@ -30,8 +30,6 @@
 
 package jpos;
 
-import jpos.events.*;
-
 public interface SignatureCaptureControl15 extends SignatureCaptureControl14
 {
   // Nothing new added for release 1.5

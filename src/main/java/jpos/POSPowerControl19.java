@@ -30,8 +30,6 @@
 
 package jpos;
 
-import jpos.events.*;
-
 public interface POSPowerControl19 extends POSPowerControl18
 {
   // Capabilities

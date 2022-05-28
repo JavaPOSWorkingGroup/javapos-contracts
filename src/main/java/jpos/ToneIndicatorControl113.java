@@ -30,8 +30,6 @@
 
 package jpos;
 
-import jpos.events.*;
-
 public interface ToneIndicatorControl113 extends ToneIndicatorControl112
 {
   // Capabilities

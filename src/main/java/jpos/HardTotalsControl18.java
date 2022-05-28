@@ -30,8 +30,6 @@
 
 package jpos;
 
-import jpos.events.*;
-
 public interface HardTotalsControl18 extends HardTotalsControl17
 {
   // Capabilities

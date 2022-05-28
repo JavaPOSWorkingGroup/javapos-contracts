@@ -33,8 +33,6 @@
 
 package jpos;
 
-import jpos.events.*;
-
 public interface FiscalPrinterControl17 extends FiscalPrinterControl16
 {
 	// The AmountDecimalPlaces property was incorrectly spelled

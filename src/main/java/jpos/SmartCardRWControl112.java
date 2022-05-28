@@ -30,8 +30,6 @@
 
 package jpos;
 
-import jpos.events.*;
-
 public interface SmartCardRWControl112 extends SmartCardRWControl111
 {
   // Nothing new added for release 1.12

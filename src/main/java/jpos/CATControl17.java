@@ -30,8 +30,6 @@
 
 package jpos;
 
-import jpos.events.*;
-
 public interface CATControl17 extends CATControl16
 {
   // Nothing new added for release 1.7

@@ -30,8 +30,6 @@
 
 package jpos;
 
-import jpos.events.*;
-
 public interface BumpBarControl18 extends BumpBarControl17
 {
   // Capabilities

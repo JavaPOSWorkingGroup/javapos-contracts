@@ -31,8 +31,6 @@
 
 package jpos;
 
-import jpos.events.*;
-
 public interface LightsControl113 extends LightsControl112
 {
   // Nothing new added for release 1.13

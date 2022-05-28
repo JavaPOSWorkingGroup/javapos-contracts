@@ -33,8 +33,6 @@
 
 package jpos;
 
-import jpos.events.*;
-
 public interface FiscalPrinterControl18 extends FiscalPrinterControl17
 {
   // Capabilities

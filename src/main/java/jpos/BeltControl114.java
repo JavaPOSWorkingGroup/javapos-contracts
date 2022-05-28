@@ -30,8 +30,6 @@
 
 package jpos;
 
-import jpos.events.*;
-
 public interface BeltControl114 extends BeltControl113
 {
   // Nothing new added for release 1.14

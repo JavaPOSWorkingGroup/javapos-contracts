@@ -30,8 +30,6 @@
 
 package jpos;
 
-import jpos.events.*;
-
 public interface RemoteOrderDisplayControl111 extends RemoteOrderDisplayControl110
 {
   // Nothing new added for release 1.11

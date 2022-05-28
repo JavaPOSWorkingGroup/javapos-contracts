@@ -30,8 +30,6 @@
 
 package jpos;
 
-import jpos.events.*;
-
 public interface HardTotalsControl15 extends HardTotalsControl14
 {
   // Nothing new added for release 1.5

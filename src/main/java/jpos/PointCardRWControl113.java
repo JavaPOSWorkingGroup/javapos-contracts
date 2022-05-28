@@ -31,8 +31,6 @@
 
 package jpos;
 
-import jpos.events.*;
-
 public interface PointCardRWControl113 extends PointCardRWControl112
 {
   // Nothing new added for release 1.13
