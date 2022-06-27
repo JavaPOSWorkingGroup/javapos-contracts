@@ -28,8 +28,11 @@
 
 package jpos.services;
 
+import jpos.*;
 
 public interface GateService115 extends GateService114
 {
-	// Nothing new added for release 1.15
+	// Properties
+	public int     getGateStatus() throws JposException;
+	
 }

@@ -40,7 +40,7 @@ public interface GateControl112 extends BaseControl
   public boolean getCapGateStatus() throws JposException;
   public int     getCapPowerReporting() throws JposException;
   /**
-   * @deprecated Does not use it. It is not defined in UnifiedPOS at all.
+   * @deprecated Do not use it. It is not defined in UnifiedPOS at all.
    */
   public boolean getCapRealTimeData() throws JposException;
   public boolean getCapStatisticsReporting() throws JposException;
@@ -48,6 +48,7 @@ public interface GateControl112 extends BaseControl
   public boolean getCapUpdateStatistics() throws JposException;
 
   // Properties
+  /** @deprecated Typo in initial version, use getGateStatus() instead */
   public int     getGetStatus() throws JposException;
   public int     getPowerNotify() throws JposException;
   public void    setPowerNotify(int powerNotify) throws JposException;

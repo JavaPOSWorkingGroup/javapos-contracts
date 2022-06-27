@@ -33,4 +33,8 @@ package jpos;
 public interface GateControl115 extends GateControl114
 {
     // Nothing new added for release 1.15
+
+    // But a typo correction is needed introduced initially with version 1.12
+    public int getGateStatus() throws JposException;
+
 }
