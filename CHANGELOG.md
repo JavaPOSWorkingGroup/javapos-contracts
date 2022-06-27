@@ -2,9 +2,11 @@
 
 ## 1.15.0
 
-- added outstanding enhancements and corrections from UnifiedPOS 1.14.1; solves GH issue #12
-- added enhancements from UnifiedPOS 1.15
+- added outstanding enhancements and corrections from UnifiedPOS 1.14.1 regarding Electronic Value Reader/Writer; solves GH issue #12
+- added enhancements from UnifiedPOS 1.15; solves GH issue #15
 - added serialization UIDs for all events at jpos.events and for jpos.JposException to get rid of all compiler warnings
+- added JavaPOS naming convention aligned constants at `ElectronicValueRWConst` replacing the OPOS constants added by mistake, marked the OPOS constants as deprecated; solves GH issue #14
+- added `getGateStatus` to _Gate_ which was missing since version 1.12 where it was misspelled as `getGetStatus`; solves GH issue #9
 
 ## 1.14.4
 
