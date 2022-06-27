@@ -369,14 +369,36 @@ public interface ElectronicValueRWConst
   // "ResultCodeExtended" Property Constants
   /////////////////////////////////////////////////////////////////////
 
-  public static final int OPOS_EVRW_NOCARD                = 201;
-  public static final int OPOS_EVRW_RELEASE               = 202;
-  public static final int OPOS_EVRW_CENTERERROR           = 203;
-  public static final int OPOS_EVRW_COMMANDERROR          = 204;
-  public static final int OPOS_EVRW_RESET                 = 205;
-  public static final int OPOS_EVRW_COMMUNICATIONERROR    = 206;
-  public static final int OPOS_EVRW_LOGOVERFLOW           = 207;
-  public static final int OPOS_EVRW_DAILYLOGOVERFLOW      = 208;
-  public static final int OPOS_EVRW_DEFICIENT             = 209;
-  public static final int OPOS_EVRW_OVERDEPOSIT           = 210;
+  public static final int JPOS_EEVRW_NOCARD               = 201;
+  public static final int JPOS_EEVRW_RELEASE              = 202;
+  public static final int JPOS_EEVRW_CENTERERROR          = 203;
+  public static final int JPOS_EEVRW_COMMANDERROR         = 204;
+  public static final int JPOS_EEVRW_RESET                = 205;
+  public static final int JPOS_EEVRW_COMMUNICATIONERROR   = 206;
+  public static final int JPOS_EEVRW_LOGOVERFLOW          = 207;
+  public static final int JPOS_EEVRW_DAILYLOGOVERFLOW     = 208;
+  public static final int JPOS_EEVRW_DEFICIENT            = 209;
+  public static final int JPOS_EEVRW_OVERDEPOSIT          = 210;
+  
+  // the following OPOS error codes has been added by mistake, use the ones from above
+  /** @deprecated Use  JPOS_EEVRW_NOCARD instead */
+  public static final int OPOS_EVRW_NOCARD                = JPOS_EEVRW_NOCARD;
+  /** @deprecated Use  JPOS_EEVRW_RELEASE instead */
+  public static final int OPOS_EVRW_RELEASE               = JPOS_EEVRW_RELEASE;
+  /** @deprecated Use  JPOS_EEVRW_CENTERERROR instead */
+  public static final int OPOS_EVRW_CENTERERROR           = JPOS_EEVRW_CENTERERROR;
+  /** @deprecated Use  JPOS_EEVRW_COMMANDERROR instead */
+  public static final int OPOS_EVRW_COMMANDERROR          = JPOS_EEVRW_COMMANDERROR;
+  /** @deprecated Use  JPOS_EEVRW_RESET instead */
+  public static final int OPOS_EVRW_RESET                 = JPOS_EEVRW_RESET;
+  /** @deprecated Use  JPOS_EEVRW_COMMUNICATIONERROR instead */
+  public static final int OPOS_EVRW_COMMUNICATIONERROR    = JPOS_EEVRW_COMMUNICATIONERROR;
+  /** @deprecated Use  JPOS_EEVRW_LOGOVERFLOW instead */
+  public static final int OPOS_EVRW_LOGOVERFLOW           = JPOS_EEVRW_LOGOVERFLOW;
+  /** @deprecated Use  JPOS_EEVRW_DAILYLOGOVERFLOW instead */
+  public static final int OPOS_EVRW_DAILYLOGOVERFLOW      = JPOS_EEVRW_DAILYLOGOVERFLOW;
+  /** @deprecated Use  JPOS_EEVRW_DEFICIENT instead */
+  public static final int OPOS_EVRW_DEFICIENT             = JPOS_EEVRW_DEFICIENT;
+  /** @deprecated Use  JPOS_EEVRW_OVERDEPOSIT instead */
+  public static final int OPOS_EVRW_OVERDEPOSIT           = JPOS_EEVRW_OVERDEPOSIT;
 }
