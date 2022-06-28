@@ -26,6 +26,11 @@ jobs:
           ORG_GRADLE_PROJECT_sonatypeUsername: ${{ secrets.SONATYPE_USERNAME }}
           ORG_GRADLE_PROJECT_sonatypePassword: ${{ secrets.SONATYPE_PASSWORD }}
         with: 
-          arguments: publishToSonatype closeSonatypeStagingRepository
+          arguments: dependencyReport publishToSonatype closeSonatypeStagingRepository
           # when release build is settled, switch to: arguments: publishToSonatype closeAndReleaseSonatypeStagingRepository
           dependencies-cache-enabled: true
+      - name: Store Dependency Report
+        uses: actions/upload-artifact@v3
+        with:
+          name: dependencies
+          path: "**/build/reports/project/dependencies.txt"
