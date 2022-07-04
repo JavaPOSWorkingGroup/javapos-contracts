@@ -18,10 +18,13 @@ jobs:
         name: Get Version
         uses: battila7/get-version-action@v2
       - name: Build
-        uses: eskatos/gradle-command-action@v1
+        uses: gradle/gradle-build-action@v2
         with:
-           arguments: dependencyReport build
-           dependencies-cache-enabled: true
+           arguments: |
+             -Pgithub.event.action=${{github.event.action}}
+             --scan
+             dependencyReport
+             build
       - name: Store Dependency Report
         uses: actions/upload-artifact@v3
         with:
