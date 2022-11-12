@@ -10,4 +10,5 @@ jobs:
     uses: JavaPOSWorkingGroup/javapos-workflow/.github/workflows/build.yml@main
     with:
       github-event-action: ${{github.event.action}}
+      has-junit-tests: false
     secrets: inherit
