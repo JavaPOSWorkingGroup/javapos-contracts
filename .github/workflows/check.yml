@@ -4,7 +4,7 @@ on:
   pull_request:
 
 jobs:
-  javapos-build-workflow:
+  javapos-workflow:
     uses: JavaPOSWorkingGroup/javapos-workflow/.github/workflows/check.yml@main
     with:
       github-event-action: ${{github.event.action}}
