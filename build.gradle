@@ -27,6 +27,7 @@ def artifactName = 'javapos-contracts'
 group='org.javapos'
 def uposVersion = '1.15'
 version="${uposVersion}.0-SNAPSHOT" // the last part after dot is the build/release version
+// if version is going to be changed, first add "-SNAPSHOT" ot test publishing to MavenCentral's Snapshot repo
  
 ///////////////////////////////////////////////////////////////////////////////
 // Project Configurations
