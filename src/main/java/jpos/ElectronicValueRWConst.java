@@ -268,6 +268,9 @@ public interface ElectronicValueRWConst
   public static final int EVRW_TAG_CM_CREDIT           = 2; // Added in release 1.14
   public static final int EVRW_TAG_CM_POINT            = 3; // Added in release 1.14
 
+  public static final int EVRW_TAG_NIT_ALL             = 1; // Added in release 1.14
+  public static final int EVRW_TAG_NIT_UPDATED         = 2; // Added in release 1.14
+  
   public static final int EVRW_TAG_PC_INSTALLMENT_1       =  1; // Added in release 1.14
   public static final int EVRW_TAG_PC_INSTALLMENT_2       =  2; // Added in release 1.14
   public static final int EVRW_TAG_PC_INSTALLMENT_3       =  3; // Added in release 1.14
@@ -308,7 +311,8 @@ public interface ElectronicValueRWConst
   public static final int EVRW_TAG_TT_RETURN           = 7; // Added in release 1.14
   public static final int EVRW_TAG_TT_SUBTRACT         = 8; // Added in release 1.14
   public static final int EVRW_TAG_TT_WRITE            = 9; // Added in release 1.14
-
+  public static final int EVRW_TAG_TT_COMPLETION       = 10; // Added in release 1.15
+  public static final int EVRW_TAG_TT_PRE_SALES        = 11; // Added in release 1.15
 
   /////////////////////////////////////////////////////////////////////
   // "transactionAccess" Method: "Control" Parameter Constants
