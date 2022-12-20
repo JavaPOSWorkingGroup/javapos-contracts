@@ -1,5 +1,10 @@
 # Change Log for javapos-contracts
 
+## 1.15.1
+
+- added ElectronicValueRW constants EVRW_TAG_NIT_ALL and EVRW_TAG_NIT_UPDATED; solves GH issue #17
+- added ElectronicValueRW constants EVRW_TAG_TT_COMPLETION and EVRW_TAG_TT_PRE_SALES; solves GH issue #16
+
 ## 1.15.0
 
 - added outstanding enhancements and corrections from UnifiedPOS 1.14.1 regarding Electronic Value Reader/Writer; solves GH issue #12
