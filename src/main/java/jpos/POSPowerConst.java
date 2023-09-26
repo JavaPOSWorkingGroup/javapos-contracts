@@ -1,6 +1,6 @@
 //////////////////////////////////////////////////////////////////////
 //
-// The JavaPOS library source code is now under the CPL license, which 
+// The JavaPOS library source code is now under the CPL license, which
 // is an OSS Apache-like license. The complete license is located at:
 //    http://www.ibm.com/developerworks/library/os-cpl.html
 //
@@ -42,6 +42,9 @@
 //     PWR_SUE_SUSPEND
 //     PWR_SUE_USER_SUSPEND
 //     PWR_SUE_PWR_SOURCE
+// 2023-Apr-17 JavaPOS Release 1.16                                MC
+//   Added the following constants:
+//     PWR_SUE_BAT_CAPACITY_REMAINING_IN_SECONDS
 //
 /////////////////////////////////////////////////////////////////////
 
@@ -101,4 +104,5 @@ public interface POSPowerConst
     public static final int PWR_SUE_SUSPEND                = 26;
     public static final int PWR_SUE_USER_SUSPEND           = 27;
     public static final int PWR_SUE_PWR_SOURCE             = 28;
+    public static final int PWR_SUE_BAT_CAPACITY_REMAINING_IN_SECONDS = 29;     // New in 1.16
 }
