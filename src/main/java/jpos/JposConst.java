@@ -174,4 +174,8 @@ public interface JposConst
     /////////////////////////////////////////////////////////////////////
 
     public static final int JPOS_FOREVER         = -1;
+    
+    // boolean constants, mainly as workaround for a type error at PointCardRW.CapCardEntranceSensor
+    public static final int JPOS_FALSE = 0;
+    public static final int JPOS_TRUE =  1; 
 }

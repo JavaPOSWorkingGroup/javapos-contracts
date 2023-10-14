@@ -1,9 +1,11 @@
 # Change Log for javapos-contracts
 
-## 1.15.2
-- added missing PINPad constant PPAD_TIMEOUT; solved GH issues #19 
+## 1.15.2 Maintenance Release
 
-## 1.15.1
+- added general constants `JPOS_FALSE` and `JPOS_FALSE` to `JposConst`, as workaround for a type error in `PointCardRW.CapCardEntranceSensor`; solves GH issues #20
+- added missing *PINPad* constant `PPAD_TIMEOUT`; solves GH issues #19 
+
+## 1.15.1 Maintenance Release
 
 - added ElectronicValueRW constants EVRW_TAG_NIT_ALL and EVRW_TAG_NIT_UPDATED; solves GH issue #17
 - added ElectronicValueRW constants EVRW_TAG_TT_COMPLETION and EVRW_TAG_TT_PRE_SALES; solves GH issue #16
