@@ -94,7 +94,7 @@ public interface PINPadConst
     /////////////////////////////////////////////////////////////////////
     public static final int PPAD_SUCCESS                    = 1;
     public static final int PPAD_CANCEL                     = 2;
-
+    public static final int PPAD_TIMEOUT                    = 3;
 
 		/////////////////////////////////////////////////////////////////////
 		// "ErrorCodeExtended" Property Constants for PINPad

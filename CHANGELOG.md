@@ -1,5 +1,8 @@
 # Change Log for javapos-contracts
 
+## 1.15.2
+- added missing PINPad constant PPAD_TIMEOUT; solved GH issues #19 
+
 ## 1.15.1
 
 - added ElectronicValueRW constants EVRW_TAG_NIT_ALL and EVRW_TAG_NIT_UPDATED; solves GH issue #17
