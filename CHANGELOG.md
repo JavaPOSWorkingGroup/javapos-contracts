@@ -7,8 +7,8 @@
 
 ## 1.15.1 Maintenance Release
 
-- added ElectronicValueRW constants EVRW_TAG_NIT_ALL and EVRW_TAG_NIT_UPDATED; solves GH issue #17
-- added ElectronicValueRW constants EVRW_TAG_TT_COMPLETION and EVRW_TAG_TT_PRE_SALES; solves GH issue #16
+- added *ElectronicValueRW* constants `EVRW_TAG_NIT_ALL` and `EVRW_TAG_NIT_UPDATED`; solves GH issue #17
+- added *ElectronicValueRW* constants `EVRW_TAG_TT_COMPLETION` and `EVRW_TAG_TT_PRE_SALES`; solves GH issue #16
 
 ## 1.15.0
 
