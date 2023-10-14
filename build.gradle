@@ -38,7 +38,7 @@ eclipse.jdt.file.withProperties { properties ->
 	properties['org.eclipse.jdt.core.compiler.codegen.methodParameters'] = 'generate'
 }
 
-def javaposManifest = manifest {
+def javaposManifest = java.manifest {
         attributes('Specification-Title': 'UnifiedPOS Standard',
 				   'Specification-Vendor': 'UnifiedPOS Committee',
                    'Specification-Version': uposVersion,
@@ -47,8 +47,6 @@ def javaposManifest = manifest {
                    'Implementation-Version': version)
 }
 
-sourceCompatibility = 8
-
 ///////////////////////////////////////////////////////////////////////////////
 // Build Tasks
 ///////////////////////////////////////////////////////////////////////////////
@@ -56,6 +54,7 @@ sourceCompatibility = 8
 java {
     withSourcesJar()
     withJavadocJar()
+    sourceCompatibility = JavaVersion.VERSION_1_8
 }
 
 jar {
