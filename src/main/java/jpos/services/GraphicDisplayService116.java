@@ -99,7 +99,7 @@ public interface GraphicDisplayService116 extends BaseService, JposServiceInstan
 
     public void setStorage(int var1) throws JposException;
 
-    public int getURL() throws JposException;
+    public String getURL() throws JposException;
 
     public String getVideoType() throws JposException;
 
