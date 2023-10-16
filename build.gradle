@@ -59,7 +59,7 @@ java {
 }
 
 javadoc {
-    maxMemory = '64m'
+    maxMemory = '512m'
 }
 
 jar {
