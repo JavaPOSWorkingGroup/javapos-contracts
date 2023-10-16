@@ -58,6 +58,10 @@ java {
     withJavadocJar()
 }
 
+javadoc {
+    maxMemory = '64m'
+}
+
 jar {
 	archiveBaseName = artifactName
 	manifest = javaposManifest
