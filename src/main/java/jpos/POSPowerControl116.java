@@ -32,23 +32,17 @@ package jpos;
 
 public interface POSPowerControl116 extends POSPowerControl115
 {
-    int getBatteryCapacityRemainingInSeconds() throws JposException;
-
-    int getBatteryCriticallyLowThresholdInSeconds() throws JposException;
-
-    void setBatteryCriticallyLowThresholdInSeconds(int seconds) throws JposException;
-
-    int getBatteryLowThresholdInSeconds() throws JposException;
-
-    void setBatteryLowThresholdInSeconds(int seconds) throws JposException;
-
+    // Capabilities
     boolean getCapBatteryCapacityRemainingInSeconds() throws JposException;
-
     boolean getCapChargeTime() throws JposException;
-
     boolean getCapVariableBatteryCriticallyLowThresholdInSeconds() throws JposException;
-
     boolean getCapVariableBatteryLowThresholdInSeconds() throws JposException;
 
+    // Properties
+    int getBatteryCapacityRemainingInSeconds() throws JposException;
+    int getBatteryCriticallyLowThresholdInSeconds() throws JposException;
+    void setBatteryCriticallyLowThresholdInSeconds(int seconds) throws JposException;
+    int getBatteryLowThresholdInSeconds() throws JposException;
+    void setBatteryLowThresholdInSeconds(int seconds) throws JposException;
     int getChargeTime() throws JposException;
 }
