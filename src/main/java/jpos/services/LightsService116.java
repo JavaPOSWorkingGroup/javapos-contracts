@@ -32,11 +32,11 @@ import jpos.JposException;
 
 public interface LightsService116 extends LightsService115
 {
+    // Capabilities
     int getCapPattern() throws JposException;
 
+    // Methods
     void switchOnMultiple(String lightNumbers, int blinkOnCycle, int blinkOffCycle, int color, int alarm) throws JposException;
-
     void switchOnPattern(int pattern, int alarm) throws JposException;
-
     void switchOffPattern() throws JposException;
 }

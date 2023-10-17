@@ -37,8 +37,6 @@ public interface LightsControl116 extends  LightsControl115
 
     // Methods
     void switchOnMultiple(String lightNumbers, int blinkOnCycle, int blinkOffCycle, int color, int alarm) throws JposException;
-
     void switchOnPattern(int pattern, int alarm) throws JposException;
-
     void switchOffPattern() throws JposException;
 }
