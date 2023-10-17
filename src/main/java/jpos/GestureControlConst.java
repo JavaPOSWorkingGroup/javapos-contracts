@@ -30,11 +30,14 @@
 
 package jpos;
 
-/**
- * All constants extracted from OPOS header OposGctl.h
- */
 public interface GestureControlConst {
-    // CapStorage, Storage
+    //###################################################################
+    //#### Gesture Control Constants
+    //###################################################################
+
+    /////////////////////////////////////////////////////////////////////
+    // "CapStorage", "Storage" Property Constants
+    /////////////////////////////////////////////////////////////////////
 
     public static final int GCTL_CST_HOST_ONLY       = 1;
     public static final int GCTL_CST_HARDTOTALS_ONLY = 2;
@@ -43,12 +46,16 @@ public interface GestureControlConst {
     public static final int GCTL_ST_HARDTOTALS       = 2;
     public static final int GCTL_ST_HOST_HARDTOTALS  = 3;
 
-    // StatusUpdateEvent
+    /////////////////////////////////////////////////////////////////////
+    // "StatusUpdateEvent" "Status" Property Constants
+    /////////////////////////////////////////////////////////////////////
 
     public static final int GCTL_SUE_START_MOTION    = 11;
     public static final int GCTL_SUE_STOP_MOTION     = 12;
 
-    // ResultCodeExtended
+    /////////////////////////////////////////////////////////////////////
+    // "ErrorEvent" "ErrorCodeExtended" Property Constants
+    /////////////////////////////////////////////////////////////////////
 
-    public static final int OPOS_EGCTL_NOROOM        = 201;
+    public static final int EGCTL_NOROOM        = 201;
 }

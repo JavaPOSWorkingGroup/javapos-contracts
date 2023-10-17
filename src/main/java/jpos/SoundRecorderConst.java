@@ -30,25 +30,37 @@
 
 package jpos;
 
-/**
- * All constants extracted from OPOS header OposSrec.h
- */
 public interface SoundRecorderConst {
-    // CapStorage, Storage
+    //###################################################################
+    //#### Sound Recorder Constants
+    //###################################################################
+
+    /////////////////////////////////////////////////////////////////////
+    // "CapStorage" Property Constants
+    /////////////////////////////////////////////////////////////////////
 
     public static final int SREC_CST_HOST_ONLY       = 1;
     public static final int SREC_CST_HARDTOTALS_ONLY = 2;
     public static final int SREC_CST_ALL             = 3;
+
+    /////////////////////////////////////////////////////////////////////
+    // "Storage" Property Constants
+    /////////////////////////////////////////////////////////////////////
+
     public static final int SREC_ST_HOST             = 1;
     public static final int SREC_ST_HARDTOTALS       = 2;
     public static final int SREC_ST_HOST_HARDTOTALS  = 3;
 
-    // StatusUpdateEvent
+    /////////////////////////////////////////////////////////////////////
+    // "StatusUpdateEvent" "Status" Property Constants
+    /////////////////////////////////////////////////////////////////////
 
     public static final int SREC_SUE_START_SOUND_RECORDING  = 11;
     public static final int SREC_SUE_STOP_SOUND_RECORDING   = 12;
 
-    // ResultCodeExtended
+    /////////////////////////////////////////////////////////////////////
+    // "ErrorEvent" "ErrorCodeExtended" Property Constants
+    /////////////////////////////////////////////////////////////////////
 
-    public static final int OPOS_ESREC_NOROOM        = 201;
+    public static final int ESREC_NOROOM        = 201;
 }

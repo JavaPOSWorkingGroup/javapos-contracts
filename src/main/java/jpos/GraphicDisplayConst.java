@@ -30,20 +30,30 @@
 
 package jpos;
 
-/**
- * All constants extracted from OPOS header OposGdsp.h
- */
 public interface GraphicDisplayConst {
-    // CapStorage, Storage
+    //###################################################################
+    //#### Graphic Display Constants
+    //###################################################################
+
+    /////////////////////////////////////////////////////////////////////
+    // "CapStorage" Property Constants
+    /////////////////////////////////////////////////////////////////////
 
     public static final int GDSP_CST_HOST_ONLY       = 1;
     public static final int GDSP_CST_HARDTOTALS_ONLY = 2;
     public static final int GDSP_CST_ALL             = 3;
+
+    /////////////////////////////////////////////////////////////////////
+    // "Storage" Property Constants
+    /////////////////////////////////////////////////////////////////////
+
     public static final int GDSP_ST_HOST             = 1;
     public static final int GDSP_ST_HARDTOTALS       = 2;
     public static final int GDSP_ST_HOST_HARDTOTALS  = 3;
 
-    // DisplayMode
+    /////////////////////////////////////////////////////////////////////
+    // "DisplayMode" Property Constants
+    /////////////////////////////////////////////////////////////////////
 
     public static final int GDSP_DMODE_HIDDEN        = 1;
     public static final int GDSP_DMODE_IMAGE_FIT     = 2;
@@ -53,13 +63,17 @@ public interface GraphicDisplayConst {
     public static final int GDSP_DMODE_VIDEO_FULL    = 6;
     public static final int GDSP_DMODE_WEB           = 7;
 
-    // LoadStatus
+    /////////////////////////////////////////////////////////////////////
+    // "LoadStatus" Property Constants
+    /////////////////////////////////////////////////////////////////////
 
     public static final int GDSP_LSTATUS_START       = 1;
     public static final int GDSP_LSTATUS_FINISH      = 2;
     public static final int GDSP_LSTATUS_CANCEL      = 3;
 
-    // StatusUpdateEvent
+    /////////////////////////////////////////////////////////////////////
+    // "StatusUpdateEvent" "Status" Property Constants
+    /////////////////////////////////////////////////////////////////////
 
     public static final int GDSP_SUE_START_IMAGE_LOAD    = 11;
     public static final int GDSP_SUE_END_IMAGE_LOAD      = 12;
@@ -69,7 +83,9 @@ public interface GraphicDisplayConst {
     public static final int GDSP_SUE_START_PLAY_VIDEO    = 31;
     public static final int GDSP_SUE_STOP_PLAY_VIDEO     = 32;
 
-    // ResultCodeExtended
+    /////////////////////////////////////////////////////////////////////
+    // "ErrorEvent" "ErrorCodeExtended" Property Constants
+    /////////////////////////////////////////////////////////////////////
 
-    public static final int OPOS_EGDSP_NOROOM        = 201; // (Several)
+    public static final int EGDSP_NOROOM        = 201; // (Several)
 }

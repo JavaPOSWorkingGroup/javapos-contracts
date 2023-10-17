@@ -30,32 +30,46 @@
 
 package jpos;
 
-/**
- * All constants extracted from OPOS header OposVcap.h
- */
 public interface VideoCaptureConst {
-    // CapStorage, Storage
+    //###################################################################
+    //#### Graphic Display Constants
+    //###################################################################
+
+    /////////////////////////////////////////////////////////////////////
+    // "CapStorage" Property Constants
+    /////////////////////////////////////////////////////////////////////
 
     public static final int VCAP_CST_HOST_ONLY       = 1;
     public static final int VCAP_CST_HARDTOTALS_ONLY = 2;
     public static final int VCAP_CST_ALL             = 3;
+
+    /////////////////////////////////////////////////////////////////////
+    // "Storage" Property Constants
+    /////////////////////////////////////////////////////////////////////
+
     public static final int VCAP_ST_HOST             = 1;
     public static final int VCAP_ST_HARDTOTALS       = 2;
     public static final int VCAP_ST_HOST_HARDTOTALS  = 3;
 
-    // VideoCaptureMode
+    /////////////////////////////////////////////////////////////////////
+    // "VideoCaptureMode" Property Constants
+    /////////////////////////////////////////////////////////////////////
 
     public static final int VCAP_VCMODE_PHOTO        = 1;
     public static final int VCAP_VCMODE_VIDEO        = 2;
 
-    // StatusUpdateEvent
+    /////////////////////////////////////////////////////////////////////
+    // "StatusUpdateEvent" "Status" Property Constants
+    /////////////////////////////////////////////////////////////////////
 
     public static final int VCAP_SUE_START_PHOTO            = 11;
     public static final int VCAP_SUE_END_PHOTO              = 12;
     public static final int VCAP_SUE_START_VIDEO            = 21;
     public static final int VCAP_SUE_STOP_VIDEO             = 22;
 
-    // ResultCodeExtended
+    /////////////////////////////////////////////////////////////////////
+    // "ErrorEvent" "ErrorCodeExtended" Property Constants
+    /////////////////////////////////////////////////////////////////////
 
-    public static final int OPOS_EVCAP_NOROOM        = 201; // (Several)
+    public static final int EVCAP_NOROOM        = 201; // (Several)
 }
