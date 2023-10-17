@@ -30,25 +30,37 @@
 
 package jpos;
 
-/**
- * All constants extracted from OPOS header OposSply.h
- */
 public interface SoundPlayerConst {
-    // CapStorage, Storage
+    //###################################################################
+    //#### Sound Player Constants
+    //###################################################################
+
+    /////////////////////////////////////////////////////////////////////
+    // "CapStorage" Property Constants
+    /////////////////////////////////////////////////////////////////////
 
     public static final int SPLY_CST_HOST_ONLY           = 1;
     public static final int SPLY_CST_HARDTOTALS_ONLY     = 2;
     public static final int SPLY_CST_ALL                 = 3;
+
+    /////////////////////////////////////////////////////////////////////
+    // "Storage" Property Constants
+    /////////////////////////////////////////////////////////////////////
+
     public static final int SPLY_ST_HOST                 = 1;
     public static final int SPLY_ST_HARDTOTALS           = 2;
     public static final int SPLY_ST_HOST_HARDTOTALS      = 3;
 
-    // StatusUpdateEvent
+    /////////////////////////////////////////////////////////////////////
+    // "StatusUpdateEvent" "Status" Property Constants
+    /////////////////////////////////////////////////////////////////////
 
     public static final int SPLY_SUE_START_PLAY_SOUND          =11;
     public static final int SPLY_SUE_STOP_PLAY_SOUND           =12;
 
-    // ResultCodeExtended
+    /////////////////////////////////////////////////////////////////////
+    // "ErrorEvent" "ErrorCodeExtended" Property Constants
+    /////////////////////////////////////////////////////////////////////
 
-    public static final int OPOS_ESPLY_NOROOM        = 201;
+    public static final int ESPLY_NOROOM        = 201;
 }

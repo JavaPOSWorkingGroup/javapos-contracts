@@ -30,8 +30,10 @@
 
 package jpos;
 
-/**
- * All constants extracted from OPOS header OposIrcg.h
- */
 public interface IndividualRecognitionConst {
+    //###################################################################
+    //#### Individual Recognition Constants
+    //###################################################################
+
+    // No constants defined in release 1.16
 }
