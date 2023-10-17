@@ -30,11 +30,14 @@
 
 package jpos;
 
-/**
- * All constants extracted from OPOS header OposSpch.h
- */
 public interface SpeechSynthesisConst {
-    // StatusUpdateEvent
+    //###################################################################
+    //#### Speech Synthesis Constants
+    //###################################################################
+
+    /////////////////////////////////////////////////////////////////////
+    // "StatusUpdateEvent" "Status" Property Constants
+    /////////////////////////////////////////////////////////////////////
 
     public static final int SPCH_SUE_START_SPEAK =  11;
     public static final int SPCH_SUE_STOP_SPEAK  =  12;

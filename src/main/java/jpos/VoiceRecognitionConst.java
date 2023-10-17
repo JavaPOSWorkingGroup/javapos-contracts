@@ -30,11 +30,14 @@
 
 package jpos;
 
-/**
- * All constants extracted from OPOS header OposVrcg.h
- */
 public interface VoiceRecognitionConst {
-    // HearingResult
+    //###################################################################
+    //#### Voice Recognition Constants
+    //###################################################################
+
+    /////////////////////////////////////////////////////////////////////
+    // "HearingResult" Property Constants
+    /////////////////////////////////////////////////////////////////////
 
     public static final int VRCG_HRESULT_FREE                   = 11;
     public static final int VRCG_HRESULT_SENTENCE               = 21;
@@ -43,7 +46,9 @@ public interface VoiceRecognitionConst {
     public static final int VRCG_HRESULT_YESNO_NO               = 42;
     public static final int VRCG_HRESULT_YESNO_CANCEL           = 43;
 
-    // HearingStatus
+    /////////////////////////////////////////////////////////////////////
+    // "HearingStatus" Property Constants
+    /////////////////////////////////////////////////////////////////////
 
     public static final int VRCG_HSTATUS_NONE                   =  0;
     public static final int VRCG_HSTATUS_FREE                   = 10;
@@ -51,7 +56,9 @@ public interface VoiceRecognitionConst {
     public static final int VRCG_HSTATUS_WORD                   = 30;
     public static final int VRCG_HSTATUS_YESNO                  = 40;
 
-    // StatusUpdateEvent
+    /////////////////////////////////////////////////////////////////////
+    // "StatusUpdateEvent" "Status" Property Constants
+    /////////////////////////////////////////////////////////////////////
 
     public static final int VRCG_SUE_STOP_HEARING               =  0;
     public static final int VRCG_SUE_START_HEARING_FREE         = 10;
