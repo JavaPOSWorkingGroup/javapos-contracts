@@ -49,7 +49,6 @@ public interface GraphicDisplayConst {
 
     public static final int GDSP_ST_HOST             = 1;
     public static final int GDSP_ST_HARDTOTALS       = 2;
-    public static final int GDSP_ST_HOST_HARDTOTALS  = 3;
 
     /////////////////////////////////////////////////////////////////////
     // "DisplayMode" Property Constants

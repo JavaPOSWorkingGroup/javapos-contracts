@@ -49,7 +49,6 @@ public interface SoundPlayerConst {
 
     public static final int SPLY_ST_HOST                 = 1;
     public static final int SPLY_ST_HARDTOTALS           = 2;
-    public static final int SPLY_ST_HOST_HARDTOTALS      = 3;
 
     /////////////////////////////////////////////////////////////////////
     // "StatusUpdateEvent" "Status" Property Constants
