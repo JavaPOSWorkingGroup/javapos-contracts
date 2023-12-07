@@ -54,7 +54,7 @@ public interface SpeechSynthesisControl116 extends BaseControl
 
     public void clearOutput() throws JposException;
 
-    public void compareFirmwareVersion(String var1, int[] var2) throws JposException;
+    public void compareFirmwareVersion(String firmwareFileName, int[] result) throws JposException;
 
     public void resetStatistics(String var1) throws JposException;
 
