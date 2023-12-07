@@ -35,7 +35,7 @@ public interface IndividualRecognitionService116 extends BaseService, JposServic
 {
     public boolean getAutoDisable() throws JposException;
 
-    public void setAutoDisable(boolean var1) throws JposException;
+    public void setAutoDisable(boolean newValue) throws JposException;
 
     public boolean getCapCompareFirmwareVersion() throws JposException;
 
@@ -51,11 +51,11 @@ public interface IndividualRecognitionService116 extends BaseService, JposServic
 
     public boolean getDataEventEnabled() throws JposException;
 
-    public void setDataEventEnabled(boolean var1) throws JposException;
+    public void setDataEventEnabled(boolean newValue) throws JposException;
 
     public int getPowerNotify() throws JposException;
 
-    public void setPowerNotify(int var1) throws JposException;
+    public void setPowerNotify(int newValue) throws JposException;
 
     public int getPowerState() throws JposException;
 
@@ -79,7 +79,7 @@ public interface IndividualRecognitionService116 extends BaseService, JposServic
 
     public String getIndividualRecognitionFilter() throws JposException;
 
-    public void setIndividualRecognitionFilter(String var1) throws JposException;
+    public void setIndividualRecognitionFilter(String newValue) throws JposException;
 
     public String getIndividualRecognitionInformation() throws JposException;
 }

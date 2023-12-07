@@ -47,7 +47,7 @@ public interface GraphicDisplayService116 extends BaseService, JposServiceInstan
 
     public int getPowerNotify() throws JposException;
 
-    public void setPowerNotify(int var1) throws JposException;
+    public void setPowerNotify(int newValue) throws JposException;
 
     public int getPowerState() throws JposException;
 
@@ -65,7 +65,7 @@ public interface GraphicDisplayService116 extends BaseService, JposServiceInstan
 
     public int getBrightness() throws JposException;
 
-    public void setBrightness(int var1) throws JposException;
+    public void setBrightness(int newValue) throws JposException;
 
     public String getCapAssociatedHardTotalsDevice() throws JposException;
 
@@ -85,11 +85,11 @@ public interface GraphicDisplayService116 extends BaseService, JposServiceInstan
 
     public int getDisplayMode() throws JposException;
 
-    public void setDisplayMode(int var1) throws JposException;
+    public void setDisplayMode(int newValue) throws JposException;
 
     public String getImageType() throws JposException;
 
-    public void setImageType(String var1) throws JposException;
+    public void setImageType(String newValue) throws JposException;
 
     public String getImageTypeList() throws JposException;
 
@@ -97,19 +97,19 @@ public interface GraphicDisplayService116 extends BaseService, JposServiceInstan
 
     public int getStorage() throws JposException;
 
-    public void setStorage(int var1) throws JposException;
+    public void setStorage(int newValue) throws JposException;
 
     public String getURL() throws JposException;
 
     public String getVideoType() throws JposException;
 
-    public void setVideoType(String var1) throws JposException;
+    public void setVideoType(String newValue) throws JposException;
 
     public String getVideoTypeList() throws JposException;
 
     public int getVolume() throws JposException;
 
-    public void setVolume(int var1) throws JposException;
+    public void setVolume(int newValue) throws JposException;
 
     public void cancelURLLoading() throws JposException;
 

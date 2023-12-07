@@ -47,7 +47,7 @@ public interface SoundPlayerService116 extends BaseService, JposServiceInstance
 
     public int getPowerNotify() throws JposException;
 
-    public void setPowerNotify(int var1) throws JposException;
+    public void setPowerNotify(int newValue) throws JposException;
 
     public int getPowerState() throws JposException;
 
@@ -79,11 +79,11 @@ public interface SoundPlayerService116 extends BaseService, JposServiceInstance
 
     public int getStorage() throws JposException;
 
-    public void setStorage(int var1) throws JposException;
+    public void setStorage(int newValue) throws JposException;
 
     public int getVolume() throws JposException;
 
-    public void setVolume(int var1) throws JposException;
+    public void setVolume(int newValue) throws JposException;
 
     public void playSound(String fileName, boolean loop) throws JposException;
 

@@ -36,7 +36,7 @@ public interface SoundRecorderControl116 extends BaseControl
 {
     public boolean getAutoDisable() throws JposException;
 
-    public void setAutoDisable(boolean var1) throws JposException;
+    public void setAutoDisable(boolean newValue) throws JposException;
 
     public boolean getCapCompareFirmwareVersion() throws JposException;
 
@@ -52,11 +52,11 @@ public interface SoundRecorderControl116 extends BaseControl
 
     public boolean getDataEventEnabled() throws JposException;
 
-    public void setDataEventEnabled(boolean var1) throws JposException;
+    public void setDataEventEnabled(boolean newValue) throws JposException;
 
     public int getPowerNotify() throws JposException;
 
-    public void setPowerNotify(int var1) throws JposException;
+    public void setPowerNotify(int newValue) throws JposException;
 
     public int getPowerState() throws JposException;
 
@@ -88,19 +88,19 @@ public interface SoundRecorderControl116 extends BaseControl
 
     public String getChannel() throws JposException;
 
-    public void setChannel(String var1) throws JposException;
+    public void setChannel(String newValue) throws JposException;
 
     public String getChannelList() throws JposException;
 
     public int getRecordingLevel() throws JposException;
 
-    public void setRecordingLevel(int var1) throws JposException;
+    public void setRecordingLevel(int newValue) throws JposException;
 
     public int getRemainingRecordingTimeInSec() throws JposException;
 
     public String getSamplingRate() throws JposException;
 
-    public void setSamplingRate(String var1) throws JposException;
+    public void setSamplingRate(String newValue) throws JposException;
 
     public String getSamplingRateList() throws JposException;
 
@@ -108,13 +108,13 @@ public interface SoundRecorderControl116 extends BaseControl
 
     public String getSoundType() throws JposException;
 
-    public void setSoundType(String var1) throws JposException;
+    public void setSoundType(String newValue) throws JposException;
 
     public String getSoundTypeList() throws JposException;
 
     public int getStorage() throws JposException;
 
-    public void setStorage(int var1) throws JposException;
+    public void setStorage(int newValue) throws JposException;
 
     public void startRecording(String fileName, boolean overwrite, int recordingTime) throws JposException;
 

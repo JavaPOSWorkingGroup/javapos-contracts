@@ -36,7 +36,7 @@ public interface IndividualRecognitionControl116 extends BaseControl
 {
     public boolean getAutoDisable() throws JposException;
 
-    public void setAutoDisable(boolean var1) throws JposException;
+    public void setAutoDisable(boolean newValue) throws JposException;
 
     public boolean getCapCompareFirmwareVersion() throws JposException;
 
@@ -52,11 +52,11 @@ public interface IndividualRecognitionControl116 extends BaseControl
 
     public boolean getDataEventEnabled() throws JposException;
 
-    public void setDataEventEnabled(boolean var1) throws JposException;
+    public void setDataEventEnabled(boolean newValue) throws JposException;
 
     public int getPowerNotify() throws JposException;
 
-    public void setPowerNotify(int var1) throws JposException;
+    public void setPowerNotify(int newValue) throws JposException;
 
     public int getPowerState() throws JposException;
 
@@ -80,7 +80,7 @@ public interface IndividualRecognitionControl116 extends BaseControl
 
     public String getIndividualRecognitionFilter() throws JposException;
 
-    public void setIndividualRecognitionFilter(String var1) throws JposException;
+    public void setIndividualRecognitionFilter(String newValue) throws JposException;
 
     public String getIndividualRecognitionInformation() throws JposException;
 
