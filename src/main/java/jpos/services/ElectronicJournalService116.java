@@ -22,7 +22,7 @@
 //   Interface defining all new capabilities, properties and methods
 //   that are specific to Electronic Journal for release 1.16.
 //
-//   Generated from ElectronicJournalControl116.
+//   Automatically generated from ElectronicJournalControl116.
 //
 /////////////////////////////////////////////////////////////////////
 

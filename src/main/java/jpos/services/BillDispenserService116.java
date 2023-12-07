@@ -22,7 +22,7 @@
 //   Interface defining all new capabilities, properties and methods
 //   that are specific to Bill Dispenser for release 1.16.
 //
-//   Generated from BillDispenserControl116.
+//   Automatically generated from BillDispenserControl116.
 //
 /////////////////////////////////////////////////////////////////////
 

@@ -22,7 +22,7 @@
 //   Interface defining all new capabilities, properties and methods
 //   that are specific to Fiscal Printer for release 1.16.
 //
-//   Generated from FiscalPrinterControl116.
+//   Automatically generated from FiscalPrinterControl116.
 //
 /////////////////////////////////////////////////////////////////////
 

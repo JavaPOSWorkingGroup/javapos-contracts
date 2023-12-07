@@ -22,7 +22,7 @@
 //   Interface defining all new capabilities, properties and methods
 //   that are specific to Belt for release 1.16.
 //
-//   Generated from BeltControl116.
+//   Automatically generated from BeltControl116.
 //
 /////////////////////////////////////////////////////////////////////
 

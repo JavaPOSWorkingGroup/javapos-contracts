@@ -22,7 +22,7 @@
 //   Interface defining all new capabilities, properties and methods
 //   that are specific to Item Dispenser for release 1.16.
 //
-//   Generated from ItemDispenserControl116.
+//   Automatically generated from ItemDispenserControl116.
 //
 /////////////////////////////////////////////////////////////////////
 

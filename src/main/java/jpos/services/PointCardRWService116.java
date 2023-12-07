@@ -22,14 +22,14 @@
 //   Interface defining all new capabilities, properties and methods
 //   that are specific to PointCard Read Writer for release 1.16.
 //
-//   Generated from PointCardRWControl116.
+//   Automatically generated from PointCardRWControl116.
 //
 /////////////////////////////////////////////////////////////////////
 
 package jpos.services;
 
 
-public interface PointCardRWService116 extends PointCardRWService114
+public interface PointCardRWService116 extends PointCardRWService115
 {
 	// Nothing new added for release 1.16
 }

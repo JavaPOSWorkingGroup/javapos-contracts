@@ -22,7 +22,7 @@
 //   Interface defining all new capabilities, properties and methods
 //   that are specific to Biometrics for release 1.16.
 //
-//   Generated from BiometricsControl116.
+//   Automatically generated from BiometricsControl116.
 //
 /////////////////////////////////////////////////////////////////////
 

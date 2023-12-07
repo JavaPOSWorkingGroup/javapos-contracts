@@ -20,9 +20,9 @@
 // CATService116
 //
 //   Interface defining all new capabilities, properties and methods
-//   that are specific to Credit Authorization Terminal for release 1.16.
+//   that are specific to CAT for release 1.16.
 //
-//   Generated from CATControl116.
+//   Automatically generated from CATControl116.
 //
 /////////////////////////////////////////////////////////////////////
 

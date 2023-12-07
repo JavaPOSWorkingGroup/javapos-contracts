@@ -22,7 +22,7 @@
 //   Interface defining all new capabilities, properties and methods
 //   that are specific to Scanner for release 1.16.
 //
-//   Generated from ScannerControl116.
+//   Automatically generated from ScannerControl116.
 //
 /////////////////////////////////////////////////////////////////////
 

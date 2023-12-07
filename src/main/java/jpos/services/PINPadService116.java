@@ -22,7 +22,7 @@
 //   Interface defining all new capabilities, properties and methods
 //   that are specific to PIN Pad for release 1.16.
 //
-//   Generated from PINPadControl116.
+//   Automatically generated from PINPadControl116.
 //
 /////////////////////////////////////////////////////////////////////
 

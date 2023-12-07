@@ -22,7 +22,7 @@
 //   Interface defining all new capabilities, properties and methods
 //   that are specific to Tone Indicator for release 1.16.
 //
-//   Generated from ToneIndicatorControl116.
+//   Automatically generated from ToneIndicatorControl116.
 //
 /////////////////////////////////////////////////////////////////////
 

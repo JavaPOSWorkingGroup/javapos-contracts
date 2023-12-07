@@ -22,7 +22,7 @@
 //   Interface defining all new capabilities, properties and methods
 //   that are specific to Scale for release 1.16.
 //
-//   Generated from ScaleControl116.
+//   Automatically generated from ScaleControl116.
 //
 /////////////////////////////////////////////////////////////////////
 

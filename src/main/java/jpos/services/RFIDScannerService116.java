@@ -22,7 +22,7 @@
 //   Interface defining all new capabilities, properties and methods
 //   that are specific to RFID Scanner for release 1.16.
 //
-//   Generated from RFIDScannerControl116.
+//   Automatically generated from RFIDScannerControl116.
 //
 /////////////////////////////////////////////////////////////////////
 

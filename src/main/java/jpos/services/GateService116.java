@@ -22,15 +22,14 @@
 //   Interface defining all new capabilities, properties and methods
 //   that are specific to Gate for release 1.16.
 //
-//   Generated from GateControl116.
+//   Automatically generated from GateControl116.
 //
 /////////////////////////////////////////////////////////////////////
 
 package jpos.services;
 
-import jpos.*;
 
 public interface GateService116 extends GateService115
 {
-    // Nothing new added for release 1.16
+	// Nothing new added for release 1.16
 }

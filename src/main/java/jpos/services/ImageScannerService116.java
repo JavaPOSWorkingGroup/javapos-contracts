@@ -22,7 +22,7 @@
 //   Interface defining all new capabilities, properties and methods
 //   that are specific to Image Scanner for release 1.16.
 //
-//   Generated from ImageScannerControl116.
+//   Automatically generated from ImageScannerControl116.
 //
 /////////////////////////////////////////////////////////////////////
 

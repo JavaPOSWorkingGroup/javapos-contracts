@@ -20,9 +20,9 @@
 // MSRService116
 //
 //   Interface defining all new capabilities, properties and methods
-//   that are specific to Magnetic Stripe Reader for release 1.16.
+//   that are specific to MSR for release 1.16.
 //
-//   Generated from MSRControl116.
+//   Automatically generated from MSRControl116.
 //
 /////////////////////////////////////////////////////////////////////
 

@@ -22,7 +22,7 @@
 //   Interface defining all new capabilities, properties and methods
 //   that are specific to Remote Order Display for release 1.16.
 //
-//   Generated from RemoteOrderDisplayControl116.
+//   Automatically generated from RemoteOrderDisplayControl116.
 //
 /////////////////////////////////////////////////////////////////////
 

@@ -22,15 +22,14 @@
 //   Interface defining all new capabilities, properties and methods
 //   that are specific to Electronic Value Reader Writer for release 1.16.
 //
-//   Generated from ElectronicValueRWControl116.
+//   Automatically generated from ElectronicValueRWControl116.
 //
 /////////////////////////////////////////////////////////////////////
 
 package jpos.services;
 
-import jpos.*;
 
 public interface ElectronicValueRWService116 extends ElectronicValueRWService115
 {
-    // Nothing new added for release 1.16
+	// Nothing new added for release 1.16
 }
