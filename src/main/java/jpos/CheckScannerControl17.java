@@ -20,7 +20,8 @@
 // CheckScannerControl17
 //
 //   Interface defining all new capabilities, properties and
-//                                Check Scanner
+//   that are specific to Check Scanner for release 1.7.
+//
 // Modification history
 // ------------------------------------------------------------------
 // 01-Jul-2002 JavaPOS Release 1.7                                 BS
