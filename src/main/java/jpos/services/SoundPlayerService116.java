@@ -61,7 +61,7 @@ public interface SoundPlayerService116 extends BaseService, JposServiceInstance
 
     public void updateFirmware(String firmwareFileName) throws JposException;
 
-    public void updateStatistics(String var1) throws JposException;
+    public void updateStatistics(String statisticsBuffer) throws JposException;
 
     public String getCapAssociatedHardTotalsDevice() throws JposException;
 

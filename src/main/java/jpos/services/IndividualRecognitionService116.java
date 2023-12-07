@@ -71,7 +71,7 @@ public interface IndividualRecognitionService116 extends BaseService, JposServic
 
     public void updateFirmware(String firmwareFileName) throws JposException;
 
-    public void updateStatistics(String var1) throws JposException;
+    public void updateStatistics(String statisticsBuffer) throws JposException;
 
     public String getCapIndividualList() throws JposException;
 

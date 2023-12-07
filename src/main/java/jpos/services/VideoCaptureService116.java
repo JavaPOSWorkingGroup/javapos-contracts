@@ -59,7 +59,7 @@ public interface VideoCaptureService116 extends BaseService, JposServiceInstance
 
     public void updateFirmware(String firmwareFileName) throws JposException;
 
-    public void updateStatistics(String var1) throws JposException;
+    public void updateStatistics(String statisticsBuffer) throws JposException;
 
     public boolean getAutoExposure() throws JposException;
 

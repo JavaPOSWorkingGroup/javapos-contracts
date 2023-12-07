@@ -62,7 +62,7 @@ public interface SpeechSynthesisControl116 extends BaseControl
 
     public void updateFirmware(String firmwareFileName) throws JposException;
 
-    public void updateStatistics(String var1) throws JposException;
+    public void updateStatistics(String statisticsBuffer) throws JposException;
 
     public boolean getCapLanguage() throws JposException;
 
