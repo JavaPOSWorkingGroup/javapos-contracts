@@ -59,7 +59,7 @@ public interface SoundPlayerService116 extends BaseService, JposServiceInstance
 
     public void retrieveStatistics(String[] statisticsBuffer) throws JposException;
 
-    public void updateFirmware(String var1) throws JposException;
+    public void updateFirmware(String firmwareFileName) throws JposException;
 
     public void updateStatistics(String var1) throws JposException;
 
