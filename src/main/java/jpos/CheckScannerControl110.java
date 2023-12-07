@@ -20,7 +20,8 @@
 // CheckScannerControl110
 //
 //   Interface defining all new capabilities, properties and
-//                                Check Scanner
+//   that are specific to Check Scanner for release 1.10.
+//
 // Modification history
 // ------------------------------------------------------------------
 // 2006-Feb-10 JavaPOS Release 1.10                                BS

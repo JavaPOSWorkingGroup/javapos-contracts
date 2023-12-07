@@ -20,7 +20,8 @@
 // CheckScannerControl18
 //
 //   Interface defining all new capabilities, properties and
-//                                Check Scanner
+//   that are specific to Check Scanner for release 1.8.
+//
 // Modification history
 // ------------------------------------------------------------------
 // 2004-Apr-01 JavaPOS Release 1.8                                 BS

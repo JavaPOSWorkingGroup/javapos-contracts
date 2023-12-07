@@ -20,7 +20,8 @@
 // CheckScannerControl19
 //
 //   Interface defining all new capabilities, properties and
-//                                Check Scanner
+//   that are specific to Check Scanner for release 1.9.
+//
 // Modification history
 // ------------------------------------------------------------------
 // 2005-Jan-16 JavaPOS release 1.9                                 BS
