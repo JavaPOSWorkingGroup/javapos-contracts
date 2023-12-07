@@ -22,33 +22,28 @@
 //   Interface defining all new capabilities, properties and methods
 //   that are specific to POS Power for release 1.16.
 //
-//   Generated from POSPowerControl116.
+//   Automatically generated from POSPowerControl116.
 //
 /////////////////////////////////////////////////////////////////////
 
 package jpos.services;
 
-import jpos.JposException;
+import jpos.*;
 
 public interface POSPowerService116 extends POSPowerService115
 {
-    int getBatteryCapacityRemainingInSeconds() throws JposException;
-
-    int getBatteryCriticallyLowThresholdInSeconds() throws JposException;
-
-    void setBatteryCriticallyLowThresholdInSeconds(int seconds) throws JposException;
-
-    int getBatteryLowThresholdInSeconds() throws JposException;
-
-    void setBatteryLowThresholdInSeconds(int seconds) throws JposException;
-
-    boolean getCapBatteryCapacityRemainingInSeconds() throws JposException;
-
-    boolean getCapChargeTime() throws JposException;
-
-    boolean getCapVariableBatteryCriticallyLowThresholdInSeconds() throws JposException;
-
-    boolean getCapVariableBatteryLowThresholdInSeconds() throws JposException;
-
-    int getChargeTime() throws JposException;
+	// Capabilities
+	public boolean getCapBatteryCapacityRemainingInSeconds() throws JposException;
+	public boolean getCapChargeTime() throws JposException;
+	public boolean getCapVariableBatteryCriticallyLowThresholdInSeconds() throws JposException;
+	public boolean getCapVariableBatteryLowThresholdInSeconds() throws JposException;
+	
+	// Properties
+	public int     getBatteryCapacityRemainingInSeconds() throws JposException;
+	public int     getBatteryCriticallyLowThresholdInSeconds() throws JposException;
+	public void    setBatteryCriticallyLowThresholdInSeconds(int seconds) throws JposException;
+	public int     getBatteryLowThresholdInSeconds() throws JposException;
+	public void    setBatteryLowThresholdInSeconds(int seconds) throws JposException;
+	public int     getChargeTime() throws JposException;
+	
 }

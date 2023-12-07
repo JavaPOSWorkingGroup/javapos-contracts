@@ -22,21 +22,22 @@
 //   Interface defining all new capabilities, properties and methods
 //   that are specific to Lights for release 1.16.
 //
-//   Generated from LightsControl116.
+//   Automatically generated from LightsControl116.
 //
 /////////////////////////////////////////////////////////////////////
 
 package jpos.services;
 
-import jpos.JposException;
+import jpos.*;
 
 public interface LightsService116 extends LightsService115
 {
-    int getCapPattern() throws JposException;
-
-    void switchOnMultiple(String lightNumbers, int blinkOnCycle, int blinkOffCycle, int color, int alarm) throws JposException;
-
-    void switchOnPattern(int pattern, int alarm) throws JposException;
-
-    void switchOffPattern() throws JposException;
+	// Capabilities
+	public int     getCapPattern() throws JposException;
+	
+	// Methods
+	public void    switchOffPattern() throws JposException;
+	public void    switchOnMultiple(String lightNumbers, int blinkOnCycle, int blinkOffCycle, int color, int alarm) throws JposException;
+	public void    switchOnPattern(int pattern, int alarm) throws JposException;
+	
 }
