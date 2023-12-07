@@ -20,66 +20,47 @@
 // IndividualRecognitionService116
 //
 //   Interface defining all new capabilities, properties and methods
-//   that are specific to Individual Recognition for release 1.16.
+//   that are specific to Gesture Control for release 1.16.
 //
-//   Generated from IndividualRecognitionControl116.
+//   Automatically generated from IndividualRecognitionControl116.
 //
 /////////////////////////////////////////////////////////////////////
 
 package jpos.services;
 
-import jpos.JposException;
-import jpos.loader.JposServiceInstance;
+import jpos.*;
 
-public interface IndividualRecognitionService116 extends BaseService, JposServiceInstance
+public interface IndividualRecognitionService116 extends BaseService, jpos.loader.JposServiceInstance
 {
-    public boolean getAutoDisable() throws JposException;
-
-    public void setAutoDisable(boolean newValue) throws JposException;
-
-    public boolean getCapCompareFirmwareVersion() throws JposException;
-
-    public int getCapPowerReporting() throws JposException;
-
-    public boolean getCapStatisticsReporting() throws JposException;
-
-    public boolean getCapUpdateFirmware() throws JposException;
-
-    public boolean getCapUpdateStatistics() throws JposException;
-
-    public int getDataCount() throws JposException;
-
-    public boolean getDataEventEnabled() throws JposException;
-
-    public void setDataEventEnabled(boolean newValue) throws JposException;
-
-    public int getPowerNotify() throws JposException;
-
-    public void setPowerNotify(int newValue) throws JposException;
-
-    public int getPowerState() throws JposException;
-
-    public void clearInput() throws JposException;
-
-    public void clearInputProperties() throws JposException;
-
-    public void compareFirmwareVersion(String firmwareFileName, int[] result) throws JposException;
-
-    public void resetStatistics(String statisticsBuffer) throws JposException;
-
-    public void retrieveStatistics(String[] statisticsBuffer) throws JposException;
-
-    public void updateFirmware(String firmwareFileName) throws JposException;
-
-    public void updateStatistics(String statisticsBuffer) throws JposException;
-
-    public String getCapIndividualList() throws JposException;
-
-    public String getIndividualIDs() throws JposException;
-
-    public String getIndividualRecognitionFilter() throws JposException;
-
-    public void setIndividualRecognitionFilter(String newValue) throws JposException;
-
-    public String getIndividualRecognitionInformation() throws JposException;
+	// Capabilities
+	public boolean getCapCompareFirmwareVersion() throws JposException;
+	public String  getCapIndividualList() throws JposException;
+	public int     getCapPowerReporting() throws JposException;
+	public boolean getCapStatisticsReporting() throws JposException;
+	public boolean getCapUpdateFirmware() throws JposException;
+	public boolean getCapUpdateStatistics() throws JposException;
+	
+	// Properties
+	public boolean getAutoDisable() throws JposException;
+	public void    setAutoDisable(boolean newValue) throws JposException;
+	public int     getDataCount() throws JposException;
+	public boolean getDataEventEnabled() throws JposException;
+	public void    setDataEventEnabled(boolean newValue) throws JposException;
+	public String  getIndividualIDs() throws JposException;
+	public String  getIndividualRecognitionFilter() throws JposException;
+	public void    setIndividualRecognitionFilter(String newValue) throws JposException;
+	public String  getIndividualRecognitionInformation() throws JposException;
+	public int     getPowerNotify() throws JposException;
+	public void    setPowerNotify(int newValue) throws JposException;
+	public int     getPowerState() throws JposException;
+	
+	// Methods
+	public void    clearInput() throws JposException;
+	public void    clearInputProperties() throws JposException;
+	public void    compareFirmwareVersion(String firmwareFileName, int[] result) throws JposException;
+	public void    resetStatistics(String statisticsBuffer) throws JposException;
+	public void    retrieveStatistics(String[] statisticsBuffer) throws JposException;
+	public void    updateFirmware(String firmwareFileName) throws JposException;
+	public void    updateStatistics(String statisticsBuffer) throws JposException;
+	
 }

@@ -22,68 +22,47 @@
 //   Interface defining all new capabilities, properties and methods
 //   that are specific to Device Monitor for release 1.16.
 //
-//   Generated from DeviceMonitorControl116.
+//   Automatically generated from DeviceMonitorControl116.
 //
 /////////////////////////////////////////////////////////////////////
 
 package jpos.services;
 
-import jpos.JposException;
-import jpos.loader.JposServiceInstance;
+import jpos.*;
 
-public interface DeviceMonitorService116 extends BaseService, JposServiceInstance
+public interface DeviceMonitorService116 extends BaseService, jpos.loader.JposServiceInstance
 {
-    public boolean getAutoDisable() throws JposException;
-
-    public void setAutoDisable(boolean newValue) throws JposException;
-
-    public boolean getCapCompareFirmwareVersion() throws JposException;
-
-    public int getCapPowerReporting() throws JposException;
-
-    public boolean getCapStatisticsReporting() throws JposException;
-
-    public boolean getCapUpdateFirmware() throws JposException;
-
-    public boolean getCapUpdateStatistics() throws JposException;
-
-    public int getDataCount() throws JposException;
-
-    public boolean getDataEventEnabled() throws JposException;
-
-    public void setDataEventEnabled(boolean newValue) throws JposException;
-
-    public int getPowerNotify() throws JposException;
-
-    public void setPowerNotify(int newValue) throws JposException;
-
-    public int getPowerState() throws JposException;
-
-    public void clearInput() throws JposException;
-
-    public void clearInputProperties() throws JposException;
-
-    public void compareFirmwareVersion(String firmwareFileName, int[] result) throws JposException;
-
-    public void resetStatistics(String statisticsBuffer) throws JposException;
-
-    public void retrieveStatistics(String[] statisticsBuffer) throws JposException;
-
-    public void updateFirmware(String firmwareFileName) throws JposException;
-
-    public void updateStatistics(String statisticsBuffer) throws JposException;
-
-    public String getDeviceData() throws JposException;
-
-    public String getDeviceList() throws JposException;
-
-    public String getMonitoringDeviceList() throws JposException;
-
-    public void addMonitoringDevice(String deviceID, int monitoringMode, int boundary, int subBoundary, int intervalTime) throws JposException;
-
-    public void clearMonitoringDevices() throws JposException;
-
-    public void deleteMonitoringDevice(String deviceID) throws JposException;
-
-    public void getDeviceValue(String deviceID, int[] pValue) throws JposException;
+	// Capabilities
+	public boolean getCapCompareFirmwareVersion() throws JposException;
+	public int     getCapPowerReporting() throws JposException;
+	public boolean getCapStatisticsReporting() throws JposException;
+	public boolean getCapUpdateFirmware() throws JposException;
+	public boolean getCapUpdateStatistics() throws JposException;
+	
+	// Properties
+	public boolean getAutoDisable() throws JposException;
+	public void    setAutoDisable(boolean newValue) throws JposException;
+	public int     getDataCount() throws JposException;
+	public boolean getDataEventEnabled() throws JposException;
+	public void    setDataEventEnabled(boolean newValue) throws JposException;
+	public String  getDeviceData() throws JposException;
+	public String  getDeviceList() throws JposException;
+	public String  getMonitoringDeviceList() throws JposException;
+	public int     getPowerNotify() throws JposException;
+	public void    setPowerNotify(int newValue) throws JposException;
+	public int     getPowerState() throws JposException;
+	
+	// Methods
+	public void    addMonitoringDevice(String deviceID, int monitoringMode, int boundary, int subBoundary, int intervalTime) throws JposException;
+	public void    clearInput() throws JposException;
+	public void    clearInputProperties() throws JposException;
+	public void    clearMonitoringDevices() throws JposException;
+	public void    compareFirmwareVersion(String firmwareFileName, int[] result) throws JposException;
+	public void    deleteMonitoringDevice(String deviceID) throws JposException;
+	public void    getDeviceValue(String deviceID, int[] pValue) throws JposException;
+	public void    resetStatistics(String statisticsBuffer) throws JposException;
+	public void    retrieveStatistics(String[] statisticsBuffer) throws JposException;
+	public void    updateFirmware(String firmwareFileName) throws JposException;
+	public void    updateStatistics(String statisticsBuffer) throws JposException;
+	
 }
