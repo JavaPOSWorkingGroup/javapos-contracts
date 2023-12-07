@@ -55,7 +55,7 @@ public interface VideoCaptureService116 extends BaseService, JposServiceInstance
 
     public void resetStatistics(String statisticsBuffer) throws JposException;
 
-    public void retrieveStatistics(String[] var1) throws JposException;
+    public void retrieveStatistics(String[] statisticsBuffer) throws JposException;
 
     public void updateFirmware(String var1) throws JposException;
 

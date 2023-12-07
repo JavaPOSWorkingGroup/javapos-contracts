@@ -68,7 +68,7 @@ public interface IndividualRecognitionControl116 extends BaseControl
 
     public void resetStatistics(String statisticsBuffer) throws JposException;
 
-    public void retrieveStatistics(String[] var1) throws JposException;
+    public void retrieveStatistics(String[] statisticsBuffer) throws JposException;
 
     public void updateFirmware(String var1) throws JposException;
 
