@@ -128,7 +128,7 @@ public interface VideoCaptureService116 extends BaseService, jpos.loader.JposSer
 	public void    retrieveStatistics(String[] statisticsBuffer) throws JposException;
 	public void    startVideo(String fileName, boolean overwrite, int recordingTime) throws JposException;
 	public void    stopVideo() throws JposException;
-	public void    takePhoto(String fileName, boolean overwrite, int recordingTime) throws JposException;
+	public void    takePhoto(String fileName, boolean overwrite, int timeout) throws JposException;
 	public void    updateFirmware(String firmwareFileName) throws JposException;
 	public void    updateStatistics(String statisticsBuffer) throws JposException;
 	
