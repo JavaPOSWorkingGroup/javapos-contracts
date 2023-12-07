@@ -32,11 +32,11 @@ package jpos;
 
 public interface LightsControl116 extends  LightsControl115
 {
-    int getCapPattern() throws JposException;
+    // Properties    
+    int  getCapPattern() throws JposException;
 
+    // Methods
     void switchOnMultiple(String lightNumbers, int blinkOnCycle, int blinkOffCycle, int color, int alarm) throws JposException;
-
     void switchOnPattern(int pattern, int alarm) throws JposException;
-
     void switchOffPattern() throws JposException;
 }

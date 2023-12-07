@@ -34,80 +34,50 @@ import jpos.events.*;
 
 public interface SpeechSynthesisControl116 extends BaseControl
 {
+    // Capabilities
     public boolean getCapCompareFirmwareVersion() throws JposException;
-
-    public int getCapPowerReporting() throws JposException;
-
-    public boolean getCapStatisticsReporting() throws JposException;
-
-    public boolean getCapUpdateFirmware() throws JposException;
-
-    public boolean getCapUpdateStatistics() throws JposException;
-
-    public int getOutputID() throws JposException;
-
-    public int getPowerNotify() throws JposException;
-
-    public void setPowerNotify(int newValue) throws JposException;
-
-    public int getPowerState() throws JposException;
-
-    public void clearOutput() throws JposException;
-
-    public void compareFirmwareVersion(String firmwareFileName, int[] result) throws JposException;
-
-    public void resetStatistics(String statisticsBuffer) throws JposException;
-
-    public void retrieveStatistics(String[] statisticsBuffer) throws JposException;
-
-    public void updateFirmware(String firmwareFileName) throws JposException;
-
-    public void updateStatistics(String statisticsBuffer) throws JposException;
-
     public boolean getCapLanguage() throws JposException;
-
     public boolean getCapPitch() throws JposException;
-
+    public int     getCapPowerReporting() throws JposException;
     public boolean getCapSpeed() throws JposException;
-
+    public boolean getCapStatisticsReporting() throws JposException;
+    public boolean getCapUpdateFirmware() throws JposException;
+    public boolean getCapUpdateStatistics() throws JposException;
     public boolean getCapVoice() throws JposException;
-
     public boolean getCapVolume() throws JposException;
 
-    public String getLanguage() throws JposException;
+    // Properties    
+    public String  getLanguage() throws JposException;
+    public void    setLanguage(String newValue) throws JposException;
+    public String  getLanguageList() throws JposException;
+    public int     getOutputID() throws JposException;
+    public String  getOutputIDList() throws JposException;
+    public int     getPitch() throws JposException;
+    public void    setPitch(int newValue) throws JposException;
+    public int     getPowerNotify() throws JposException;
+    public void    setPowerNotify(int newValue) throws JposException;
+    public int     getPowerState() throws JposException;
+    public int     getSpeed() throws JposException;
+    public void    setSpeed(int newValue) throws JposException;
+    public String  getVoice() throws JposException;
+    public void    setVoice(String newValue) throws JposException;
+    public String  getVoiceList() throws JposException;
+    public int     getVolume() throws JposException;
+    public void    setVolume(int newValue) throws JposException;
 
-    public void setLanguage(String newValue) throws JposException;
+    // Methods
+    public void    clearOutput() throws JposException;
+    public void    compareFirmwareVersion(String firmwareFileName, int[] result) throws JposException;
+    public void    resetStatistics(String statisticsBuffer) throws JposException;
+    public void    retrieveStatistics(String[] statisticsBuffer) throws JposException;
+    public void    speak(String text) throws JposException;
+    public void    speakImmediate(String text) throws JposException;
+    public void    stopCurrentSpeaking() throws JposException;
+    public void    stopSpeaking(int outputID) throws JposException;
+    public void    updateFirmware(String firmwareFileName) throws JposException;
+    public void    updateStatistics(String statisticsBuffer) throws JposException;
 
-    public String getLanguageList() throws JposException;
-
-    public String getOutputIDList() throws JposException;
-
-    public int getPitch() throws JposException;
-
-    public void setPitch(int newValue) throws JposException;
-
-    public int getSpeed() throws JposException;
-
-    public void setSpeed(int newValue) throws JposException;
-
-    public String getVoice() throws JposException;
-
-    public void setVoice(String newValue) throws JposException;
-
-    public String getVoiceList() throws JposException;
-
-    public int getVolume() throws JposException;
-
-    public void setVolume(int newValue) throws JposException;
-
-    public void speak(String text) throws JposException;
-
-    public void speakImmediate(String text) throws JposException;
-
-    public void stopCurrentSpeaking() throws JposException;
-
-    public void stopSpeaking(int outputID) throws JposException;
-
+    // Event listener methods
     public void    addDirectIOListener(DirectIOListener l);
     public void    removeDirectIOListener(DirectIOListener l);
     public void    addErrorListener(ErrorListener l);
