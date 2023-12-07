@@ -47,7 +47,7 @@ public interface GestureControlService116 extends BaseService, JposServiceInstan
 
     public int getPowerNotify() throws JposException;
 
-    public void setPowerNotify(int var1) throws JposException;
+    public void setPowerNotify(int newValue) throws JposException;
 
     public int getPowerState() throws JposException;
 
@@ -65,7 +65,7 @@ public interface GestureControlService116 extends BaseService, JposServiceInstan
 
     public String getAutoMode() throws JposException;
 
-    public void setAutoMode(String var1) throws JposException;
+    public void setAutoMode(String newValue) throws JposException;
 
     public String getAutoModeList() throws JposException;
 
@@ -87,13 +87,13 @@ public interface GestureControlService116 extends BaseService, JposServiceInstan
 
     public boolean getPoseCreationMode() throws JposException;
 
-    public void setPoseCreationMode(boolean var1) throws JposException;
+    public void setPoseCreationMode(boolean newValue) throws JposException;
 
     public String getPoseList() throws JposException;
 
     public int getStorage() throws JposException;
 
-    public void setStorage(int var1) throws JposException;
+    public void setStorage(int newValue) throws JposException;
 
     public void createMotion(String fileName, String poseList) throws JposException;
 

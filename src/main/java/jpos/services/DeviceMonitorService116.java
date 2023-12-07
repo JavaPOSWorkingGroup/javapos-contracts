@@ -35,7 +35,7 @@ public interface DeviceMonitorService116 extends BaseService, JposServiceInstanc
 {
     public boolean getAutoDisable() throws JposException;
 
-    public void setAutoDisable(boolean var1) throws JposException;
+    public void setAutoDisable(boolean newValue) throws JposException;
 
     public boolean getCapCompareFirmwareVersion() throws JposException;
 
@@ -51,11 +51,11 @@ public interface DeviceMonitorService116 extends BaseService, JposServiceInstanc
 
     public boolean getDataEventEnabled() throws JposException;
 
-    public void setDataEventEnabled(boolean var1) throws JposException;
+    public void setDataEventEnabled(boolean newValue) throws JposException;
 
     public int getPowerNotify() throws JposException;
 
-    public void setPowerNotify(int var1) throws JposException;
+    public void setPowerNotify(int newValue) throws JposException;
 
     public int getPowerState() throws JposException;
 

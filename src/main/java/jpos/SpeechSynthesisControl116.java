@@ -48,7 +48,7 @@ public interface SpeechSynthesisControl116 extends BaseControl
 
     public int getPowerNotify() throws JposException;
 
-    public void setPowerNotify(int var1) throws JposException;
+    public void setPowerNotify(int newValue) throws JposException;
 
     public int getPowerState() throws JposException;
 
@@ -76,7 +76,7 @@ public interface SpeechSynthesisControl116 extends BaseControl
 
     public String getLanguage() throws JposException;
 
-    public void setLanguage(String var1) throws JposException;
+    public void setLanguage(String newValue) throws JposException;
 
     public String getLanguageList() throws JposException;
 
@@ -84,21 +84,21 @@ public interface SpeechSynthesisControl116 extends BaseControl
 
     public int getPitch() throws JposException;
 
-    public void setPitch(int var1) throws JposException;
+    public void setPitch(int newValue) throws JposException;
 
     public int getSpeed() throws JposException;
 
-    public void setSpeed(int var1) throws JposException;
+    public void setSpeed(int newValue) throws JposException;
 
     public String getVoice() throws JposException;
 
-    public void setVoice(String var1) throws JposException;
+    public void setVoice(String newValue) throws JposException;
 
     public String getVoiceList() throws JposException;
 
     public int getVolume() throws JposException;
 
-    public void setVolume(int var1) throws JposException;
+    public void setVolume(int newValue) throws JposException;
 
     public void speak(String text) throws JposException;
 
