@@ -19,7 +19,7 @@
 //
 // CheckScannerControl111
 //
-//   Interface definining all new capabilities, properties and
+//   Interface defining all new capabilities, properties and
 //                                Check Scanner
 // Modification history
 // ------------------------------------------------------------------

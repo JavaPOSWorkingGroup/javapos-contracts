@@ -19,7 +19,7 @@
 //
 // ToneIndicatorControl114
 //
-// Interface definining all new capabilities, properties and methods
+// Interface defining all new capabilities, properties and methods
 // that are specific to Tone Indicator for release 1.14.
 //
 // Modification history

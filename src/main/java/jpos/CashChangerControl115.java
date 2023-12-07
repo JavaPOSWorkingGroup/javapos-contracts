@@ -19,7 +19,7 @@
 //
 // CashChangerControl115
 //
-// Interface definining all new capabilities, properties and methods
+// Interface defining all new capabilities, properties and methods
 // that are specific to Cash Changer for release 1.15.
 //
 // Modification history

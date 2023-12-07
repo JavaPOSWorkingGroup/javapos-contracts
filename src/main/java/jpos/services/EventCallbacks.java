@@ -19,7 +19,7 @@
 //
 // EventCallbacks
 //
-//   Interface definining callback methods in a JavaPOS device
+//   Interface defining callback methods in a JavaPOS device
 //   control that are callable by a JavaPOS device service.
 //
 // Modification history

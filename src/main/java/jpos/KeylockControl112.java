@@ -19,7 +19,7 @@
 //
 // KeylockControl112
 //
-//   Interface definining all new capabilities, properties and
+//   Interface defining all new capabilities, properties and
 //   methods that are specific to Keylock for release 1.12.
 //
 // Modification history

@@ -19,7 +19,7 @@
 //
 // LineDisplayControl115
 //
-// Interface definining all new capabilities, properties and methods
+// Interface defining all new capabilities, properties and methods
 // that are specific to Line Display for release 1.15.
 //
 // Modification history

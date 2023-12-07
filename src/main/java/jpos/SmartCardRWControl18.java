@@ -19,7 +19,7 @@
 //
 // SmartCardRWControl18
 //
-//   Interface definining all new capabilities, properties and
+//   Interface defining all new capabilities, properties and
 //   methods that are specific to Smart Card for release 1.8.
 //
 // Modification history

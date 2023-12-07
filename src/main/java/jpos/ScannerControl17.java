@@ -19,7 +19,7 @@
 //
 // ScannerControl17
 //
-//   Interface definining all new capabilities, properties and
+//   Interface defining all new capabilities, properties and
 //   methods that are specific to Scanner for release 1.7.
 //
 // Modification history

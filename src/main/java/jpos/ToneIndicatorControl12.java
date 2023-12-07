@@ -19,7 +19,7 @@
 //
 // ToneIndicatorControl12
 //
-//   Interface definining all capabilities, properties and methods
+//   Interface defining all capabilities, properties and methods
 //   that are specific to Tone Indicator for release 1.2.
 //
 // Modification history

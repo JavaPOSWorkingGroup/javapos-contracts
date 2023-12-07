@@ -19,7 +19,7 @@
 //
 // BillDispenserControl111
 //
-//   Interface definining all new capabilities, properties and
+//   Interface defining all new capabilities, properties and
 //   methods that are specific to Bill Dispenser for release 1.11.
 //
 // Modification history
