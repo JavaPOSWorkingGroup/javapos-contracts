@@ -32,7 +32,7 @@ package jpos;
 
 public interface LightsControl116 extends  LightsControl115
 {
-    // Properties    
+    // Capabilities    
     int  getCapPattern() throws JposException;
 
     // Methods

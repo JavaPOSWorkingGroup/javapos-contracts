@@ -42,12 +42,12 @@ public interface GraphicDisplayControl116 extends BaseControl
 	public int     getCapPowerReporting() throws JposException;
 	public boolean getCapStatisticsReporting() throws JposException;
 	public int     getCapStorage() throws JposException;
+	public boolean getCapUpdateFirmware() throws JposException;
+	public boolean getCapUpdateStatistics() throws JposException;
 	public boolean getCapURLBack() throws JposException;
 	public boolean getCapURLForward() throws JposException;
 	public boolean getCapVideoType() throws JposException;
 	public boolean getCapVolume() throws JposException;
-    public boolean getCapUpdateFirmware() throws JposException;
-    public boolean getCapUpdateStatistics() throws JposException;
 
     // Properties    
     public int     getBrightness() throws JposException;
@@ -72,9 +72,9 @@ public interface GraphicDisplayControl116 extends BaseControl
     public void    setVolume(int newValue) throws JposException;
 
     // Methods
+    public void    cancelURLLoading() throws JposException;
     public void    clearOutput() throws JposException;
     public void    compareFirmwareVersion(String firmwareFileName, int[] result) throws JposException;
-    public void    cancelURLLoading() throws JposException;
     public void    goURLBack() throws JposException;
     public void    goURLForward() throws JposException;
     public void    loadImage(String fileName) throws JposException;

@@ -38,8 +38,8 @@ public interface SoundRecorderControl116 extends BaseControl
 	public String  getCapAssociatedHardTotalsDevice() throws JposException;
 	public boolean getCapChannel() throws JposException;
 	public boolean getCapCompareFirmwareVersion() throws JposException;
-	public boolean getCapRecordingLevel() throws JposException;
 	public int     getCapPowerReporting() throws JposException;
+	public boolean getCapRecordingLevel() throws JposException;
 	public boolean getCapSamplingRate() throws JposException;
 	public boolean getCapSoundType() throws JposException;
 	public boolean getCapStatisticsReporting() throws JposException;
@@ -50,12 +50,12 @@ public interface SoundRecorderControl116 extends BaseControl
     // Properties    
     public boolean getAutoDisable() throws JposException;
     public void    setAutoDisable(boolean newValue) throws JposException;
-    public int     getDataCount() throws JposException;
-    public boolean getDataEventEnabled() throws JposException;
-    public void    setDataEventEnabled(boolean newValue) throws JposException;
     public String  getChannel() throws JposException;
     public void    setChannel(String newValue) throws JposException;
     public String  getChannelList() throws JposException;
+    public int     getDataCount() throws JposException;
+    public boolean getDataEventEnabled() throws JposException;
+    public void    setDataEventEnabled(boolean newValue) throws JposException;
     public int     getPowerNotify() throws JposException;
     public void    setPowerNotify(int newValue) throws JposException;
     public int     getPowerState() throws JposException;
