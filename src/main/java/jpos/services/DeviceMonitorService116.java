@@ -65,7 +65,7 @@ public interface DeviceMonitorService116 extends BaseService, JposServiceInstanc
 
     public void compareFirmwareVersion(String firmwareFileName, int[] result) throws JposException;
 
-    public void resetStatistics(String var1) throws JposException;
+    public void resetStatistics(String statisticsBuffer) throws JposException;
 
     public void retrieveStatistics(String[] var1) throws JposException;
 
