@@ -19,7 +19,7 @@
 //
 // Signature CaptureControl12
 //
-//   Interface definining all capabilities, properties and methods
+//   Interface defining all capabilities, properties and methods
 //   that are specific to Signature Capture for release 1.2.
 //
 // Modification history

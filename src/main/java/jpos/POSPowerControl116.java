@@ -19,7 +19,7 @@
 //
 // POSPowerControl116
 //
-// Interface definining all new capabilities, properties and methods
+// Interface defining all new capabilities, properties and methods
 // that are specific to POS Power for release 1.16.
 //
 // Modification history

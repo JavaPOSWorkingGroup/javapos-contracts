@@ -19,7 +19,7 @@
 //
 // CATControl116
 //
-// Interface definining all capabilities, properties and methods that are
+// Interface defining all capabilities, properties and methods that are
 // specific to the Credit Authorization Terminal for release 1.16.
 //
 // Modification history

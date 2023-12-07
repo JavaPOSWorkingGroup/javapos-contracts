@@ -19,7 +19,7 @@
 //
 // BeltControl113
 //
-//   Interface definining all new capabilities, properties and
+//   Interface defining all new capabilities, properties and
 //   methods that are specific to Belt for release 1.13.
 //
 // Modification history

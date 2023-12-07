@@ -19,7 +19,7 @@
 //
 // ElectronicJournalControl113
 //
-//   Interface definining all new capabilities, properties and
+//   Interface defining all new capabilities, properties and
 //   methods that are specific to Electronic Journal for release
 //   1.10.
 //

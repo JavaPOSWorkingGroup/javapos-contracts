@@ -19,7 +19,7 @@
 //
 // MSRControl14
 //
-//   Interface definining all new capabilities, properties and
+//   Interface defining all new capabilities, properties and
 //   methods that are specific to MSR for release 1.4.
 //
 // Modification history

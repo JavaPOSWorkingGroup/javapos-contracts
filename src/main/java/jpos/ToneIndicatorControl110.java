@@ -19,7 +19,7 @@
 //
 // ToneIndicatorControl110
 //
-//   Interface definining all new capabilities, properties and
+//   Interface defining all new capabilities, properties and
 //   methods that are specific to Tone Indicator for release 1.10.
 //
 // Modification history

@@ -19,7 +19,7 @@
 //
 // FiscalPrinterControl18
 //
-//   Interface definining all new capabilities, properties and
+//   Interface defining all new capabilities, properties and
 //   methods that are specific to Fiscal Printer for release 1.8.
 //
 // Modification history

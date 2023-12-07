@@ -19,7 +19,7 @@
 //
 // ElectronicValueRWControl116
 //
-// Interface definining all new capabilities, properties and methods
+// Interface defining all new capabilities, properties and methods
 // that are specific to Electronic Value Reader Writer for release 1.16.
 //
 // Modification history

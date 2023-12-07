@@ -19,7 +19,7 @@
 //
 // CashDrawerControl114
 //
-// Interface definining all new capabilities, properties and methods
+// Interface defining all new capabilities, properties and methods
 // that are specific to Cash Drawer for release 1.14.
 //
 // Modification history

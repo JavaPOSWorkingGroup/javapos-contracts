@@ -19,7 +19,7 @@
 //
 // CoinAcceptorControl116
 //
-// Interface definining all new capabilities, properties and methods
+// Interface defining all new capabilities, properties and methods
 // that are specific to Coin Acceptor for release 1.16.
 //
 // Modification history
