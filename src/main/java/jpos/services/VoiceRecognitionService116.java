@@ -63,7 +63,7 @@ public interface VoiceRecognitionService116 extends BaseService, JposServiceInst
 
     public void clearInputProperties() throws JposException;
 
-    public void compareFirmwareVersion(String var1, int[] var2) throws JposException;
+    public void compareFirmwareVersion(String firmwareFileName, int[] result) throws JposException;
 
     public void resetStatistics(String var1) throws JposException;
 
