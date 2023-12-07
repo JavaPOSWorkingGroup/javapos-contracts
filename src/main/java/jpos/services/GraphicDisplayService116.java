@@ -61,7 +61,7 @@ public interface GraphicDisplayService116 extends BaseService, JposServiceInstan
 
     public void updateFirmware(String firmwareFileName) throws JposException;
 
-    public void updateStatistics(String var1) throws JposException;
+    public void updateStatistics(String statisticsBuffer) throws JposException;
 
     public int getBrightness() throws JposException;
 

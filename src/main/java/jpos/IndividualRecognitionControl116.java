@@ -72,7 +72,7 @@ public interface IndividualRecognitionControl116 extends BaseControl
 
     public void updateFirmware(String firmwareFileName) throws JposException;
 
-    public void updateStatistics(String var1) throws JposException;
+    public void updateStatistics(String statisticsBuffer) throws JposException;
 
     public String getCapIndividualList() throws JposException;
 

@@ -71,7 +71,7 @@ public interface VoiceRecognitionService116 extends BaseService, JposServiceInst
 
     public void updateFirmware(String firmwareFileName) throws JposException;
 
-    public void updateStatistics(String var1) throws JposException;
+    public void updateStatistics(String statisticsBuffer) throws JposException;
 
     public boolean getCapLanguage() throws JposException;
 

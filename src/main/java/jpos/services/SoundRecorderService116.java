@@ -71,7 +71,7 @@ public interface SoundRecorderService116 extends BaseService, JposServiceInstanc
 
     public void updateFirmware(String firmwareFileName) throws JposException;
 
-    public void updateStatistics(String var1) throws JposException;
+    public void updateStatistics(String statisticsBuffer) throws JposException;
 
     public String getCapAssociatedHardTotalsDevice() throws JposException;
 
