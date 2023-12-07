@@ -66,6 +66,8 @@ public interface SpeechSynthesisControl116 extends BaseControl
     public void    setVolume(int newValue) throws JposException;
 
     // Methods
+    public void clearInput() throws JposException;
+    public void clearInputProperties() throws JposException;
     public void    clearOutput() throws JposException;
     public void    compareFirmwareVersion(String firmwareFileName, int[] result) throws JposException;
     public void    resetStatistics(String statisticsBuffer) throws JposException;

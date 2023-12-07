@@ -61,9 +61,9 @@ public interface SoundPlayerControl116 extends BaseControl
     // Methods
     public void    clearOutput() throws JposException;
     public void    compareFirmwareVersion(String firmwareFileName, int[] result) throws JposException;
+    public void    playSound(String fileName, boolean loop) throws JposException;
     public void    resetStatistics(String statisticsBuffer) throws JposException;
     public void    retrieveStatistics(String[] statisticsBuffer) throws JposException;
-    public void    playSound(String fileName, boolean loop) throws JposException;
     public void    stopSound(int outputID) throws JposException;
     public void    updateFirmware(String firmwareFileName) throws JposException;
     public void    updateStatistics(String statisticsBuffer) throws JposException;

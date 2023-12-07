@@ -57,8 +57,6 @@ public interface GestureControlControl116 extends BaseControl
     public boolean getPoseCreationMode() throws JposException;
     public void    setPoseCreationMode(boolean newValue) throws JposException;
     public String  getPoseList() throws JposException;
-    public void    getPosition(String jointID, int[] position) throws JposException;
-    public void    setPosition(String positionList, int time, boolean absolute) throws JposException;
     public int     getPowerNotify() throws JposException;
     public void    setPowerNotify(int newValue) throws JposException;
     public int     getPowerState() throws JposException;
@@ -70,14 +68,16 @@ public interface GestureControlControl116 extends BaseControl
     public void    compareFirmwareVersion(String firmwareFileName, int[] result) throws JposException;
     public void    createMotion(String fileName, String poseList) throws JposException;
     public void    createPose(String fileName, int time) throws JposException;
+    public void    getPosition(String jointID, int[] position) throws JposException;
     public void    resetStatistics(String statisticsBuffer) throws JposException;
     public void    retrieveStatistics(String[] statisticsBuffer) throws JposException;
-    public void    updateFirmware(String firmwareFileName) throws JposException;
-    public void    updateStatistics(String statisticsBuffer) throws JposException;
+    public void    setPosition(String positionList, int time, boolean absolute) throws JposException;
     public void    setSpeed(String speedList, int time) throws JposException;
     public void    startMotion(String fileName) throws JposException;
     public void    startPose(String fileName) throws JposException;
     public void    stopControl(int outputID) throws JposException;
+    public void    updateFirmware(String firmwareFileName) throws JposException;
+    public void    updateStatistics(String statisticsBuffer) throws JposException;
 
     // Event listener methods
     public void    addDirectIOListener(DirectIOListener l);
