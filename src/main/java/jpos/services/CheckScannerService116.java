@@ -22,7 +22,7 @@
 //   Interface defining all new capabilities, properties and methods
 //   that are specific to Check Scanner for release 1.16.
 //
-//   Generated from CheckScannerControl116.
+//   Automatically generated from CheckScannerControl116.
 //
 /////////////////////////////////////////////////////////////////////
 

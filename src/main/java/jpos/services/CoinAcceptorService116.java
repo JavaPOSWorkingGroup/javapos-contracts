@@ -22,7 +22,7 @@
 //   Interface defining all new capabilities, properties and methods
 //   that are specific to Coin Acceptor for release 1.16.
 //
-//   Generated from CoinAcceptorControl116.
+//   Automatically generated from CoinAcceptorControl116.
 //
 /////////////////////////////////////////////////////////////////////
 

@@ -20,10 +20,9 @@
 // MICRService116
 //
 //   Interface defining all new capabilities, properties and methods
-//   that are specific to Magnetic Ink Character Recognition Reader for
-//   release 1.16.
+//   that are specific to MICR for release 1.16.
 //
-//   Generated from MICRControl116.
+//   Automatically generated from MICRControl116.
 //
 /////////////////////////////////////////////////////////////////////
 

@@ -22,7 +22,7 @@
 //   Interface defining all new capabilities, properties and methods
 //   that are specific to Motion Sensor for release 1.16.
 //
-//   Generated from MotionSensorControl116.
+//   Automatically generated from MotionSensorControl116.
 //
 /////////////////////////////////////////////////////////////////////
 

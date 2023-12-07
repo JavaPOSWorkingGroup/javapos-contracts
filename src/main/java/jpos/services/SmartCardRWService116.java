@@ -22,7 +22,7 @@
 //   Interface defining all new capabilities, properties and methods
 //   that are specific to Smart Card Reader Writer for release 1.16.
 //
-//   Generated from SmartCardRWControl116.
+//   Automatically generated from SmartCardRWControl116.
 //
 /////////////////////////////////////////////////////////////////////
 

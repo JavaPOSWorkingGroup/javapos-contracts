@@ -22,7 +22,7 @@
 //   Interface defining all new capabilities, properties and methods
 //   that are specific to Cash Changer for release 1.16.
 //
-//   Generated from CashChangerControl116.
+//   Automatically generated from CashChangerControl116.
 //
 /////////////////////////////////////////////////////////////////////
 

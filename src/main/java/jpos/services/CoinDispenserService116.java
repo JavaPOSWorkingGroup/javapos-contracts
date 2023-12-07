@@ -22,7 +22,7 @@
 //   Interface defining all new capabilities, properties and methods
 //   that are specific to Coin Dispenser for release 1.16.
 //
-//   Generated from CoinDispenserControl116.
+//   Automatically generated from CoinDispenserControl116.
 //
 /////////////////////////////////////////////////////////////////////
 

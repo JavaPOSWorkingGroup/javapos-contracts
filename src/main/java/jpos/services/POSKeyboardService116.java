@@ -22,7 +22,7 @@
 //   Interface defining all new capabilities, properties and methods
 //   that are specific to POS Keyboard for release 1.16.
 //
-//   Generated from POSKeyboardControl116.
+//   Automatically generated from POSKeyboardControl116.
 //
 /////////////////////////////////////////////////////////////////////
 

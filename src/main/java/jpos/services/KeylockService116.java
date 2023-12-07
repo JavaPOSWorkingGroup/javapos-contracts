@@ -22,7 +22,7 @@
 //   Interface defining all new capabilities, properties and methods
 //   that are specific to Keylock for release 1.16.
 //
-//   Generated from KeylockControl116.
+//   Automatically generated from KeylockControl116.
 //
 /////////////////////////////////////////////////////////////////////
 

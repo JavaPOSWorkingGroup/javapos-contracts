@@ -22,7 +22,7 @@
 //   Interface defining all new capabilities, properties and methods
 //   that are specific to Signature Capture for release 1.16.
 //
-//   Generated from SignatureCaptureControl116.
+//   Automatically generated from SignatureCaptureControl116.
 //
 /////////////////////////////////////////////////////////////////////
 

@@ -22,7 +22,7 @@
 //   Interface defining all new capabilities, properties and methods
 //   that are specific to Line Display for release 1.16.
 //
-//   Generated from LineDisplayControl116.
+//   Automatically generated from LineDisplayControl116.
 //
 /////////////////////////////////////////////////////////////////////
 

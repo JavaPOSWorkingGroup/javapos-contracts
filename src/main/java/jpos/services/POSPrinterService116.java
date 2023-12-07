@@ -22,7 +22,7 @@
 //   Interface defining all new capabilities, properties and methods
 //   that are specific to POS Printer for release 1.16.
 //
-//   Generated from POSPrinterControl116.
+//   Automatically generated from POSPrinterControl116.
 //
 /////////////////////////////////////////////////////////////////////
 

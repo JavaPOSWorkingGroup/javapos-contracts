@@ -22,7 +22,7 @@
 //   Interface defining all new capabilities, properties and methods
 //   that are specific to Bump Bar for release 1.16.
 //
-//   Generated from BumpBarControl116.
+//   Automatically generated from BumpBarControl116.
 //
 /////////////////////////////////////////////////////////////////////
 

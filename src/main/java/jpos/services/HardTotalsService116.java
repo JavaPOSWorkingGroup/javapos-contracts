@@ -22,7 +22,7 @@
 //   Interface defining all new capabilities, properties and methods
 //   that are specific to Hard Totals for release 1.16.
 //
-//   Generated from HardTotalsControl116.
+//   Automatically generated from HardTotalsControl116.
 //
 /////////////////////////////////////////////////////////////////////
 
