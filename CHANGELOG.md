@@ -1,5 +1,10 @@
 # Change Log for javapos-contracts
 
+## 1.16.0 
+
+- added device categories new in UnifiedPOS 1.16, i.e. DeviceMonitor, GestureControl, GraphicDisplay, IndividualRecognition, SoundPlayer, 
+  SoundRecorder, SpeechSynthesis, VideoCapture, VoiceRecognition (contribution by @mjpcger, PR #21)
+
 ## 1.15.2 Maintenance Release
 
 - added general constants `JPOS_FALSE` and `JPOS_FALSE` to `JposConst`, as workaround for a type error in `PointCardRW.CapCardEntranceSensor`; solves GH issues #20
