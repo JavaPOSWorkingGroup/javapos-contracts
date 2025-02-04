@@ -48,6 +48,9 @@
 //       FPTR_RT_EOD_ORDINAL
 //   Added new ErrorCodeExtended constant:
 //       JPOS_EFPTR_DAY_END_REQUIRED
+// 2025-Feb-04 JavaPOS Release 1.15.2                              MC
+//   Added new GetData constant:
+//		 FPTR_GD_VAT_ID_LIST
 //
 /////////////////////////////////////////////////////////////////////
 
@@ -284,6 +287,7 @@ public interface FiscalPrinterConst
     public static final int FPTR_GD_TENDER                   = 26;
     public static final int FPTR_GD_LINECOUNT                = 27;
     public static final int FPTR_GD_DESCRIPTION_LENGTH       = 28;
+	public static final int FPTR_GD_VAT_ID_LIST              = 29; // Added in release 1.15.2
 
     public static final int FPTR_PDL_CASH                     =  1;
     public static final int FPTR_PDL_CHEQUE                   =  2;

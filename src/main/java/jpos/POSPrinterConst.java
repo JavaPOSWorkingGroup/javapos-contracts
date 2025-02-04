@@ -82,6 +82,14 @@
 //   Re-added dropped, misspelled slip cartridge constant for backwards
 //   compatibility.
 //     PTR_SUE_SLP_CARTDRIGE_OK
+// 2025-Feb-04 JavaPOS Release 1.15.2                              MC
+//   Marked Bar Code Symbology value as deprecated:
+//     PTR_BCS_EAN128
+//   Added Bar Code Symbology value as replacement for PTR_BCS_EAN128:
+//     PTR_BCS_GS1128
+//   Added Bar Code Symbology values:
+//     PTR_BCS_DOTCODE
+//     PTR_BCS_HANXIN
 //
 /////////////////////////////////////////////////////////////////////
 
@@ -275,12 +283,14 @@ public interface POSPrinterConst
                                                            //   barcode
     public static final int PTR_BCS_EAN13_S        = 119;  // EAN 13 with supplemental
                                                            //   barcode
+@deprecated                                                // Deprecated JavaPOS 1.15.2														   
     public static final int PTR_BCS_EAN128         = 120;  // EAN 128
     public static final int PTR_BCS_OCRA           = 121;  // OCR "A"
     public static final int PTR_BCS_OCRB           = 122;  // OCR "B"
 
     // Added in Release 1.8
     public static final int PTR_BCS_Code128_Parsed = 123;
+
        // The followings RSS have been deprecated in 1.12. Use the GS1DATABAR constants below instead.
     public static final int PTR_BCS_RSS14          = 131;  // Reduced Space Symbology - 14 digit GTIN
     public static final int PTR_BCS_RSS_EXPANDED   = 132;  // RSS - 14 digit GTIN plus additional fields
@@ -290,6 +300,15 @@ public interface POSPrinterConst
     public static final int PTR_BCS_GS1DATABAR_E   = 132;  // GS1 DataBar Expanded
     public static final int PTR_BCS_GS1DATABAR_S   = 133;  // GS1 DataBar Stacked Omnidirectional
     public static final int PTR_BCS_GS1DATABAR_E_S = 134;  // GS1 DataBar Expanded Stacked
+	
+	// Added in Release 1.15.1
+    public static final int PTR_BCS_GS1DATABAR     = 131;  // GS1 DataBar Omnidirectional
+    public static final int PTR_BCS_GS1DATABAR_E   = 132;  // GS1 DataBar Expanded
+	
+	// Added in Release 1.15.2
+    public static final int PTR_BCS_GS1128         = 120;  // GS1-128
+    public static final int PTR_BCS_DOTCODE        = 124;  // Dot Code
+    public static final int PTR_BCS_HANXIN         = 125;  // Han Xin Code
 
     //     Two dimensional symbologies
     public static final int PTR_BCS_PDF417       = 201;
