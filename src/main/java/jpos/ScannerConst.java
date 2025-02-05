@@ -131,7 +131,7 @@ public interface ScannerConst
                                                          //   supplemental barcode
     public static final int SCAN_SDT_EAN13_S     = 119;  // EAN 13 with
                                                          //   supplemental barcode
-@deprecated                                              // Deprecated JavaPOS 1.15.2
+@Deprecated                                              // Deprecated JavaPOS 1.15.2
     public static final int SCAN_SDT_EAN128      = 120;  // EAN 128
     public static final int SCAN_SDT_OCRA        = 121;  // OCR "A"
     public static final int SCAN_SDT_OCRB        = 122;  // OCR "B"
