@@ -57,10 +57,6 @@ java {
     sourceCompatibility = JavaVersion.VERSION_1_8
 }
 
-javadoc {
-    maxMemory = '4096m'
-}
-
 jar {
 	archiveBaseName = artifactName
 	manifest = javaposManifest
