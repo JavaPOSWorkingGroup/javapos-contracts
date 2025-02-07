@@ -2,10 +2,13 @@ name: Check PR
 
 on:
   pull_request:
+  push:
+    branches: 
+      - '**'
 
 jobs:
   javapos-workflow:
-    uses: JavaPOSWorkingGroup/javapos-workflow/.github/workflows/check.yml@v1.1
+    uses: JavaPOSWorkingGroup/javapos-workflow/.github/workflows/check.yml@3108982395fec215d6d87a03bf42e7d7d955c098
     with:
       github-event-action: ${{github.event.action}}
     secrets: inherit
