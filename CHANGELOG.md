@@ -1,5 +1,14 @@
 # Change Log for javapos-contracts
 
+## 1.15.3 Maintenance Release
+
+- made conform to UnifiedPOS 1.15.1 (contribution by @mjpcger); in particular this includes the following changes
+- added *ElectronicValueRW* constants `EVRW_TAG_VR_` and `EVRW_TAG_VTT_`
+- added *FiscalPrinter* constant `FPTR_GD_VAT_ID_LIST`
+- added *POSPrinter* constants `PTR_BCS_GS1128`, `PTR_BCS_DOTCODE`, `PTR_BCS_HANXIN`
+- added *Scanner* constants `SCAN_SDT_GS1128` and `SCAN_SDT_DWCODE`
+- marked constants `PTR_BCS_EAN128` and `SCAN_SDT_EAN128` as deprecated as noted by UnfiedPOS 1.15.1
+
 ## 1.15.2 Maintenance Release
 
 - added general constants `JPOS_FALSE` and `JPOS_FALSE` to `JposConst`, as workaround for a type error in `PointCardRW.CapCardEntranceSensor`; solves GH issues #20
