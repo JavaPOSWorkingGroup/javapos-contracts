@@ -285,10 +285,11 @@ public interface POSPrinterConst
                                                            //   barcode
 	/**
 	 * EAN-128 is deprecated and has been replaced by GS1-128. Therefore,
-	 * PTR_BCS_EAN128 has been replaced by PRT_BCS_GS1128. See specification 
-	 * of UPOS 1.15.1.
+	 * instead of PTR_BCS_EAN128 the constant {@link POSPrinterConst#PTR_BCS_GS1128}
+	 * should be used. 
+	 * See specification of UnifiedPOS 1.15.1.
 	 */
-@Deprecated                                                // Deprecated JavaPOS 1.15.2
+    @Deprecated
     public static final int PTR_BCS_EAN128         = 120;  // EAN 128
     public static final int PTR_BCS_OCRA           = 121;  // OCR "A"
     public static final int PTR_BCS_OCRB           = 122;  // OCR "B"

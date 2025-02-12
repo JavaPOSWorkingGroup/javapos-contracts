@@ -134,10 +134,10 @@ public interface ScannerConst
     
 	/**
 	 * EAN-128 is deprecated and has been replaced by GS1-128. Therefore,
-	 * SCAN_SDT_EAN128 has been replaced by SCAN_SDT_GS1128. See specification 
-	 * of UPOS 1.15.1.
+	 * instead of SCAN_SDT_EAN128 the constant {@link ScannerConst#SCAN_SDT_GS1128}. 
+	 * See specification of UPOS 1.15.1.
 	 */
-@Deprecated                                              // Deprecated JavaPOS 1.15.2
+    @Deprecated
     public static final int SCAN_SDT_EAN128      = 120;  // EAN 128
     public static final int SCAN_SDT_OCRA        = 121;  // OCR "A"
     public static final int SCAN_SDT_OCRB        = 122;  // OCR "B"
