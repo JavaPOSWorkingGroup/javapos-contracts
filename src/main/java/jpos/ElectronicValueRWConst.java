@@ -99,6 +99,14 @@
 //     EVRW_TE_NOTIFY_LOCK
 //     EVRW_TE_NOTIFY_CENTER_CHECK_COMPLETE
 //     EVRW_TE_CONFIRM_PIN_ENTRY_BY_OUTER_PINPAD
+// 2025-Feb-04 JavaPOS Release 1.15.2                              MC
+//   Added new constants:
+//     EVRW_TAG_VR_VOID
+//     EVRW_TAG_VR_RETURN
+//     EVRW_TAG_VTT_SALES
+//     EVRW_TAG_VTT_CHARGE
+//     EVRW_TAG_VTT_CANCEL
+//     EVRW_TAG_VTT_RETURN
 //
 /////////////////////////////////////////////////////////////////////
 
@@ -313,6 +321,14 @@ public interface ElectronicValueRWConst
   public static final int EVRW_TAG_TT_WRITE            = 9; // Added in release 1.14
   public static final int EVRW_TAG_TT_COMPLETION       = 10; // Added in release 1.15
   public static final int EVRW_TAG_TT_PRE_SALES        = 11; // Added in release 1.15
+
+  public static final int EVRW_TAG_VR_VOID             = 1; // Added in release 1.15.2
+  public static final int EVRW_TAG_VR_RETURN           = 2; // Added in release 1.15.2
+
+  public static final int EVRW_TAG_VTT_SALES           = 1; // Added in release 1.15.2
+  public static final int EVRW_TAG_VTT_CHARGE          = 2; // Added in release 1.15.2
+  public static final int EVRW_TAG_VTT_CANCEL          = 3; // Added in release 1.15.2
+  public static final int EVRW_TAG_VTT_RETURN          = 4; // Added in release 1.15.2
 
   /////////////////////////////////////////////////////////////////////
   // "transactionAccess" Method: "Control" Parameter Constants

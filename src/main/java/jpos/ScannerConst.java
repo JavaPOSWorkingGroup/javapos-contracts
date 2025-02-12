@@ -73,6 +73,13 @@
 //       SCAN_SDT_UsIntelligent
 //       SCAN_SDT_UsPlanet
 //       SCAN_SDT_PostNet
+// 2025-Feb-04 JavaPOS Release 1.15.2                              MC
+//   Marked ScanDataType constant as deprecated:
+//       SCAN_SDT_EAN128
+//   Added ScanDataType constant as replacement for SCAN_SDT_EAN128:
+//       SCAN_SDT_GS1128
+//   Added new ScanDataType constant:
+//       SCAN_SDT_DWCODE
 //
 /////////////////////////////////////////////////////////////////////
 
@@ -124,6 +131,13 @@ public interface ScannerConst
                                                          //   supplemental barcode
     public static final int SCAN_SDT_EAN13_S     = 119;  // EAN 13 with
                                                          //   supplemental barcode
+    
+	/**
+	 * EAN-128 is deprecated and has been replaced by GS1-128. Therefore,
+	 * SCAN_SDT_EAN128 has been replaced by SCAN_SDT_GS1128. See specification 
+	 * of UPOS 1.15.1.
+	 */
+@Deprecated                                              // Deprecated JavaPOS 1.15.2
     public static final int SCAN_SDT_EAN128      = 120;  // EAN 128
     public static final int SCAN_SDT_OCRA        = 121;  // OCR "A"
     public static final int SCAN_SDT_OCRB        = 122;  // OCR "B"
@@ -152,6 +166,10 @@ public interface ScannerConst
     public static final int SCAN_SDT_MSI              = 143;  // MSI Code
     public static final int SCAN_SDT_PLESSEY          = 144;  // Plessey Code
     public static final int SCAN_SDT_TELEPEN          = 145;  // Telepen
+
+    // One dimensional symbologies (added in Release 1.15.2)
+    public static final int SCAN_SDT_GS1128      = 120;  // GS1-128
+    public static final int SCAN_SDT_DWCODE      = 146;  // Digital Watermarking
 
     // Composite Symbologies (Added in Release 1.8)
     public static final int SCAN_SDT_CCA         = 151;  // Composite Component A.

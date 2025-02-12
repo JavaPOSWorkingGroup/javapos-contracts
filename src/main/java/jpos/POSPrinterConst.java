@@ -82,6 +82,14 @@
 //   Re-added dropped, misspelled slip cartridge constant for backwards
 //   compatibility.
 //     PTR_SUE_SLP_CARTDRIGE_OK
+// 2025-Feb-04 JavaPOS Release 1.15.2                              MC
+//   Marked Bar Code Symbology value as deprecated:
+//     PTR_BCS_EAN128
+//   Added Bar Code Symbology value as replacement for PTR_BCS_EAN128:
+//     PTR_BCS_GS1128
+//   Added Bar Code Symbology values:
+//     PTR_BCS_DOTCODE
+//     PTR_BCS_HANXIN
 //
 /////////////////////////////////////////////////////////////////////
 
@@ -275,6 +283,12 @@ public interface POSPrinterConst
                                                            //   barcode
     public static final int PTR_BCS_EAN13_S        = 119;  // EAN 13 with supplemental
                                                            //   barcode
+	/**
+	 * EAN-128 is deprecated and has been replaced by GS1-128. Therefore,
+	 * PTR_BCS_EAN128 has been replaced by PRT_BCS_GS1128. See specification 
+	 * of UPOS 1.15.1.
+	 */
+@Deprecated                                                // Deprecated JavaPOS 1.15.2
     public static final int PTR_BCS_EAN128         = 120;  // EAN 128
     public static final int PTR_BCS_OCRA           = 121;  // OCR "A"
     public static final int PTR_BCS_OCRB           = 122;  // OCR "B"
@@ -290,6 +304,11 @@ public interface POSPrinterConst
     public static final int PTR_BCS_GS1DATABAR_E   = 132;  // GS1 DataBar Expanded
     public static final int PTR_BCS_GS1DATABAR_S   = 133;  // GS1 DataBar Stacked Omnidirectional
     public static final int PTR_BCS_GS1DATABAR_E_S = 134;  // GS1 DataBar Expanded Stacked
+	
+    // Added in Release 1.15.2
+    public static final int PTR_BCS_GS1128         = 120;  // GS1-128
+    public static final int PTR_BCS_DOTCODE        = 124;  // Dot Code
+    public static final int PTR_BCS_HANXIN         = 125;  // Han Xin Code
 
     //     Two dimensional symbologies
     public static final int PTR_BCS_PDF417       = 201;
