@@ -1,5 +1,6 @@
 [![Gitpod ready-to-code](https://img.shields.io/badge/Gitpod-ready--to--code-blue?logo=gitpod)](https://gitpod.io/#https://github.com/JavaPOSWorkingGroup/javapos-contracts)
-[![Build Status](https://github.com/JavaPOSWorkingGroup/javapos-contracts/workflows/Build/badge.svg)](https://github.com/JavaPOSWorkingGroup/javapos-contracts/actions)
+[![CI](https://github.com/JavaPOSWorkingGroup/javapos-contracts/actions/workflows/build.yml/badge.svg)](https://github.com/JavaPOSWorkingGroup/javapos-contracts/actions/workflows/build.yml)
+[![Release Build](https://github.com/JavaPOSWorkingGroup/javapos-contracts/actions/workflows/release.yml/badge.svg)](https://github.com/JavaPOSWorkingGroup/javapos-contracts/actions/workflows/release.yml)
 [![Maven Central](https://maven-badges.herokuapp.com/maven-central/org.javapos/javapos-contracts/badge.svg)](https://maven-badges.herokuapp.com/maven-central/org.javapos/javapos-contracts/)
 
 JavaPOS Contracts 
