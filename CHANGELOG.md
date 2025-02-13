@@ -1,5 +1,9 @@
 # Change Log for javapos-contracts
 
+## 1.15.4 Maintenance Release
+
+- added *POSPrinter* constant `BCS_GS1DATAMATRIX` missing from UnifiedPOS 1.15.1 (contribution by @mjpcger)
+
 ## 1.15.3 Maintenance Release
 
 - made conform to UnifiedPOS 1.15.1 (contribution by @mjpcger); in particular this includes the following changes
