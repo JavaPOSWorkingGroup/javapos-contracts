@@ -90,6 +90,9 @@
 //   Added Bar Code Symbology values:
 //     PTR_BCS_DOTCODE
 //     PTR_BCS_HANXIN
+// 2025-Feb-13 JavaPOS Release 1.15.2                              MC
+//   Added Bar Code Symbology value:
+//     PTR_BCS_GS1DATAMATRIX
 //
 /////////////////////////////////////////////////////////////////////
 
@@ -321,6 +324,8 @@ public interface POSPrinterConst
     public static final int PTR_BCS_UQRCODE      = 205; // Micro QR Code
     public static final int PTR_BCS_AZTEC        = 206; // Aztec
     public static final int PTR_BCS_UPDF417      = 207; // Micro PDF 417
+    // Added in Release 1.15.2
+    public static final int PTR_BCS_GS1DATAMATRIX= 208; // GS1 Data Matrix
 
     //     Start of Printer-Specific bar code symbologies
     public static final int PTR_BCS_OTHER        = 501;
