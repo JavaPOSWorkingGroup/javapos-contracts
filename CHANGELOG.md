@@ -1,5 +1,9 @@
 # Change Log for javapos-contracts
 
+## 1.15.5 Maintenance Release
+
+- added constant `ScaleConst.JPOS_ESCAL_UNDERWEIGHT` to be UnifiedPOS 1.14 compliant; solves GH issue #24
+
 ## 1.15.4 Maintenance Release
 
 - added *POSPrinter* constant `BCS_GS1DATAMATRIX` missing from UnifiedPOS 1.15.1 (contribution by @mjpcger)
