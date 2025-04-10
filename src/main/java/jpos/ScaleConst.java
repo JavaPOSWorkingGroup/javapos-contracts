@@ -147,7 +147,8 @@ public interface ScaleConst
     // "ResultCodeExtended" Property Constants for Scale
     /////////////////////////////////////////////////////////////////////
 
-    public static final int JPOS_ESCAL_OVERWEIGHT  = 1 + JposConst.JPOSERREXT; // ReadWeight
-    public static final int JPOS_ESCAL_UNDER_ZERO  = 2 + JposConst.JPOSERREXT; // ReadWeight
-    public static final int JPOS_ESCAL_SAME_WEIGHT = 3 + JposConst.JPOSERREXT; // ReadWeight
+    public static final int JPOS_ESCAL_OVERWEIGHT  = 1 + JposConst.JPOSERREXT;
+    public static final int JPOS_ESCAL_UNDER_ZERO  = 2 + JposConst.JPOSERREXT;
+    public static final int JPOS_ESCAL_SAME_WEIGHT = 3 + JposConst.JPOSERREXT;
+    public static final int JPOS_ESCAL_UNDERWEIGHT = 4 + JposConst.JPOSERREXT;
 }
