@@ -1,5 +1,9 @@
 # Change Log for javapos-contracts
 
+## 1.14.5
+
+- added constant `ScaleConst.JPOS_ESCAL_UNDERWEIGHT to be UnifiedPOS compliant; solved GH issue #24
+
 ## 1.14.4
 
 - **Major Change**: requires Java 8 runtime (cannot be marked as major version change accordingly as major and minor version is aligned to UnifiedPOS version)
