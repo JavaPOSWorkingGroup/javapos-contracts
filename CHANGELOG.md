@@ -2,7 +2,7 @@
 
 ## 1.14.5
 
-- added constant `ScaleConst.JPOS_ESCAL_UNDERWEIGHT to be UnifiedPOS compliant; solves GH issue #24
+- added constant `ScaleConst.JPOS_ESCAL_UNDERWEIGHT` to be UnifiedPOS compliant; solves GH issue #24
 
 ## 1.14.4
 
